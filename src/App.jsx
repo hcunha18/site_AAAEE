@@ -34,25 +34,26 @@ function App() {
         <Container customClass="min_height">
           <Routes>
 
-            <Route path="/" element={<Home/>}/>
+              <Route path="/">
+              <Route index element={<Home/>}/>
+              <Route path="Gestao2023_2" element={<Gestao2023_2/>}/>
+              <Route path="Documentos" element={<Documentos/>}/>
+              <Route path="Galeria" element={<Galeria/>}/>
 
-            <Route path="/Gestao2023_2" element={<Gestao2023_2/>}/>
-            <Route path="/Documentos" element={<Documentos/>}/>
-            <Route path="/Galeria" element={<Galeria/>}/>
+              <Route path="Competicoes" element={<Competicoes/>}/>
+              <Route path="Modalidades" element={<Modalidades/>}/>
 
-            <Route path="/Competicoes" element={<Competicoes/>}/>
-            <Route path="/Modalidades" element={<Modalidades/>}/>
+              <Route path="Eventos" element={<Eventos/>}/>
 
-            <Route path="/Eventos" element={<Eventos/>}/>
+              <Route path="Lojinha" element={<Lojinha/>}/>
 
-            <Route path="/Lojinha" element={<Lojinha/>}/>
+              <Route path="SejaUmParceiro" element={<SejaUmParceiro/>}/>
+              <Route path="NossosParceiros" element={<NossosParceiros/>}/>
 
-            <Route path="/SejaUmParceiro" element={<SejaUmParceiro/>}/>
-            <Route path="/NossosParceiros" element={<NossosParceiros/>}/>
+              <Route path="CampusAberto" element={<CampusAberto/>}/>
 
-            <Route path="/CampusAberto" element={<CampusAberto/>}/>
-
-            <Route path="/Contato" element={<Contato/>}/>
+              <Route path="Contato" element={<Contato/>}/>
+            </Route>  
 
           </Routes>
 
