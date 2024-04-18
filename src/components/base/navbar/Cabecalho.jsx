@@ -69,7 +69,7 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li>
-                                <a href="/CampusAberto">Campus Aberto</a>
+                                <Link to="/CampusAberto">Campus Aberto</Link>
                             </li>
                             <li className="item">
                                 <div className="dropdown_toggle" onMouseEnter={handleEsportivoToggle}>
