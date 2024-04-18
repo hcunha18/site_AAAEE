@@ -1,0 +1,326 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+:root{
+    --hoverColor: #27749B;
+    --boxColor: #ffffff;
+    --backgroundColor: #D9D9D9;
+    --textColor: #000000;
+    --titleEventosColor: #109AB3;
+    --buttonColor: #EDA15B;
+}
+
+.Body{
+    position: relative;
+    background-color: var(--backgroundColor);
+}
+.overlay{
+    position: relative;
+}
+.bg{
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(40%);
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DAE7FE;
+    font-size: 32px;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.3em;  
+}
+.TituloOrientadora{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.TituloOrientadora h1{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.TituloOrientadora hr{
+    width: 100%;
+    height: 3px;
+    background-color: var(--textColor);
+}
+.DivisaoTela{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+.TelaEsquerda{
+    width: 50%;
+    /* background-color: red; */
+}
+.TelaEsquerda h1{
+    margin-left: 5rem;
+}
+.TelaDireita{
+    width: 50%;
+    /* background-color: blue; */
+}
+.TelaDireita h2{
+    font-size: 16px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Area bolsistas*/
+.TituloBolsistas{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.TituloBolsistas h1{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.TituloBolsistas hr{
+    width: 100%;
+    height: 3px;
+    background-color: var(--textColor);
+}
+.DivisaoTela2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+.TelaEsquerda2{
+    width: 50%;
+}
+.TelaDireita2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+/*AQUI VAI A CONFIGURAÇÃO DAS BOX DOS BOLSISTAS*/
+
+/*Area O que é?*/
+.TituloSobre{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.TituloSobre h1{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.TituloSobre hr{
+    width: 100%;
+    height: 3px;
+    background-color: var(--textColor);
+}
+.TituloSobre h2{
+    margin-top: 3rem;
+    font-size: 20px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*Area PROJETO CAMPUS ABERTO - ATLÉTICA PANTERÃO*/
+.SobreProjeto{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.SobreProjeto h1{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.SobreProjeto hr{
+    width: 100%;
+    height: 3px;
+    background-color: var(--textColor);
+}
+.SobreProjeto h2{
+    margin-top: 3rem;
+    font-size: 20px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+.SobreProjeto h2 li{
+    text-align: justify;
+}
+/* Area sobre PESQUISA, ENSINO E EXTENSÃO*/
+.Pesquisa{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.Pesquisa h1{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.Pesquisa hr{
+    width: 100%;
+    height: 3px;
+    background-color: var(--textColor);
+}
+.Pesquisa h2{
+    margin-top: 3rem;
+    font-size: 20px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Area sobre Galeria de Fotos*/
+.Galeria{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.Galeria h1{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.Galeria hr{
+    width: 100%;
+    height: 3px;
+    background-color: var(--textColor);
+}
+
+.DivisaoFotos{
+    display: flex;
+    justify-content: center;
+}
+.ColunaEsquerda{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+
+}
+.ColunaCentro{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+.ColunaDireita{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .ImgCampeonato{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+} */
+
+.ImgCampeonato{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 370px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Bloco Apoiadores */
+.Apoiadores{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.Apoiadores h1{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.Apoiadores hr{
+    width: 100%;
+    height: 3px;
+    background-color: var(--textColor);
+}
+.Apoiadores h2{
+    margin: 5rem;
+    /*margin apenas de exemplo*/
+}
+
+/*Bloco PARA MAIS INFORMAÇÕES*/
+.DivisaoTela3{
+    display: flex;
+    justify-content: center;
+}
+.ColunaEsquerda1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ColunaEsquerda1 h1{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.ColunaEsquerda1 hr{
+    margin-left: 2rem;
+    width: 17rem;
+    height: 3px;
+    background-color: var(--textColor);
+}
+.ColunaEsquerda1 h2{
+    font-size: 18px;
+    margin-top: 1rem;
+}
+/*Criação do botao*/
+.AlinharBotao{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.Botao{
+    background-color: #EDA15B;
+    border-radius: 50px;
+    height: 50px;
+    width: 25rem;
+    font-size: 16px;
+    letter-spacing: 5px;
+    border: none;
+}
+.Botao:hover{
+    cursor: pointer;
+    color: #D9D9D9;
+}
+.ColunaDireita1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.ColunaDireita1 h2{
+    font-size: 18px;
+    margin-top: 5rem;
+}
+.LogoCampusAberto{
+    margin-top: 3rem;
+    width: 90%;
+    height: 90%;
+}
+

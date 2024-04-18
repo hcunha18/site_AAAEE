@@ -1,0 +1,83 @@
+.redondo-container-arthur {
+    position: relative;
+    width: 280px; 
+    height: 450px; 
+  }
+  
+  .redondo-arthur {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    border: 4px solid white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+  }
+  
+  .redondo-arthur img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .quadrado-arthur {
+    width: 650px; 
+    height: 250px; 
+    background-color: white;
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    border: 2px solid lightgray; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: translate(-50%, -50%); 
+  }
+  
+  .informacoes-arthur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.agradecimentos-arthur{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha verticalmente */
+  align-items: center; /* Alinha horizontalmente */
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.divisor-arthur {
+    width: 100%;
+    height: 80px; 
+    position: absolute;
+    bottom: 140px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}

@@ -1,0 +1,130 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+    
+:root {
+    --cabecalho-color: #090E17;
+    --select-color: #2D7EA3;
+    --background-color: #d9d9d9;
+    --text-rodape-color: #D9D9D9;
+    --text-page-color: #D9D9D9;
+}
+
+.Body {
+    position: relative;
+    background-color: var(--text-page-color);
+}
+
+.overlay {
+    position: relative;
+}
+/*Tentar deixar a imagem mais escura e nao mais clara*/
+.bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* opacity: 1; */
+    filter: brightness(40%);
+}
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DAE7FE;
+    font-size: 32px;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.3em;
+}
+.NossosEventos{
+    position: relative;
+    margin-left: 5rem;
+    margin-top: 8rem;
+}
+.NossosEventos hr{
+    margin-top: 5px;
+    height: 2px;
+    width: 350px;
+    background-color: #090E17;
+}
+.NossosEventos pre{
+    font-size: 20px;
+    /* font-size: clamp (12px, 4vw, 32px); */
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 5rem;
+}
+
+/*Divisao da tela*/
+.DivisaoTela1{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.DivisaoTela2{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--text-page-color);
+}
+.TelaEsquerda{
+    width: 50%;
+}
+.TelaDireita{
+    width: 50%;
+}
+
+/*Configuração dos textos*/
+.TextoEvento{
+    margin: 5rem;
+    margin-top: 7rem; 
+}
+.TextoEvento h1{
+    color: #2D7EA3;
+    font-size: 24px;
+}
+.TextoEvento hr{
+    background-color: #2D7EA3;
+    margin-top: 5px;
+    height: 2px;
+    width: 350px;
+    margin-bottom: 5px;
+}
+.TextoEvento h2{
+    font-size: 18px;
+    /* font-size: clamp (12px, 4vw, 32px); */
+    margin-top: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.DivisaoTela3{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+/*Definição global para todas as fotos que serão utilizadas na página*/
+.ImgFestas{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 370px;
+    width: 100%;
+}
+.ImgFestas img{
+    border-radius: 10px;
+    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+}

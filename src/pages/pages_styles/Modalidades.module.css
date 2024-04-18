@@ -1,0 +1,180 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+
+:root{
+    --cabecalho-color: #090E17;
+    --select-color: #2D7EA3;
+    --background-color: #1E222D;
+    --text-rodape-color: #D9D9D9;
+    --text-page-color: #D9D9D9;
+}
+.Body{
+    background-color: var(--text-page-color);
+}
+
+/*Texto Nossas Modalidades*/
+.TextModalidades{
+    margin-left: 10rem;
+    padding-top: 4rem;
+}
+
+
+.TextModalidades hr{
+    margin-top: 5px;
+    height: 2px;
+    width: 350px;
+    background-color: #090E17;
+}
+.TextModalidades h2{
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+/*Definição de tamanho da img da garra*/
+.Garra{
+    width: 90%;
+    height: 90%;
+    margin-top: 50px;
+}
+
+/*Definição do tamanho das divs (dividir a tela ao meio)*/
+.DivisaoTela{
+    display: flex;
+}
+.BlocoEsquerda{
+    width: 35vw;
+}
+.BlocoDireita{
+    width: 70vw;
+    margin-top: 150px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap; /*É ESSA FUNÇÃO CARALHOOOOOOOOOO */
+    /* background-color: red; */
+}
+.ListModalidadesEsquerda{
+    margin-right: px;
+}
+.ListModalidadesEsquerda hr{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    height: 2px;
+    background-color: #090E17;
+}
+.ListModalidadesDireita{
+    margin-left: 200px;
+}
+.ListModalidadesDireita hr{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    height: 2px;
+    background-color: #090E17;
+}
+
+/*Texto informativo dos treinos*/
+.Treino{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.Treino hr{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 2px;
+    width: 150px;
+    background-color: #090E17;
+}
+
+/*Breve texto para acesso ao linktree dos treinos*/
+.AcesseTreino{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.AcesseTreino hr{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 2px;
+    width: 300px;
+    background-color: #090E17;
+}
+.AcesseTreino h2{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/*Criação do botao*/
+.AlinharBotao{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.Botao{
+    background-color: #EDA15B;
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+}
+.Botao:hover{
+    cursor: pointer;
+    color: #D9D9D9;
+}
+
+/*Img Campeonatos*/
+.DivisaoFotos{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.ColunaEsquerda{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+
+}
+.ColunaCentro{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+.ColunaDireita{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .ImgCampeonato{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+} */
+.ImgCampeonato{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 370px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*Utilizar "rem" ou "em" */
+
+/*grid para dividir tela*/
+
+
+
