@@ -86,10 +86,10 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li>
-                                <a href="/Eventos">Eventos</a>
+                                <Link to="/Eventos">Eventos</Link>
                             </li>
                             <li>
-                                <a href="/Lojinha">Lojinha</a>  
+                                <Link to="/Lojinha">Lojinha</Link> 
                             </li>
                             <li className="item">
                                 <div className="dropdown_toggle" onMouseEnter={handleParceriasToggle}>
@@ -106,7 +106,7 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li>
-                                <a href="/Contato">Contato</a>  
+                                <Link to="/Contato">Contato</Link> 
                             </li>
                         </ul>
                     </nav>
