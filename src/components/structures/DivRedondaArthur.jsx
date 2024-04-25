@@ -14,7 +14,7 @@ function DivRedondaArthur() {
                     Arthur Ribeiro de Oliveira
                 </h1>
                 <h3>
-                    Fundador da A.A.A.E.E CEFET-Leopoldina
+                    Cofundador da A.A.A.E.E CEFET-Leopoldina
                 </h3>
             </div>
 
@@ -24,9 +24,11 @@ function DivRedondaArthur() {
 
             <div className='agradecimentos-arthur'>
                 <text>
-                    A Atlética Panterão agradece em especial ao nosso fundador, Arthur Ribeiro, pelo
+                    A Atlética Panterão agradece em especial ao nosso cofundador, 
                     <br/>
-                    trabalho prestado e proporcionado.
+                    Arthur Ribeiro, 
+                    <br/>
+                    pelo trabalho prestado e proporcionado.
                 </text>
             </div>
         </div>

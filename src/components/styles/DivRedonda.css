@@ -1,7 +1,7 @@
 .redondo-container {
     position: relative;
     width: 280px; 
-    height: 450px; 
+    height: 400px; 
   }
   
   .redondo {
@@ -10,10 +10,11 @@
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    left: 50%;
-    border: 4px solid white; 
+    left: 50%; 
+    top: -10%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translate(-50%, -50%);
+
   }
   
   .redondo img {
@@ -22,8 +23,8 @@
   }
   
   .quadrado {
-    width: 400px; 
-    height: 250px; 
+    width: 340px; 
+    height: 225px; 
     background-color: white;
     position: absolute;
     top: 20%; 
@@ -32,6 +33,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transform: translate(-50%, -50%); 
+    
   }
   
   .informacoes {
@@ -40,36 +42,52 @@
     width: 100%;
     height: 150px; 
     position: absolute;
-    bottom: 200px; 
+    bottom: 13rem; 
     left: 50%; 
     transform: translateX(-50%); 
+
+    font-family: 'inter';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000000;
+
+
 }
 
 .divisor{
     width: 100%;
     height: 80px; 
     position: absolute;
-    bottom: 210px; 
+    bottom: 15rem;
     left: 50%; 
     transform: translateX(-50%);
 }
 
-.icones{
-    width: auto;
-    height: 60px; 
-    position: absolute;
-    color: black;
-    bottom: 220px;
-    left: 50%; 
-    align-items: center;
+.icones {
+  width: auto;
+  height: 60px;
+  position: absolute;
+  color: black;
+  bottom: 15rem;
+  left: 50%;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  transform: translateX(-50%);
+  size: 20px;
 }
 
-.icones svg{
-    fill: black;
-    cursor: pointer;
-    transition: fill 0.3s;
+.icones a:not(:last-child) { 
+  margin-right: 10px; 
+}
+
+.icones svg {
+  fill: black;
+  cursor: pointer;
+  transition: fill 0.3s;
 }
 
 .icones svg:hover {
-    fill: blue; 
+  fill: #2D7EA3;
 }
