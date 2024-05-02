@@ -8,6 +8,7 @@ import logoCEFET from '../../images/DEDC_CEFET.png';
 function Footer() {
     return (
         <footer className={styles.footer}>
+            <Divider/>
 
             {/* Rodapé */}
 

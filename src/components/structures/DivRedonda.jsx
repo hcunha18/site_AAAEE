@@ -1,12 +1,15 @@
 import React from 'react';
 import '../styles/DivRedonda.css';
 import Divider from './Divider';
-import { FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoMailSharp } from "react-icons/io5";
 
 function DivRedonda({ imageLink, h1Text, h3Text, iconLink }) {
     const links = [
         { url: "https://imgbox.com/VOIgCQVs", image: imageLink, alt: "Imagem Diretoria" },
-        { url: iconLink, icon: <FaInstagram/> }
+        { url: iconLink, icon: <FaGithub/> },
+        { url: "mailto:seuemail@example.com", icon: <IoMailSharp/> }, // Ícone de e-mail
+        { url: "https://www.linkedin.com/seuperfil", icon: <FaLinkedin/> } // Ícone do LinkedIn
     ];
 
     return (
@@ -20,12 +23,13 @@ function DivRedonda({ imageLink, h1Text, h3Text, iconLink }) {
                 ))}
             </div>
             <div className="informacoes">
-                <h1 className="textoInformacoes">
+                <text className="textoInformacoes">
                     {h1Text}
-                </h1>
-                <h3>
+                </text>
+                <br/>
+                <text>
                     {h3Text}
-                </h3>
+                </text>
             </div>
 
             <div className="divisor">

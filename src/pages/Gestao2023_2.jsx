@@ -14,19 +14,26 @@ function Gestao2023_2() {
       </div>
       <div className={styles.baseInformacoes}>
         <pre className={styles.textoInformacoes}>
-          {"A gestão 2023.2 da Associação Atlética Acadêmica CEFET -\n"}
-          {"Leopoldina (A.A.A.E.E CEFET - Leopoldina) tem como missão\n"}
-          {"Empoderar a comunidade estudantil do CEFET-MG através de\n"}
-          {"atividades esportivas e culturais, fomentando a integração,\n"}
-          {"a participação ativa e a excelência em todas as nossas iniciativas."}
+          Menção Honrosa
         </pre>
+        <Divider className={styles.dividerPrincipal}/>
       </div>
       <div className={styles.boxPrincipal}>
-        <FotoPrincipal imageLink="https://thumbs2.imgbox.com/4a/08/VOIgCQVs_t.png" h1Text="Arthur Ribeiro de Oliveira" h3Text="Fundador da A.A.A.E.E CEFET -Leopoldina" />
+        <FotoPrincipal/>
+      </div>
+
+      <div className={styles.baseInformacoes}>
+        <pre className={styles.textoInformacoes}>
+          Membros
+        </pre>
+        <Divider className={styles.dividerPrincipal}/>
+      </div>
+      <div className={styles.groundColor}> 
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       </div>
       <div className={styles.baseDiretoria}>
         <div className={styles.linhaDiretoria}>
-          <DivRedonda imageLink="https://thumbs2.imgbox.com/4a/08/VOIgCQVs_t.png" h1Text="Ítalo Aurélio" h3Text="X° Diretor de Relações" iconLink="https://www.instagram.com/atleticaleopoldina/" />
+          <DivRedonda imageLink="https://thumbs2.imgbox.com/4a/08/VOIgCQVs_t.png" h1Text="Humberto Motta da Cunha" h3Text="Presidente da A.A.A.E.E CEFET -Leopoldina" iconLink="https://www.instagram.com/atleticaleopoldina/" />
         </div>
         <div className={styles.linhaDiretoria}>
           <DivRedonda />
@@ -35,6 +42,7 @@ function Gestao2023_2() {
           <DivRedonda />
         </div>
       </div>
+
       <div className={styles.baseDiretoria}>
         <div className={styles.linhaDiretoria}>
           <DivRedonda />
@@ -46,8 +54,7 @@ function Gestao2023_2() {
           <DivRedonda />
         </div>
       </div>
-      <div className={styles.endPage}></div>
-      <Divider />
+
     </section>
   );
 }

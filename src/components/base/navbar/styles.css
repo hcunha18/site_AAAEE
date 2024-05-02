@@ -6,7 +6,6 @@ header .container {
   justify-content: left;
   display: flex;
   align-items: center;
- 
 }
 
 header img {
@@ -16,13 +15,13 @@ header img {
 }
 
 header nav {
-  margin-left: 150px;
   display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  margin-right: 1em;
   padding: 15px;
-  display: inline-block;
+  margin-left: 280px;
 }
 
 header nav ul {
@@ -170,7 +169,7 @@ header nav ul li a:hover {
 }
 
 .item a:hover {
-  color: blue;
+  color: #2D7EA3;
 }
 
 .dropdown_menu {
@@ -192,7 +191,6 @@ header nav ul li a:hover {
   display: block; 
 }
 
-/* Estilo dos itens dentro do menu */
 .dropdown_menu a {
   display: block; 
   padding: 10px 0; 
