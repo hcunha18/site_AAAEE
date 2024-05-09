@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import styles from './pages_styles/Home.module.css';
 import logo from '../images/Background.png';
 import escrita from '../images/Escrita.png';
-import AnimatedTyping from '../components/animation/AnimatedTyping';
 
 function Home() {
 
@@ -13,11 +12,18 @@ function Home() {
 
       <img src={logo} alt="Pantera" className={styles.bg} />
 
-      <div className='Letreiro'>
-        <div className={styles.tittleDestaques}>
-          <AnimatedTyping title="Fiquem ligados nas nossa NOVIDADES!" />
+      
+        <div className='Letreiro'>
+          <div className="static-txt">Fiquem ligados</div>
+          <ul className="dynamic-txts">
+            <li><span>nos nossos Eventos!</span></li>
+            <li><span>nos nossos Campeonatos!</span></li>
+            <li><span>na nossa Lojinha!</span></li>
+            <li><span>nos nossos Parceiros!</span></li>
+
+          </ul>
         </div>
-      </div>
+      
 
       <div className={styles.fundo}></div>
 
