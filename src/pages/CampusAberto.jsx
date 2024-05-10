@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './pages_styles/CampusAberto.module.css';
 import bannerCampusAberto from '../images/bannerCampusAbertoMembros.png';
 import Divider from '../components/structures/Divider';
-import DivRedonda from '../components/structures/DivRedonda';
-import FotoPrincipal from '../components/structures/DivRedondaArthur';
+import DivRedonda from '../components/structures/BoxMembros';
+import FotoPrincipal from '../components/structures/BoxHomenagem';
 
 function CampusAberto() {
   return (

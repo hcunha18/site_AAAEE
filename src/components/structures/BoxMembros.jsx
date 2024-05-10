@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/DivRedonda.css';
+import '../styles/BoxMembros.css';
 import Divider from './Divider';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
 
-function DivRedonda({ imageLink, h1Text, h3Text, iconLink }) {
+function BoxMembros({ imageLink, h1Text, h3Text, iconLink }) {
     const links = [
         { url: "https://imgbox.com/VOIgCQVs", image: imageLink, alt: "Imagem Diretoria" },
         { url: iconLink, icon: <FaGithub/> },
-        { url: "mailto:seuemail@example.com", icon: <IoMailSharp/> }, // Ícone de e-mail
-        { url: "https://www.linkedin.com/seuperfil", icon: <FaLinkedin/> } // Ícone do LinkedIn
+        { url: "mailto:seuemail@example.com", icon: <IoMailSharp/> }, 
+        { url: "https://www.linkedin.com/seuperfil", icon: <FaLinkedin/> } 
     ];
 
     return (
@@ -47,4 +47,4 @@ function DivRedonda({ imageLink, h1Text, h3Text, iconLink }) {
     );
 }
 
-export default DivRedonda;
+export default BoxMembros;

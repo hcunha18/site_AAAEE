@@ -1,20 +1,20 @@
 .redondo-container {
     position: relative;
-    width: 280px; 
-    height: 400px; 
+    width: 17.5rem; 
+    height: 23.8rem; 
   }
   
   .redondo {
-    width: 180px;
-    height: 180px;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
     left: 50%; 
     top: -10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     transform: translate(-50%, -50%);
-
+    background-color: pink;
   }
   
   .redondo img {
@@ -23,15 +23,15 @@
   }
   
   .quadrado {
-    width: 340px; 
-    height: 225px; 
+    width: 22rem; 
+    height: 14rem; 
     background-color: white;
     position: absolute;
     top: 20%; 
     left: 50%;
-    border: 2px solid lightgray; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 0.125rem solid lightgray; 
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     transform: translate(-50%, -50%); 
     
   }
@@ -40,46 +40,40 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 150px; 
     position: absolute;
-    bottom: 13rem; 
+    bottom: 16.5rem; 
     left: 50%; 
     transform: translateX(-50%); 
-
     font-family: 'inter';
     font-style: normal;
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 0.875rem;
+    line-height: 0.938rem;
     color: #000000;
-
-
 }
 
 .divisor{
-    width: 100%;
-    height: 80px; 
+    width: 100%; 
     position: absolute;
-    bottom: 15rem;
+    bottom: 14rem;
     left: 50%; 
     transform: translateX(-50%);
 }
 
 .icones {
   width: auto;
-  height: 60px;
   position: absolute;
   color: black;
-  bottom: 15rem;
+  bottom: 13rem;
   left: 50%;
   display: flex; 
   align-items: center;
   justify-content: space-between; 
   transform: translateX(-50%);
-  size: 20px;
+  size: 1.25rem;
 }
 
 .icones a:not(:last-child) { 
-  margin-right: 10px; 
+  margin-right: 0.625rem; 
 }
 
 .icones svg {

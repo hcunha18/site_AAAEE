@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/DivRedondaArthur.css';
+import '../styles/BoxHomenagem.css';
 import Divider from './Divider';
 
-function DivRedondaArthur() {
+function BoxHomenagem() {
     return (
         <div className="redondo-container-arthur">
             <div className="quadrado-arthur"></div>
@@ -35,4 +35,4 @@ function DivRedondaArthur() {
     );
 }
 
-export default DivRedondaArthur;
+export default BoxHomenagem;

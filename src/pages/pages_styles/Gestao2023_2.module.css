@@ -17,6 +17,7 @@
 .content {
     vertical-align:baseline;
     background-color: #090E17;
+    
 }
 
 .overlay {
@@ -66,17 +67,20 @@
 }
 
 .baseDiretoria {
+    column-count: 3;
     display: flex;
     flex-direction: row;
     background-color: var(--text-page-color);
-    align-items: center;
     justify-content: space-around; 
 }
 
 .linhaDiretoria {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.membro {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
 }
 
 .textoInformacoes{
@@ -128,6 +132,20 @@
     .textoInformacoes{
         padding-left: 0rem;
         text-align: center;
+        font-size: 24px; 
     }
 
+    .title {
+        font-size: 24px; 
+    }
+
+    .baseInformacoes {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .membro {
+        width: 100%; 
+        margin-right: 0; 
+    }
 }
