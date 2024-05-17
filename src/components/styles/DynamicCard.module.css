@@ -1,0 +1,103 @@
+:root{
+    --cabecalho-color: #090E17;
+    --text-color: black;
+    --text-light-color: #D9D9D9;
+    --select-color: #2D7EA3;
+    --background-color: #1E222D;
+    --box-color: #FFFF;
+}
+  
+.card {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.alignTitulos {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.textoTitulos {
+    flex: 1;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    text-align: center;
+    color: var(--text-color);
+    position: relative;
+}
+
+.textoTitulos::after {
+    content: '';
+    display: block;
+    width: 30%;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.cardItem {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.fileInfo {
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    margin-left: -3rem;
+}
+
+.pdfIcon {
+    font-size: 3rem;
+}
+
+.modDate{
+    margin-left: -4rem;
+}
+
+.fileName, .modDate, .fileSize {
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px; 
+}
+
+.divider {
+    width: 80%;
+    margin: 10px auto; 
+    height: 1px;
+    background-color: #000; 
+}
+
+@media (max-width: 600px) {
+    .pdfIcon {
+        font-size: 1rem;
+    }
+    .fileInfo {
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        flex-direction:column;
+    }    
+    .modDate{
+        display: flex;
+        flex-direction:column;
+    }
+
+}

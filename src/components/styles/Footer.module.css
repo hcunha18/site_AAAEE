@@ -1,7 +1,17 @@
+:root{
+    --cabecalho-color: #090E17;
+    --text-color: black;
+    --text-light-color: #D9D9D9;
+    --select-color: #2D7EA3;
+    --background-color: #1E222D;
+    --box-color: #FFFF;
+    --span-color: #626569;
+}
+
 .footer {
     width: 100%;
     height: auto;
-    background-color: #D9D9D9;
+    background-color: var( --text-light-color);
     padding: 1em;
     text-align: center;
     margin-bottom: 0;
@@ -11,7 +21,7 @@
     display: flex;
     justify-content: right; 
     list-style-type: none;
-    color: black;
+    color: var( --text-color)
 }
 
 .social_list li {
@@ -19,11 +29,11 @@
 }
 
 .social_list svg:hover {
-    fill: #2D7EA3;
+    fill: var(--select-color);
 }
 
 .social_list svg{
-    fill: black;
+    fill: var(--text-color);
     font-size: 2.25em;
     cursor: pointer;
     transition: fill 0.3s;
@@ -32,7 +42,7 @@
 .copy_right{
     text-align: left;
     align-items: flex-start;
-    color: #626569;
+    color: var( --span-color);
 }
 
 .copy_right span{
@@ -42,20 +52,20 @@
 .text{
     text-align: left;
     align-items: flex-start;
-    color: #626569;
+    color: var( --span-color);
 }
 
 .textRight {
     right: 0;
     position: relative;
     justify-content: flex-end;
-    color: #626569;
+    color: var( --span-color);
 }
 
 .textRightEnd {
     position: relative;
     justify-content: flex-end;
-    color: #626569;
+    color: var( --span-color);
     margin-left: auto;
     margin-bottom: 0;
     margin-top: 35px;

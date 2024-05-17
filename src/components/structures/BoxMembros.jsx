@@ -3,13 +3,15 @@ import '../styles/BoxMembros.css';
 import Divider from './Divider';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
+import lattes from '../../images/lattes.png';
 
-function BoxMembros({ imageLink, h1Text, h3Text, iconLink }) {
+function BoxMembros({ imageLink, h1Text, h3Text, gitLink, mailLink, linkedLink, lattesLink }) {
     const links = [
-        { url: "https://imgbox.com/VOIgCQVs", image: imageLink, alt: "Imagem Diretoria" },
-        { url: iconLink, icon: <FaGithub/> },
-        { url: "mailto:seuemail@example.com", icon: <IoMailSharp/> }, 
-        { url: "https://www.linkedin.com/seuperfil", icon: <FaLinkedin/> } 
+        { url: imageLink, image: imageLink, alt: "Imagem Diretoria" },
+        { url: gitLink, icon: <FaGithub /> },
+        { url: `mailto:${mailLink}`, icon: <IoMailSharp /> },
+        { url: linkedLink, icon: <FaLinkedin /> },
+        //{ url: lattesLink, icon: <img src={lattes} alt="Lattes" style={{ width: '25px', height: '25px' }} /> }
     ];
 
     return (
@@ -18,28 +20,32 @@ function BoxMembros({ imageLink, h1Text, h3Text, iconLink }) {
             <div className="redondo">
                 {links.map((link, index) => (
                     link.image ? (
-                        <a key={index} href={link.url} target="_blank"><img src={link.image} alt={link.alt}/></a>
+                        <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+                            <img src={link.image} alt={link.alt} />
+                        </a>
                     ) : null
                 ))}
             </div>
             <div className="informacoes">
-                <text className="textoInformacoes">
+                <div className="textoInformacoes">
                     {h1Text}
-                </text>
-                <br/>
-                <text>
+                </div>
+                <br />
+                <div>
                     {h3Text}
-                </text>
+                </div>
             </div>
 
             <div className="divisor">
-                <Divider/>
+                <Divider />
             </div>
 
             <div className="icones">
                 {links.map((link, index) => (
                     link.icon ? (
-                        <a key={index} href={link.url} target="_blank">{link.icon}</a>
+                        <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="link">
+                            {link.icon}
+                        </a>
                     ) : null
                 ))}
             </div>

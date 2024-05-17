@@ -58,6 +58,8 @@ header nav ul li a:hover {
 @media (max-width: 1120px) {
   .menu-section nav {
     display: none;
+    justify-content: flex-end;
+    margin-left: auto;
   }
 
   .one, .two, .three {
@@ -72,9 +74,9 @@ header nav ul li a:hover {
     width: 40px;
     height: 30px;
     margin-right: 20px;
+    margin-left: auto;
   }
 
-  /*Fullscreen*/
   .menu-section.on {
     position: absolute;
     top: 0;
@@ -90,9 +92,9 @@ header nav ul li a:hover {
 
   .menu-section.on nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
     right: 70px;
+    justify-content: flex-end;
+    margin-left: auto;
   }
 
   .menu-section.on .menu-toggle {

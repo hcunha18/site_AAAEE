@@ -67,15 +67,12 @@
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
   text-align: center;
-
   color: #000000;
 
 
@@ -88,4 +85,31 @@
     bottom: 270px; 
     left: 50%; 
     transform: translateX(-50%);
+}
+
+@media (max-width: 600px){
+  .redondo-arthur {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 50%;
+    left: 20%;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .quadrado-arthur {
+    width: 30rem; 
+    height: 20rem; 
+    background-color: white;
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    border: 2px solid lightgray; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: translate(-50%, -50%); 
+  }
+
 }

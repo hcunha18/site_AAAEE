@@ -11,11 +11,13 @@ function Gestao2023_2() {
       imageLink: 'https://thumbs2.imgbox.com/4a/08/VOIgCQVs_t.png',
       h1Text: 'Humberto Motta da Cunha',
       h3Text: 'Presidente da A.A.A.E.E CEFET - Leopoldina',
-      iconLink: 'https://www.instagram.com/atleticaleopoldina/'
+      gitLink: 'https://www.instagram.com/atleticaleopoldina/',
+      mailLink: 'humberto@example.com',
+      linkedLink: 'https://www.linkedin.com/in/humberto-motta-da-cunha'
     },
-    {},
-    {},
-    {},
+    {h1Text: 'a',},
+    {h1Text: 'b',},
+    {h1Text: 'c',},
     {},
     {},
     {},
@@ -30,16 +32,7 @@ function Gestao2023_2() {
     return membrosPorLinha;
   };
 
-
-  let membrosPorLinha = organizarMembrosPorLinha(membrosData);
-
-  // const verdadeiro = (i) => {
-  //   if(i % 3 == 0){
-  //     return true;
-  //   }
-  //   else return false;
-    
-  // };
+  const membrosPorLinha = organizarMembrosPorLinha(membrosData);
 
   return (
     <section className={styles.content}>
@@ -68,66 +61,22 @@ function Gestao2023_2() {
       </div>
 
       <div className={styles.baseDiretoria}>
-        
         {membrosPorLinha.map((linha, index) => (
-          <div className={styles.linhaDiretoria} key={index}>
-            {linha.map((membro, index) => (
-              <div className={styles.membro} key={index}>
-                <BoxMembros
-                  imageLink={membro.imageLink}
-                  h1Text={membro.h1Text}
-                  h3Text={membro.h3Text}
-                  iconLink={membro.iconLink}
-                />
-              </div>
+          <div key={index} className={styles.membrosLinha}>
+            {linha.map((membro, idx) => (
+              <BoxMembros
+                key={idx}
+                imageLink={membro.imageLink}
+                h1Text={membro.h1Text}
+                h3Text={membro.h3Text}
+                gitLink={membro.gitLink}
+                mailLink={membro.mailLink}
+                linkedLink={membro.linkedLink}
+              />
             ))}
           </div>
-        ))}  
-
-        {/* 
-        TENTATIVA 2:
-
-        {membrosData.map((membro, index) => (
-          verdadeiro(index+1) ? <div>           
-          
-          <BoxMembros
-            imageLink={membro.imageLink}
-            h1Text={membro.h1Text}
-            h3Text={membro.h3Text}
-            iconLink={membro.iconLink}
-          />  
-
-          <br/>
-        
-        </div> : <div> 
-          
-          <BoxMembros
-            imageLink={membro.imageLink}
-            h1Text={membro.h1Text}
-            h3Text={membro.h3Text}
-            iconLink={membro.iconLink}
-          /> 
-
-        </div>
-    
-        ))} */}
-
-        {/* 
-        TENTATIVA 3:
-
-        {membrosData.map((membro) => (
-                <BoxMembros
-                  imageLink={membro.imageLink}
-                  h1Text={membro.h1Text}
-                  h3Text={membro.h3Text}
-                  iconLink={membro.iconLink}
-                />
-        ))} 
-         */}
-
-
+        ))}
       </div>
-
     </section>
   );
 }

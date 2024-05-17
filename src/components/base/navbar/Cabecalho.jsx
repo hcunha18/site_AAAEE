@@ -51,7 +51,7 @@ const Header = () => {
                     <nav>
                         <ul>
                             <li className="item">
-                                <div className="dropdown_toggle" onMouseEnter={handleAtleticaToggle}>
+                                <div className="dropdown_toggle" onClick={handleAtleticaToggle}>
                                     A Atlética
                                 </div>
                                 <ul className="dropdown_menu">
@@ -72,7 +72,7 @@ const Header = () => {
                                 <Link to="/CampusAberto">Campus Aberto</Link>
                             </li>
                             <li className="item">
-                                <div className="dropdown_toggle" onMouseEnter={handleEsportivoToggle}>
+                                <div className="dropdown_toggle" onClick={handleEsportivoToggle}>
                                     Esportivo
                                 </div>
                                 <ul className="dropdown_menu">
@@ -92,7 +92,7 @@ const Header = () => {
                                 <Link to="/Lojinha">Lojinha</Link> 
                             </li>
                             <li className="item">
-                                <div className="dropdown_toggle" onMouseEnter={handleParceriasToggle}>
+                                <div className="dropdown_toggle" onClick={handleParceriasToggle}>
                                     Parcerias
                                 </div>
                                 <ul className="dropdown_menu">
