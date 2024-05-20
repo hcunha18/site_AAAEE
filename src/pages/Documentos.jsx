@@ -9,7 +9,7 @@ function Documentos() {
     {
         icon: <VscFilePdf />,
         fileName: 'Relatório Anual 2024',
-        fileUrl: 'public/pdfs/Regimento InternodeESports.pdf',
+        fileUrl: '../pdfs/Regimento InternodeESports.pdf',
         modDate: null,
         fileSize: null
     },
