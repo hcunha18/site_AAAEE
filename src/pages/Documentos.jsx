@@ -8,7 +8,7 @@ function Documentos() {
   const [items, setItems] = useState([
     {
         icon: <VscFilePdf />,
-        fileName: 'Relatório Anual 2024',
+        fileName: 'Regimento Interno',
         fileUrl: '../pdfs/Regimento InternodeESports.pdf',
         modDate: null,
         fileSize: null
