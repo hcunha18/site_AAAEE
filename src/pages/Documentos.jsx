@@ -28,24 +28,36 @@ function Documentos() {
       fileSize: null
     },
   ]);
-
+  
   useEffect(() => {
     const fetchFileDetails = async () => {
       const updatedItems = await Promise.all(items.map(async item => {
-        const response = await fetch(item.fileUrl, { method: 'HEAD' });
-        const fileSize = response.headers.get('content-length');
-        const lastModified = response.headers.get('last-modified');
-        return {
-          ...item,
-          fileSize: fileSize ? (fileSize / (1024 * 1024)).toFixed(2) + ' MB' : 'Unknown',
-          modDate: lastModified ? new Date(lastModified).toLocaleDateString('pt-BR') : 'Unknown'
-        };
+        try {
+          const response = await fetch(item.fileUrl, { method: 'HEAD' });
+          if (!response.ok) {
+            throw new Error(`Error fetching ${item.fileName}`);
+          }
+          const fileSize = response.headers.get('content-length');
+          const lastModified = response.headers.get('last-modified');
+          return {
+            ...item,
+            fileSize: fileSize ? (fileSize / (1024 * 1024)).toFixed(2) + ' MB' : 'Desconhecido',
+            modDate: lastModified ? new Date(lastModified).toLocaleDateString('pt-BR') : 'Desconhecido'
+          };
+        } catch (error) {
+          console.error(`Error fetching details for ${item.fileName}:`, error);
+          return {
+            ...item,
+            fileSize: 'Erro ao obter tamanho',
+            modDate: 'Erro ao obter data'
+          };
+        }
       }));
       setItems(updatedItems);
     };
     
     fetchFileDetails();
-  }, []);
+  }, [items]);
 
   return (
     <section className={styles.content}>
