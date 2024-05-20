@@ -1,4 +1,4 @@
-:root{
+:root {
     --cabecalho-color: #090E17;
     --text-color: black;
     --text-light-color: #D9D9D9;
@@ -6,7 +6,7 @@
     --background-color: #1E222D;
     --box-color: #FFFF;
 }
-  
+
 .card {
     justify-content: center;
     align-items: center;
@@ -43,7 +43,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    
 }
 
 .cardItem {
@@ -57,22 +56,30 @@
 .fileInfo {
     display: flex;
     align-items: center;
-    flex-direction:row;
+    flex-direction: row;
     margin-left: -3rem;
+}
+
+.downloadLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .pdfIcon {
     font-size: 3rem;
+    margin-right: 0.5rem;
 }
 
-.modDate{
-    margin-left: -4rem;
+.modDate {
+    margin-left: -5rem;
 }
 
 .fileName, .modDate, .fileSize {
     display: flex;
     align-items: center;
-    flex-direction:row;
+    flex-direction: row;
     font-size: 1rem;
     text-align: center;
     margin-top: 5px; 
@@ -80,9 +87,9 @@
 
 .divider {
     width: 80%;
-    margin: 10px auto; 
+    margin: 10px auto;
     height: 1px;
-    background-color: #000; 
+    background-color: #000;
 }
 
 @media (max-width: 600px) {
@@ -93,11 +100,10 @@
         display: flex;
         padding: 1rem;
         align-items: center;
-        flex-direction:column;
+        flex-direction: column;
     }    
-    .modDate{
+    .modDate {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
-
 }

@@ -3,11 +3,10 @@ import styles from '../styles/DynamicCard.module.css';
 
 function Divider() {
     return <hr className={styles.divider} />;
-  }
-  
+}
+
 const DynamicCard = ({ items }) => {
     return (
-        
         <div className={styles.card}>
             <div className={styles.alignTitulos}>
                 <div className={styles.textoTitulos}>Nome do arquivo</div>
@@ -19,13 +18,15 @@ const DynamicCard = ({ items }) => {
                 <React.Fragment key={index}>
                     <div className={styles.cardItem}>
                         <div className={styles.fileInfo}>
-                            <span className={styles.pdfIcon}>{item.icon}</span>
-                            <span className={styles.fileName}>{item.fileName}</span>
+                            <a href={item.fileUrl} download={item.fileName} className={styles.downloadLink}>
+                                <span className={styles.pdfIcon}>{item.icon}</span>
+                                <span className={styles.fileName}>{item.fileName}</span>
+                            </a>
                         </div>
                         <div className={styles.modDate}>{item.modDate}</div>
                         <div className={styles.fileSize}>{item.fileSize}</div>
                     </div>
-                    <Divider className={styles.divider} />
+                    <Divider />
                 </React.Fragment>
             ))}
         </div>
