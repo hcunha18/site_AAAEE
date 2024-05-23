@@ -22,7 +22,7 @@ function Documentos() {
     },
     {
       icon: <VscFilePdf />,
-      fileName: 'Relatório Anual 2022',
+      fileName: 'Relatório de Teste ',
       fileUrl: '/pdfs/RelatorioAnual2022.pdf',
       modDate: null,
       fileSize: null
@@ -41,8 +41,8 @@ function Documentos() {
           const lastModified = response.headers.get('last-modified');
           return {
             ...item,
-            fileSize: fileSize ? (fileSize / (1024 * 1024)).toFixed(2) + ' MB' : 'Desconhecido',
-            modDate: lastModified ? new Date(lastModified).toLocaleDateString('pt-BR') : 'Desconhecido'
+            fileSize: fileSize ? (fileSize / (1024 * 1024)).toFixed(2) + ' MB' : 'Tamanho não identificado',
+            modDate: lastModified ? new Date(lastModified).toLocaleDateString('pt-BR') : 'Data de modificação não encontrada'
           };
         } catch (error) {
           console.error(`Error fetching details for ${item.fileName}:`, error);

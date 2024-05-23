@@ -47,48 +47,47 @@
 
 .cardItem {
     display: flex;
-    margin-bottom: 10px;
-    justify-content: space-around;
     width: 100%;
     margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .fileInfo {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    margin-left: -3rem;
+    width: 33.33%; 
 }
 
 .downloadLink {
     display: flex;
-    align-items: center;
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
 .pdfIcon {
     font-size: 3rem;
     margin-right: 0.5rem;
-}
-
-.modDate {
-    margin-left: -5rem;
+    align-items: center;
 }
 
 .fileName, .modDate, .fileSize {
     display: flex;
     align-items: center;
-    flex-direction: row;
     font-size: 1rem;
-    text-align: center;
-    margin-top: 5px; 
+    justify-content: center;
+    flex: 1;
+    width: 33.33%; 
+}
+
+.fileInfo svg:hover {
+    fill: var(--select-color);
 }
 
 .divider {
     width: 80%;
     margin: 10px auto;
-    height: 1px;
+    height: 0.2px;
     background-color: #000;
 }
 
