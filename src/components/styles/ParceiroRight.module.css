@@ -1,104 +1,207 @@
 * {
-    padding: 0;
-    margin: 0;
-    vertical-align: baseline;
-    list-style: none;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+:root {
+  --cabecalho-color: #090E17;
+  --select-color: #2D7EA3;
+  --background-color: #1E222D;
+  --text-rodape-color: #D9D9D9;
+  --text-page-color: #D9D9D9;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text-page-color);
+}
+
+.informacoes {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.parceiro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem; 
+  height: 30rem; 
+  padding: 15px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border: 2px solid transparent; 
+  border-radius: 10px; 
+  overflow: hidden; 
+}
+
+.parceiro img {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  background-color: blue;
+  margin-bottom: 1.5rem;
+}
+
+.parceiroInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 3rem;
+}
+
+.parceiroInfo h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'Jockey One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: left;
+  color: #000000;
+}
+
+.divider {
+  width: 20rem;
+  margin: 0px 0 0px 0; 
+  height: 0.2px;
+  background-color: #000;
+}
+
+.parceiroDetalhes {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.parceiroDescricao {
+  margin-right: 10rem;
+  align-items: center;
+}
+
+.parceiroDescricao p {
+  margin: 0;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-align: center;
+}
+
+.descricaoEmpresa {
+  font-family: 'Kumbh Sans';
+  margin-top: 1.5rem;
+  font-style: normal;
+  font-weight: 50;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #000000;
+}
+
+.background1 {
+  background-color: rgb(209, 208, 208);
+}
+
+.background2 {
+  background-color: var(--text-page-color);
+}
+
+
+@media (max-width: 1200px) {
+  .parceiro {
+      width: 40rem;
+      height: 22rem;
   }
-  
-  :root {
-    --cabecalho-color: #090E17;
-    --select-color: #2D7EA3;
-    --background-color: #1E222D;
-    --text-rodape-color: #D9D9D9;
-    --text-page-color: #D9D9D9;
+
+  .parceiro img {
+      width: 12rem;
+      height: 12rem;
   }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+
+  .parceiroInfo h2 {
+      font-size: 30px;
+      line-height: 40px;
   }
-  
-  .informacoes{
-    display: flex;
-    flex-direction: row;
-    background-color: #2D7EA3;
+
+  .parceiroDescricao p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .informacoes {
+      flex-direction: column;
+      align-items: center;
   }
 
   .parceiro {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    background-color: pink;
-    margin-left: 5rem;
-}
-  
+      width: 35rem;
+      height: 20rem;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+  }
+
   .parceiro img {
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
     background-color: blue;
+    margin-bottom: 1.5rem;
     align-items: left;
-  }
-  
-  .parceiroInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2.5rem;
-  }
-  
-  .parceiroInfo h2 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-family: 'Jockey One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 50px;
-    text-align: center;
-    color: #000000;
-  }
-  
-  .parceiroDetalhes {
-    margin-top: 10px;
-    text-align: left;
-  }
-  
-  .parceiroDescricao {
-    display: flex;
-    align-items: center;
-  }
-  
-  .parceiroDescricao p {
-    margin: 0;
-    font-family: 'Kumbh Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 0.05em;
-    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
 
-.descricaoEmpresa{
-    font-family: 'Kumbh Sans';
-    font-style: normal;
-    font-weight: 50;
-    font-size: 1.5rem;
-    line-height: 37px;
-    letter-spacing: 0.05em;
-    color: #000000;
-    align-items: left;
+  .parceiroInfo {
+      align-items: center;
+  }
+
+  .parceiroInfo h2 {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+  }
+
+  .parceiroDescricao p {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+  }
+
+  .descricaoEmpresa {
+      text-align: center;
+  }
 }
-  
-.divider{
-    width: 20rem;
-    margin: 0px auto;
-    height: 0.2px;
-    background-color: #000;
+
+@media (max-width: 768px) {
+  .parceiro {
+      width: 28rem;
+      height: 18rem;
+  }
+
+  .parceiro img {
+      width: 8rem;
+      height: 8rem;
+  }
+
+  .parceiroInfo h2 {
+      font-size: 20px;
+      line-height: 28px;
+  }
+
+  .parceiroDescricao p {
+      font-size: 16px;
+      line-height: 22px;
+  }
 }

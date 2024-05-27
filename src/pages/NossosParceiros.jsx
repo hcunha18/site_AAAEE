@@ -9,20 +9,36 @@ function Divider() {
 
 const empresas = [
     {
-      logo: 'url-da-imagem1.jpg',
+      logo: 'https://th.bing.com/th/id/OIP.KRURSIfETIgNFlh3zeL8GAHaE2?rs=1&pid=ImgDetMain',
       nome: 'Empresa 1',
       descricao: 'A Mecânica PowerMEC, é uma oficina mecânica completa com sede própria em Sorocaba, localizada na Zona Oeste na Av. General Carneiro, 1149 – Sorocaba/SP. Somos especializados no conserto de veículo e automóveis de todas as marcas nacionais e importadas, com uma equipe diversificada de mecânicos devidamente uniformizados e treinados.Trabalhamos com: Mecânica Geral, Freios, Pneus, Suspensão, Troca de Óleo e Filtro, Troca de Correia, Injeção Eletrônica, Troca de Embreagem, Limpeza de Radiador, Bico Injetor, Alinhamento / Balanceamento. ',
       endereco: 'Endereço da Empresa 1',
       email: 'email@empresa1.com',
-      localizacao: 'Localização da Empresa 1'
+      telefone: '(31) xxxxx-xxxx'
     },
     {
-      logo: 'url-da-imagem2.jpg',
+      logo: 'https://i.pinimg.com/originals/87/4f/00/874f00b0e6a9f0c905433bf6d3b50979.jpg',
       nome: 'Empresa 2',
-      descricao: 'Descrição da Empresa 2',
+      descricao: 'A Mecânica PowerMEC, é uma oficina mecânica completa com sede própria em Sorocaba, localizada na Zona Oeste na Av. General Carneiro, 1149 – Sorocaba/SP. Somos especializados no conserto de veículo e automóveis de todas as marcas nacionais e importadas, com uma equipe diversificada de mecânicos devidamente uniformizados e treinados.Trabalhamos com: Mecânica Geral, Freios, Pneus, Suspensão, Troca de Óleo e Filtro, Troca de Correia, Injeção Eletrônica, Troca de Embreagem, Limpeza de Radiador, Bico Injetor, Alinhamento / Balanceamento. ',
       endereco: 'Endereço da Empresa 2',
       email: 'email@empresa2.com',
-      localizacao: 'Localização da Empresa 2'
+      telefone: '(31) xxxxx-xxxx'
+    },
+    {
+      logo: 'https://i.pinimg.com/originals/87/4f/00/874f00b0e6a9f0c905433bf6d3b50979.jpg',
+      nome: 'Empresa 2',
+      descricao: 'A Mecânica PowerMEC, é uma oficina mecânica completa com sede própria em Sorocaba, localizada na Zona Oeste na Av. General Carneiro, 1149 – Sorocaba/SP. Somos especializados no conserto de veículo e automóveis de todas as marcas nacionais e importadas, com uma equipe diversificada de mecânicos devidamente uniformizados e treinados.Trabalhamos com: Mecânica Geral, Freios, Pneus, Suspensão, Troca de Óleo e Filtro, Troca de Correia, Injeção Eletrônica, Troca de Embreagem, Limpeza de Radiador, Bico Injetor, Alinhamento / Balanceamento. ',
+      endereco: 'Endereço da Empresa 2',
+      email: 'email@empresa2.com',
+      telefone: '(31) xxxxx-xxxx'
+    },
+    {
+      logo: 'https://i.pinimg.com/originals/87/4f/00/874f00b0e6a9f0c905433bf6d3b50979.jpg',
+      nome: 'Empresa 2',
+      descricao: 'A Mecânica PowerMEC, é uma oficina mecânica completa com sede própria em Sorocaba, localizada na Zona Oeste na Av. General Carneiro, 1149 – Sorocaba/SP. Somos especializados no conserto de veículo e automóveis de todas as marcas nacionais e importadas, com uma equipe diversificada de mecânicos devidamente uniformizados e treinados.Trabalhamos com: Mecânica Geral, Freios, Pneus, Suspensão, Troca de Óleo e Filtro, Troca de Correia, Injeção Eletrônica, Troca de Embreagem, Limpeza de Radiador, Bico Injetor, Alinhamento / Balanceamento. ',
+      endereco: 'Endereço da Empresa 2',
+      email: 'email@empresa2.com',
+      telefone: '(31) xxxxx-xxxx'
     },
   ];
 
@@ -41,9 +57,12 @@ function NossosParceiros() {
             <pre className={styles.textoInformacoes}>
             Parceiros
             </pre>
+
             <Divider/>
 
-            <pre className={styles.textoMotivacional}>"O segredo de um grande sucesso está saber fazer parcerias duradouras"</pre>
+            <pre className={styles.textoMotivacional}>
+              "O segredo de um grande sucesso está saber fazer parcerias duradouras"
+            </pre>
 
         </div>
 
