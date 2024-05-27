@@ -89,179 +89,201 @@
   width: 100%;
 }
 
-.Divisor1 {
-  width: 50%;
-  /* Ocupar toda largura */
-  overflow: hidden;
-  margin-top: 100px;
-}
+/* Estilos dos contaneires dos destaques */
 
-/* Estilo para a div esquerda */
-.esquerda {
-  float: left;
-  /* coloca para a esquerda */
-  width: 50%;
-  box-sizing: border-box;
-  /* Faz com que a largura inclua o padding e a borda */
-}
-
-/* Estilo para a div direita */
-.direita {
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-  /* Faz com que a largura inclua o padding e a borda */
-}
-
-.imagem1 {
-  width: 200px;
-  height: 200px;
-  margin-top: 30px;
-}
-
-.Botao {
-  background-color: #eda15b;
-  /* Cor de fundo do botão */
-  color: #000;
-  /* Cor do texto do botão */
-  padding: 10px 20px;
-  /* Espaçamento interno do botão */
-  border: none;
-  /* Remove a borda do botão */
-  border-radius: 50px;
-  /* Borda arredondada */
-  cursor: pointer;
-  /* Cursor ao passar o mouse */
-}
-
-/* Estilização para quando o mouse passa por cima do botão */
-.Botao:hover {
-  background-color: #0056b3;
-  /* Cor de fundo do botão ao passar o mouse */
-}
-
-.Botao1 {
+.container {
   display: flex;
-  margin-left: 50px;
-  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center; /* Alinha verticalmente os itens ao centro */
+  padding: 100px;
+  gap: 40px; /* Reduzido o gap para diminuir o espaço entre os itens */
+  width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  margin-top: 70px;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Jockey One', sans-serif;
+  color: #000;
+  margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
+}
+
+.h2 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Jockey One', sans-serif;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
+}
+
+
+.Divisor1 {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* Limite de largura total */
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.esquerda, .direita {
+  flex: 1;
+  min-width: 0; /* Permite que os itens encolham conforme necessário */
+}
+
+.divisor {
+  width: 1px;
+  background-color: #000;
+  margin: 0 60px; /* Aumenta o espaço horizontal ao redor da linha divisória */
+}
+
+.esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .imagem1 {
-  display: inline-flex;
-  border-radius: 50px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem1 img {
+  max-width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  height: auto;
+  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+}
+
+.slider {
+  width: 100%; /* Ajuste a largura para ocupar toda a área disponível */
+  margin: 0 auto; /* Centraliza o slider */
+}
+
+.slider img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+}
+
+/* src/pages_styles/Home.module.css */
+.sliderContainer {
+  position: relative;
+}
+
+.verMaisButton {
+  background-color: #0056b3; /* Fundo */
+  color: #fff; /* Cor do texto branco */
+  padding: 15px 30px; /* Espaçamento interno */
+  border: 2px solid #fff; /* Borda branca */
+  border-radius: 10px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor ao passar o mouse */
+  margin-top: 50px; /* Espaçamento superior */
+  font-size: 20px; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  font-family: 'Jockey One', sans-serif; /* Fonte similar */
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+.verMaisButton:hover {
+  transform: scale(1.1); /* Aumenta o botão em 10% ao passar o mouse */
+  background-color: #053651; /* Cor de fundo ao passar o mouse */
+}
+
+/* Fim do contaneir dos destaques */
+
+
+/* Estilização para o Campus Aberto*/
+
+.Divisor2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.esquerda2 {
+  flex: 1;
+  padding: 90px;
+}
+
+.direita2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.campus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .texto1 {
-  width: 50%;
-  margin-left: 100px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .titulo1 {
-  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Jockey One', sans-serif;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .paragrafo1 {
-  margin-top: 50px;
+  font-size: 16px;
+  line-height: 2.0;
+  font-family: sans-serif;
+  text-align: justify;
 }
 
-.Botao2 {
-  margin-left: 228px;
-  margin-top: 30px;
+.logoc {
+  max-width: 200%; /* Ajustado para ocupar toda a largura disponível */
+  height: auto;
+  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
 }
 
-.Botao3 {
-  margin-top: -200px;
-  margin-left: 240px;
-}
+/* Fim da estilização para o Campus Aberto*/
 
-.Campus_Aberto {
-  display: inline-flex;
-}
 
-.Divisor2 {
-  width: 100%;
-  /* Ocupar toda largura */
-  overflow: hidden;
-}
+/* Estilização para o card Incentivo ao Esporte*/
 
-/* Estilo para a div esquerda */
-.esquerda2 {
-  float: left;
-  /* coloca para a esquerda */
-  width: 50%;
-  box-sizing: border-box;
-  /* Faz com que a largura inclua o padding e a borda */
-}
-
-/* Estilo para a div direita */
-.direita2 {
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-  /* Faz com que a largura inclua o padding e a borda */
-}
-
-.Botao {
-  background-color: #eda15b;
-  /* Cor de fundo do botão */
-  color: #000;
-  /* Cor do texto do botão */
-  padding: 10px 20px;
-  /* Espaçamento interno do botão */
-  border: none;
-  /* Remove a borda do botão */
-  border-radius: 50px;
-  /* Borda arredondada */
-  cursor: pointer;
-  /* Cursor ao passar o mouse */
-}
-
-/* Estilização para quando o mouse passa por cima do botão */
-.Botao:hover {
-  background-color: #0056b3;
-  /* Cor de fundo do botão ao passar o mouse */
-}
-
-.Incentivo {
-  margin-top: 100px;
-  width: 100%;
-  margin-left: 150px;
-}
-
-.titulo2 {
-  text-align: start;
+.customCard {
+  position: relative;
   display: flex;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 80px auto; /* Centralizar o card */
+}
+
+.cardMedia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+  width: 50%; /* Alterado para ocupar 50% da largura */
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.7); /* Fundo semitransparente */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-left: -300px;
 }
-
-.paragrafo2 {
-  margin-top: 50px;
-  text-align: center;
-  margin-left: -100px;
-  width: 80%;
-  color: #000;
-}
-
-.Botao4 {
-  margin-left: 40px;
-  margin-top: 30px;
-}
-
-.quadrado {
-  width: 65%;
-  height: 369px;
-  background-color: red;
-  margin-top: 100px;
-  border-radius: 50px;
-}
-
-.metade {
-  width: 50%;
-  height: 369px;
-  background-color: blue;
-  border-radius: 50px;
-  margin-top: -100px;
-  opacity: 0.5;
-}
+/* Final Estilização para o card Incentivo ao Esporte*/
