@@ -37,7 +37,7 @@ function Home() {
             2000,
             "NOS NOSSOS CAMPEONATOS!",
             2000,
-            "NAS NOSSAS LOJINHAS! ",
+            "NA NOSSA LOJINHA! ",
             2000,
             "NOS NOSSOS PARCEIROS!",
             2000,
@@ -75,7 +75,7 @@ function Home() {
               className={styles.verMaisButton}
               onClick={() => navigate("Lojinha/")}
             >
-              Saiba Mais
+              Ver Todos
             </button>
           </div>
           <div className={styles.divisor}></div>
