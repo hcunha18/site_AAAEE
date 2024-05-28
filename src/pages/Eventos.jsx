@@ -7,34 +7,50 @@ function Eventos() {
   // funçao para colocar o slider
   // {} -> objeto
   // [] -> array/vetor de links
-  const linksSlider = [
-    {url: 'https://i.ibb.co/QnB9ktC/banner-Campus-Aberto-Membros.png', alt: "Banner campus Aberto", id: "1"},
-    {url: 'https://i.ibb.co/Sc0ffLy/1700099016684-1.jpg', alt: "#", id: "2"},
-    {url: 'https://i.ibb.co/Lhhj1t0/DSC-7079.jpg', alt: "#", id: "3"},
-    {url: 'https://i.ibb.co/YP9zsKk/DSC-6625.jpg', alt: "#", id: "4"}
+
+  //Array com as imagens para o Banner da página Eventos
+  const linksSliderBanner = [
+    {id: "1", url: 'https://i.ibb.co/QnB9ktC/banner-Campus-Aberto-Membros.png', alt: "Banner campus Aberto"},
+    {id: "2", url: 'https://i.ibb.co/Sc0ffLy/1700099016684-1.jpg', alt: "#"},
+    {id: "3", url: 'https://i.ibb.co/Lhhj1t0/DSC-7079.jpg', alt: "#"},
+    {id: "4", url: 'https://i.ibb.co/hdhQQZs/DSC-6531.jpg', alt: "#"}
 ];
 
-useEffect(() => {
-  // Código a ser executado quando o componente é montado ou atualizado
-  
-  console.log("montou o componente eventos!");
-  return () => {
-    // Código de limpeza, executado quando o componente é desmontado ou antes do próximo efeito
-    console.log("desmontou o componente eventos");
-  };
-}, [/* array de dependências */]);
+// Array com as imagens da recepção de calouros
+  const linksSliderRecepcao = [
+    {id: "1", url: 'https://i.ibb.co/MPNLbJY/PHOTO-2023-04-01-09-59-55-1.jpg', alt: "#"},
+    {id: "2", url: 'https://i.ibb.co/jG07Lb0/IMG-0488-1.jpg', alt: "#"},
+    {id: "3", url: 'https://i.ibb.co/LCbgkWT/PHOTO-2023-04-01-09-59-58-1.jpg', alt: "#"},
+    {id: "4", url: 'https://i.ibb.co/Y0MhwJM/PHOTO-2023-04-01-10-00-05.jpg', alt: "#"}
+];
+
+// Array com as imagens da Calcoolizando
+  const linksSliderCalcoolizando = [
+    {id: "1", url: 'https://i.ibb.co/rd1GLVT/DSC-7212.jpg', alt: "Banda Pagode"},
+    {id: "2", url: 'https://i.ibb.co/k5zxwnq/DSC-6820.jpg', alt: "#"},
+    {id: "3", url: 'https://i.ibb.co/C0gN1dq/DSC-7071.jpg', alt: "#"},
+    {id: "4", url: 'https://i.ibb.co/rxbHvxD/DSC-6870.jpg', alt: "#"}
+];
+
+// Array com as imagens da Adeus Calouros
+  const linksSliderAdeus = [
+    {id: "1", url: 'https://i.ibb.co/kq4SwwT/Yuri-Ariane-Adeus-Calouros1.jpg', alt: "Yuri e Ariane"},
+    {id: "2", url: 'https://i.ibb.co/XSDJttt/DSCN7589.jpg', alt: "Galera no banner da Atlética"},
+    {id: "3", url: 'https://i.ibb.co/4SgQyCy/DSCN7607.jpg', alt: "Meninas no banner da Atlética"},
+    {id: "4", url: 'https://i.ibb.co/6vhMQVX/DSCN7609.jpg', alt: "Ze no banner da Atlética"}
+];
   
   return (
     <section className={styles.Body}>
-      {/* <div className={styles.overlay}> */}
+      <div className={styles.overlay}>
         <h1 className={styles.title}>EVENTOS</h1>  
-        {/* <div className={styles.bg}> */}
+        <div className={styles.bg}>
           {/*  */}
           <SliderBanner
-            links={linksSlider}
+            links={linksSliderBanner}
           />
-        {/* </div>
-      </div> */}
+        </div>
+      </div>
 
       <div className={styles.NossosEventos}>
         <h1>NOSSOS EVENTOS</h1>
@@ -56,8 +72,9 @@ useEffect(() => {
         </div>
         <div className={styles.TelaDireita}>
           <div className={styles.ImgFestas}>
-            {/* Imagem / banner das fotos das festas */}
-            {/* <img src='https://i.ibb.co/MPNLbJY/PHOTO-2023-04-01-09-59-55-1.jpg' alt='Recepção Panterão 2023.1' /> */}
+            <SliderBanner
+              links={linksSliderRecepcao}
+            />
           </div>
         </div>
       </div>
@@ -66,7 +83,9 @@ useEffect(() => {
         <div className={styles.TelaEsquerda}>
           <div className={styles.ImgFestas}>
             {/* Imagem / banner das fotos das festas */}
-            <SliderBanner />
+            <SliderBanner 
+              links={linksSliderCalcoolizando}
+            />
           </div>
         </div>
         <div className={styles.TelaDireita}>
@@ -88,8 +107,9 @@ useEffect(() => {
         </div>
         <div className={styles.TelaDireita}>
           <div className={styles.ImgFestas}>
-            {/* Imagem / banner das fotos das festas */}
-            <SliderBanner />
+            <SliderBanner 
+              links={linksSliderAdeus}
+            />
           </div>
         </div>
       </div>

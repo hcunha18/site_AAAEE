@@ -21,7 +21,6 @@
 
 .overlay {
     position: relative;
-    display: grid;
 }
 
 .bg {
@@ -125,7 +124,7 @@
 .ImgFestas{
     width: 30rem;
     height: 20rem;
-    background-color: black;
+    /* background-color: black; */
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
     display: grid;
