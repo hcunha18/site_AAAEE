@@ -1,4 +1,4 @@
-    // import '../styles/SliderBanner.css';
+    import '../styles/SliderBanner.css';
     import {useState, useEffect} from 'react';
     import { Swiper, SwiperSlide } from 'swiper/react'
     
@@ -26,15 +26,11 @@
                 >
                     {links?.map((item, index) => (
                     <SwiperSlide key={item.id}>
-                        <div
+                        <div 
                             className="slider-slide"
-                            style={{
-                                backgroundImage: `url(${item.url})`,
-                                // Passando a altura do banner para 35rem para que as imagens se ajustem melhor
-                                height: '35rem', 
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
+                                style={{
+                                    backgroundImage: `url(${item.url})`,
+                                }}
                         >
                         {/* Overlay and content can go here if needed */}
                         </div>

@@ -20,13 +20,14 @@
 }
 
 .overlay {
+    width: 100%;
+    height: 40rem;
     position: relative;
 }
 
 .bg {
     width: 100%;
-    height: 30rem;
-    /* display: block; */
+    height:100%;
     filter: brightness(40%);
 }
 .title {
@@ -124,8 +125,6 @@
 .ImgFestas{
     width: 30rem;
     height: 20rem;
-    /* background-color: black; */
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
-    display: grid;
 }

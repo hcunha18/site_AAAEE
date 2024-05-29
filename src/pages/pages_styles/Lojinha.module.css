@@ -40,7 +40,7 @@
 }
 .bg {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     display: block;
     filter: brightness(40%);
     background-color: red;
@@ -87,4 +87,31 @@
     height: 2px;
     width: 60rem;
     background-color: #090E17;
+}
+
+.DivisaoFotos{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.ColunaEsquerda{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+
+}
+.ColunaCentro{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+.ColunaDireita{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+.slider{
+    padding-top: 5rem;
+    width: 30rem;
+    height: 30rem;
 }

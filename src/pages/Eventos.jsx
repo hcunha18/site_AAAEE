@@ -45,7 +45,6 @@ function Eventos() {
       <div className={styles.overlay}>
         <h1 className={styles.title}>EVENTOS</h1>  
         <div className={styles.bg}>
-          {/*  */}
           <SliderBanner
             links={linksSliderBanner}
           />
