@@ -1,13 +1,13 @@
 /* Pai */
 .slider-container{
-    height: 40rem;
+    height: 100%;
     width: 100%;
     /* background-color: aqua; */
 }
 
 /* Filho */
 .slider-slide{
-    height: 100%;
+    height: 40rem;
     width: 100%;
     background-size: cover;
     /* Ajuste da posição da imagem */
