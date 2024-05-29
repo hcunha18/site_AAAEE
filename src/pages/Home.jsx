@@ -11,6 +11,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { CardActions } from "@mui/material";
+import { useMediaQuery } from "react-responsive"
 
 function Home() {
   const settings = {
@@ -28,7 +29,6 @@ function Home() {
   return (
     <section className={styles.content}>
       <img src={logo} alt="Pantera" className={styles.bg} />
-
       <div className={styles.letreiroContainer}>
         <div className={styles.staticMessage}>FIQUEM LIGADOS</div>
         <TypeAnimation

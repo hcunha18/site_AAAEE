@@ -25,38 +25,86 @@
   border-radius: 50px;
 }
 
+
 .letreiroContainer {
-  position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #0d1b2a; /* Cor de fundo azul escuro */
-  font-family: "Courier Prime", monospace; /* Fonte do texto */
-  color: #ffffff; /* Cor do texto branco */
-  padding: 20px 110px; /* Espaçamento interno */
-  border-radius: 10px; /* Bordas arredondadas */
-  margin-top: 380px;
-  border: 2px solid #fff; /* Borda branca */
-  display: flex; /* Usar flexbox para alinhamento */
-  flex-direction: column; /* Organizar conteúdo em coluna */
-  align-items: center; /* Alinhar itens ao início da coluna */
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+  background-color: #0d1b2a;
+  font-family: "Courier Prime", monospace;
+  color: #ffffff;
+  padding: 20px 110px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 .staticMessage {
-  font-size: 30px; /* Tamanho da fonte */
-  font-weight: bold; /* Negrito */
-  margin-bottom: 15px; /* Espaço abaixo da mensagem estática */
-  color: #fff; /* Cor do texto */
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .typeAnimation {
-  font-size: 15px; /* Ajustar o tamanho da fonte para melhor visibilidade */
-  color: #ffffff; /* Cor do texto branco */
+  font-size: 15px;
+  color: #ffffff;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+@media (max-width: 880px) {
+  .typeAnimation {
+    font-size: 1.5em;
+  }
+
+  .letreiroContainer {
+    max-width: 90%; /* Aumenta a largura máxima em telas menores */
+    padding: 10px 20px; /* Ajusta o padding para telas menores */
+    margin-left: 0; /* Remove o grande valor de margin-left para centralizar */
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .letreiroContainer {
+    max-width: 80%;
+    padding: 10px 15px; /* Ajusta o padding para telas ainda menores */
+  }
+
+  .staticMessage {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .typeAnimation {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas menores */
+  }
+}
+
+@media (max-width: 400px) {
+  .letreiroContainer {
+    max-width: 70%;
+    padding: 5px 10px; /* Ajusta o padding para telas muito pequenas */
+  }
+
+  .staticMessage {
+    font-size: 1em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+  }
+
+  .typeAnimation {
+    font-size: 1em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+  }
 }
 
 .Letreiro {
-  display: inline-flex;
+  display:inline-flex;
 }
 
 .Letreiro .static-txt {
@@ -64,25 +112,6 @@
   font-weight: 400;
   color: #fff;
 }
-
-/* .tittleDestaques {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  margin: 0;
-  padding-top: 15px;
-  background-color: #053651;
-  color: #dae7fe;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding-bottom: 50px;
-  z-index: 2;
-  position: relative;
-} */
 
 .bg {
   height: 100%;
@@ -98,7 +127,7 @@
   padding: 100px;
   gap: 40px; /* Reduzido o gap para diminuir o espaço entre os itens */
   width: 100%; /* Ajustado para ocupar toda a largura disponível */
-  margin-top: 70px;
+  margin-top: -1.5rem;
 }
 
 .h1 {
@@ -289,4 +318,5 @@
   justify-content: center;
   border-radius: 40px;
 }
+
 /* Final Estilização para o card Incentivo ao Esporte*/
