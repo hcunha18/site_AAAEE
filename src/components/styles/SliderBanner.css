@@ -1,0 +1,16 @@
+/* Pai */
+.slider-container{
+    height: 40rem;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+/* Filho */
+.slider-slide{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /* Ajuste da posição da imagem */
+    background-position: 50% 40%;
+    border-radius: 10px;
+}

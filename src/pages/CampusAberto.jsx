@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import styles from './pages_styles/CampusAberto.module.css';
 import bannerCampusAberto from '../images/bannerCampusAbertoMembros.png';
 import Divider from '../components/structures/Divider';

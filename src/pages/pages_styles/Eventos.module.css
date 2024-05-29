@@ -20,14 +20,14 @@
 }
 
 .overlay {
+    width: 100%;
+    height: 40rem;
     position: relative;
 }
-/*Tentar deixar a imagem mais escura e nao mais clara*/
+
 .bg {
     width: 100%;
-    height: auto;
-    display: block;
-    /* opacity: 1; */
+    height:100%;
     filter: brightness(40%);
 }
 .title {
@@ -80,9 +80,15 @@
 }
 .TelaEsquerda{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .TelaDireita{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Configuração dos textos*/
@@ -114,17 +120,11 @@
     flex-direction: row;
     background-color: white;
 }
+
 /*Definição global para todas as fotos que serão utilizadas na página*/
 .ImgFestas{
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    height: 370px;
-    width: 100%;
-}
-.ImgFestas img{
+    width: 30rem;
+    height: 20rem;
     border-radius: 10px;
-    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
 }

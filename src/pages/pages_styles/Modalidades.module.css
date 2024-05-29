@@ -32,7 +32,7 @@
     background-color: #090E17;
 }
 .TextModalidades h2{
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 50px;
 }
 
@@ -76,6 +76,12 @@
     height: 2px;
     background-color: #090E17;
 }
+.ListModalidadesEsquerda li{
+    font-size: 17px;
+}
+.ListModalidadesDireita li{
+    font-size: 17px;
+}
 
 /*Texto informativo dos treinos*/
 .Treino{
@@ -89,6 +95,9 @@
     height: 2px;
     width: 150px;
     background-color: #090E17;
+}
+.Treino p{
+    font-size: 17px;
 }
 
 /*Breve texto para acesso ao linktree dos treinos*/
