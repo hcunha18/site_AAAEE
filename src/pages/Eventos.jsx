@@ -54,11 +54,16 @@ function Eventos() {
       <div className={styles.NossosEventos}>
         <h1>NOSSOS EVENTOS</h1>
         <hr />
-        <pre>
+        <h2>
+          A Atlética Panterão realiza diversos eventos durante o ano, sejam eles festas ou até mesmo eventos intitucionais. <br></br>
+          Nosso objetivo é criar uma maior integração entre os alunos e deixar cada vez melhor sua experiência universitária.<br></br>
+          Aqui, apresentamos algum de nossos eventos realizados durante o ano.
+        </h2>
+        {/* <pre>
           {"A Atlética Panterão realiza diversos eventos durante o ano, sejam eles festas ou até mesmo eventos intitucionais. \n"}
           {"Nosso objetivo é criar uma maior integração entre os alunos e deixar cada vez melhor sua experiência universitária. \n"}
           {"Aqui, apresentamos algum de nossos eventos realizados durante o ano."}
-        </pre>
+        </pre> */}
       </div>
 
       <div className={styles.DivisaoTela1}>

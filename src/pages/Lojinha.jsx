@@ -40,10 +40,9 @@ function Lojinha() {
           <div className={styles.ImgProdutoDestaque}>
             <img src="https://i.ibb.co/t3GJPW1/Rectangle-18.png" alt="Rectangle-18" border="0" />
           </div>
-
-          {/* Importação do botão COMPRAR */}
-
-
+          <div className={styles.botao}>
+            <h1>AQUI TERÁ UM BOTAO</h1>
+          </div>
           {/* Section todos os produtos à venda */}
           <div className={styles.titleProdutos}>
             <h1>AQUI VOCÊ ENCONTRA OS MELHORES PRODUTOS DE TODO O CEFET</h1>
@@ -51,12 +50,17 @@ function Lojinha() {
           </div>
           
           {/* Divisão da tela em 3 colunas para apresentacao dos produtos */}
-          <div className={styles.DivisaoFotos}>
+          <div className={styles.DivisaoProdutos}>
             <div className={styles.ColunaEsquerda}>
               <div className={styles.slider}>
                 <SliderBanner 
                   links={linksSliderProdutos}
                 />
+              </div>
+              <div className={styles.descricaoProduto}>
+                <h2>Bucket Panterão</h2>
+                <hr/>
+                <h2>R$ 50,00</h2>
               </div>
             </div>
             <div className={styles.ColunaCentro}>
@@ -64,6 +68,11 @@ function Lojinha() {
                 <SliderBanner 
                   links={linksSliderProdutos}
                 />
+              </div>
+              <div className={styles.descricaoProduto}>
+                <h2>Caneca Panterão</h2>
+                <hr/>
+                <h2>R$ 50,00</h2>               
               </div>                
             </div>
             <div className={styles.ColunaDireita}>
@@ -71,8 +80,16 @@ function Lojinha() {
                 <SliderBanner 
                   links={linksSliderProdutos}
                 />
-              </div>                
+              </div>
+              <div className={styles.descricaoProduto}>
+                <h2>Camisa Algodão Panterão</h2>
+                <hr/>
+                <h2>R$ 50,00</h2>               
+              </div>                             
             </div>
+            {/* <div className={styles.imgGarra}>
+              <img src='https://i.ibb.co/jkfGYSk/garra-1-2.png'/>
+            </div> */}
           </div>
 
 
