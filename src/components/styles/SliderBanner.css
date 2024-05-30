@@ -2,15 +2,15 @@
 .slider-container{
     height: 100%;
     width: 100%;
-    /* background-color: aqua; */
 }
 
 /* Filho */
 .slider-slide{
-    height: 40rem;
+    height: 100%;
     width: 100%;
     background-size: cover;
     /* Ajuste da posição da imagem */
     background-position: 50% 40%;
     border-radius: 10px;
+    object-fit: cover;
 }

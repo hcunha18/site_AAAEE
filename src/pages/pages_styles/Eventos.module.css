@@ -19,16 +19,19 @@
     background-color: var(--text-page-color);
 }
 
+/* Pai */
 .overlay {
     width: 100%;
     height: 40rem;
     position: relative;
 }
 
+/* Filho */
 .bg {
     width: 100%;
     height:100%;
     filter: brightness(40%);
+    /* background-color: red; */
 }
 .title {
     position: absolute;
@@ -58,7 +61,7 @@
     width: 350px;
     background-color: #090E17;
 }
-.NossosEventos pre{
+.NossosEventos h2{
     font-size: 20px;
     /* font-size: clamp (12px, 4vw, 32px); */
     margin-top: 30px;
@@ -123,8 +126,11 @@
 
 /*Definição global para todas as fotos que serão utilizadas na página*/
 .ImgFestas{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 30rem;
-    height: 20rem;
+    height: 35rem;
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
 }

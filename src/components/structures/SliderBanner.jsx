@@ -11,7 +11,8 @@
 
           return (
             <div className="slider-container">
-                <Swiper
+                <Swiper style={{ height: "100%", width: "100%" }}
+                        
                     spaceBetween={20}
                     slidesPerView={1}
                     loop={true}
@@ -19,13 +20,12 @@
                     delay: 3000,
                     disableOnInteraction: false,
                     }}
-                    // navigation
                     pagination={{ clickable: true }}
                     // scrollbar={{ draggable: true }}
                     onSlideChange={handleSlideChange}
                 >
-                    {links?.map((item, index) => (
-                    <SwiperSlide key={item.id}>
+                 {links?.map((item, index) => (
+                    <SwiperSlide key={item.id} style={{ height: "100%", width: "100%" }}>
                         <div 
                             className="slider-slide"
                                 style={{
