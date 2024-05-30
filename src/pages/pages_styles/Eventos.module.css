@@ -63,7 +63,6 @@
 }
 .NossosEventos h2{
     font-size: 20px;
-    /* font-size: clamp (12px, 4vw, 32px); */
     margin-top: 30px;
     line-height: 1.5;
     text-align: justify;

@@ -1,8 +1,35 @@
 import React from 'react';
 import styles from './pages_styles/Modalidades.module.css';
 import garra from '../images/garra 1.png';
+import SliderBanner from '../components/structures/SliderBanner';
 
 function Modalidades() {
+
+  // Array de imagens para o Slider da esquerda
+  const linksSliderEsquerda = [
+    { id: "1", url: 'https://i.ibb.co/GTrSsZz/IMG-3255.jpg', alt: "Concentracao FDG" },
+    { id: "2", url: 'https://i.ibb.co/qRZc46Y/IMG-3229.jpg', alt: "Semi Mossa x FDG" },
+    { id: "3", url: 'https://i.ibb.co/TbHYTYm/1698198702124.jpg', alt: "Patrocinadores Interperiodo 2023.2" },
+    { id: "4", url: 'https://i.ibb.co/PFdMRQY/IMG-20231122-150735.jpg', alt: "Premiacao medalhas de ouro" }
+  ];
+  
+  // Array de imagens para o Slider do centro
+  const linksSliderCentro = [
+    { id: "1", url: 'https://i.ibb.co/VqFM2kQ/IMG-20231122-153317.jpg', alt: "David jogando FINAL" },
+    { id: "2", url: 'https://i.ibb.co/dDWtVcd/IMG-20231122-152255.jpg', alt: "Capitaes final com juizes" },
+    { id: "3", url: 'https://i.ibb.co/P5RNW7z/IMG-20231122-150749.jpg', alt: "Trofeu" },
+    { id: "4", url: 'https://i.ibb.co/cyYp3td/IMG-20231122-171200.jpg', alt: "Campeoes 2023.2" }
+  ];  
+
+  // Array de imagens para o Slider da direita
+  const linksSliderDireita = [
+    { id: "1", url: 'https://i.ibb.co/5MQDctv/99a25a82-1ba8-433d-85af-5d59c140df54.jpg', alt: "Botafofo Campeao" },
+    { id: "2", url: 'https://i.ibb.co/fk1bbjG/PHOTO-2023-03-24-17-54-54.jpg', alt: "Atletica Campeao camp gremio" },
+    { id: "3", url: 'https://i.ibb.co/6nPSXjt/IMG-1062.jpg', alt: "Estudiantes" },
+    { id: "4", url: 'https://i.ibb.co/Z15hzP5/IMG-0844.jpg', alt: "BarSemLona x ..." }
+  ];  
+
+
     return (
         <section className={styles.Body}>
             <div className={styles.TextModalidades}>
@@ -53,9 +80,10 @@ function Modalidades() {
                     <div className={styles.Treino}>
                         <h1>TREINOS</h1>
                         <hr />
-                        <p>Nossos treinos das modalidades físicas de futsal, vôlei e basquete, acontecem no Centro Poliesportivo do CEFET MG - Leopoldina.<br />
+                        <h2>
+                            Nossos treinos das modalidades físicas de futsal, vôlei e basquete, acontecem no Centro Poliesportivo do CEFET MG - Leopoldina.<br />
                             Já nossos treinos das modalidades de E-sports acontecem de forma remota.
-                        </p>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -72,13 +100,29 @@ function Modalidades() {
 
             <div className={styles.DivisaoFotos}>
                 <div className={styles.ColunaEsquerda}>
-                    <img className={styles.ImgCampeonato} src="https://i.ibb.co/f40hxB0/IMG-20231122-150512-1.jpg" alt="ImgCampeonato" />
+                    <div className={styles.ImgCampeonato}>
+                        <SliderBanner
+                            links={linksSliderEsquerda}
+                        />
+                    </div>    
                 </div>
                 <div className={styles.ColunaCentro}>
-                    <img className={styles.ImgCampeonato} src="https://i.ibb.co/P5RNW7z/IMG-20231122-150749.jpg" alt="ImgCampeonato" />
+                <div className={styles.ColunaEsquerda}>
+                    <div className={styles.ImgCampeonato}>
+                        <SliderBanner
+                            links={linksSliderCentro}
+                        />
+                    </div>    
+                </div>
                 </div>
                 <div className={styles.ColunaDireita}>
-                    <img className={styles.ImgCampeonato} src="https://i.ibb.co/PFdMRQY/IMG-20231122-150735.jpg" alt="ImgCampeonato" />
+                <div className={styles.ColunaEsquerda}>
+                    <div className={styles.ImgCampeonato}>
+                        <SliderBanner
+                            links={linksSliderDireita}
+                        />
+                    </div>    
+                </div>
                 </div>
             </div>
         </section>

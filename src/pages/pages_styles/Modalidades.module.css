@@ -23,17 +23,24 @@
     margin-left: 10rem;
     padding-top: 4rem;
 }
+.TextModalidades h1{
+    color: #2D7EA3;
+    text-decoration: underline;
+}
 
-
-.TextModalidades hr{
+/* .TextModalidades hr{
     margin-top: 5px;
     height: 2px;
     width: 350px;
-    background-color: #090E17;
-}
+    background-color: #2D7EA3;
+} */
+
 .TextModalidades h2{
-    font-size: 18px;
-    margin-top: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 5rem;
 }
 
 /*Definição de tamanho da img da garra*/
@@ -59,23 +66,41 @@
     /* background-color: red; */
 }
 .ListModalidadesEsquerda{
-    margin-right: px;
+    padding-left: 15rem;
 }
-.ListModalidadesEsquerda hr{
+.ListModalidadesEsquerda h1{
+    text-decoration: underline;
+    /* color: #2D7EA3; */
+    padding-bottom: 3rem;
+}
+
+
+/* .ListModalidadesEsquerda hr{
     margin-top: 5px;
     margin-bottom: 30px;
     height: 2px;
     background-color: #090E17;
-}
+} */
+
+
 .ListModalidadesDireita{
-    margin-left: 200px;
+    padding-left: 15rem;
 }
-.ListModalidadesDireita hr{
+.ListModalidadesDireita h1{
+    text-decoration: underline;
+    /* color: #2D7EA3; */
+    padding-bottom: 3rem;
+}
+
+
+/* .ListModalidadesDireita hr{
     margin-top: 5px;
     margin-bottom: 30px;
     height: 2px;
     background-color: #090E17;
-}
+} */
+
+
 .ListModalidadesEsquerda li{
     font-size: 17px;
 }
@@ -89,15 +114,26 @@
     align-items: start;
     flex-direction: column;
 }
-.Treino hr{
+.Treino h1{
+    text-decoration: underline;
+    /* color: #2D7EA3; */
+    padding-bottom: 2rem;
+}
+
+
+/* .Treino hr{
     margin-top: 5px;
     margin-bottom: 20px;
     height: 2px;
     width: 150px;
     background-color: #090E17;
-}
-.Treino p{
+} */
+
+
+.Treino h2{
     font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 /*Breve texto para acesso ao linktree dos treinos*/
@@ -163,27 +199,14 @@
     justify-content: center;
 }
 
-/* .ImgCampeonato{
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-    display: flex;
-    justify-content: center;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
-} */
 .ImgCampeonato{
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    height: 370px;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    width: 25rem;
+    height: 30rem;
     border-radius: 10px;
-    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
 }
-
-/*Utilizar "rem" ou "em" */
-
-/*grid para dividir tela*/
 
 
 

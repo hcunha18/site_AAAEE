@@ -12,6 +12,7 @@
     --background-color: #1E222D;
     --text-rodape-color: #D9D9D9;
     --text-page-color: #D9D9D9;
+    --buttom-color: #EDA15B;
 }
 .content {
     background-color: var(--text-rodape-color);
@@ -69,17 +70,10 @@
 }
 /* Caso tenha slider, modificar aqui o tamanho da img */
 .ImgProdutoDestaque img{
-    width: 50rem;
-    height: 30rem;
+    width: 60rem;
+    height: 40rem;
+    object-fit: cover;
 }
-
-/* Estilização botao */
-.botao{
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-}
-
 /* Titulo produtos */
 .titleProdutos{
     display: flex;
@@ -95,31 +89,35 @@
     background-color: #090E17;
 }
 
-.DivisaoProdutos{
+.DivisaoProdutos1{
     display: flex;
     justify-content: center;
     background-color: white;
 }
-.ColunaEsquerda{
-    width: 33%;
+.DivisaoProdutos2{
     display: flex;
     justify-content: center;
+    background-color: var(--text-rodape-color);
+}
+
+.ColunaEsquerda{
+    /* O flex 1 irá garantir que as colunas tenham o mesmo tamanho */
+    flex: 1; 
+    /* width: 33%; */
+    display: flex;
     flex-direction: column;
-    padding-left: 4rem;
 }
 .ColunaCentro{
-    width: 33%;
+    flex: 1;
+    /* width: 33%; */
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding-left: 4rem;
 }
 .ColunaDireita{
-    width: 33%;
+    flex: 1;
+    /* width: 33%; */
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding-left: 4rem;
 }
 .slider{
     margin-top: 5rem;
@@ -128,19 +126,48 @@
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
 }
-.descricaoProduto{
-    padding-top: 3rem;
-    padding-left: 2rem;
-}
-.descricaoProduto hr{
-    /* margin-top: 1rem; */
-    margin-bottom: 1rem;
-    height: 2px;
-    width: 11rem;
-    background-color: #090E17;
-}
-/* .imgGarra{
+.produtos{
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descricaoProduto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.descricaoProduto h2{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-decoration: underline;
+}
+.descricaoProduto h3{
+    padding-top: 1rem;
+}
+
+/* Ajustes na imagem da garra na coluna da direita */
+/* .imgGarra {
     position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    transform: rotate(180deg);
+    z-index: -1;
 } */
+
+
+
+
+/* Botao provisório */
+.botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
