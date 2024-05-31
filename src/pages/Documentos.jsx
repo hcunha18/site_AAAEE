@@ -10,25 +10,27 @@ function Documentos() {
         icon: <VscFilePdf />,
         fileName: 'Regimento Interno',
         fileUrl: '../pdfs/Regimento InternodeESports.pdf',
-        modDate: null,
+        modDate: '11-01-2024',
         fileSize: null
     },
     {
         icon: <VscFilePdf />,
         fileName: 'Relatório Anual 2023',
         fileUrl: '/pdfs/RelatorioAnual2023.pdf',
-        modDate: null,
-        fileSize: null
+        modDate: '11-01-2024',
+        fileSize: '11-01-2024'
     },
     {
       icon: <VscFilePdf />,
       fileName: 'Relatório de Teste ',
       fileUrl: '/pdfs/RelatorioAnual2022.pdf',
-      modDate: null,
+      modDate: '11-01-2024',
       fileSize: null
     },
   ]);
-  
+
+
+  // Data de modificação está comentada por questões de acesso no Netlify. Quando em um banco de dados, estará automatizado novamente.
   useEffect(() => {
     const fetchFileDetails = async () => {
       const updatedItems = await Promise.all(items.map(async item => {
@@ -38,18 +40,18 @@ function Documentos() {
             throw new Error(`Error fetching ${item.fileName}`);
           }
           const fileSize = response.headers.get('content-length');
-          const lastModified = response.headers.get('last-modified');
+          // const lastModified = response.headers.get('last-modified');
           return {
             ...item,
             fileSize: fileSize ? (fileSize / (1024 * 1024)).toFixed(2) + ' MB' : 'Tamanho não identificado',
-            modDate: lastModified ? new Date(lastModified).toLocaleDateString('pt-BR') : 'Data de modificação não encontrada'
+            // modDate: lastModified ? new Date(lastModified).toLocaleDateString('pt-BR') : 'Data de modificação não encontrada'
           };
         } catch (error) {
           console.error(`Error fetching details for ${item.fileName}:`, error);
           return {
             ...item,
             fileSize: 'Erro ao obter tamanho',
-            modDate: 'Erro ao obter data'
+            // modDate: 'Erro ao obter data'
           };
         }
       }));
@@ -58,7 +60,7 @@ function Documentos() {
     
     fetchFileDetails();
   }, [items]);
-
+  
   return (
     <section className={styles.content}>
       <div className={styles.overlay}>

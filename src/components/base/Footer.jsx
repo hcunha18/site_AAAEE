@@ -18,21 +18,18 @@ function Footer() {
                 <span>Atlética Panterão - Todos os direitos reservados</span>
             </p>
 
-            <div>
-                <div className={styles.textoRow}>
-                    <div className={styles.text}>
+            <div className={styles.textoRow}>
+                <div className={styles.text}>
+                    <p>
+                        A.A.A.E.E. CEFET Leopoldina - CNPJ:0932039203-23 - R. José Péres, 558
                         <br/>
-                        <p>
-                            A.A.A.E.E. CEFET Leopoldina - CNPJ:0932039203-23 - R. José Péres, 558
-                            <br/>
-                            Centro - Prédio 3 - CEP: 36700-000 - Leopoldina - MG
-                        </p>
-                    </div>
-                    <div className={styles.textRightEnd}>
-                        <p>
-                            Formas de pagamento aceitas: Pix, Cartão de crédito, Cheers e Picpay.
-                        </p>
-                    </div>
+                        Centro - Prédio 3 - CEP: 36700-000 - Leopoldina - MG
+                    </p>
+                </div>
+                <div className={styles.textRightEnd}>
+                    <p>
+                        Formas de pagamento aceitas: Pix, Cartão de crédito, Cheers e Picpay.
+                    </p>
                 </div>
             </div>
 
@@ -47,38 +44,28 @@ function Footer() {
                 
                 <div className={styles.auxsocial}>
                     <ul className={styles.social_list}>
-
                         <li>
-                            <br/>
-                            <text>Siga-nos</text>
-                        </li>
-
-                        <li>
-                            <br/>
                             <a href="https://api.whatsapp.com/send?phone=5532998510529&text=">
                                 <FaWhatsapp/>
                             </a>
                         </li>
                         <li>
-                            <br/>
                             <a href="https://www.instagram.com/atleticaleopoldina/">
                                 <FaInstagram/>
                             </a>
                         </li>
-
                         <li>
-                            <br/>
                             <a href="https://www.twitch.tv/atleticapanterao">
                                 <FaTwitch/>
                             </a>
                         </li>
                         <li>
-                            <br/>
                             <a href="https://www.youtube.com/@AtleticaPanterao">
                                 <FaYoutube/>
                             </a>
                         </li>
                     </ul>
+                    <p className={styles.follow_us}>Siga-nos</p>
                 </div>
             </div>
 
