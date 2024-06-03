@@ -22,7 +22,7 @@
 /* Pai */
 .overlay {
     width: 100%;
-    height: 40rem;
+    height: 30vw;
     position: relative;
 }
 
@@ -54,6 +54,17 @@
     position: relative;
     margin-left: 5rem;
     margin-top: 8rem;
+    padding-bottom: 5rem;
+}
+.NossosEventos h1{
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .NossosEventos hr{
     margin-top: 5px;
@@ -62,11 +73,16 @@
     background-color: #090E17;
 }
 .NossosEventos h2{
-    font-size: 20px;
-    margin-top: 30px;
-    line-height: 1.5;
+    padding-top: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    line-height: 40px;
     text-align: justify;
-    margin-bottom: 5rem;
+    color: #000000;
 }
 
 /*Divisao da tela*/
@@ -99,8 +115,15 @@
     margin-top: 7rem; 
 }
 .TextoEvento h1{
-    color: #2D7EA3;
     font-size: 24px;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
+    color: #2D7EA3;
 }
 .TextoEvento hr{
     background-color: #2D7EA3;
@@ -110,11 +133,16 @@
     margin-bottom: 5px;
 }
 .TextoEvento h2{
-    font-size: 18px;
-    /* font-size: clamp (12px, 4vw, 32px); */
-    margin-top: 20px;
-    line-height: 1.7;
+    padding-top: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 40px;
     text-align: justify;
+    color: #000000;
 }
 
 .DivisaoTela3{

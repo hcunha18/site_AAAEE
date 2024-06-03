@@ -66,11 +66,11 @@ function CampusAberto() {
         <h2>
           Para isso, serão realizadas as seguintes ações:
           <ul>
-            <li>participação de competições esportivas representando o CEFET-MG Campus Leopoldina;</li>
-            <li>participação em Congresso Internacional de Educação Física;</li>
-            <li>oferecimento de oficinas esportivas para público interno e externo dentro do Complexo Esportivo do campus;</li> 
-            <li>desenvolvimento de habilidades socioemocionais do público alvo e dos discentes que compõem a equipe de competição através das oficinas esportivas;</li>
-            <li>programação de atividades esportivas gratuitas e abertas à sociedade na MOCITEC MG 2024, proporcionando o contato do público externo do projeto a 
+            <li> - participação de competições esportivas representando o CEFET-MG Campus Leopoldina;</li>
+            <li> - participação em Congresso Internacional de Educação Física;</li>
+            <li> - oferecimento de oficinas esportivas para público interno e externo dentro do Complexo Esportivo do campus;</li> 
+            <li> - desenvolvimento de habilidades socioemocionais do público alvo e dos discentes que compõem a equipe de competição através das oficinas esportivas;</li>
+            <li> - programação de atividades esportivas gratuitas e abertas à sociedade na MOCITEC MG 2024, proporcionando o contato do público externo do projeto a 
             outras ações de extensão existentes no CEFET-MG.</li>
           </ul>
         </h2>

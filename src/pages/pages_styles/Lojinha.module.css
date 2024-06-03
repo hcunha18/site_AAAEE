@@ -41,7 +41,7 @@
 }
 .bg {
     width: 100%;
-    height: 40rem;
+    height: 30vw;
     display: block;
     filter: brightness(40%);
 }
@@ -53,7 +53,15 @@
     flex-direction: column;
 }
 .novidades h1{
-    padding-top: 5rem;
+    padding-top: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .novidades hr{
     margin-top: 1rem;
@@ -74,12 +82,23 @@
     height: 40rem;
     object-fit: cover;
 }
+
 /* Titulo produtos */
 .titleProdutos{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 10rem;
+}
+.titleProdutos h1{
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .titleProdutos hr{
     margin-top: 1rem;
@@ -135,18 +154,32 @@
 .descricaoProduto{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 .descricaoProduto h2{
-    padding-top: 4rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    padding-top: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: justify;
+    color: #000000;
     text-decoration: underline;
 }
 .descricaoProduto h3{
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    line-height: 40px;
+    text-align: justify;
+    color: #000000;
 }
 
 /* Ajustes na imagem da garra na coluna da direita */

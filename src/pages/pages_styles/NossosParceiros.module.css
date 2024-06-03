@@ -25,10 +25,11 @@
 }
 
 .bg {
-    width: 60vw;
-    height: auto;
+    width: 100%;
+    height: 30vw;
     display: block;
     opacity: 0.4;
+    object-fit: cover;
 }
 
 .title {
