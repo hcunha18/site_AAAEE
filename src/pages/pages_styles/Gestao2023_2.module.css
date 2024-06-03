@@ -20,16 +20,24 @@
     
 }
 
-.overlay {
+.overlay{
     position: relative;
 }
 
+<<<<<<< HEAD
 .bg {
+=======
+.bg{
+>>>>>>> 39a1087957e9159efef1e075daf7f6f920b91db8
     width: 100%;
     height: 30vw;
     display: block;
     opacity: 0.4;
+<<<<<<< HEAD
     object-fit: cover;
+=======
+    object-fit: cover
+>>>>>>> 39a1087957e9159efef1e075daf7f6f920b91db8
 }
 
 .title {

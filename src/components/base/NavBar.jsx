@@ -166,10 +166,8 @@ const styles = {
     left: "50%",
     transform: "translateX(-50%)",
     marginLeft: "-10px",
-  },
-
-  "@media screen and (max-width: 872px)": {
-    dropdown_divider: {
+  
+    "@media screen and (max-width: 872px)": {
       marginLeft: "0px", 
     }
   },
@@ -214,6 +212,21 @@ const DropdownButton = styled.button`
   @media screen and (max-width: 871px) {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     margin-left: 0px;
+  }
+`;
+
+const Divider = styled.div`
+  width: 100%;
+  height: 1px;
+  background: #2d7ea3;
+  border: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -10px;
+
+  @media screen and (max-width: 872px) {
+    margin-left: 0;
   }
 `;
 
@@ -289,7 +302,7 @@ const Header = () => {
                 </DropdownButton>
               </li>
               <li>
-                <hr style={styles.dropdown_divider} />
+                <Divider/>
               </li>
               <li styles={styles.dropdown_list}>
                 <DropdownButton
@@ -300,7 +313,7 @@ const Header = () => {
                 </DropdownButton>
               </li>
               <li>
-                <hr style={styles.dropdown_divider} />
+                <Divider/>  
               </li>
               <li>
                 <DropdownButton
@@ -311,7 +324,7 @@ const Header = () => {
                 </DropdownButton>
               </li>
               <li>
-                <hr style={styles.dropdown_divider} />
+                <Divider/>
               </li>
               <li>
                 <DropdownButton
@@ -346,7 +359,7 @@ const Header = () => {
                 </DropdownButton>
               </li>
               <li>
-                <hr style={styles.dropdown_divider} />
+                <Divider/>
               </li>
               <li>
                 <DropdownButton
@@ -373,7 +386,7 @@ const Header = () => {
                 </DropdownButton>
               </li>
               <li>
-                <hr style={styles.dropdown_divider} />
+                <Divider/>
               </li>
               <li>
                 <DropdownButton

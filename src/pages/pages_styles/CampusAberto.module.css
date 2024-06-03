@@ -28,6 +28,7 @@
     filter: brightness(40%);
     object-fit: cover;
 }
+
 .title{
     position: absolute;
     top: 50%;
