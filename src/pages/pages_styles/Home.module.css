@@ -1,322 +1,37 @@
 * {
-  padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  list-style: none;
-  border: 0;
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E222D;
 }
 
-.content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #d9d9d9;
+.tittleDestaques{
+    background-color: #090E17;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+    color: #DAE7FE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 15px;
 }
 
-.fundo {
-  width: 50%;
-  height: 150px;
-  color: #053651;
-  background-color: #053651;
-  margin-top: -150px;
-  z-index: 1;
-  border: none;
-  border-radius: 50px;
+.bg{
+    height: 100%;
+    width: 100%;
 }
-
-
-.letreiroContainer {
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #0d1b2a;
-  font-family: "Courier Prime", monospace;
-  color: #ffffff;
-  padding: 20px 110px;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-}
-
-.staticMessage {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #fff;
-  max-width: 100%;
-  white-space: nowrap;
-}
-
-.typeAnimation {
-  font-size: 15px;
-  color: #ffffff;
-  max-width: 100%;
-  white-space: nowrap;
-}
-
-@media (max-width: 880px) {
-  .typeAnimation {
-    font-size: 1.5em;
-  }
-
-  .letreiroContainer {
-    max-width: 90%; /* Aumenta a largura máxima em telas menores */
-    padding: 10px 20px; /* Ajusta o padding para telas menores */
-    margin-left: 0; /* Remove o grande valor de margin-left para centralizar */
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media (max-width: 600px) {
-  .letreiroContainer {
-    max-width: 80%;
-    padding: 10px 15px; /* Ajusta o padding para telas ainda menores */
-  }
-
-  .staticMessage {
-    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas menores */
-  }
-
-  .typeAnimation {
-    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas menores */
-  }
-}
-
-@media (max-width: 400px) {
-  .letreiroContainer {
-    max-width: 70%;
-    padding: 5px 10px; /* Ajusta o padding para telas muito pequenas */
-  }
-
-  .staticMessage {
-    font-size: 1em; /* Ajusta o tamanho da fonte para telas muito pequenas */
-  }
-
-  .typeAnimation {
-    font-size: 1em; /* Ajusta o tamanho da fonte para telas muito pequenas */
-  }
-}
-
-.Letreiro {
-  display:inline-flex;
-}
-
-.Letreiro .static-txt {
-  font-size: 60px;
-  font-weight: 400;
-  color: #fff;
-}
-
-.bg {
-  height: 100%;
-  width: 100%;
-}
-
-/* Estilos dos contaneires dos destaques */
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Alinha verticalmente os itens ao centro */
-  padding: 100px;
-  gap: 40px; /* Reduzido o gap para diminuir o espaço entre os itens */
-  width: 100%; /* Ajustado para ocupar toda a largura disponível */
-  margin-top: -1.5rem;
-}
-
-.h1 {
-  font-size: 30px;
-  font-weight: 600;
-  font-family: 'Jockey One', sans-serif;
-  color: #000;
-  margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
-}
-
-.h2 {
-  font-size: 30px;
-  font-weight: 600;
-  font-family: 'Jockey One', sans-serif;
-  color: #000;
-  text-align: center;
-  margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
-}
-
-
-.Divisor1 {
-  display: flex;
-  width: 100%;
-  max-width: 1200px; /* Limite de largura total */
-  margin: 0 auto; /* Centraliza o conteúdo */
-}
-
-.esquerda, .direita {
-  flex: 1;
-  min-width: 0; /* Permite que os itens encolham conforme necessário */
-}
-
-.divisor {
-  width: 1px;
-  background-color: #000;
-  margin: 0 60px; /* Aumenta o espaço horizontal ao redor da linha divisória */
-}
-
-.esquerda {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.imagem1 {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.imagem1 img {
-  max-width: 100%; /* Ajustado para ocupar toda a largura disponível */
-  height: auto;
-  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
-}
-
-.slider {
-  width: 100%; /* Ajuste a largura para ocupar toda a área disponível */
-  margin: 0 auto; /* Centraliza o slider */
-}
-
-.slider img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
-  border-radius: 10%;
-}
-
-/* src/pages_styles/Home.module.css */
-.sliderContainer {
-  position: relative;
-}
-
-.verMaisButton {
-  background-color: #0056b3; /* Fundo */
-  color: #fff; /* Cor do texto branco */
-  padding: 15px 30px; /* Espaçamento interno */
-  border: 2px solid #fff; /* Borda branca */
-  border-radius: 10px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor ao passar o mouse */
-  margin-top: 50px; /* Espaçamento superior */
-  font-size: 20px; /* Tamanho da fonte */
-  text-align: center; /* Centraliza o texto */
-  font-family: 'Jockey One', sans-serif; /* Fonte similar */
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
-}
-
-.verMaisButton:hover {
-  transform: scale(1.1); /* Aumenta o botão em 10% ao passar o mouse */
-  background-color: #053651; /* Cor de fundo ao passar o mouse */
-}
-
-/* Fim do contaneir dos destaques */
-
-
-/* Estilização para o Campus Aberto*/
-
-.Divisor2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.esquerda2 {
-  flex: 1;
-  padding: 90px;
-}
-
-.direita2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.campus {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.texto1 {
-  margin-bottom: 20px;
-}
-
-.titulo1 {
-  font-size: 30px;
-  font-weight: 600;
-  font-family: 'Jockey One', sans-serif;
-  color: #000;
-  text-align: center;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.paragrafo1 {
-  font-size: 16px;
-  line-height: 2.0;
-  font-family: sans-serif;
-  text-align: justify;
-}
-
-.logoc {
-  max-width: 200%; /* Ajustado para ocupar toda a largura disponível */
-  height: auto;
-  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
-}
-
-/* Fim da estilização para o Campus Aberto*/
-
-
-/* Estilização para o card Incentivo ao Esporte*/
-
-.customCard {
-  position: relative;
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 80px auto; /* Centralizar o card */
-  border-radius: 40px;
-}
-
-.cardMedia {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  border-radius: 40px;
-}
-
-.cardContent {
-  position: relative;
-  z-index: 1;
-  width: 50%; /* Alterado para ocupar 50% da largura */
-  padding: 20px;
-  background-color: rgba(245, 245, 245, 0.7); /* Fundo semitransparente */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 40px;
-}
-
-/* Final Estilização para o card Incentivo ao Esporte*/
