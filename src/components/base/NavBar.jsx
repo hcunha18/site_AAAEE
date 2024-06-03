@@ -16,10 +16,10 @@ const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    opacity: ${(props) => (props.isToggleOpen ? "0" : "1")}; 
-    visibility: ${(props) => (props.isToggleOpen ? "hidden" : "visible")}; 
-    transition: opacity 0.3s, visibility 0s linear ${(props) => (props.isToggleOpen ? "0.3s" : "0s")};
-    pointer-events: ${(props) => (props.isToggleOpen ? "none" : "auto")}; 
+    opacity: ${(props) => (props.$isToggleOpen ? "0" : "1")}; 
+    visibility: ${(props) => (props.$isToggleOpen ? "hidden" : "visible")}; 
+    transition: opacity 0.3s, visibility 0s linear ${(props) => (props.$isToggleOpen ? "0.3s" : "0s")};
+    pointer-events: ${(props) => (props.$isToggleOpen ? "none" : "auto")}; 
   }
 
   .menuToggleBtn {
@@ -36,6 +36,7 @@ const StyledHeader = styled.header`
     .menuToggleBtn {
       display: block;
     }
+  }
 `;
 
 const NavMenu = styled.ul`
@@ -114,14 +115,14 @@ const NavMenu = styled.ul`
     top: calc(100% + 10px);
     left: 50%;
     transform: translateX(-50%);
-    display: ${(props) => (props.isDropdownOpen ? "block" : "none")};
+    display: ${(props) => (props.$isDropdownOpen ? "block" : "none")};
     margin-top: 10px;
     z-index: 1;
   }
 
   @media screen and (max-width: 872px) {
     width: 100%;
-    display: ${(props) => (props.isOpen ? "block" : "none")};
+    display: ${(props) => (props.$isOpen ? "block" : "none")};
     li {
       width: 100%;
       margin: 0 0px;
@@ -142,7 +143,7 @@ const NavMenu = styled.ul`
       top: 0%;
       left: 0%;
       transform: translateX(0%);
-      display: ${(props) => (props.isDropdownOpen ? "block" : "none")};
+      display: ${(props) => (props.$isDropdownOpen ? "block" : "none")};
     }
     .dropdown_menu li {
       background-color: #d9d9d9;
@@ -154,7 +155,6 @@ const NavMenu = styled.ul`
     }
   }
 `;
-
 
 const styles = {
   dropdown_divider: {
@@ -180,7 +180,7 @@ const styles = {
 };
 
 const LogoLink = styled(Link)`
-  visibility: ${(props) => (props.isToggleOpen ? "hidden" : "visible")};
+  visibility: ${(props) => (props.$isToggleOpen ? "hidden" : "visible")};
   transition: visibility;
 `;
 
@@ -273,42 +273,31 @@ const Header = () => {
 
   return (
     <>
-      <StyledHeader isToggleOpen={isToggleOpen}>
+      <StyledHeader $isToggleOpen={isToggleOpen}>
         <div className="nav_logo">
           <LogoLink
             to="/"
             className="nav-logo-link"
-            isToggleOpen={isToggleOpen}
+            $isToggleOpen={isToggleOpen}
           >
             <LogoImage className={styles.logo} src={logo} alt="Atlética Panterão" /> 
           </LogoLink>
         </div>
         <FaBars className="menuToggleBtn" onClick={handleToggleOpen} />
-        <NavMenu isOpen={isToggleOpen} isDropdownOpen={isDropdownOpen}>
+        <NavMenu $isOpen={isToggleOpen} $isDropdownOpen={isDropdownOpen}>
           <li onClick={handleDropdownOpen}>
-            <button
-              className="nav-menu-list
-"
-            >
-              A Atlética
-            </button>
-            <ul className="dropdown_menu" isDropdownOpen={isDropdownOpen}>
+            <button className="nav-menu-list">A Atlética</button>
+            <ul className="dropdown_menu" $isDropdownOpen={isDropdownOpen}>
               <li>
-                <DropdownButton
-                  onClick={() => handleNavigation("/")}
-                  className="DropdownMenu"
-                >
+                <DropdownButton onClick={() => handleNavigation("/")}>
                   Home
                 </DropdownButton>
               </li>
               <li>
                 <Divider/>
               </li>
-              <li styles={styles.dropdown_list}>
-                <DropdownButton
-                  onClick={() => handleNavigation("/Gestao2023_2")}
-                  className="DropdownMenu"
-                >
+              <li>
+                <DropdownButton onClick={() => handleNavigation("/Gestao2023_2")}>
                   Gestão 2023.2
                 </DropdownButton>
               </li>
@@ -316,10 +305,7 @@ const Header = () => {
                 <Divider/>  
               </li>
               <li>
-                <DropdownButton
-                  onClick={() => handleNavigation("/Galeria")}
-                  className="DropdownMenu"
-                >
+                <DropdownButton onClick={() => handleNavigation("/Galeria")}>
                   Galeria
                 </DropdownButton>
               </li>
@@ -327,10 +313,7 @@ const Header = () => {
                 <Divider/>
               </li>
               <li>
-                <DropdownButton
-                  onClick={() => handleNavigation("/Documentos")}
-                  className="DropdownMenu"
-                >
+                <DropdownButton onClick={() => handleNavigation("/Documentos")}>
                   Documentos
                 </DropdownButton>
               </li>
@@ -351,10 +334,7 @@ const Header = () => {
               style={{ display: isEsportivoDropdownOpen ? "block" : "none" }}
             >
               <li>
-                <DropdownButton
-                  onClick={() => handleNavigation("/Modalidades")}
-                  className="DropdownMenu"
-                >
+                <DropdownButton onClick={() => handleNavigation("/Modalidades")}>
                   Modalidades
                 </DropdownButton>
               </li>
@@ -362,10 +342,7 @@ const Header = () => {
                 <Divider/>
               </li>
               <li>
-                <DropdownButton
-                  onClick={() => handleNavigation("/Competicoes")}
-                  className="DropdownMenu"
-                >
+                <DropdownButton onClick={() => handleNavigation("/Competicoes")}>
                   Competições
                 </DropdownButton>
               </li>
@@ -378,10 +355,7 @@ const Header = () => {
               style={{ display: isParceriasDropdownOpen ? "block" : "none" }}
             >
               <li>
-                <DropdownButton
-                  onClick={() => handleNavigation("/NossosParceiros")}
-                  className="DropdownMenu"
-                >
+                <DropdownButton onClick={() => handleNavigation("/NossosParceiros")}>
                   Nossos Parceiros
                 </DropdownButton>
               </li>
@@ -389,10 +363,7 @@ const Header = () => {
                 <Divider/>
               </li>
               <li>
-                <DropdownButton
-                  onClick={() => handleNavigation("/SejaUmParceiro")}
-                  className="DropdownMenu"
-                >
+                <DropdownButton onClick={() => handleNavigation("/SejaUmParceiro")}>
                   Seja um Parceiro
                 </DropdownButton>
               </li>
