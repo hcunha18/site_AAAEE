@@ -9,7 +9,10 @@ function ParceiroRight({ empresas }) {
   return (
     <section className={styles.content}>
       {empresas.map((empresa, index) => (
-        <div key={index} className={`${styles.informacoes} ${index % 2 === 0 ? styles.background1 : styles.background2}`}>
+        <div
+          key={index}
+          className={`${styles.informacoes} ${index % 2 === 0 ? styles.background1 : styles.background2} ${index % 2 === 0 ? styles.rowReverse : ''}`}
+        >
           <div className={styles.parceiro}>
             <img src={empresa.logo} alt={`${empresa.nome} logo`} />
             <div className={styles.parceiroDetalhes}>

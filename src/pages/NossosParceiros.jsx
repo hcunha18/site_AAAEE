@@ -70,6 +70,21 @@ function NossosParceiros() {
          <ParceiroRight empresas={empresas} />
         </div>
 
+        <div className={styles.endPage}>
+          <div className={styles.endPageLeft}>
+            <img src="https://i.ibb.co/xGSc8GS/Pantera-removebg-preview.png" className={styles.pantera}/>
+          </div>
+
+          <div className={styles.endPageRight}>
+            <a className={styles.Texto}>Quer ser nosso parceiro?</a>
+            <hr className={styles.finalDivider} />
+            <a className={styles.CliqueNoBotao}>Clique no botão abaixo</a>
+            <div className={styles.AlinharBotao}>
+                <a href='https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus'><button className={styles.Botao}>Saiba Mais</button></a>
+            </div>
+          </div >
+        </div >
+
 
         </section>
     );

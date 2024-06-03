@@ -21,8 +21,8 @@
   }
   
   .quadrado-arthur {
-    width: 650px; 
-    height: 250px; 
+    width: 40.6rem; 
+    height: 15.6rem; 
     background-color: white;
     position: absolute;
     top: 40%; 
@@ -56,7 +56,6 @@
 
 .agradecimentos-arthur{
   display: flex;
-  flex-direction: column;
   justify-content: center; 
   align-items: center; 
   text-align: center;
@@ -74,8 +73,6 @@
   line-height: 15px;
   text-align: center;
   color: #000000;
-
-
 }
 
 .divisor-arthur {
@@ -100,7 +97,7 @@
   }
 
   .quadrado-arthur {
-    width: 30rem; 
+    width: 25rem; 
     height: 20rem; 
     background-color: white;
     position: absolute;
@@ -110,6 +107,9 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transform: translate(-50%, -50%); 
+  }
+  .agradecimentos-arthur{
+    font-size: 11px;
   }
 
 }

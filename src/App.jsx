@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
 
 // Importação dos Componentes Principais
-import Header from './components/base/navbar/Cabecalho';
+import Header from './components/base/NavBar';
 import Rodape from './components/base/Footer';
 import Container from './components/base/Container';
 
