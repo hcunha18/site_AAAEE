@@ -17,7 +17,7 @@ function Galeria() {
   return (
     <section className={styles.content}>
       <div className={styles.overlay}>
-        <h1 className={styles.title}>Galeria</h1>
+        <h1 className={styles.title}>GALERIA</h1>
         <div className={styles.bg}>
           <SliderBanner
             links={linksSliderBanner}
