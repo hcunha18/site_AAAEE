@@ -26,6 +26,13 @@
 .TextModalidades h1{
     color: #2D7EA3;
     text-decoration: underline;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
 }
 
 /* .TextModalidades hr{
@@ -37,10 +44,16 @@
 
 .TextModalidades h2{
     font-size: 20px;
-    margin-top: 30px;
-    line-height: 1.5;
+    padding-top: 1.5rem;
+    line-height: 1.2;
     text-align: justify;
-    margin-bottom: 5rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: #000000;
 }
 
 /*Definição de tamanho da img da garra*/
@@ -70,8 +83,15 @@
 }
 .ListModalidadesEsquerda h1{
     text-decoration: underline;
-    /* color: #2D7EA3; */
     padding-bottom: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 50px;
+    color: #000000;
 }
 
 
@@ -88,8 +108,15 @@
 }
 .ListModalidadesDireita h1{
     text-decoration: underline;
-    /* color: #2D7EA3; */
     padding-bottom: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 50px;
+    color: #000000;
 }
 
 
@@ -102,10 +129,24 @@
 
 
 .ListModalidadesEsquerda li{
-    font-size: 17px;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    text-align: justify;
+    color: #000000;
 }
 .ListModalidadesDireita li{
-    font-size: 17px;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    text-align: justify;
+    color: #000000;
 }
 
 /*Texto informativo dos treinos*/
@@ -116,8 +157,15 @@
 }
 .Treino h1{
     text-decoration: underline;
-    /* color: #2D7EA3; */
     padding-bottom: 2rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
+    color: #000000;
 }
 
 
@@ -131,12 +179,29 @@
 
 
 .Treino h2{
-    font-size: 17px;
-    line-height: 1.5;
+    width: 55vw;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 30px;
     text-align: justify;
+    color: #000000;
 }
 
 /*Breve texto para acesso ao linktree dos treinos*/
+.AcesseTreino h1{
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
+    color: #000000;
+}
 .AcesseTreino{
     display: flex;
     justify-content: center;
@@ -153,7 +218,15 @@
 }
 .AcesseTreino h2{
     margin-top: 15px;
-    font-size: 20px;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: justify;
+    color: #000000;
 }
 
 /*Criação do botao*/

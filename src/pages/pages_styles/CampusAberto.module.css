@@ -23,11 +23,11 @@
 }
 .bg{
     width: 100%;
-    height: auto;
+    height: 30vw;
     display: block;
     filter: brightness(40%);
+    object-fit: cover;
 }
-
 .title{
     position: absolute;
     top: 50%;
@@ -45,14 +45,22 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.3em;  
 }
+
+/* ORIENTADORA */
 .TituloOrientadora{
-    margin-top: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 5rem;
 }
 .TituloOrientadora h1{
     margin-left: 2rem;
     margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .TituloOrientadora hr{
     width: 100%;
@@ -76,12 +84,20 @@
     /* background-color: blue; */
 }
 .TelaDireita h2{
-    font-size: 16px;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    line-height: 1.5;
+    width: 40vw;
     text-align: justify;
+    padding-top: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 40px;
+    text-align: justify;
+    color: #000000;
 }
+
 
 /* Area bolsistas*/
 .TituloBolsistas{
@@ -92,6 +108,14 @@
 .TituloBolsistas h1{
     margin-left: 2rem;
     margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .TituloBolsistas hr{
     width: 100%;
@@ -113,6 +137,8 @@
 }
 /*AQUI VAI A CONFIGURAÇÃO DAS BOX DOS BOLSISTAS*/
 
+
+
 /*Area O que é?*/
 .TituloSobre{
     margin-top: 5rem;
@@ -122,6 +148,16 @@
 .TituloSobre h1{
     margin-left: 2rem;
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .TituloSobre hr{
     width: 100%;
@@ -129,12 +165,18 @@
     background-color: var(--textColor);
 }
 .TituloSobre h2{
-    margin-top: 3rem;
-    font-size: 20px;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    line-height: 1.5;
+    padding-top: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 40px;
     text-align: justify;
+    color: #000000;
 }
 
 /*Area PROJETO CAMPUS ABERTO - ATLÉTICA PANTERÃO*/
@@ -146,6 +188,16 @@
 .SobreProjeto h1{
     margin-left: 2rem;
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .SobreProjeto hr{
     width: 100%;
@@ -153,16 +205,25 @@
     background-color: var(--textColor);
 }
 .SobreProjeto h2{
-    margin-top: 3rem;
-    font-size: 20px;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    line-height: 1.5;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 40px;
     text-align: justify;
+    color: #000000;
 }
 .SobreProjeto h2 li{
+    padding-left: 2rem;
     text-align: justify;
 }
+
+
 /* Area sobre PESQUISA, ENSINO E EXTENSÃO*/
 .Pesquisa{
     margin-top: 5rem;
@@ -172,6 +233,16 @@
 .Pesquisa h1{
     margin-left: 2rem;
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .Pesquisa hr{
     width: 100%;
@@ -196,6 +267,16 @@
 .Galeria h1{
     margin-left: 2rem;
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .Galeria hr{
     width: 100%;
@@ -243,6 +324,7 @@
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
+
 /* Bloco Apoiadores */
 .Apoiadores{
     margin-top: 5rem;
@@ -252,6 +334,16 @@
 .Apoiadores h1{
     margin-left: 2rem;
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .Apoiadores hr{
     width: 100%;
@@ -277,19 +369,39 @@
 }
 .ColunaEsquerda1 h1{
     margin-top: 4rem;
-    margin-left: 2rem;
     margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 50px;
+    color: #000000;
 }
 .ColunaEsquerda1 hr{
-    margin-left: 2rem;
-    width: 17rem;
-    height: 3px;
+    width: 20vw;
+    height: 0.2rem;
     background-color: var(--textColor);
 }
 .ColunaEsquerda1 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 40px;
+    text-align: justify;
+    color: #000000;
 }
+
+
 /*Criação do botao*/
 .AlinharBotao{
     margin-top: 30px;
@@ -310,15 +422,7 @@
     cursor: pointer;
     color: #D9D9D9;
 }
-.ColunaDireita1{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-.ColunaDireita1 h2{
-    font-size: 18px;
-    margin-top: 5rem;
-}
+
 .LogoCampusAberto{
     margin-top: 3rem;
     width: 90%;

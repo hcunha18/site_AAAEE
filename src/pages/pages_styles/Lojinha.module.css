@@ -41,7 +41,7 @@
 }
 .bg {
     width: 100%;
-    height: 40rem;
+    height: 30vw;
     display: block;
     filter: brightness(40%);
 }
