@@ -9,7 +9,7 @@ function CampusAberto() {
   return (
     <section className={styles.Body}>
       <div className={styles.overlay}>
-        <h1 className={styles.title}>Projeto Campus Aberto</h1>
+        <h1 className={styles.title}>PROJETO CAMPUS ABERTO</h1>
         <img src={bannerCampusAberto} alt='Banner' className={styles.bg}/>
       </div>
 
