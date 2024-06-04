@@ -2,11 +2,15 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+
 import Header from './components/base/NavBar';
-import Rodape from './components/base/Footer';
+// import Rodape from './components/base/Footer';
 import Container from './components/base/Container';
 import LoadingSpinner from './components/animations/LoadingSpinner';
 
+import PageTransition from './components/animations/PageTransition';
+
+const Rodape = lazy(() => import('./components/base/Footer'));
 const Home = lazy(() => import('./pages/Home'));
 const Contato = lazy(() => import('./pages/Contato'));
 const Eventos = lazy(() => import('./pages/Eventos'));
@@ -20,7 +24,6 @@ const Modalidades = lazy(() => import('./pages/Modalidades'));
 const NossosParceiros = lazy(() => import('./pages/NossosParceiros'));
 const SejaUmParceiro = lazy(() => import('./pages/SejaUmParceiro'));
 
-import PageTransition from './components/animations/PageTransition';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -48,7 +51,7 @@ function App() {
             </Suspense>
           </PageTransition>
         </Container>
-        <Rodape />
+        <Rodape customClass="footer" />
       </Router>
   );
 }
