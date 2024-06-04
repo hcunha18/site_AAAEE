@@ -16,3 +16,35 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Adição de animações nas rotas */
+body {
+  background-color: #090E17; 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-color: #090E17; 
+}
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}

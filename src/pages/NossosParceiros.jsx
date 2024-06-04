@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/Background.png';
 import styles from './pages_styles/NossosParceiros.module.css';
-import ParceiroRight from '../components/structures/ParceiroRight.jsx';
+import Parceiros from '../components/structures/Parceiros.jsx';
 
 function Divider() {
     return <hr className={styles.divider} />;
@@ -60,14 +60,14 @@ function NossosParceiros() {
 
             <Divider/>
 
-            <pre className={styles.textoMotivacional}>
+            <p className={styles.textoMotivacional}>
               "O segredo de um grande sucesso está saber fazer parcerias duradouras"
-            </pre>
+            </p>
 
         </div>
 
-        <div>
-         <ParceiroRight empresas={empresas} />
+        <div className={styles.empresas}>
+         <Parceiros empresas={empresas} />
         </div>
 
         <div className={styles.endPage}>
