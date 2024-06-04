@@ -23,7 +23,7 @@ function Lojinha() {
   return (
     <section className={styles.content}>
       <div className={styles.overlay}>
-        <h1 className={styles.title}>Lojinha</h1>
+        <h1 className={styles.title}>LOJINHA</h1>
         <div className={styles.bg}>
           <SliderBanner
             links={linksSliderLojinha}
