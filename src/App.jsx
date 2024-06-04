@@ -2,6 +2,7 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import LinearProgress from '@mui/material/LinearProgress';
 
 import Header from './components/base/NavBar';
 // import Rodape from './components/base/Footer';
@@ -33,7 +34,7 @@ function App() {
         <Header />
         <Container customClass="min_height">
           <PageTransition>
-            <Suspense fallback={<LoadingSpinner />}>
+            <Suspense fallback={<LinearProgress />}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="Gestao2023_2" element={<Gestao2023_2 />} />
