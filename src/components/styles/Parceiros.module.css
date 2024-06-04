@@ -1,17 +1,17 @@
 * {
-  padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  list-style: none;
-  border: 0;
-}
-
-:root {
-  --cabecalho-color: #090E17;
-  --select-color: #2D7EA3;
-  --background-color: #1E222D;
-  --text-rodape-color: #D9D9D9;
-  --text-page-color: #D9D9D9;
+  padding:0;
+  margin:0;
+  vertical-align:baseline;
+  list-style:none;
+  border:0
+  }
+:root{
+  --hoverColor: #27749B;
+  --boxColor: #ffffff;
+  --backgroundColor: #D9D9D9;
+  --textColor: #000000;
+  --titleEventosColor: #109AB3;
+  --buttonColor: #EDA15B;
 }
 
 .content {
@@ -30,7 +30,6 @@
   flex-direction: row-reverse;
   .parceiroInfo {
     align-items: flex-end;
-    
   }
 }
 
@@ -184,6 +183,13 @@
   .descricaoEmpresa {
     text-align: center;
   }
+
+  .rowReverse {
+    .parceiroInfo {
+      align-items: center;
+    }
+  }
+
 }
 
 @media (max-width: 480px) {

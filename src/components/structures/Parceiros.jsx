@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from '../styles/ParceiroRight.module.css';
+import styles from '../styles/Parceiros.module.css';
 
 function Divider() {
     return <hr className={styles.divider} />;
 }
 
-function ParceiroRight({ empresas }) {
+function Parceiros({ empresas }) {
   return (
     <section className={styles.content}>
       {empresas.map((empresa, index) => (
@@ -32,4 +32,4 @@ function ParceiroRight({ empresas }) {
   );
 }
 
-export default ParceiroRight;
+export default Parceiros;
