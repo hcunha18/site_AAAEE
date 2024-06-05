@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+}
+
+:root {
+    --hoverColor: #27749B;
+    --boxColor: #ffffff;
+    --backgroundColor: #D9D9D9;
+    --textColor: #000000;
+    --titleEventosColor: #109AB3;
+    --baseContato: #0C1526;
+    --buttonColor: #EDA15B;
+}
+
+.content {
+    vertical-align: baseline;
+    background-color: #090E17;
+}
+
+.overlay {
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 30vw;
+    display: block;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DAE7FE;
+    font-size: 32px;
+    text-align: center;
+    z-index: 1;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.3em;
+}
+
+/* Box de Informações  */
+
+.informacoes {
+    background-color: var(--baseContato);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.informacoes h1 {
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.h1Divider {
+    width: 20%;
+    height: 0.2px;
+    background-color: white;
+    margin: 0 auto;  
+}
+
+.informacoesSegundaBox {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem; /* Espaçamento entre os itens */
+}
+
+.informacoesSegundaBox p {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.informacoesDeContato,
+.informacoesClicaveis {
+    padding-top: 2rem;
+    flex: 1;
+}
+
+.informacoesDivider {
+    flex: 0 0 10%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verticalDivider {
+    background-color: white;
+    width: 1px; 
+    height: 100%; 
+}
+
+.mapa{
+    
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .informacoesSegundaBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacoesDeContato,
+    .informacoesClicaveis,
+    .informacoesDivider {
+        flex: none;
+        width: 100%;
+    }
+
+    .informacoesDivider {
+        margin: 2rem 0; /* Espaçamento entre os itens verticais */
+    }
+
+    .verticalDivider {
+        width: 100%; 
+        height: 1px;
+        margin: 0 auto;
+    }
+}
+
+/* Botão */
+
+.AlinharBotao {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.Botao {
+    background-color: #EDA15B;
+    border-radius: 3rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.Botao:hover {
+    cursor: pointer;
+    color: #D9D9D9;
+    transform: scale(1.05);
+}

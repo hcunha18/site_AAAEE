@@ -1,12 +1,12 @@
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
-    }
-    
-:root{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+}
+
+:root {
     --hoverColor: #27749B;
     --boxColor: #ffffff;
     --backgroundColor: #D9D9D9;
@@ -16,20 +16,20 @@
 }
 
 .content {
-    vertical-align:baseline;
+    vertical-align: baseline;
     background-color: #090E17;
 }
 
-.overlay{
+.overlay {
     position: relative;
 }
 
-.bg{
+.bg {
     width: 100%;
     height: 30vw;
     display: block;
     opacity: 0.4;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .title {
@@ -61,7 +61,7 @@
     padding-right: 5rem;
 }
 
-.textoInformacoes{
+.textoInformacoes {
     position: relative;
     text-align: left;
     font-family: 'Jockey One';
@@ -73,7 +73,7 @@
     padding-left: 5rem;
 }
 
-.textoMotivacional{
+.textoMotivacional {
     font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: 400;
@@ -84,8 +84,7 @@
     color: #000000;
 }
 
-
-/* Divider*/
+/* Divider */
 .divider {
     width: 20%;
     height: 0.2px;
@@ -93,7 +92,7 @@
 }
 
 /* Final da página */
-.pantera{
+.pantera {
     width: 30rem;
     height: 30rem;
     max-width: 100%;
@@ -102,29 +101,29 @@
     margin: 0 auto;
 }
 
-.endPage{
+.endPage {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: var(--text-rodape-color)
+    background-color: var(--backgroundColor);
 }
 
-.endPageRight{
+.endPageRight {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.endPageLeft{
+.endPageLeft {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.Texto{
+.Texto {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
@@ -138,7 +137,7 @@
     color: #000000;
 }
 
-.CliqueNoBotao{
+.CliqueNoBotao {
     width: 20rem;
     height: 3rem;
     font-family: 'Kumbh Sans';
@@ -151,20 +150,20 @@
     color: #000000;
 }
 
-.finalDivider{
+.finalDivider {
     width: 90%;
     height: 0.1rem;
     background-color: #252525;
 }
 
 /* Botão */
-.AlinharBotao{
+.AlinharBotao {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
 
-.Botao{
+.Botao {
     background-color: #EDA15B;
     border-radius: 3rem;
     height: 3rem;
@@ -174,7 +173,7 @@
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.Botao:hover{
+.Botao:hover {
     cursor: pointer;
     color: #D9D9D9;
     transform: scale(1.05);
@@ -191,49 +190,124 @@
 
 /* Parceiros */
 
-  @media (max-width: 768px) {
-    .endPage{
-        flex-direction: column;
+/* Responsividade */
+@media (max-width: 1024px) {
+    .bg {
+        height: 40vw;
     }
 
-    .Texto{
+    .textoInformacoes {
         font-size: 2rem;
+        padding-left: 3rem;
     }
 
-    .finalDivider{
-        width: 60%;
+    .textoMotivacional {
+        font-size: 1.4rem;
+        line-height: 5rem;
+        padding-top: 0.5rem;
+    }
+
+    .Texto {
+        width: 35rem;
+        font-size: 2.5rem;
+    }
+
+    .finalDivider {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg {
+        height: 50vw;
+    }
+
+    .title {
+        font-size: 28px;
     }
 
     .baseInformacoes {
-        padding: 0px;
-        background-color: #D9D9D9;
-        padding-top: 2rem;
+        padding: 2rem 1rem;
     }
 
-    .textoMotivacional{
+    .textoInformacoes {
+        font-size: 1.8rem;
+        padding-left: 2rem;
+    }
+
+    .textoMotivacional {
+        font-size: 1.2rem;
+        line-height: 4rem;
+    }
+
+    .Texto {
+        width: 30rem;
+        font-size: 2.5rem;
+    }
+
+    .finalDivider {
+        width: 70%;
+    }
+
+    .pantera {
+        padding-top: 2rem;
+        width: 20rem;
+    }
+
+    .endPage {
+        flex-direction: column;
+    }
+
+    .AlinharBotao {
+        margin-bottom: 20px;
+    }
+
+    .Botao {
+        height: 2.5rem;
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg {
+        height: 60vw;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .baseInformacoes {
+        padding: 1rem 0.5rem;
+    }
+
+    .textoInformacoes {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .textoMotivacional {
         font-size: 1rem;
-        line-height: 6rem;
-        padding-top: 1rem;
-        color: #000000;
+        line-height: 3rem;
     }
 
-    .divider {
-        align-items: center;
-        justify-content: center;
+    .Texto {
+        width: 25rem;
+        font-size: 1.5rem;
+    }
+
+    .finalDivider {
         width: 60%;
-        height: 0.2px;
-        background-color: #000;
     }
 
-    .pantera{
-        width: 10rem;
-        height: auto;
-        padding-top: 2rem;
+    .pantera {
+        width: 15rem;
     }
 
-    .empresas{
-        align-items: center;
-        justify-content: center;
+    .Botao {
+        height: 2rem;
+        width: 6rem;
+        font-size: 0.7rem;
     }
-    
-  }
+}

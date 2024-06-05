@@ -1,11 +1,12 @@
 * {
-  padding:0;
-  margin:0;
-  vertical-align:baseline;
-  list-style:none;
-  border:0
-  }
-:root{
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+:root {
   --hoverColor: #27749B;
   --boxColor: #ffffff;
   --backgroundColor: #D9D9D9;
@@ -39,11 +40,11 @@
   align-items: center;
   width: 50rem;
   height: 30rem;
-  padding: 15px;
+  padding: 0.9375rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  border: 2px solid transparent;
-  border-radius: 10px;
+  border: 0.125rem solid transparent;
+  border-radius: 0.625rem;
   overflow: hidden;
 }
 
@@ -65,12 +66,12 @@
 
 .parceiroInfo h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   font-family: 'Jockey One';
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 50px;
+  font-size: 2.25rem;
+  line-height: 3.125rem;
   text-align: left;
   color: #000000;
 }
@@ -78,12 +79,12 @@
 .divider {
   width: 20rem;
   margin: 0px 0 0px 0;
-  height: 0.2px;
+  height: 0.0125rem;
   background-color: #000;
 }
 
 .parceiroDetalhes {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   text-align: center;
   width: 100%;
 }
@@ -99,7 +100,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
-  line-height: 37px;
+  line-height: 2.3125rem;
   letter-spacing: 0.05em;
   color: #000000;
   text-align: center;
@@ -120,10 +121,10 @@
 }
 
 .background2 {
-  background-color: var(--text-page-color);
+  background-color: var(--backgroundColor);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .parceiro {
     width: 40rem;
     height: 22rem;
@@ -135,8 +136,8 @@
   }
 
   .parceiroInfo h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .parceiroDescricao p {
@@ -145,18 +146,19 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .informacoes {
     flex-direction: column;
     align-items: center;
   }
 
   .parceiro {
-    width: 35rem;
-    height: 20rem;
+    width: 15rem;
+    height: 25rem;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0.625rem;
+    margin: 0.625rem 0;
   }
 
   .parceiro img {
@@ -166,17 +168,18 @@
 
   .parceiroInfo {
     align-items: center;
+    padding-left: 0rem;
   }
 
   .parceiroInfo h2 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     text-align: center;
   }
 
   .parceiroDescricao p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.375rem;
     text-align: center;
   }
 
@@ -190,26 +193,4 @@
     }
   }
 
-}
-
-@media (max-width: 480px) {
-  .parceiro {
-    width: 28rem;
-    height: 18rem;
-  }
-
-  .parceiro img {
-    width: 8rem;
-    height: 8rem;
-  }
-
-  .parceiroInfo h2 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .parceiroDescricao p {
-    font-size: 16px;
-    line-height: 22px;
-  }
 }
