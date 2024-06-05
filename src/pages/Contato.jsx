@@ -50,8 +50,19 @@ function Contato() {
         </div>
       </div>
 
-      <div className={styles.mapa}>
-   
+      <div className={styles.mapaBox}>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2206.8161677813705!2d-42.63469456726882!3d-21.530911559534804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2ceac9e2e24d7%3A0xbc944d7bf96a2136!2sCEFET-MG%20-%20Campus%20Leopoldina!5e0!3m2!1spt-BR!2sbr!4v1717600540595!5m2!1spt-BR!2sbr" 
+          className={styles.mapa}
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+      </div>
+
+      <div className={styles.boxFormulario}>
+        <h1>Entre em contato com a Atlética Panterão</h1>
       </div>
 
       </section>
