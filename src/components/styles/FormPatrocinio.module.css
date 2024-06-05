@@ -1,0 +1,33 @@
+.formRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Adicione esta classe CSS para ajustar o espaçamento entre os campos */
+.formFieldTelefone {
+    flex: 0 0 calc(40% - 0.5rem); /* Define a largura de cada campo como metade da largura da caixa, menos o espaçamento */
+}
+
+.formFieldEmail {
+    flex: 0 0 calc(60% - 0.5rem); /* Define a largura de cada campo como metade da largura da caixa, menos o espaçamento */
+}
+
+.errorMessage {
+    color: red;
+    cursor: pointer;
+}
+
+/* Adicione esta classe CSS para ajustar o tamanho do botão de envio */
+button[type="submit"] {
+    width: 100%; /* Define a largura do botão de envio como 100% */
+}
+
+@media (max-width: 768px) {
+    .formFieldTelefone {
+        flex: 0 0 calc(50% - 0.5rem); /* Define a largura de cada campo como metade da largura da caixa, menos o espaçamento */
+    }
+    
+    .formFieldEmail {
+        flex: 0 0 calc(50% - 0.5rem); /* Define a largura de cada campo como metade da largura da caixa, menos o espaçamento */
+    }
+}

@@ -1,0 +1,73 @@
+.cookieConsentBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483645;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #F1F6F4;
+  }
+  
+  .cookieConsentBannerInner {
+    max-width: 60rem; 
+    margin: 0 auto;
+    padding: 2rem 1.25rem; 
+  }
+  
+  .cookieConsentBannerHeader {
+    margin-bottom: 0.5rem; 
+    font-family: "CeraPRO-Bold", sans-serif, arial;
+    font-weight: normal;
+    font-size: 1rem; 
+    line-height: 1.5rem; 
+  }
+  
+  .cookieConsentBannerDescription {
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+    font-weight: normal;
+    color: #838F93;
+    font-size: 1rem; 
+    line-height: 1.5rem; 
+  }
+  
+  .CookieConsentCannerAccepted,
+  .CookieConsentCannerButtonDecline {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%; 
+    margin-bottom: 1rem; 
+    padding: 0.6875rem 0.8125rem; 
+    border-radius: 0.125rem; 
+    text-decoration: none;
+    text-align: center;
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+    font-weight: normal;
+    font-size: 1rem; 
+    line-height: 1.25rem; 
+
+    transition: background-color 0.3s ease;
+  }
+
+  .CookieConsentCannerAccepted:hover,
+  .CookieConsentCannerButtonDecline:hover {
+    background-color: #3A4649;
+    cursor: pointer;
+  }  
+  
+  .CookieConsentCannerAccepted {
+    background-color: #2D7EA3;
+    color: #FFF;
+  }
+  
+  .CookieConsentCannerButtonDecline {
+    border: 0.125rem solid #3A4649; 
+    background-color: transparent;
+    color: #2D7EA3;
+  }
+  
+  @media screen and (max-width: 37.5rem) { 
+    .cookieConsentBannerInner {
+      padding: 1.25rem 0.625rem; 
+    }
+  }
+  

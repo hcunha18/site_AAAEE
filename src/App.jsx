@@ -1,12 +1,18 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+
 import LinearProgress from '@mui/material/LinearProgress';
+import PageTransition from './components/animations/PageTransition';
 
 import Header from './components/base/NavBar';
 import Container from './components/base/Container';
-import PageTransition from './components/animations/PageTransition';
 
+// Importando o componente de aviso de cookies
+import CookieConsent from './components/structures/CookieConsent';
+import { useCookies } from "react-cookie";
+
+// Importando componentes de páginas com lazy loading
 const Rodape = lazy(() => import('./components/base/Footer'));
 const Home = lazy(() => import('./pages/Home'));
 const Contato = lazy(() => import('./pages/Contato'));
@@ -21,35 +27,41 @@ const Modalidades = lazy(() => import('./pages/Modalidades'));
 const NossosParceiros = lazy(() => import('./pages/NossosParceiros'));
 const SejaUmParceiro = lazy(() => import('./pages/SejaUmParceiro'));
 
-
 function App() {
-  const [count, setCount] = useState(0);
+  const [cookies, setCookie] = useCookies(["cookieConsent"]);
+  const [showCookieConsent, setShowCookieConsent] = useState(!cookies.cookieConsent);
+
+  const giveCookieConsent = () => {
+    setCookie("cookieConsent", true, { path: "/" });
+    setShowCookieConsent(false);
+  };
 
   return (
-      <Router>
-        <Header />
-        <Container customClass="min_height">
-          <PageTransition>
-            <Suspense fallback={<LinearProgress />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="Gestao2023_2" element={<Gestao2023_2 />} />
-                <Route path="Documentos" element={<Documentos />} />
-                <Route path="Galeria" element={<Galeria />} />
-                <Route path="Competicoes" element={<Competicoes />} />
-                <Route path="Modalidades" element={<Modalidades />} />
-                <Route path="Eventos" element={<Eventos />} />
-                <Route path="Lojinha" element={<Lojinha />} />
-                <Route path="SejaUmParceiro" element={<SejaUmParceiro />} />
-                <Route path="NossosParceiros" element={<NossosParceiros />} />
-                <Route path="CampusAberto" element={<CampusAberto />} />
-                <Route path="Contato" element={<Contato />} />
-              </Routes>
-            </Suspense>
-          </PageTransition>
-        </Container>
-        <Rodape customClass="footer" />
-      </Router>
+    <Router>
+      <Header />
+      <Container customClass="min_height">
+        <PageTransition>
+          <Suspense fallback={<LinearProgress />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="Gestao2023_2" element={<Gestao2023_2 />} />
+              <Route path="Documentos" element={<Documentos />} />
+              <Route path="Galeria" element={<Galeria />} />
+              <Route path="Competicoes" element={<Competicoes />} />
+              <Route path="Modalidades" element={<Modalidades />} />
+              <Route path="Eventos" element={<Eventos />} />
+              <Route path="Lojinha" element={<Lojinha />} />
+              <Route path="SejaUmParceiro" element={<SejaUmParceiro />} />
+              <Route path="NossosParceiros" element={<NossosParceiros />} />
+              <Route path="CampusAberto" element={<CampusAberto />} />
+              <Route path="Contato" element={<Contato />} />
+            </Routes>
+          </Suspense>
+        </PageTransition>
+      </Container>
+      <Rodape customClass="footer" />
+      {showCookieConsent && <CookieConsent giveCookieConsent={giveCookieConsent} />} 
+    </Router>
   );
 }
 

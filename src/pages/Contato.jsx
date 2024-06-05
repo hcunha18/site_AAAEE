@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './pages_styles/Contato.module.css'
+import FormPatrocinio from '../components/structures/FormPatrocinio'
+import Cookies from '../components/structures/CookieConsent'
 
 function Contato() {
   return (
@@ -62,10 +64,19 @@ function Contato() {
       </div>
 
       <div className={styles.boxFormulario}>
-        <h1>Entre em contato com a Atlética Panterão</h1>
+        <>
+          <h1>Entre em contato com a Atlética Panterão</h1>
+        </>
+
+        <div className={styles.card}>
+          <FormPatrocinio/>
+        </div>
+        
+
       </div>
 
       </section>
+
   );
 }
 
