@@ -3,13 +3,12 @@
     justify-content: space-between;
 }
 
-/* Adicione esta classe CSS para ajustar o espaçamento entre os campos */
 .formFieldTelefone {
-    flex: 0 0 calc(40% - 0.5rem); /* Define a largura de cada campo como metade da largura da caixa, menos o espaçamento */
+    flex: 0 0 calc(40% - 0.5rem); 
 }
 
 .formFieldEmail {
-    flex: 0 0 calc(60% - 0.5rem); /* Define a largura de cada campo como metade da largura da caixa, menos o espaçamento */
+    flex: 0 0 calc(60% - 0.5rem);
 }
 
 .errorMessage {
@@ -17,17 +16,29 @@
     cursor: pointer;
 }
 
-/* Adicione esta classe CSS para ajustar o tamanho do botão de envio */
 button[type="submit"] {
-    width: 100%; /* Define a largura do botão de envio como 100% */
+    background-color: #EDA15B;
+    border-radius: 3rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    color: #D9D9D9;
+    transform: scale(1.05);
+}
+
 
 @media (max-width: 768px) {
     .formFieldTelefone {
-        flex: 0 0 calc(50% - 0.5rem); /* Define a largura de cada campo como metade da largura da caixa, menos o espaçamento */
+        flex: 0 0 calc(50% - 0.5rem); 
     }
     
     .formFieldEmail {
-        flex: 0 0 calc(50% - 0.5rem); /* Define a largura de cada campo como metade da largura da caixa, menos o espaçamento */
+        flex: 0 0 calc(50% - 0.5rem); 
     }
 }
