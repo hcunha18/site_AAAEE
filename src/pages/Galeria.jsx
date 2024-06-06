@@ -2,6 +2,8 @@ import React from 'react';
 import SliderBanner from '../components/structures/SliderBanner';
 import styles from './pages_styles/Galeria.module.css';
 import Container from '../components/base/Container';
+import { ImageList } from '@mui/material';
+import QuiltedImageList from '../components/structures/ImageList';
 
 
 function Galeria() {
@@ -23,6 +25,10 @@ function Galeria() {
             links={linksSliderBanner}
           />
         </div>
+      </div>
+
+      <div className={styles.ListaImagem}>
+        <QuiltedImageList />
       </div>
       
     </section>
