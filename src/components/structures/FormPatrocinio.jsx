@@ -1,15 +1,25 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styles from '../styles/FormPatrocinio.module.css';
+import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
+import { db } from '../../firebase/firebase';
 
 function FormPatrocinio() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [showErrorMessage, setShowErrorMessage] = useState(false);
 
-  const onSubmit = (data) => {
-    console.log(data); // Aqui você pode fazer o que quiser com os dados do formulário
+  const onSubmit = async (data) => {
+    try {
+      await addDoc(collection(db, 'patrocinios'), data);
+      console.log('Documento adicionado com ID: ', data);
+      alert('Dados enviados com sucesso!');
+    } catch (e) {
+      console.error('Erro ao adicionar documento: ', e);
+      alert('Erro ao enviar dados. Tente novamente.');
+    }
   };
-
+  
+  
   return (
     <form onSubmit={handleSubmit(onSubmit)} >
       <div>
@@ -112,7 +122,10 @@ function FormPatrocinio() {
         <textarea id="proposal" {...register('proposal')}  placeholder="Conte para nós um pouco sobre a sua proposta de patrocínio " />
       </div>
 
-      <button type="submit">Enviar</button>
+      <div className={styles.buttonPosition}>
+        <button type="submit">Enviar</button>
+      </div>
+
     </form>
   );
 }

@@ -67,11 +67,16 @@ function Contato() {
         <>
           <h1>Entre em contato com a Atlética Panterão</h1>
         </>
-
         <div className={styles.card}>
           <FormPatrocinio/>
         </div>
         
+        <div className={styles.buttonPosition}>
+          <img src="https://i.ibb.co/xGSc8GS/Pantera-removebg-preview.png" className={styles.pantera}/>
+          <h1>Tudo certo?</h1>
+          <hr className={styles.h1ButtonPositionDivider} />
+          <p>Clique no botão abaixo</p>
+        </div>
 
       </div>
 
