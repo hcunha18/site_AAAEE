@@ -164,21 +164,26 @@
     justify-content: center;
 }
 
-.Botao{
-    background-color: #EDA15B;
-    border-radius: 3rem;
-    height: 3rem;
-    width: 10rem;
-    font-size: 1rem;
-    text-decoration: underline;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
-
-.Botao:hover{
-    cursor: pointer;
-    color: #D9D9D9;
-    transform: scale(1.05);
-}
+.verMaisButton {
+    background-color: #0056b3; /* Fundo */
+    color: #fff; /* Cor do texto branco */
+    padding: 15px 30px; /* Espaçamento interno */
+    border: 2px solid #fff; /* Borda branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    margin-top: 1vw; /* Espaçamento superior */
+    margin-bottom: 3vw;
+    font-size: 20px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Jockey One', sans-serif; /* Fonte similar */
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+  }
+  
+  .verMaisButton:hover {
+    transform: scale(1.1); /* Aumenta o botão em 10% ao passar o mouse */
+    background-color: #053651; /* Cor de fundo ao passar o mouse */
+  }
 
 .parceiro img {
     transition: transform 0.3s, opacity 0.3s;
