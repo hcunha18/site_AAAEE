@@ -1,11 +1,3 @@
-<<<<<<< Updated upstream
-import React from 'react';
-import styles from './pages_styles/Home.module.css';
-import logo from '../images/Background.png';
-import escrita from '../images/Escrita.png';
-
-function Home() {
-=======
 import { useNavigate } from "react-router-dom";
 import styles from "./pages_styles/Home.module.css";
 import logo from "../images/Background.png";
@@ -19,43 +11,67 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { CardActions } from "@mui/material";
-import { useMediaQuery } from "react-responsive";
-import SliderBanner from "../components/structures/SliderBanner";
+import { useMediaQuery } from "react-responsive"
 
 
 function Home() {
-  const SliderBannerEsquerda = [
-    {id: "1", url: 'https://i.ibb.co/4jN6NWS/Bucket-Panterao.png', alt: "Jogos Interperiodo"},
-    {id: "1", url: 'https://i.ibb.co/myY8nyV/Post-caneca.jpg', alt: "Data Jogos Interperiodo"},
-  ]
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
 
-  const SliderBannerDireita = [
-    {id: "1", url: 'https://i.ibb.co/8zYBnyz/Jogos-Interperiodo.jpg', alt: "Jogos Interperiodo"},
-    {id: "1", url: 'https://i.ibb.co/yfR2X4x/Data-Jogos-Interperiodo.jpg', alt: "Data Jogos Interperiodo"},
-  ]
-  
   const navigate = useNavigate();
 
->>>>>>> Stashed changes
   return (
     <section className={styles.content}>
       <img src={logo} alt="Pantera" className={styles.bg} />
-      <div className={styles.tittleDestaques}>
-        <h1>escrita</h1>
+      <div className={styles.letreiroContainer}>
+        <div className={styles.staticMessage}>FIQUEM LIGADOS</div>
+        <TypeAnimation
+          sequence={[
+            "NOS NOSSOS EVENTOS!",
+            2000,
+            "NOS NOSSOS CAMPEONATOS!",
+            2000,
+            "NA NOSSA LOJINHA! ",
+            2000,
+            "NOS NOSSOS PARCEIROS!",
+            2000,
+          ]}
+          wrapper="div"
+          cursor={true}
+          repeat={Infinity}
+          className={styles.typeAnimation}
+        />
       </div>
-<<<<<<< Updated upstream
-      <img src={escrita} alt="Pantera" className={styles.bg} />
-=======
 
       <div className={styles.container}>
         <div className={styles.Divisor1}>
           <div className={styles.esquerda}>
             <h1 className={styles.h1}> Nossos produtos</h1>
-            <div className={styles.slider}>
-              <SliderBanner 
-                links={SliderBannerEsquerda}
-              />
-            </div>
+            <Slider {...settings} className={styles.slider}>
+              <div>
+                <img
+                  className="img2"
+                  src="https://i.ibb.co/4jN6NWS/Bucket-Panterao.png"
+                  alt="Jogos-Interperiodo"
+                  border="0"
+                />
+              </div>
+              <div>
+                <img
+                  className="img3"
+                  src="https://i.ibb.co/myY8nyV/Post-caneca.jpg"
+                  alt="Data-Jogos-Interperiodo"
+                  border="0"
+                />
+              </div>
+            </Slider>
             <button
               className={styles.verMaisButton}
               onClick={() => navigate("Lojinha/")}
@@ -65,12 +81,25 @@ function Home() {
           </div>
           <div className={styles.divisor}></div>
           <div className={styles.direita}>
-            <h2 className={styles.h2}>Campeonatos em Andamento</h2>
-            <div className={styles.slider}>
-              <SliderBanner 
-                links={SliderBannerDireita}
-              />
-            </div>
+            <h2 className={styles.h2}> Campeonatos em Andamento</h2>
+            <Slider {...settings} className={styles.slider}>
+              <div>
+                <img
+                  className="img2"
+                  src="https://i.ibb.co/8zYBnyz/Jogos-Interperiodo.jpg"
+                  alt="Jogos-Interperiodo"
+                  border="0"
+                />
+              </div>
+              <div>
+                <img
+                  className="img3"
+                  src="https://i.ibb.co/yfR2X4x/Data-Jogos-Interperiodo.jpg"
+                  alt="Data-Jogos-Interperiodo"
+                  border="0"
+                />
+              </div>
+            </Slider>
           </div>
         </div>
       </div>
@@ -161,7 +190,6 @@ function Home() {
           </CardActions>
         </CardContent>
       </Card>
->>>>>>> Stashed changes
     </section>
   );
 }
