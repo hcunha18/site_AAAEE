@@ -5,6 +5,7 @@ import Divider from '../components/structures/Divider';
 import DivRedonda from '../components/structures/BoxMembros';
 import FotoPrincipal from '../components/structures/BoxHomenagem';
 
+
 function CampusAberto() {
   return (
     <section className={styles.Body}>

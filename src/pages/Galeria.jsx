@@ -4,6 +4,7 @@ import styles from './pages_styles/Galeria.module.css';
 import Container from '../components/base/Container';
 import { ImageList } from '@mui/material';
 import QuiltedImageList from '../components/structures/ImageList';
+import Button from "@mui/material/Button";
 
 
 function Galeria() {
@@ -27,10 +28,28 @@ function Galeria() {
         </div>
       </div>
 
-      <div className={styles.ListaImagem}>
-        <QuiltedImageList />
-      </div>
-      
+      <div className={styles.body}>
+        <div className={styles.ListaImagem}>
+          <QuiltedImageList />
+        </div>
+        <div className={styles.endPage}>
+            <div className={styles.endPageLeft}>
+              <img src="https://i.ibb.co/xGSc8GS/Pantera-removebg-preview.png" className={styles.pantera}/>
+            </div>
+
+            <div className={styles.endPageRight}>
+              <a className={styles.Texto}>Quer ter acesso a todas as mídias?</a>
+              <hr className={styles.finalDivider} />
+              <a className={styles.CliqueNoBotao}>Clique no botão abaixo</a>
+              <button
+                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                className={styles.verMaisButton}>
+                  Galeria
+              </button>
+            </div >
+          </div >
+        </div>
+      {/* Botao para o drive galeria */}
     </section>
   );
 }

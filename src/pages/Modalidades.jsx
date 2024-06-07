@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './pages_styles/Modalidades.module.css';
 import garra from '../images/garra 1.png';
 import SliderBanner from '../components/structures/SliderBanner';
+import Button from "@mui/material/Button";
+import {Link} from 'react-router-dom';
 
 function Modalidades() {
 
@@ -92,11 +94,17 @@ function Modalidades() {
                 <h1>TREINOS</h1>
                 <hr />
                 <h2>Quer ser um atleta Panterão?</h2>
+                <button
+                onClick={() => <a href="https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"/>}
+                className={styles.verMaisButton}>
+                    Saiba Mais
+                </button>
             </div>
 
-            <div className={styles.AlinharBotao}>
+
+            {/* <div className={styles.AlinharBotao}>
                 <a href='https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus'><button className={styles.Botao}>Saiba Mais</button></a>
-            </div>
+            </div> */}
 
             <div className={styles.DivisaoFotos}>
                 <div className={styles.ColunaEsquerda}>
