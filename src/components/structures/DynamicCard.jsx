@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from '../styles/DynamicCard.module.css';
 
-function Divider() {
-    return <hr className={styles.divider} />;
-}
+const Divider = () => <hr className={styles.divider} />;
 
 const DynamicCard = ({ items }) => {
     return (
@@ -26,7 +24,7 @@ const DynamicCard = ({ items }) => {
                         <div className={styles.modDate}>{item.modDate}</div>
                         <div className={styles.fileSize}>{item.fileSize}</div>
                     </div>
-                    <Divider />
+                    {index !== items.length - 1 && <Divider />}
                 </React.Fragment>
             ))}
         </div>

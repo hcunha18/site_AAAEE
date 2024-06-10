@@ -7,8 +7,11 @@
     --box-color: #FFFF;
 }
 
+.content {
+    width: 100%;
+}
+
 .card {
-    justify-content: center;
     align-items: center;
     width: 100%;
     background-color: white;
@@ -16,7 +19,6 @@
     border-radius: 10px;
     padding: 1rem;
 }
-
 .alignTitulos {
     display: flex;
     width: 100%;
@@ -49,16 +51,14 @@
     display: flex;
     width: 100%;
     margin-bottom: 20px;
-    justify-content: space-between;
 }
 
-.fileInfo {
+.cardItem {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 33.33%; 
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center; 
 }
-
 .downloadLink {
     display: flex;
     text-decoration: none;
@@ -80,8 +80,31 @@
     width: 33.33%; 
 }
 
+.fileInfo{
+    display: flex;
+    align-items: center;
+    flex-grow: 0.5;
+    margin-left: 12rem;
+}
+
+.modDate{
+    margin-right: 7rem;
+}
+
+.fileSize{
+    margin-right: 3rem;
+}
+
+.modDate,
+.fileSize {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+
 .fileInfo svg:hover {
     fill: var(--select-color);
+    align-items: center; 
 }
 
 .divider {
@@ -91,18 +114,20 @@
     background-color: #000;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .pdfIcon {
         font-size: 1rem;
     }
-    .fileInfo {
-        display: flex;
-        padding: 1rem;
+    .cardItem {
+        flex-direction: column;
         align-items: center;
-        flex-direction: column;
+    }
+    .fileInfo {
+        flex-grow: 1; 
+        margin-left: 0; 
+        margin-right: 0; 
     }    
-    .modDate {
-        display: flex;
-        flex-direction: column;
+    .modDate, .fileSize {
+        margin-right: 0; 
     }
 }
