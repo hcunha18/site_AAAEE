@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./pages_styles/Home.module.css";
 import logo from "../images/Background.png";
-import Slider from "react-slick";
 import { TypeAnimation } from "react-type-animation";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,18 +10,20 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { CardActions } from "@mui/material";
-import { useMediaQuery } from "react-responsive"
+import { useMediaQuery } from "react-responsive";
+import SliderBanner from '../components/structures/SliderBanner';
 
 function Home() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
+
+  const SliderBannerEsquerda = [
+    {id: "1", url: 'https://i.ibb.co/4jN6NWS/Bucket-Panterao.png', alt: "Bucket Panterão"},
+    {id: "2", url: 'https://i.ibb.co/myY8nyV/Post-caneca.jpg', alt: "Caneca Panterão"},
+  ]
+
+  const SliderBannerDireita =[
+    {id: "1", url: 'https://i.ibb.co/8zYBnyz/Jogos-Interperiodo.jpg', alt: "Jogos interperiodo"},
+    {id: "2", url: 'https://i.ibb.co/yfR2X4x/Data-Jogos-Interperiodo.jpg', alt: "Data jogos interperiodo"},
+  ]
 
   const navigate = useNavigate();
 
@@ -53,52 +54,28 @@ function Home() {
         <div className={styles.Divisor1}>
           <div className={styles.esquerda}>
             <h1 className={styles.h1}> Nossos produtos</h1>
-            <Slider {...settings} className={styles.slider}>
-              <div>
-                <img
-                  className="img2"
-                  src="https://i.ibb.co/4jN6NWS/Bucket-Panterao.png"
-                  alt="Jogos-Interperiodo"
-                  border="0"
-                />
-              </div>
-              <div>
-                <img
-                  className="img3"
-                  src="https://i.ibb.co/myY8nyV/Post-caneca.jpg"
-                  alt="Data-Jogos-Interperiodo"
-                  border="0"
-                />
-              </div>
-            </Slider>
+            <div className={styles.slider}>
+              <SliderBanner 
+                links={SliderBannerEsquerda}
+              />
+            </div>
+            
             <button
               className={styles.verMaisButton}
-              onClick={() => navigate("Lojinha/")}
-            >
+              onClick={() => navigate("Lojinha/")}>
               Ver Todos
             </button>
           </div>
+          {/* Linha divisoria no meio da tela */}
           <div className={styles.divisor}></div>
+          
           <div className={styles.direita}>
             <h2 className={styles.h2}> Campeonatos em Andamento</h2>
-            <Slider {...settings} className={styles.slider}>
-              <div>
-                <img
-                  className="img2"
-                  src="https://i.ibb.co/8zYBnyz/Jogos-Interperiodo.jpg"
-                  alt="Jogos-Interperiodo"
-                  border="0"
-                />
-              </div>
-              <div>
-                <img
-                  className="img3"
-                  src="https://i.ibb.co/yfR2X4x/Data-Jogos-Interperiodo.jpg"
-                  alt="Data-Jogos-Interperiodo"
-                  border="0"
-                />
-              </div>
-            </Slider>
+            <div className={styles.slider}>
+              <SliderBanner 
+                links={SliderBannerDireita}
+              />
+            </div>  
           </div>
         </div>
       </div>

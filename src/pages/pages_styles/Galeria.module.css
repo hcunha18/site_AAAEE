@@ -45,12 +45,70 @@
     filter: brightness(40%);
 }
 
-/* Configuração da lista de imagens */
-.ListaImagem{
-    margin-top: 2vw;
-    width: 100%;
+/* Texto inicial */
+
+.IntroEvento{
+    padding-top: 5vw;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.IntroEvento h1{
+    color: #D9D9D9;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
+}
+.IntroEvento hr{
+    margin-top: 1vw;
+    height: 0.15vw;
+    width: 40vw;
+    background-color: var(--select-color);
+}
+.IntroEvento h2{
+    padding-bottom: 1vw;
+    font-size: 20px;
+    padding-top: 1.5rem;
+    line-height: 1.2;
+    text-align: justify;
+    position: relative;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: #D9D9D9;
+}
+
+/* Tipo do evento */
+
+.TipoEvento{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 4vw;
+}
+.TipoEvento h1{
+    padding-bottom: 2vw;
+    color: #D9D9D9;
+    text-decoration: underline;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 50px;
+}
+
+/* Configuração da lista de imagens */
+
+.complexButton{
+    padding: 0.5vw;
+    padding-bottom: 3vw;
 }
 
 
