@@ -15,8 +15,8 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   },
   '&:hover, &.Mui-focusVisible': {
     zIndex: 1,
-    '& .MuiImageBackdrop-root': {
-      opacity: 0.6,
+    '& .MuiImageackdrop-root': {
+      opacity: 0.,
     },
     '& .MuiImageMarked-root': {
       opacity: 0,
