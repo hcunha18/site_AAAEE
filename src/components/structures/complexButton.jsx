@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 300,
-  margin: 3,
+  margin: 2.5,
   [theme.breakpoints.down('sm')]: {
     width: '100% !important', // Overrides inline-style
     height: 100,
@@ -16,7 +16,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   '&:hover, &.Mui-focusVisible': {
     zIndex: 1,
     '& .MuiImageBackdrop-root': {
-      opacity: 0.15,
+      opacity: 0.6,
     },
     '& .MuiImageMarked-root': {
       opacity: 0,
@@ -34,7 +34,7 @@ const ImageSrc = styled('span')({
   top: 0,
   bottom: 0,
   backgroundSize: 'cover',
-  backgroundPosition: 'center 40%',
+  backgroundPosition: 'center 45%',
 });
 
 const Image = styled('span')(({ theme }) => ({
