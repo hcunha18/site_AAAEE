@@ -41,10 +41,10 @@ function Lojinha() {
       <div className={styles.ImgProdutoDestaque}>
         <img src="https://i.ibb.co/t3GJPW1/Rectangle-18.png" alt="Rectangle-18" border="0" />
         <button
-          onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
-          className={styles.verMaisButton}>
-            Encomendar
-          </button>
+          onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
+            className={styles.verMaisButton}>
+              Encomendar
+        </button>
       </div>
 
       {/* Section todos os produtos à venda */}
@@ -68,7 +68,7 @@ function Lojinha() {
               <h3>R$ 50,00</h3>
             </div>
             <button
-                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
                 className={styles.verMaisButton}>
                     Comprar
                 </button>
@@ -88,10 +88,10 @@ function Lojinha() {
               <h3>R$ 50,00</h3>
             </div>
             <button
-                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
                 className={styles.verMaisButton}>
-                    Comprar
-                </button>
+                  Comprar
+            </button>
           </div>
         </div>
 
@@ -108,10 +108,10 @@ function Lojinha() {
               <h3>R$ 50,00</h3>
             </div>
             <button
-                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
                 className={styles.verMaisButton}>
-                    Comprar
-                </button>
+                  Comprar
+            </button>
             {/* Adiciona a imagem da garra no contêiner principal */}
           </div>
         </div>
@@ -137,10 +137,10 @@ function Lojinha() {
               <h3>R$ 50,00</h3>
             </div>
             <button
-                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
                 className={styles.verMaisButton}>
-                    Comprar
-                </button>
+                  Comprar
+            </button>
           </div>
         </div>
 
@@ -157,10 +157,10 @@ function Lojinha() {
               <h3>R$ 50,00</h3>
             </div>
             <button
-                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
                 className={styles.verMaisButton}>
-                    Comprar
-                </button>
+                  Comprar
+            </button>
           </div>
         </div>
 
@@ -177,10 +177,10 @@ function Lojinha() {
               <h3>R$ 50,00</h3>
             </div>
             <button
-                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
                 className={styles.verMaisButton}>
-                    Comprar
-                </button>
+                  Comprar
+            </button>
           </div>
         </div>
       </div>
