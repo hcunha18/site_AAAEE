@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 
-
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 300,
@@ -16,7 +15,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   '&:hover, &.Mui-focusVisible': {
     zIndex: 1,
     '& .MuiImageackdrop-root': {
-      opacity: 0.,
+      opacity: 0,
     },
     '& .MuiImageMarked-root': {
       opacity: 0,
@@ -70,7 +69,11 @@ const ImageMarked = styled('span')(({ theme }) => ({
   transition: theme.transitions.create('opacity'),
 }));
 
-export default function ButtonBaseDemo( {images} ) {
+export default function ButtonBaseDemo({ images }) {
+  const handleClick = (url) => {
+    window.location.href = url;
+  };
+
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
       {images.map((image) => (
@@ -80,6 +83,7 @@ export default function ButtonBaseDemo( {images} ) {
           style={{
             width: image.width,
           }}
+          onClick={() => handleClick(image.redirectUrl)}
         >
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
           <ImageBackdrop className="MuiImageBackdrop-root" />
