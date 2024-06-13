@@ -1,11 +1,12 @@
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
-    }
-:root{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0
+}
+
+:root {
     --hoverColor: #27749B;
     --boxColor: #ffffff;
     --backgroundColor: #D9D9D9;
@@ -14,21 +15,24 @@
     --buttonColor: #EDA15B;
 }
 
-.Body{
+.Body {
     position: relative;
     background-color: var(--backgroundColor);
 }
-.overlay{
+
+.overlay {
     position: relative;
 }
-.bg{
+
+.bg {
     width: 100%;
     height: 30vw;
     display: block;
     filter: brightness(40%);
     object-fit: cover;
 }
-.title{
+
+.title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,14 +47,15 @@
     font-size: 36px;
     line-height: 44px;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    letter-spacing: 0.3em;  
+    letter-spacing: 0.3em;
 }
 
 /* ORIENTADORA */
-.TituloOrientadora{
+.TituloOrientadora {
     margin: 5rem;
 }
-.TituloOrientadora h1{
+
+.TituloOrientadora h1 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     position: relative;
@@ -62,22 +67,24 @@
     line-height: 50px;
     color: #000000;
 }
-.TituloOrientadora hr{
+
+.TituloOrientadora hr {
     width: 100%;
     height: 3px;
     background-color: var(--textColor);
 }
 
-.DivisaoTela{
+.DivisaoTela {
     display: flex;
     flex-direction: row;
     margin-top: 5rem;
 }
-.TelaEsquerda{
+
+.TelaEsquerda {
     width: 50%;
     /* background-color: red; */
 }
- 
+
 
 .CardCorpo {
     max-width: 30rem;
@@ -89,54 +96,56 @@
     border-radius: 10px;
     background-color: #FFFFFF;
     justify-content: center;
-  }
-  
-  .imgPerfil {
+}
+
+.imgPerfil {
     width: 100%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
     color: red;
     background-color: blue;
-  }
-  
-  .profileinfo h2 {
+}
+
+.profileinfo h2 {
     margin: 10px 0 5px;
     font-size: 1.45em;
-  }
-  
-  .CardCorpo p {
+}
+
+.CardCorpo p {
     margin: 5px 0;
     font-size: 1em;
     color: #000000;
     text-align: justify;
     justify-content: center;
     display: flex;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     text-align: center;
     padding-top: 10px;
-  }
-  
-  .social-icons img {
+}
+
+.social-icons img {
     width: 30px;
     height: 30px;
     margin: 0 5px;
-  }
+}
 
 
 /*Final Card Gabriela */
 
 
-.TelaEsquerda h1{
+.TelaEsquerda h1 {
     margin-left: 5rem;
 }
-.TelaDireita{
+
+.TelaDireita {
     width: 50%;
     /* background-color: blue; */
 }
-.TelaDireita h2{
+
+.TelaDireita h2 {
     width: 40vw;
     text-align: justify;
     padding-top: 3rem;
@@ -153,12 +162,13 @@
 
 
 /* Area bolsistas*/
-.TituloBolsistas{
+.TituloBolsistas {
     margin-top: 5rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
-.TituloBolsistas h1{
+
+.TituloBolsistas h1 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     position: relative;
@@ -170,56 +180,66 @@
     line-height: 50px;
     color: #000000;
 }
-.TituloBolsistas hr{
+
+.TituloBolsistas hr {
     width: 100%;
     height: 3px;
     background-color: var(--textColor);
 }
-.DivisaoTela2{
+
+.DivisaoTela2 {
     display: flex;
     flex-direction: row;
     margin-top: 5rem;
 }
-.TelaEsquerda2{
+
+.TelaEsquerda2 {
     width: 50%;
 }
-.TelaDireita2{
+
+.TelaDireita2 {
     width: 50%;
     display: flex;
     justify-content: center;
 }
+
 /*AQUI VAI A CONFIGURAÇÃO DAS BOX DOS BOLSISTAS*/
-.ParteDireita{
+.ParteDireita {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
-    }
+}
 
 .CardBols {
-        max-width: 22rem;
-        height: auto; /* Alterado de 13.5rem para auto para acomodar o conteúdo */
-        margin: 20px auto;
-        border: 1px solid #ddd;
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        background-color: #FFFFFF;
-        display: flex; /* Adicionado para usar flexbox */
-        flex-direction: column; /* Os itens são empilhados verticalmente */
-        align-items: center; /* Centraliza horizontalmente */
-        margin-top: 10rem;
-      }
-      
-.ImgPerfil {
-        margin-top: -6rem; /* Move a imagem para cima, fora da caixa */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    max-width: 22rem;
+    height: auto;
+    /* Alterado de 13.5rem para auto para acomodar o conteúdo */
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    /* Adicionado para usar flexbox */
+    flex-direction: column;
+    /* Os itens são empilhados verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+    margin-top: 10rem;
+}
 
-.img1{
+.ImgPerfil {
+    margin-top: -6rem;
+    /* Move a imagem para cima, fora da caixa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
@@ -231,41 +251,41 @@
 }
 
 .img2 {
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
-        border: 0;
-        object-fit: cover;
-      }
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 0;
+    object-fit: cover;
+}
 
 .img3 {
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
-        border: 0;
-        object-fit: cover;
-      }
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 0;
+    object-fit: cover;
+}
 
-.img4{
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
-        border: 0;
-        object-fit: cover;
+.img4 {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 0;
+    object-fit: cover;
 
-      }
+}
 
 .img5 {
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
-        border: 0;
-        object-fit: cover;
-      }
-      
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 0;
+    object-fit: cover;
+}
 
 
-.parteMeio h1{
+
+.parteMeio h1 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     position: relative;
@@ -278,21 +298,22 @@
     color: #000000;
 }
 
-.ParteEsquerda{
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
+.ParteEsquerda {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 /*Area O que é?*/
-.TituloSobre{
+.TituloSobre {
     margin-top: 5rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
-.TituloSobre h1{
+
+.TituloSobre h1 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -306,12 +327,14 @@ justify-content: center;
     line-height: 50px;
     color: #000000;
 }
-.TituloSobre hr{
+
+.TituloSobre hr {
     width: 100%;
     height: 3px;
     background-color: var(--textColor);
 }
-.TituloSobre h2{
+
+.TituloSobre h2 {
     padding-top: 3rem;
     padding-left: 7rem;
     padding-right: 7rem;
@@ -327,12 +350,13 @@ justify-content: center;
 }
 
 /*Area PROJETO CAMPUS ABERTO - ATLÉTICA PANTERÃO*/
-.SobreProjeto{
+.SobreProjeto {
     margin-top: 5rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
-.SobreProjeto h1{
+
+.SobreProjeto h1 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -346,12 +370,14 @@ justify-content: center;
     line-height: 50px;
     color: #000000;
 }
-.SobreProjeto hr{
+
+.SobreProjeto hr {
     width: 100%;
     height: 3px;
     background-color: var(--textColor);
 }
-.SobreProjeto h2{
+
+.SobreProjeto h2 {
     padding-left: 7rem;
     padding-right: 7rem;
     padding-top: 3rem;
@@ -365,19 +391,21 @@ justify-content: center;
     text-align: justify;
     color: #000000;
 }
-.SobreProjeto h2 li{
+
+.SobreProjeto h2 li {
     padding-left: 2rem;
     text-align: justify;
 }
 
 
 /* Area sobre PESQUISA, ENSINO E EXTENSÃO*/
-.Pesquisa{
+.Pesquisa {
     margin-top: 5rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
-.Pesquisa h1{
+
+.Pesquisa h1 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -391,12 +419,14 @@ justify-content: center;
     line-height: 50px;
     color: #000000;
 }
-.Pesquisa hr{
+
+.Pesquisa hr {
     width: 100%;
     height: 3px;
     background-color: var(--textColor);
 }
-.Pesquisa h2{
+
+.Pesquisa h2 {
     margin-top: 3rem;
     font-size: 20px;
     margin-left: 7rem;
@@ -406,12 +436,13 @@ justify-content: center;
 }
 
 /* Area sobre Galeria de Fotos*/
-.Galeria{
+.Galeria {
     margin-top: 5rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
-.Galeria h1{
+
+.Galeria h1 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -425,28 +456,32 @@ justify-content: center;
     line-height: 50px;
     color: #000000;
 }
-.Galeria hr{
+
+.Galeria hr {
     width: 100%;
     height: 3px;
     background-color: var(--textColor);
 }
 
-.DivisaoFotos{
+.DivisaoFotos {
     display: flex;
     justify-content: center;
 }
-.ColunaEsquerda{
+
+.ColunaEsquerda {
     width: 33%;
     display: flex;
     justify-content: center;
 
 }
-.ColunaCentro{
+
+.ColunaCentro {
     width: 33%;
     display: flex;
     justify-content: center;
 }
-.ColunaDireita{
+
+.ColunaDireita {
     width: 33%;
     display: flex;
     justify-content: center;
@@ -460,7 +495,7 @@ justify-content: center;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
 } */
 
-.ImgCampeonato{
+.ImgCampeonato {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
@@ -473,46 +508,50 @@ justify-content: center;
 
 
 /* Bloco Apoiadores */
-.Apoiadores{
+.Apoiadores {
     margin-top: 5rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
 
-.Apoio{
+.Apoio {
 
-align-content: center;
-flex-direction: row;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-margin-top: 100px;
+    align-content: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
 
-.CardAp{
+.CardAp {
     max-width: 22rem;
-    height: 10rem; /* Alterado de 13.5rem para auto para acomodar o conteúdo */
+    height: 10rem;
+    /* Alterado de 13.5rem para auto para acomodar o conteúdo */
     margin: 20px auto;
     border: 1px solid #ddd;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: #03386C;
-    display: flex; /* Adicionado para usar flexbox */
-    flex-direction: column; /* Os itens são empilhados verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    display: flex;
+    /* Adicionado para usar flexbox */
+    flex-direction: column;
+    /* Os itens são empilhados verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
 }
 
 .apoiainfo h2 {
     margin: 10px 0 5px;
     font-size: 1.15em;
     color: #fff;
-    text-align: center;    
+    text-align: center;
     margin-top: -10px;
     display: flex;
 }
 
-.ImgApoia{
+.ImgApoia {
 
     border-radius: 50%;
     width: 10rem;
@@ -521,8 +560,7 @@ margin-top: 100px;
     object-fit: cover;
 }
 
-.Apoiadores h1{
-    margin-left: 1rem;
+.Apoiadores h1 {
     margin-bottom: 1rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
@@ -535,29 +573,33 @@ margin-top: 100px;
     line-height: 50px;
     color: #000000;
 }
-.Apoiadores hr{
+
+.Apoiadores hr {
     width: 100%;
     height: 3px;
     background-color: var(--textColor);
 }
-.Apoiadores h2{
+
+.Apoiadores h2 {
     margin: 5rem;
     /*margin apenas de exemplo*/
 }
 
 /*Bloco PARA MAIS INFORMAÇÕES*/
-.DivisaoTela3{
+.DivisaoTela3 {
     display: flex;
     justify-content: center;
 }
-.ColunaEsquerda1{
+
+.ColunaEsquerda1 {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.ColunaEsquerda1 h1{
+
+.ColunaEsquerda1 h1 {
     margin-top: 4rem;
     margin-bottom: 1rem;
     position: relative;
@@ -569,12 +611,14 @@ margin-top: 100px;
     line-height: 50px;
     color: #000000;
 }
-.ColunaEsquerda1 hr{
+
+.ColunaEsquerda1 hr {
     width: 20vw;
     height: 0.2rem;
     background-color: var(--textColor);
 }
-.ColunaEsquerda1 h2{
+
+.ColunaEsquerda1 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -593,13 +637,14 @@ margin-top: 100px;
 
 
 /*Criação do botao*/
-.AlinharBotao{
+.AlinharBotao {
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
-.Botao{
+
+.Botao {
     background-color: #EDA15B;
     border-radius: 50px;
     height: 50px;
@@ -608,14 +653,14 @@ margin-top: 100px;
     letter-spacing: 5px;
     border: none;
 }
-.Botao:hover{
+
+.Botao:hover {
     cursor: pointer;
     color: #D9D9D9;
 }
 
-.LogoCampusAberto{
+.LogoCampusAberto {
     margin-top: 3rem;
     width: 90%;
     height: 90%;
 }
-

@@ -12,38 +12,29 @@ function CampusAberto() {
         <h1 className={styles.title}>PROJETO CAMPUS ABERTO</h1>
         <img src={bannerCampusAberto} alt='Banner' className={styles.bg} />
       </div>
-
       <div className={styles.TituloOrientadora}>
         <h1>ORIENTADORA</h1>
       </div>
       <div className={styles.DivisaoTela}>
         <div className={styles.TelaEsquerda}>
 
-        <div className={styles.CardCorpo}>
-              <div className={styles.ImgPerfil}>
-                <img
-                  className={styles.img1}
-                  src="https://i.ibb.co/vX972Gc/foto-gabriela.jpg" 
-                  alt="gabriela"
-                />
-              </div>
-              <div className={styles.profileinfo}>
-              </div>
-              <h2>Drª  Gabriela Rezende de Oliveira Venturini</h2>
-              <p>Coordenadora</p>
+          <div className={styles.CardCorpo}>
+            <div className={styles.ImgPerfil}>
+              <img
+                className={styles.img1}
+                src="https://i.ibb.co/vX972Gc/foto-gabriela.jpg"
+                alt="gabriela"
+              />
             </div>
+            <div className={styles.profileinfo}>
+            </div>
+            <h2>Drª  Gabriela Rezende de Oliveira Venturini</h2>
+            <p>Coordenadora</p>
+          </div>
 
         </div>
-
-
-
-
-
-
-
-
-
         <div className={styles.TelaDireita}>
+
           <h2>
             O projeto Campus Aberto Atlética Panterão é coordenado pela professora Drª
             Gabriela Venturini (PORTARIA ADMINISTRATIVA DEDC/CEFET-MG Nº 207,
@@ -72,7 +63,7 @@ function CampusAberto() {
                 />
               </div>
               <div className={styles.profileinfo}>
-              <h2>Isabelly Araújo Temoteo</h2>
+                <h2>Isabelly Araújo Temoteo</h2>
               </div>
               <p>Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão</p>
             </div>
@@ -86,7 +77,7 @@ function CampusAberto() {
                 />
               </div>
               <div className={styles.profileinfo}>
-              <h2>Gabriel Ferreira de Oliveira</h2>
+                <h2>Gabriel Ferreira de Oliveira</h2>
               </div>
               <p>Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão</p>
             </div>
@@ -105,7 +96,7 @@ function CampusAberto() {
                 />
               </div>
               <div className={styles.profileinfo}>
-              <h2>Sophia Coura Martins Ferreira</h2>
+                <h2>Sophia Coura Martins Ferreira</h2>
               </div>
               <p>Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão</p>
             </div>
@@ -114,12 +105,12 @@ function CampusAberto() {
               <div className={styles.ImgPerfil}>
                 <img
                   className={styles.img5}
-                  src="https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg" 
-                  alt="marcelo-filho-1" 
+                  src="https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg"
+                  alt="marcelo-filho-1"
                 />
               </div>
               <div className={styles.profileinfo}>
-              <h2>Marcelo Teixeira de Sousa Filho</h2>
+                <h2>Marcelo Teixeira de Sousa Filho</h2>
               </div>
               <p>Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão</p>
             </div>
@@ -193,38 +184,37 @@ function CampusAberto() {
         <div className={styles.Apoio}>
           <div className={styles.CardAp}>
             <div className={styles.ImgPerfil}>
-            <img
-                  className={styles.ImgApoia}
-                  src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg" 
-                  alt="Apoia" 
-                />           
+              <img
+                className={styles.ImgApoia}
+                src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg"
+                alt="Apoia"
+              />
             </div>
             <div className={styles.apoiainfo}>
 
               <h2>Centro Federal de Educação Tecnológica de Minas Gerais - Campus Leopoldina</h2> </div>
           </div>
 
-
           <div className={styles.CardAp}>
-              <div className={styles.ImgPerfil}>
-                <img
-                  className={styles.ImgApoia}
-                  src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg" 
-                  alt="Apoia" 
-                />
+            <div className={styles.ImgPerfil}>
+              <img
+                className={styles.ImgApoia}
+                src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg"
+                alt="Apoia"
+              />
             </div>
             <div className={styles.apoiainfo}>
-              <h2>Prefeitura Municipal de Leopoldina</h2> 
-          </div>
+              <h2>Prefeitura Municipal de Leopoldina</h2>
+            </div>
           </div>
 
           <div className={styles.CardAp}>
             <div className={styles.ImgPerfil}>
-            <img
-                  className={styles.ImgApoia}
-                  src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg" 
-                  alt="Apoia" 
-                />            
+              <img
+                className={styles.ImgApoia}
+                src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg"
+                alt="Apoia"
+              />
             </div>
             <div className={styles.apoiainfo}>
               <h2>Diretoria de Extensão e Desenvolvimento Comunitário</h2> </div>
@@ -233,8 +223,6 @@ function CampusAberto() {
         </div>
 
       </div>
-
-
 
 
       <div className={styles.DivisaoTela3}>
