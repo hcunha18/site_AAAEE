@@ -191,7 +191,6 @@
   height: auto;
   object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
 }
-
 /* Configuração dos sliders */
 .slider {
   width: 30vw;

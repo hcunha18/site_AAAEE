@@ -7,8 +7,6 @@ import LinearProgress from '@mui/material/LinearProgress';
 import Header from './components/base/NavBar';
 // import Rodape from './components/base/Footer';
 import Container from './components/base/Container';
-import LoadingSpinner from './components/animations/LoadingSpinner';
-
 import PageTransition from './components/animations/PageTransition';
 
 const Rodape = lazy(() => import('./components/base/Footer'));
