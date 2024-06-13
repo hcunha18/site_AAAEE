@@ -187,12 +187,6 @@ function CampusAberto() {
           <img className={styles.ImgCampeonato} src="https://i.ibb.co/PFdMRQY/IMG-20231122-150735.jpg" alt="ImgCampeonato"></img>
         </div>
       </div>
-
-
-
-
-
-
       <div className={styles.Apoiadores}>
         <h1>APOIADORES</h1>
         <hr />
