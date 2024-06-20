@@ -116,7 +116,9 @@ function Home() {
           </div>
         </div>
       </div>
-      <Card className={styles.customCard}>
+      <Card className={styles.customCard}
+      style={{borderRadius: "40px"}
+      }>
         <CardMedia
           component="img"
           image="https://i.ibb.co/KmPr9ww/1700099016684.jpg"
