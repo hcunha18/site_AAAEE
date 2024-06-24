@@ -28,6 +28,7 @@ const NossosParceiros = lazy(() => import('./pages/NossosParceiros'));
 const SejaUmParceiro = lazy(() => import('./pages/SejaUmParceiro'));
 
 function App() {
+
   const [cookies, setCookie] = useCookies(["cookieConsent"]);
   const [showCookieConsent, setShowCookieConsent] = useState(!cookies.cookieConsent);
 
@@ -63,6 +64,7 @@ function App() {
       {showCookieConsent && <CookieConsent giveCookieConsent={giveCookieConsent} />} 
     </Router>
   );
+
 }
 
 export default App;

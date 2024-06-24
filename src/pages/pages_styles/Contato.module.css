@@ -189,13 +189,16 @@
     width: 100%;
     margin-bottom: 16px;
     text-indent: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 .card input[id="howDidYouKnow"] {
+    font-family: 'Inter', sans-serif;
     min-height: 5rem;
 }
 
 .card textarea {
+    font-family: 'Inter', sans-serif;
     min-height: 10rem;
     padding-top: 5px;
 }
