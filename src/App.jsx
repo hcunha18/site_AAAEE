@@ -25,7 +25,6 @@ const Competicoes = lazy(() => import('./pages/Competicoes'));
 const Galeria = lazy(() => import('./pages/Galeria'));
 const Modalidades = lazy(() => import('./pages/Modalidades'));
 const NossosParceiros = lazy(() => import('./pages/NossosParceiros'));
-const SejaUmParceiro = lazy(() => import('./pages/SejaUmParceiro'));
 
 function App() {
 
@@ -52,7 +51,6 @@ function App() {
               <Route path="Modalidades" element={<Modalidades />} />
               <Route path="Eventos" element={<Eventos />} />
               <Route path="Lojinha" element={<Lojinha />} />
-              <Route path="SejaUmParceiro" element={<SejaUmParceiro />} />
               <Route path="NossosParceiros" element={<NossosParceiros />} />
               <Route path="CampusAberto" element={<CampusAberto />} />
               <Route path="Contato" element={<Contato />} />

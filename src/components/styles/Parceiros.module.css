@@ -121,7 +121,7 @@
 }
 
 .background2 {
-  background-color: #D9D9D9;
+  background-color: var(--backgroundColor);
 }
 
 @media (max-width: 75rem) {

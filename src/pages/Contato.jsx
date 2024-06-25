@@ -1,14 +1,30 @@
 import React from 'react';
 import styles from './pages_styles/Contato.module.css'
 import FormPatrocinio from '../components/structures/FormPatrocinio'
-import Cookies from '../components/structures/CookieConsent'
 
 function Contato() {
+
+  const telefone = "+5532998510529";
+
+  const handleClickTelefone = () => {
+    window.location.href = `tel:${telefone}`;
+  };
+
+  const handleScroll = () => {
+    const element = document.getElementById('formularioContato');
+    if (element) {
+      window.scrollTo({
+        behavior: 'smooth',
+        top: element.offsetTop
+      });
+    }
+  };
+
   return (
     <section className={styles.content}>
       <div className={styles.overlay}>
         <h1 className={styles.title}>CONTATO</h1>
-        <img src={'https://i.ibb.co/hmj05Ly/imagem-2024-06-05-104727447.png'} alt="Pantera" className={styles.bg}/>
+        <img src={'https://i.ibb.co/hmj05Ly/imagem-2024-06-05-104727447.png'} alt="Pantera" className={styles.bg} />
       </div>
 
       <div className={styles.informacoes}>
@@ -24,12 +40,12 @@ function Contato() {
 
             <h1>TELEFONE</h1>
             <hr className={styles.h1Divider} />
-            <p>(32) 9 9851-0529</p>
+            <p><a className={styles.linkTo} href="tel:+5532998510529">(32) 9 9851-0529</a></p>
 
             <h1>E-MAIL</h1>
             <hr className={styles.h1Divider} />
-            <p>aaaecefetleopoldina@gmail.com</p>
-
+            <p><a className={styles.linkTo} href="mailto:aaaecefetleopoldina@gmail.com">aaaecefetleopoldina@gmail.com</a></p>
+            
           </div>
           <div className={styles.informacoesDivider}>
             <hr className={styles.verticalDivider}/>
@@ -39,14 +55,14 @@ function Contato() {
             <hr className={styles.h1Divider} />
             <p>Gostaria de fazer sugestões? Sua <br/>mensagem será direcionada para <br/>nosso centro de atendimento e<br/> retornaremos o mais rápido possível.</p>
             <div className={styles.AlinharBotao}>
-                <a href='https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus'><button className={styles.Botao}>Saiba Mais</button></a>
+              <button className={styles.Botao} onClick={handleClickTelefone}>Saiba Mais</button>
             </div>
 
             <h1>SEJA NOSSO PARCEIRO</h1>
             <hr className={styles.h1Divider} />
             <p>Você tem uma empresa e gostaria de<br/> ter sua logo empurrando o<br/> espírito esportivo do panterão?</p>
             <div className={styles.AlinharBotao}>
-                <a href='https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus'><button className={styles.Botao}>Saiba Mais</button></a>
+              <button className={styles.Botao} onClick={handleScroll}>Saiba Mais</button>
             </div>
           </div>
         </div>
@@ -63,7 +79,7 @@ function Contato() {
 
       </div>
 
-      <div className={styles.boxFormulario}>
+      <div className={styles.boxFormulario} id="formularioContato">
         <>
           <h1>Entre em contato com a Atlética Panterão</h1>
         </>

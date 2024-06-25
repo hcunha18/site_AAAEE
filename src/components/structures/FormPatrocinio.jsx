@@ -5,36 +5,30 @@ import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase/firebase';
 
 function FormPatrocinio() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   const onSubmit = async (data) => {
     try {
       await addDoc(collection(db, 'patrocinios'), data);
       console.log('Documento adicionado com ID: ', data);
       alert('Dados enviados com sucesso!');
+      reset(); 
     } catch (e) {
       console.error('Erro ao adicionar documento: ', e);
       alert('Erro ao enviar dados. Tente novamente.');
     }
   };
-  
-  
+
   return (
-    <form onSubmit={handleSubmit(onSubmit)} >
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <div>
           {errors.fullName && (
-            <span
-              className={styles.errorMessage}
-              onClick={() => setShowErrorMessage(!showErrorMessage)}
-            >
-              * {showErrorMessage ? errors.fullName.message : 'Campo Obrigatório'}
-            </span>
+            <span className={styles.errorMessage}>* Campo Obrigatório</span>
           )}
-          <input 
-            type="text" 
-            id="fullName" 
+          <input
+            type="text"
+            id="fullName"
             {...register('fullName', { required: 'Campo obrigatório' })}
             placeholder="Nome Completo"
           />
@@ -42,16 +36,11 @@ function FormPatrocinio() {
 
         <div>
           {errors.companyName && (
-            <span
-              className={styles.errorMessage}
-              onClick={() => setShowErrorMessage(!showErrorMessage)}
-            >
-              * {showErrorMessage ? errors.companyName.message : 'Campo Obrigatório'}
-            </span>
+            <span className={styles.errorMessage}>* Campo Obrigatório</span>
           )}
-          <input 
-            type="text" 
-            id="companyName" 
+          <input
+            type="text"
+            id="companyName"
             {...register('companyName', { required: 'Campo obrigatório' })}
             placeholder="Nome Fantasia da Empresa"
           />
@@ -61,34 +50,36 @@ function FormPatrocinio() {
       <div className={styles.formRow}>
         <div className={styles.formFieldEmail}>
           {errors.email && (
-            <span
-              className={styles.errorMessage}
-              onClick={() => setShowErrorMessage(!showErrorMessage)}
-            >
-              * {showErrorMessage ? errors.email.message : 'Campo Obrigatório'}
-            </span>
+            <span className={styles.errorMessage}>* {errors.email.message}</span>
           )}
-          <input 
-            type="email" 
-            id="email" 
-            {...register('email', { required: 'Campo obrigatório' })}
+          <input
+            type="email"
+            id="email"
+            {...register('email', {
+              required: 'Campo obrigatório',
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: 'Endereço de e-mail inválido'
+              }
+            })}
             placeholder="E-mail de Contato"
           />
         </div>
 
         <div className={styles.formFieldTelefone}>
           {errors.phone && (
-            <span
-              className={styles.errorMessage}
-              onClick={() => setShowErrorMessage(!showErrorMessage)}
-            >
-              * {showErrorMessage ? errors.phone.message : 'Campo Obrigatório'}
-            </span>
+            <span className={styles.errorMessage}>* {errors.phone.message}</span>
           )}
-          <input 
-            type="tel" 
-            id="phone" 
-            {...register('phone', { required: 'Campo obrigatório' })}
+          <input
+            type="tel"
+            id="phone"
+            {...register('phone', {
+              required: 'Campo obrigatório',
+              pattern: {
+                value: /^[0-9]{10,11}$/,
+                message: 'Telefone inválido'
+              }
+            })}
             placeholder="Telefone de Contato"
           />
         </div>
@@ -96,30 +87,24 @@ function FormPatrocinio() {
 
       <div>
         {errors.howDidYouKnow && (
-          <span
-            className={styles.errorMessage}
-            onClick={() => setShowErrorMessage(!showErrorMessage)}
-          >
-            * {showErrorMessage ? errors.howDidYouKnow.message : 'Campo Obrigatório'}
-          </span>
+          <span className={styles.errorMessage}>* Campo Obrigatório</span>
         )}
         <textarea
-          id="howDidYouKnow" 
+          id="howDidYouKnow"
           {...register('howDidYouKnow', { required: 'Campo obrigatório' })}
           placeholder="Como você conheceu a Atlética Panterão?"
         />
       </div>
 
       <div>
-      {errors.proposal && (
-          <span
-            className={styles.errorMessage}
-            onClick={() => setShowErrorMessage(!showErrorMessage)}
-          >
-            * {showErrorMessage ? errors.proposal.message : 'Campo Obrigatório'}
-          </span>
+        {errors.proposal && (
+          <span className={styles.errorMessage}>* Campo Obrigatório</span>
         )}
-        <textarea id="proposal" {...register('proposal')}  placeholder="Conte para nós um pouco sobre a sua proposta de patrocínio " />
+        <textarea
+          id="proposal"
+          {...register('proposal', { required: 'Campo obrigatório' })}
+          placeholder="Conte para nós um pouco sobre a sua proposta de patrocínio "
+        />
       </div>
 
       <div className={styles.buttonPosition}>

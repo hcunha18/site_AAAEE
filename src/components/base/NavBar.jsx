@@ -11,6 +11,8 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   position: relative;
+  height: 6rem;
+
 
   .nav_logo {
     display: flex;
@@ -33,6 +35,7 @@ const StyledHeader = styled.header`
   }
 
   @media screen and (max-width: 872px) {
+    height: ${(props) => (props.$isToggleOpen ? "35rem" : "6rem")}; 
     .menuToggleBtn {
       display: block;
     }
@@ -234,32 +237,22 @@ const Header = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isEsportivoDropdownOpen, setIsEsportivoDropdownOpen] = useState(false);
-  const [isParceriasDropdownOpen, setIsParceriasDropdownOpen] = useState(false);
 
   const navigate = useNavigate();
 
   const handleToggleOpen = () => {
     setIsToggleOpen(!isToggleOpen);
     setIsEsportivoDropdownOpen(false);
-    setIsParceriasDropdownOpen(false);
     setIsEsportivoDropdownOpen(false);
   };
 
   const handleDropdownOpen = () => {
     setIsDropdownOpen(!isDropdownOpen);
     setIsEsportivoDropdownOpen(false);
-    setIsParceriasDropdownOpen(false);
   };
 
   const handleEsportivoDropdownOpen = () => {
     setIsEsportivoDropdownOpen(!isEsportivoDropdownOpen);
-    setIsDropdownOpen(false);
-    setIsParceriasDropdownOpen(false);
-  };
-
-  const handleParceriasDropdownOpen = () => {
-    setIsParceriasDropdownOpen(!isParceriasDropdownOpen);
-    setIsEsportivoDropdownOpen(false);
     setIsDropdownOpen(false);
   };
 
@@ -268,7 +261,6 @@ const Header = () => {
     setIsToggleOpen(false);
     setIsDropdownOpen(false);
     setIsEsportivoDropdownOpen(false);
-    setIsParceriasDropdownOpen(false);
   };
 
   return (
@@ -348,27 +340,11 @@ const Header = () => {
               </li>
             </ul>
           </li>
-          <li onClick={handleParceriasDropdownOpen}>
-            <button className="nav-menu-list">Parcerias</button>
-            <ul
-              className="dropdown_menu"
-              style={{ display: isParceriasDropdownOpen ? "block" : "none" }}
-            >
               <li>
                 <DropdownButton onClick={() => handleNavigation("/NossosParceiros")}>
-                  Nossos Parceiros
+                  Parcerias
                 </DropdownButton>
               </li>
-              <li>
-                <Divider/>
-              </li>
-              <li>
-                <DropdownButton onClick={() => handleNavigation("/SejaUmParceiro")}>
-                  Seja um Parceiro
-                </DropdownButton>
-              </li>
-            </ul>
-          </li>
           <li>
             <button
               className="nav-menu-list"
