@@ -163,6 +163,7 @@
     justify-content: center;
 }
 
+
 .Botao {
     background-color: #EDA15B;
     border-radius: 3rem;
@@ -178,6 +179,7 @@
     color: #D9D9D9;
     transform: scale(1.05);
 }
+
 
 .parceiro img {
     transition: transform 0.3s, opacity 0.3s;

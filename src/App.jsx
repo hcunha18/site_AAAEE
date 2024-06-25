@@ -12,6 +12,7 @@ import Container from './components/base/Container';
 import CookieConsent from './components/structures/CookieConsent';
 import { useCookies } from "react-cookie";
 
+
 // Importando componentes de páginas com lazy loading
 const Rodape = lazy(() => import('./components/base/Footer'));
 const Home = lazy(() => import('./pages/Home'));

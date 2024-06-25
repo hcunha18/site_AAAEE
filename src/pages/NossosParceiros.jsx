@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../images/Background.png';
 import styles from './pages_styles/NossosParceiros.module.css';
 import Parceiros from '../components/structures/Parceiros.jsx';
+import Button from "@mui/material/Button";
 
 function Divider() {
     return <hr className={styles.divider} />;
@@ -79,9 +80,11 @@ function NossosParceiros() {
             <a className={styles.Texto}>Quer ser nosso parceiro?</a>
             <hr className={styles.finalDivider} />
             <a className={styles.CliqueNoBotao}>Clique no botão abaixo</a>
-            <div className={styles.AlinharBotao}>
-                <a href='https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus'><button className={styles.Botao}>Saiba Mais</button></a>
-            </div>
+            <button
+                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                className={styles.verMaisButton}>
+                    Saiba Mais
+                </button>
           </div >
         </div >
 

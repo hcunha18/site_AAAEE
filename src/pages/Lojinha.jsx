@@ -1,6 +1,7 @@
 import React from 'react';
 import SliderBanner from '../components/structures/SliderBanner';
 import styles from './pages_styles/Lojinha.module.css';
+import Button from "@mui/material/Button";
 
 function Lojinha() {
 
@@ -39,11 +40,11 @@ function Lojinha() {
       {/* Imagem do produto novidade destaque */}
       <div className={styles.ImgProdutoDestaque}>
         <img src="https://i.ibb.co/t3GJPW1/Rectangle-18.png" alt="Rectangle-18" border="0" />
-      </div>
-
-      {/* Botao provisorio */}
-      <div className={styles.botao}>
-        <button>ENCOMENDAR</button>
+        <button
+          onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
+            className={styles.verMaisButton}>
+              Encomendar
+        </button>
       </div>
 
       {/* Section todos os produtos à venda */}
@@ -66,9 +67,11 @@ function Lojinha() {
               <h2>Bucket Panterão</h2>
               <h3>R$ 50,00</h3>
             </div>
-            <div className={styles.botao}>
-              <button>COMPRAR</button>
-            </div>
+            <button
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
+                className={styles.verMaisButton}>
+                    Comprar
+                </button>
           </div>
         </div>
 
@@ -84,9 +87,11 @@ function Lojinha() {
               <h2>Bucket Panterão</h2>
               <h3>R$ 50,00</h3>
             </div>
-            <div className={styles.botao}>
-              <button>COMPRAR</button>
-            </div>
+            <button
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
+                className={styles.verMaisButton}>
+                  Comprar
+            </button>
           </div>
         </div>
 
@@ -102,9 +107,11 @@ function Lojinha() {
               <h2>Bucket Panterão</h2>
               <h3>R$ 50,00</h3>
             </div>
-            <div className={styles.botao}>
-              <button>COMPRAR</button>
-            </div>
+            <button
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
+                className={styles.verMaisButton}>
+                  Comprar
+            </button>
             {/* Adiciona a imagem da garra no contêiner principal */}
           </div>
         </div>
@@ -129,9 +136,11 @@ function Lojinha() {
               <h2>Bucket Panterão</h2>
               <h3>R$ 50,00</h3>
             </div>
-            <div className={styles.botao}>
-              <button>COMPRAR</button>
-            </div>
+            <button
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
+                className={styles.verMaisButton}>
+                  Comprar
+            </button>
           </div>
         </div>
 
@@ -147,9 +156,11 @@ function Lojinha() {
               <h2>Bucket Panterão</h2>
               <h3>R$ 50,00</h3>
             </div>
-            <div className={styles.botao}>
-              <button>COMPRAR</button>
-            </div>
+            <button
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
+                className={styles.verMaisButton}>
+                  Comprar
+            </button>
           </div>
         </div>
 
@@ -165,9 +176,11 @@ function Lojinha() {
               <h2>Bucket Panterão</h2>
               <h3>R$ 50,00</h3>
             </div>
-            <div className={styles.botao}>
-              <button>COMPRAR</button>
-            </div>
+            <button
+                onClick={() => window.location.href= "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}
+                className={styles.verMaisButton}>
+                  Comprar
+            </button>
           </div>
         </div>
       </div>
