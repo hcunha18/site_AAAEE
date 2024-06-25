@@ -2,7 +2,8 @@ import React from 'react';
 import logo from '../images/Background.png';
 import styles from './pages_styles/NossosParceiros.module.css';
 import Parceiros from '../components/structures/Parceiros.jsx';
-import Button from "@mui/material/Button";
+
+import { useNavigate } from "react-router-dom";
 
 function Divider() {
     return <hr className={styles.divider} />;
@@ -44,8 +45,13 @@ const empresas = [
   ];
 
 
-
 function NossosParceiros() {
+
+  const navigate = useNavigate();
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
     return (
         <section className={styles.content}>
 
@@ -81,7 +87,7 @@ function NossosParceiros() {
             <hr className={styles.finalDivider} />
             <a className={styles.CliqueNoBotao}>Clique no botão abaixo</a>
             <button
-                onClick={() => href("https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus")}
+                onClick={() => handleNavigation("/Contato")}
                 className={styles.verMaisButton}>
                     Saiba Mais
                 </button>

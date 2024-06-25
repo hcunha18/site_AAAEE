@@ -130,4 +130,12 @@
     .modDate, .fileSize {
         margin-right: 0; 
     }
+    .cardItem {
+        flex-direction: column;
+        align-items: center;
+    }
+    .alignTitulos {
+        flex-direction: column;
+    }
 }
+

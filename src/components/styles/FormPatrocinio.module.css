@@ -1,0 +1,57 @@
+.formRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formFieldTelefone {
+    flex: 0 0 calc(40% - 0.5rem); 
+}
+
+.formFieldEmail {
+    flex: 0 0 calc(60% - 0.5rem);
+}
+
+.errorMessage {
+    color: red;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #EDA15B;
+    border-radius: 3rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    color: #D9D9D9;
+    transform: scale(1.05);
+}
+
+.buttonPosition{
+    position: absolute;
+    padding-left:37.5rem;
+    padding-top: 10rem;
+}
+
+@media (max-width: 1099px){
+    .buttonPosition{
+        padding-left:0rem;
+        padding-top: 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .formFieldTelefone {
+        flex: 0 0 calc(50% - 0.5rem); 
+    }
+    
+    .formFieldEmail {
+        flex: 0 0 calc(50% - 0.5rem); 
+    }
+
+}

@@ -1,0 +1,407 @@
+:root {
+    --hoverColor: #27749B;
+    --boxColor: #ffffff;
+    --backgroundColor: #D9D9D9;
+    --textColor: #000000;
+    --titleEventosColor: #109AB3;
+    --baseContato: #0C1526;
+    --buttonColor: #EDA15B;
+}
+
+.content {
+    vertical-align: baseline;
+    background-color: #090E17;
+}
+
+.overlay {
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 30vw;
+    display: block;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DAE7FE;
+    font-size: 2.25rem;
+    text-align: center;
+    z-index: 1;
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+    line-height: 2.75rem;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.3em;
+}
+
+.informacoes {
+    background-color: var(--baseContato);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.informacoes h1 {
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 3.125rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.h1Divider {
+    width: 20%;
+    height: 0.2px;
+    background-color: white;
+    margin: 0 auto;  
+}
+
+.informacoesSegundaBox {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.informacoesSegundaBox p, a {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.linkTo {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+.linkTo:hover {
+    text-decoration: underline; 
+    color: var(--hoverColor);
+}
+
+
+.informacoesDeContato,
+.informacoesClicaveis {
+    padding-top: 2rem;
+    flex: 1;
+    text-decoration: none;
+}
+
+.informacoesDivider {
+    flex: 0 0 10%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verticalDivider {
+    background-color: white;
+    width: 1px;
+    height: 100%;
+}
+
+.AlinharBotao {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.Botao {
+    background-color: var(--buttonColor);
+    border-radius: 3rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.Botao:hover {
+    cursor: pointer;
+    color: #D9D9D9;
+    transform: scale(1.05);
+}
+
+.mapaBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 0;
+}
+
+.boxFormulario {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgroundColor);
+    flex-direction: column;
+}
+
+.boxFormulario h1 {
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 3.125rem;
+    text-align: center;
+    color: #000000;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 80rem;
+    min-height: 35rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="tel"],
+.card textarea,
+.card select {
+    background-color: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    border-radius: 30px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    text-indent: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.card input[id="howDidYouKnow"] {
+    font-family: 'Inter', sans-serif;
+    min-height: 5rem;
+}
+
+.card textarea {
+    font-family: 'Inter', sans-serif;
+    min-height: 10rem;
+    padding-top: 5px;
+}
+
+.card select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    color: #999999;
+}
+
+.buttonPosition {
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.buttonPosition h1 {
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 50px;
+    letter-spacing: 0.25em;
+    color: #000000;
+
+    position: absolute;
+    margin-bottom: 26rem;
+    margin-left: 10rem;
+}
+
+.buttonPosition p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+
+    position: absolute;
+    margin-bottom: 17rem;
+    margin-left: 10rem;
+}
+
+.h1ButtonPositionDivider {
+    width: 10%;
+    height: 0.2px;
+    background-color: black;
+
+    position: absolute;
+    margin-bottom: 21rem;
+    margin-left: 9rem;
+}
+
+.pantera {
+    width: 20rem;
+    
+    position: absolute;
+    margin-bottom: 14rem;
+    margin-right: 30rem;
+}
+
+@media (max-width: 1213px) {
+    .bg {
+        height: 40vw;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .informacoesSegundaBox {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 1099px) {
+    .informacoesSegundaBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacoesDeContato,
+    .informacoesClicaveis,
+    .informacoesDivider {
+        flex: none;
+        width: 100%;
+    }
+
+    .informacoesDivider,
+    .verticalDivider {
+        display: none;
+    }
+
+    .AlinharBotao {
+        margin-bottom: 20px;
+    }
+
+    .mapaBox {
+        height: 20rem;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card input[type="text"],
+    .card input[type="email"],
+    .card input[type="tel"],
+    .card textarea,
+    .card select {
+        margin-bottom: 10px;
+    }
+
+    .buttonPosition {
+        padding: 1rem;
+    }
+
+    .buttonPosition h1,
+    .buttonPosition p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .h1ButtonPositionDivider {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pantera {
+        width: 15rem;
+        margin-bottom: 20rem;
+        margin-right: 0rem;
+        margin-left: 9rem;
+    }
+
+    .buttonPosition h1 {
+        visibility: hidden;
+    }
+    
+    .buttonPosition p {
+        visibility: hidden;
+    }
+    
+    .h1ButtonPositionDivider {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg {
+        height: 50vw;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .informacoes h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .informacoesSegundaBox p, a {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    
+    .card {
+        width: 85%;
+    }
+
+    .Botao {
+        height: 2.5rem;
+        width: 8rem;
+        font-size: 0.875rem;
+    }
+
+    .boxFormulario h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .buttonPosition h1 {
+        font-size: 1.5rem;
+    }
+
+    .buttonPosition p {
+        font-size: 1rem;
+    }
+}
