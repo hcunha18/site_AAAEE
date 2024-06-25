@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 300,
-  margin: 2.5,
+  margin: 1.5,
   [theme.breakpoints.down('sm')]: {
     width: '100% !important', // Overrides inline-style
     height: 100,

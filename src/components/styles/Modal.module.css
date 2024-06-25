@@ -1,0 +1,17 @@
+.verMaisButton {
+    background-color: #0056b3; /* Fundo */
+    color: #fff; /* Cor do texto branco */
+    padding: 1px 3px; /* Espaçamento interno */
+    border: 2px solid #fff; /* Borda branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Jockey One', sans-serif; /* Fonte similar */
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+  }
+  .verMaisButton:hover {
+    transform: scale(1.1); /* Aumenta o botão em 10% ao passar o mouse */
+    background-color: #053651; /* Cor de fundo ao passar o mouse */
+  }

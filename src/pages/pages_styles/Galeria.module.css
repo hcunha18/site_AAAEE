@@ -83,6 +83,9 @@
     font-size: 1.4rem;
     color: #D9D9D9;
 }
+.IntroEvento h2 a{
+    color: var(--select-color);
+}
 
 /* Tipo do evento */
 
@@ -110,100 +113,3 @@
     padding: 0.5vw;
     padding-bottom: 3vw;
 }
-
-
-/* End Page */
-.endPage{
-    background-color: var(--background-color);
-}
-.pantera{
-    width: 30rem;
-    height: 30rem;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.endPage{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--text-rodape-color)
-}
-
-.endPageRight{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.endPageLeft{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.Texto{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    width: 40rem;
-    height: 3rem;
-    font-family: 'Jockey One';
-    font-style: normal;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    letter-spacing: 0.1em;
-    color: #000000;
-}
-
-.CliqueNoBotao{
-    width: 20rem;
-    height: 3rem;
-    font-family: 'Kumbh Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    text-align: center;
-    letter-spacing: 0.07em;
-    color: #000000;
-}
-
-.finalDivider{
-    width: 90%;
-    height: 0.1rem;
-    background-color: #252525;
-}
-
-/* Botão */
-.AlinharBotao{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.verMaisButton {
-    background-color: #0056b3; /* Fundo */
-    color: #fff; /* Cor do texto branco */
-    padding: 15px 30px; /* Espaçamento interno */
-    border: 2px solid #fff; /* Borda branca */
-    border-radius: 10px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor ao passar o mouse */
-    margin-top: 1vw; /* Espaçamento superior */
-    margin-bottom: 3vw;
-    font-size: 20px; /* Tamanho da fonte */
-    text-align: center; /* Centraliza o texto */
-    font-family: 'Jockey One', sans-serif; /* Fonte similar */
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
-  }
-  
-  .verMaisButton:hover {
-    transform: scale(1.1); /* Aumenta o botão em 10% ao passar o mouse */
-    background-color: #053651; /* Cor de fundo ao passar o mouse */
-  }
