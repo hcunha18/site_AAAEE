@@ -3,6 +3,7 @@ import SliderBanner from '../components/structures/SliderBanner';
 import styles from './pages_styles/Galeria.module.css';
 import ButtonBaseDemo from '../components/structures/complexButton';
 
+
 function Galeria() {
   const linksSliderBanner = [
     {id: "1", url: 'https://i.ibb.co/2qcQmXz/DSC-6547.jpg', alt: "Banner campus Aberto"},
@@ -11,18 +12,21 @@ function Galeria() {
     {id: "4", url: 'https://i.ibb.co/JtcxSCC/IMG-20231122-154139.jpg', alt: "Jogo Interperiodo"}
   ];
 
+  // Configurações dos Complex Buttons para cada tipo de Evento
+  // Festas
   const imagesFestas = [
     {
       url: 'https://i.ibb.co/1nP6mQ0/DSC-6514.jpg',
       title: 'Calcoolizando',
       width: '33%',
-      redirectUrl: 'https://drive.google.com/drive/folders/1bLVgXX56foOggSjS_f85Hp_LV8icnVJi'
+      redirectUrl: 'https://drive.google.com/drive/folders/1bLVgXX56foOggSjS_f85Hp_LV8icnVJi',
     },
     {
       url: 'https://i.ibb.co/LCbgkWT/PHOTO-2023-04-01-09-59-58-1.jpg',
       title: 'Recepção de Calouros - 2023.1',
       width: '33%',
       redirectUrl: 'https://drive.google.com/drive/folders/1-DzFPOD5u32XR6vBEB3BubgNskfOmuzE?usp=drive_link'
+      
     },
     {
       url: 'https://i.ibb.co/XSDJttt/DSCN7589.jpg',
@@ -32,6 +36,7 @@ function Galeria() {
     },
   ];
 
+  // Esportes
   const imagesEsportes = [
     {
       url: 'https://i.ibb.co/P5RNW7z/IMG-20231122-150749.jpg',
@@ -93,6 +98,8 @@ function Galeria() {
     },
     //Fim da terceira linha
   ];
+    // Fim do Complex Buttom
+
 
   return (
     <section className={styles.content}>
@@ -107,14 +114,16 @@ function Galeria() {
           <h1>Se é foto que você procura</h1>
           <hr/>
           <h2>O Panterão separou as melhores fotos de nossos eventos especialmente para você!</h2>
-          <h2>Escolha o evento e não esqueça de marcar a @AtléticaPanterão no Instagram</h2>
+          <h2>Escolha o evento e não esqueça de marcar a <a href='https://www.instagram.com/atleticaleopoldina/'>@AtléticaPanterão</a> no Instagram</h2>
         </div>
 
         <div className={styles.TipoEvento}>
           <h1>FESTAS</h1>
         </div>
         <div className={styles.complexButton}>
-          <ButtonBaseDemo images={imagesFestas} />
+          <ButtonBaseDemo 
+            images={imagesFestas} 
+          />
         </div>
 
         <div className={styles.TipoEvento}>
