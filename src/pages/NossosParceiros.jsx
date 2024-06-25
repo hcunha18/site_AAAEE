@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../images/Background.png';
 import styles from './pages_styles/NossosParceiros.module.css';
 import Parceiros from '../components/structures/Parceiros.jsx';
+
 import { useNavigate } from "react-router-dom";
 
 function Divider() {

@@ -15,7 +15,7 @@ function Documentos() {
     },
     {
         icon: <VscFilePdf />,
-        fileName: 'Relatório Anual 2023',
+        fileName: 'Relatório Anual',
         fileUrl: '/pdfs/RelatorioAnual2023.pdf',
         modDate: '11-01-2024',
         fileSize: '11-01-2024'
