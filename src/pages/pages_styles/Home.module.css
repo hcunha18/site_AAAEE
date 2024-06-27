@@ -315,4 +315,10 @@
   border-radius: 40px;
 }
 
+/* centralização do botão */
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Final Estilização para o card Incentivo ao Esporte*/

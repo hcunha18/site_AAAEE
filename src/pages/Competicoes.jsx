@@ -53,19 +53,18 @@ function Competicoes() {
             </div>
           </div>
           <div className={styles.scores}>
-            <div className={styles.team}>
+            <div className={styles.team1}>
               <div className={`${styles.teamLogo} ${styles.teamA}`}></div>
-              <div className={styles.teamName}>BTF</div>
+              <div className={styles.teamName1}>BTF</div>
               <div className={styles.teamScore}>0</div>
             </div>
             <div className={styles.period}>
               <div className={styles.periodTitle}>TEMPO</div>
               <div className={styles.periodNumber}>{formatTime(time)}</div>
-              <div className={styles.final}>_________</div>
             </div>
-            <div className={styles.team}>
+            <div className={styles.team2}>
               <div className={`${styles.teamLogo} ${styles.teamB}`}></div>
-              <div className={styles.teamName}>EST</div>
+              <div className={styles.teamName2}>EST</div>
               <div className={styles.teamScore}>3</div>
             </div>
           </div>

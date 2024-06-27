@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Example font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Example font */
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
+/* Import DS-Digital font */
 
 .content {
-  background-color: #333;
+  background-color: #1E222D;
   color: white;
   font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 100vh; /* Change height to min-height */
+  min-height: 100vh;
+  /* Change height to min-height */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,7 +25,8 @@
   padding: 20px 0;
   border: 2px solid #FFD700;
   box-shadow: 0 0 10px #FFD700;
-  font-family: 'Press Start 2P', cursive; /* Example font */
+  font-family: 'Press Start 2P', cursive;
+  /* Example font */
   margin-bottom: 20px;
 }
 
@@ -35,22 +40,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px; /* Add margin to push the container down */
+  margin-top: 40px;
+  /* Add margin to push the container down */
 }
 
 .gameStatus {
+  border-radius: 30px;
   background-color: black;
   color: #00ff15;
   font-size: 24px;
   padding: 10px;
-  margin-bottom: 30px; /* Add margin to push the text down */
+  margin-bottom: 30px;
+  /* Add margin to push the text down */
   border: 2px solid #00ff15;
   box-shadow: 0 0 10px #00ff15;
   text-align: center;
-  font-family: 'Press Start 2P', cursive; /* Example font */
+  font-family: 'Press Start 2P', cursive;
+  /* Example font */
 }
 
 .scoreboard {
+  font-family: 'DS-Digital', sans-serif;
+  /* Apply DS-Digital font */
+  border-radius: 10px;
   background-color: black;
   padding: 20px;
   border: 2px solid #444;
@@ -61,10 +73,14 @@
   text-align: center;
   margin: auto;
   position: relative;
-  margin-top: 20px; /* Add margin to push the scoreboard down */
+  margin-top: 20px;
+  /* Add margin to push the scoreboard down */
 }
 
-.boltTopLeft, .boltTopRight, .boltBottomLeft, .boltBottomRight {
+.boltTopLeft,
+.boltTopRight,
+.boltBottomLeft,
+.boltBottomRight {
   width: 20px;
   height: 20px;
   background-color: gray;
@@ -98,7 +114,9 @@
   align-items: center;
 }
 
-.header .possession, .header .fouls, .header .timeouts {
+.header .possession,
+.header .fouls,
+.header .timeouts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,13 +124,15 @@
 
 .header .fouls {
   position: relative;
-  margin-bottom: 15px; /* Add space below fouls */
+  margin-bottom: 15px;
+  /* Add space below fouls */
 }
 
 .header .tempo {
   display: flex;
   align-items: center;
-  margin-top: 15px; /* Increase space above tempo */
+  margin-top: 15px;
+  /* Increase space above tempo */
 }
 
 .header .tempo .circle {
@@ -134,38 +154,6 @@
   align-items: center;
 }
 
-.team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.teamLogo.teamA {
-  background-image: url('/path/to/team-a-logo.png'); /* Placeholder for team A logo */
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-}
-
-.teamLogo.teamB {
-  background-image: url('/path/to/team-b-logo.png'); /* Placeholder for team B logo */
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-}
-
-.period {
-  text-align: center;
-}
-
-.period .final {
-  font-size: 20px;
-  margin-top: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
-
 .period .final::before {
   content: 'SEMI-FINAL';
   position: absolute;
@@ -177,31 +165,53 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
-.teamName, .teamScore, .periodNumber {
-  font-size: 48px;
+.teamScore,
+.periodNumber {
+  font-size: 100px;
   margin: 5px 0;
-  color: #FFD700; /* Adjusted to gold color */
+  color: #FFD700;
+  /* Adjusted to gold color */
+}
+
+.teamName1 {
+  font-size: 60px;
+  margin: 5px 0;
+  color: #FFD700
+}
+
+.teamName2 {
+  font-size: 60px;
+  margin: 5px 0;
+  color: #FFD700
 }
 
 .periodTitle {
   font-size: 24px;
-  color: #FFD700; /* Adjusted to gold color */
+  color: #FFD700;
+  /* Adjusted to gold color */
 }
 
-.pos, .posNumber, .foulsTitle, .foulsNumber {
-  color: #FFD700; /* Adjusted to gold color */
+.pos,
+.posNumber,
+.foulsTitle,
+.foulsNumber {
+  color: #FFD700;
+  font-size: 20px;
+  /* Adjusted to gold color */
 }
 
 .weeklyGames {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  margin-top: 40px; /* Add margin to push the weekly games section down */
+  margin-top: 40px;
+  /* Add margin to push the weekly games section down */
 }
 
 .title {
@@ -210,7 +220,8 @@
   margin-bottom: 20px;
   text-align: center;
   margin-top: 100px;
-  font-family: 'Press Start 2P', cursive; /* Example font */
+  font-family: 'Press Start 2P', cursive;
+  /* Example font */
 
 }
 
@@ -219,7 +230,8 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  align-items: center; /* Center align the schedule */
+  align-items: center;
+  /* Center align the schedule */
 }
 
 .daySection {
@@ -237,6 +249,7 @@
 }
 
 .game {
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -245,13 +258,15 @@
   border: 2px solid #FFD700;
   box-shadow: 0 0 5px #FFD700;
   width: 100%;
-  max-width: 800px; /* Adjust max-width to fit the content */
+  max-width: 800px;
+  /* Adjust max-width to fit the content */
 }
 
 .team {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-direction: column;
 }
 
 .logoPlaceholder {
@@ -273,13 +288,16 @@
 
 .table {
   width: 100%;
-  max-width: 800px; /* Ensure table fits within content width */
-  margin: 20px auto; /* Center the table */
+  max-width: 800px;
+  /* Ensure table fits within content width */
+  margin: 20px auto;
+  /* Center the table */
   border-collapse: collapse;
   font-family: 'Arial', sans-serif;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   border: 1px solid #004080;
   padding: 10px;
   text-align: left;
@@ -288,7 +306,7 @@
 
 .table th {
   background-color: #004080;
-  color:white;
+  color: white;
   font-family: 'Press Start 2P', cursive;
 }
 
