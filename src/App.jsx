@@ -1,19 +1,21 @@
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
+// Animações
 import LinearProgress from '@mui/material/LinearProgress';
 import PageTransition from './components/animations/PageTransition';
+import LoadingScreen from './components/animations/LoadingScreen';
 
+// Imports principais
 import Header from './components/base/NavBar';
 import Container from './components/base/Container';
 
-// Importando o componente de aviso de cookies
+// Cookies
 import CookieConsent from './components/structures/CookieConsent';
 import { useCookies } from "react-cookie";
 
-
-// Importando componentes de páginas com lazy loading
+// Rotas com lazy
 const Rodape = lazy(() => import('./components/base/Footer'));
 const Home = lazy(() => import('./pages/Home'));
 const Contato = lazy(() => import('./pages/Contato'));
@@ -29,13 +31,26 @@ const NossosParceiros = lazy(() => import('./pages/NossosParceiros'));
 
 function App() {
 
+  const [loading, setLoading] = useState(true);
+  
   const [cookies, setCookie] = useCookies(["cookieConsent"]);
   const [showCookieConsent, setShowCookieConsent] = useState(!cookies.cookieConsent);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); 
+    return () => clearTimeout(timer);
+  }, []);
 
   const giveCookieConsent = () => {
     setCookie("cookieConsent", true, { path: "/" });
     setShowCookieConsent(false);
   };
+
+  if (loading) {
+    return <LoadingScreen />;
+  }
 
   return (
     <Router>
@@ -60,10 +75,9 @@ function App() {
         </PageTransition>
       </Container>
       <Rodape customClass="footer" />
-      {showCookieConsent && <CookieConsent giveCookieConsent={giveCookieConsent} />} 
+      {showCookieConsent && <CookieConsent giveCookieConsent={giveCookieConsent} />}
     </Router>
   );
-
 }
 
 export default App;

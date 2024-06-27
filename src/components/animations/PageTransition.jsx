@@ -11,7 +11,7 @@ const PageTransition = ({ children }) => {
       <CSSTransition
         key={location.key}
         classNames="page"
-        timeout={300}
+        timeout={100}
       >
         <div className="page">
           {children}

@@ -16,11 +16,12 @@
 
 .content {
     vertical-align:baseline;
-    background-color: #090E17;
+    background-color: #D9D9D9;
     
 }
 
 .overlay{
+    background-color: #1E222D;
     position: relative;
 }
 
@@ -120,6 +121,7 @@
 
 .groundColor{
     background-color: #D9D9D9;
+    height: 9rem;
 }
 
 @media (max-width: 1120px) {
@@ -127,9 +129,10 @@
         flex-direction: column;
     }
     .baseDiretoria {
-        align-items: center;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top:2rem;
     }
 
     .textoInformacoes{
@@ -148,8 +151,10 @@
     }
 
     .membro {
-        width: 100%; 
+        width: 90%; 
         margin-right: 0; 
+        margin-left: 0;
+        flex: 0 1 calc(25% - 20px);
     }
 
     .boxPrincipal {

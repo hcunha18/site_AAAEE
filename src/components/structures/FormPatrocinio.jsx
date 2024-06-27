@@ -10,8 +10,7 @@ function FormPatrocinio() {
   const onSubmit = async (data) => {
     try {
       await addDoc(collection(db, 'patrocinios'), data);
-      console.log('Documento adicionado com ID: ', data);
-      alert('Dados enviados com sucesso!');
+      alert('Sua proposta foi enviada com sucesso!');
       reset(); 
     } catch (e) {
       console.error('Erro ao adicionar documento: ', e);

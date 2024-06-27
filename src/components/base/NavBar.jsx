@@ -341,9 +341,11 @@ const Header = () => {
             </ul>
           </li>
               <li>
-                <DropdownButton onClick={() => handleNavigation("/NossosParceiros")}>
+                <button 
+                className="nav-menu-list"
+                onClick={() => handleNavigation("/NossosParceiros")}>
                   Parcerias
-                </DropdownButton>
+                </button>
               </li>
           <li>
             <button
