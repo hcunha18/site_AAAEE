@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Example font */
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
+/* Import DS-Digital font */
+
+.content {
+  background-color: #1E222D;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  /* Change height to min-height */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.marquee {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 10px #FFD700;
+  font-family: 'Press Start 2P', cursive;
+  /* Example font */
+  margin-bottom: 20px;
+}
+
+.marqueeText {
+  font-size: 36px;
+  color: #FFD700;
+}
+
+.scoreboardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  /* Add margin to push the container down */
+}
+
+.gameStatus {
+  border-radius: 30px;
+  background-color: black;
+  color: #00ff15;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 30px;
+  /* Add margin to push the text down */
+  border: 2px solid #00ff15;
+  box-shadow: 0 0 10px #00ff15;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  /* Example font */
+}
+
+.scoreboard {
+  font-family: 'DS-Digital', sans-serif;
+  /* Apply DS-Digital font */
+  border-radius: 10px;
+  background-color: black;
+  padding: 20px;
+  border: 2px solid #444;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
+  /* Add margin to push the scoreboard down */
+}
+
+.boltTopLeft,
+.boltTopRight,
+.boltBottomLeft,
+.boltBottomRight {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  position: absolute;
+}
+
+.boltTopLeft {
+  top: 5px;
+  left: 5px;
+}
+
+.boltTopRight {
+  top: 5px;
+  right: 5px;
+}
+
+.boltBottomLeft {
+  bottom: 5px;
+  left: 5px;
+}
+
+.boltBottomRight {
+  bottom: 5px;
+  right: 5px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.header .possession,
+.header .fouls,
+.header .timeouts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .fouls {
+  position: relative;
+  margin-bottom: 15px;
+  /* Add space below fouls */
+}
+
+.header .tempo {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  /* Increase space above tempo */
+}
+
+.header .tempo .circle {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.header .timeouts {
+  display: flex;
+  gap: 5px;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.period .final::before {
+  content: 'SEMI-FINAL';
+  position: absolute;
+  left: 100%;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.teamScore,
+.periodNumber {
+  font-size: 100px;
+  margin: 5px 0;
+  color: #FFD700;
+  /* Adjusted to gold color */
+}
+
+.teamName1 {
+  font-size: 60px;
+  margin: 5px 0;
+  color: #FFD700
+}
+
+.teamName2 {
+  font-size: 60px;
+  margin: 5px 0;
+  color: #FFD700
+}
+
+.periodTitle {
+  font-size: 24px;
+  color: #FFD700;
+  /* Adjusted to gold color */
+}
+
+.pos,
+.posNumber,
+.foulsTitle,
+.foulsNumber {
+  color: #FFD700;
+  font-size: 20px;
+  /* Adjusted to gold color */
+}
+
+.weeklyGames {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  /* Add margin to push the weekly games section down */
+}
+
+.title {
+  font-size: 36px;
+  color: #FFD700;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Press Start 2P', cursive;
+  /* Example font */
+
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  /* Center align the schedule */
+}
+
+.daySection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.dayTitle {
+  font-size: 24px;
+  color: #FFD700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.game {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  padding: 10px;
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 5px #FFD700;
+  width: 100%;
+  max-width: 800px;
+  /* Adjust max-width to fit the content */
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.logoPlaceholder {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border: 1px solid #FFD700;
+}
+
+.teamName {
+  font-size: 18px;
+  color: white;
+}
+
+.time {
+  font-size: 18px;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  max-width: 800px;
+  /* Ensure table fits within content width */
+  margin: 20px auto;
+  /* Center the table */
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+}
+
+.table th,
+.table td {
+  border: 1px solid #004080;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table th {
+  background-color: #004080;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.table tr:nth-child(even) {
+  background-color: #053651;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #053651;
+}
+
+.table .team {
+  display: flex;
+  align-items: center;
+}
+
+.table .logo {
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+}

@@ -96,12 +96,12 @@ function Home() {
                   Leopoldina com a comunidade através do esporte, como
                   ferramenta de promoção da saúde e da educação.
                 </p>
+                <button
+                onClick={() => navigate("CampusAberto/")}
+                className={styles.verMaisButton}>
+                  Saiba Mais
+                </button>
               </div>
-              <button
-              onClick={() => navigate("CampusAberto/")}
-              className={styles.verMaisButton}>
-                Saiba Mais
-              </button>
             </div>
           </div>
         </div>
@@ -116,9 +116,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Card className={styles.customCard}
-      style={{borderRadius: "40px"}
-      }>
+      <Card className={styles.customCard}>
         <CardMedia
           component="img"
           image="https://i.ibb.co/KmPr9ww/1700099016684.jpg"
@@ -145,7 +143,7 @@ function Home() {
             variant="body2"
             color="text.secondary"
             className={styles.cardText}
-            style={{ margin: "20px 15px", fontSize: "17px", textAlign: "justify"}}
+            style={{ margin: "20px 15px", fontSize: "18px", textAlign: "justify", color: "black", fontStyle: "bold"}}
           >
             A Lei nº 11.438/06 – Lei de Incentivo ao Esporte (LIE), como é mais
             conhecida, permite que recursos provenientes de renúncia fiscal
@@ -158,7 +156,7 @@ function Home() {
             consolidação do paradigma do esporte como um meio de inclusão
             social.
           </Typography>
-          <CardActions>
+          <CardActions className={styles.button}>
             <button
               onClick={() => navigate("CampusAberto/")}
               className={styles.verMaisButton}
