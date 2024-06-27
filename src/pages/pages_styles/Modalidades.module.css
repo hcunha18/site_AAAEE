@@ -7,16 +7,12 @@
     }
 
 
-:root{
-    --cabecalho-color: #090E17;
-    --select-color: #2D7EA3;
-    --background-color: #1E222D;
-    --text-rodape-color: #D9D9D9;
-    --text-page-color: #D9D9D9;
+.content{
+
+    background-color: red;
+    
 }
-.Body{
-    background-color: var(--text-page-color);
-}
+
 
 /*Texto Nossas Modalidades*/
 .TextModalidades{
