@@ -4,7 +4,76 @@ import bannerCampusAberto from '../images/bannerCampusAbertoMembros.png';
 import Divider from '../components/structures/Divider';
 import DivRedonda from '../components/structures/BoxMembros';
 import FotoPrincipal from '../components/structures/BoxHomenagem';
+import BoxMembros from '../components/structures/BoxMembros';
+import BoxApoiadores from '../components/structures/BoxApoiadores';
 
+// Definição das boxs
+const coordenadoraData = [
+  {
+    imageLink: 'https://i.ibb.co/vX972Gc/foto-gabriela.jpg',
+    h1Text: 'Drª  Gabriela Rezende de Oliveira Venturini',
+    h3Text: 'Coordenadora',
+    gitLink: 'https://github.com/hcunha18',
+    mailLink: 'humbertomottadacunha@gmail.com',
+    linkedLink: 'https://www.linkedin.com/in/humberto-motta-da-cunha-447067188/'
+  }
+]
+
+// Box dos bolsistas
+const membrosData = [
+  {
+    imageLink: 'https://i.ibb.co/LYHYvz2/isabelly.jpg',
+    h1Text: 'Isabelly Araújo Temoteo',
+    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+    gitLink: 'https://github.com/IsabellyTemoteo',
+    mailLink: 'isabellyatemoteo@gmail.com',
+    linkedLink: 'https://www.linkedin.com/in/isabelly-temoteo-010131230/'
+  },
+  {
+    imageLink: 'https://i.ibb.co/B6d09rx/foto-sophia.jpg',
+    h1Text: 'Sophia Coura Martins Ferreira',
+    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+    gitLink: 'https://github.com/sophiacmf',
+    mailLink: 'sophiacmf20@gmail.com',
+    linkedLink: 'https://www.linkedin.com/in/sophia-coura-martins-ferreira-2160641a5/'
+  },
+  {
+    imageLink: 'https://i.ibb.co/GTxzgpv/gabriel.jpg',
+    h1Text: 'Gabriel Ferreira de Oliveira',
+    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+    gitLink: 'https://github.com/bigolzin',
+    mailLink: 'gabrielferreolive@gmail.com',
+    linkedLink: 'https://www.linkedin.com/in/gabriel-oliveira-8651a9269/'
+  },
+  {
+    imageLink: 'https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg',
+    h1Text: 'Marcelo Teixeira de Sousa Filho',
+    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+    gitLink: 'https://github.com/Marcelotsfiilho',
+    mailLink: 'marcelo.estudo.cefet@gmail.com',
+    linkedLink: 'https://www.linkedin.com/in/marcelo-teixeira-574926311/'
+  }
+
+]
+
+// Box Apoiadores
+const apoiadoresData = [
+  {
+    imageLink: 'https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg',
+    h1Text: 'Marcelo Teixeira de Sousa Filho',
+    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+  },
+  {
+    imageLink: 'https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg',
+    h1Text: 'Marcelo Teixeira de Sousa Filho',
+    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+  },
+  {
+    imageLink: 'https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg',
+    h1Text: 'Marcelo Teixeira de Sousa Filho',
+    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+  }
+]
 
 function CampusAberto() {
   return (
@@ -15,35 +84,41 @@ function CampusAberto() {
       </div>
       <div className={styles.TituloOrientadora}>
         <h1>ORIENTADORA</h1>
+        <hr />
       </div>
       <div className={styles.DivisaoTela}>
         <div className={styles.TelaEsquerda}>
-
-          <div className={styles.CardCorpo}>
-            <div className={styles.ImgPerfil}>
-              <img
-                className={styles.img1}
-                src="https://i.ibb.co/vX972Gc/foto-gabriela.jpg"
-                alt="gabriela"
-              />
-            </div>
-            <div className={styles.profileinfo}>
-            </div>
-            <h2>Drª  Gabriela Rezende de Oliveira Venturini</h2>
-            <p>Coordenadora</p>
+          <div className={styles.baseDiretoria}>
+            {coordenadoraData.map((membro, index) => (
+              <div key={index} className={styles.membro}>
+                <BoxMembros
+                  imageLink={membro.imageLink}
+                  h1Text={membro.h1Text}
+                  h3Text={membro.h3Text}
+                  gitLink={membro.gitLink}
+                  mailLink={membro.mailLink}
+                  linkedLink={membro.linkedLink}
+                />
+              </div>
+            ))}
           </div>
-
         </div>
         <div className={styles.TelaDireita}>
-
           <h2>
             O projeto Campus Aberto Atlética Panterão é coordenado pela professora Drª
             Gabriela Venturini (PORTARIA ADMINISTRATIVA DEDC/CEFET-MG Nº 207,
             DE 14 DE SETEMBRO DE 2023).
           </h2>
+          {/* Botao Saiba Mais Campus Aberto */}
+          <button
+            className={styles.verMaisButton}
+            onClick={() => window.location.href = "https://www.extensao.leopoldina.cefetmg.br/2023/06/19/campus-aberto/"}>
+            Saiba Mais
+          </button>
         </div>
       </div>
 
+      {/* Area Bolsistas */}
       <div className={styles.TituloBolsistas}>
         <h1>BOLSISTAS</h1>
         <hr />
@@ -55,65 +130,19 @@ function CampusAberto() {
         <div className={styles.TelaDireita2}>
 
           <div className={styles.ParteDireita}>
-            <div className={styles.CardBols}>
-              <div className={styles.ImgPerfil}>
-                <img
-                  className={styles.img2}
-                  src="https://i.ibb.co/LYHYvz2/isabelly.jpg"
-                  alt="isabelly"
-                />
-              </div>
-              <div className={styles.profileinfo}>
-                <h2>Isabelly Araújo Temoteo</h2>
-              </div>
-              <p>Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão</p>
-            </div>
-
-            <div className={styles.CardBols}>
-              <div className={styles.ImgPerfil}>
-                <img
-                  className={styles.img3}
-                  src="https://i.ibb.co/GTxzgpv/gabriel.jpg"
-                  alt="gabriel"
-                />
-              </div>
-              <div className={styles.profileinfo}>
-                <h2>Gabriel Ferreira de Oliveira</h2>
-              </div>
-              <p>Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão</p>
-            </div>
-
-          </div>
-          <div className={styles.ParteMeio}><h1>Integrantes</h1></div>
-
-          <div className={styles.ParteEsquerda}>
-
-            <div className={styles.CardBols}>
-              <div className={styles.ImgPerfil}>
-                <img
-                  className={styles.img4}
-                  src="https://i.ibb.co/B6d09rx/foto-sophia.jpg"
-                  alt="sophia"
-                />
-              </div>
-              <div className={styles.profileinfo}>
-                <h2>Sophia Coura Martins Ferreira</h2>
-              </div>
-              <p>Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão</p>
-            </div>
-
-            <div className={styles.CardBols}>
-              <div className={styles.ImgPerfil}>
-                <img
-                  className={styles.img5}
-                  src="https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg"
-                  alt="marcelo-filho-1"
-                />
-              </div>
-              <div className={styles.profileinfo}>
-                <h2>Marcelo Teixeira de Sousa Filho</h2>
-              </div>
-              <p>Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão</p>
+            <div className={styles.baseDiretoria}>
+              {membrosData.map((membro, index) => (
+                <div key={index} className={styles.membro}>
+                  <BoxMembros
+                    imageLink={membro.imageLink}
+                    h1Text={membro.h1Text}
+                    h3Text={membro.h3Text}
+                    gitLink={membro.gitLink}
+                    mailLink={membro.mailLink}
+                    linkedLink={membro.linkedLink}
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -160,69 +189,61 @@ function CampusAberto() {
       <div className={styles.Pesquisa}>
         <h1>PESQUISA, ENSINO E EXTENSÃO</h1>
         <hr />
-        <h2>A GABRIELA VAI ESCREVER E MANDAR SOBRE ESSE ASSUNTO</h2>
+        <h2>O projeto de pesquisa do Campus Aberto possui 2 bolsistas, um da graduação e um do técnico integrado em informática,
+          e busca desenvolver um aplicativo que meça o nível de atividade física dos discentes do campus.
+        </h2>
+
+        <h2>Ensino: o projeto de ensino está sendo relizado com as tumas dos cursos técnicos integrado do campus, e tem como objetivo
+          conhecer as principais tecnologias utiilzadas nos Jogos Olímpicos e Paralímpicos PARIS 2024.
+        </h2>
+
+        <h2>O Campus Aberto possui um núcleo de extensão chamado Atlética Panterão, que realiza diferentes ações no contexto esportivo,
+          dentre elas, a realização do Torneio de Futsal Interperíodos, a programação esportiva da MOCITEC MG.
+          a oferta de oficinas esportivas gratuitas para alunos das escolas públicas da cidade ( em parceria com a Prefeitura de Leopoldina),
+          a oferta de cursos de extensão, entre outras.
+        </h2>
       </div>
 
       <div className={styles.Galeria}>
         <h1>GALERIA DE FOTOS</h1>
         <hr />
-      </div>
-
-      <div className={styles.DivisaoFotos}>
-        <div className={styles.ColunaEsquerda}>
-          <img className={styles.ImgCampeonato} src="https://i.ibb.co/f40hxB0/IMG-20231122-150512-1.jpg" alt="ImgCampeonato"></img>
+        <div className={styles.DivisaoFotos}>
+          <div className={styles.ColunaEsquerda}>
+            <img className={styles.ImgCampeonato} src="https://i.ibb.co/f40hxB0/IMG-20231122-150512-1.jpg" alt="ImgCampeonato"></img>
+          </div>
+          <div className={styles.ColunaCentro}>
+            <img className={styles.ImgCampeonato} src="https://i.ibb.co/P5RNW7z/IMG-20231122-150749.jpg" alt="ImgCampeonato"></img>
+          </div>
+          <div className={styles.ColunaDireita}>
+            <img className={styles.ImgCampeonato} src="https://i.ibb.co/PFdMRQY/IMG-20231122-150735.jpg" alt="ImgCampeonato"></img>
+          </div>
         </div>
-        <div className={styles.ColunaCentro}>
-          <img className={styles.ImgCampeonato} src="https://i.ibb.co/P5RNW7z/IMG-20231122-150749.jpg" alt="ImgCampeonato"></img>
-        </div>
-        <div className={styles.ColunaDireita}>
-          <img className={styles.ImgCampeonato} src="https://i.ibb.co/PFdMRQY/IMG-20231122-150735.jpg" alt="ImgCampeonato"></img>
+        <div className={styles.Botao1}>
+          <button
+            className={styles.verMaisButton}
+            onClick={() => navigate("Galeria/")}>
+            Galeria
+          </button>
         </div>
       </div>
       <div className={styles.Apoiadores}>
         <h1>APOIADORES</h1>
         <hr />
-        <div className={styles.Apoio}>
-          <div className={styles.CardAp}>
-            <div className={styles.ImgPerfil}>
-              <img
-                className={styles.ImgApoia}
-                src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg"
-                alt="Apoia"
-              />
-            </div>
-            <div className={styles.apoiainfo}>
 
-              <h2>Centro Federal de Educação Tecnológica de Minas Gerais - Campus Leopoldina</h2> </div>
+        <div className={styles.ParteDireita} >
+          <div className={styles.base}>
+            {apoiadoresData.map((membro, index) => (
+              <div key={index} className={styles.membro}>
+                <BoxMembros
+                  imageLink={membro.imageLink}
+                  h1Text={membro.h1Text}
+                  h3Text={membro.h3Text}
+                  className={styles.fundoAzul}
+                />
+              </div>
+            ))}
           </div>
-
-          <div className={styles.CardAp}>
-            <div className={styles.ImgPerfil}>
-              <img
-                className={styles.ImgApoia}
-                src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg"
-                alt="Apoia"
-              />
-            </div>
-            <div className={styles.apoiainfo}>
-              <h2>Prefeitura Municipal de Leopoldina</h2>
-            </div>
-          </div>
-
-          <div className={styles.CardAp}>
-            <div className={styles.ImgPerfil}>
-              <img
-                className={styles.ImgApoia}
-                src="https://i.ibb.co/j5QRrf8/DSC-6514.jpg"
-                alt="Apoia"
-              />
-            </div>
-            <div className={styles.apoiainfo}>
-              <h2>Diretoria de Extensão e Desenvolvimento Comunitário</h2> </div>
-          </div>
-          <hr />
         </div>
-
       </div>
 
 
@@ -231,10 +252,13 @@ function CampusAberto() {
           <h1>PARA MAIS INFORMAÇÕES</h1>
           <hr />
           <h2>Nos acompanhe no Instagram</h2>
+          <button
+            className={styles.verMaisButton}
+            onClick={() => window.location.href = "https://www.instagram.com/campusabertocefetleopoldina/"}>
+            @campusabertocefetleopoldina
+          </button>
 
-          <div className={styles.AlinharBotao}>
-            <a href='https://www.instagram.com/campusabertocefetleopoldina/'><button className={styles.Botao}>@campusabertocefetleopoldina</button></a>
-          </div>
+
         </div>
         <div className={styles.ColunaDireita1}>
           <img className={styles.LogoCampusAberto} src="https://i.ibb.co/CMCf4Ph/Campus-Aberto-LOGO-1.png" alt="LogoCampusAberto"></img>
