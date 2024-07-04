@@ -82,7 +82,9 @@
 
 .TelaEsquerda {
     width: 50%;
-    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    padding-top: 3vw;
 }
 
 /* Centralização da Box Orientadora */
@@ -218,12 +220,24 @@
 }
 
 
-.ParteDireita {
+.ParteDireita2 {
     display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
+
+.ParteDireita2>* {
+    display: inline-flex;
+    /* Garantir que os filhos não sejam tratados como blocos */
+    flex: 0 1 auto;
+    /* Ajustar a largura dos elementos filhos conforme necessário */
+    margin: 15rem;
+    /* Espaçamento entre os elementos */
 }
 
 .CardBols {
@@ -495,7 +509,7 @@
     background-color: var(--textColor);
 }
 
-.Botao1{
+.Botao1 {
     display: flex;
     justify-content: center;
 
@@ -553,11 +567,7 @@
     flex-direction: row;
 }
 
-.fundoAzul {
-    background-color: blue;
-     /* ou qualquer outra cor azul desejada */
-    /* Adicione outros estilos conforme necessário */
-  }
+
 .Apoio {
 
     align-content: center;
@@ -566,42 +576,6 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
-}
-
-.CardAp {
-    max-width: 22rem;
-    height: 10rem;
-    /* Alterado de 13.5rem para auto para acomodar o conteúdo */
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: #03386C;
-    display: flex;
-    /* Adicionado para usar flexbox */
-    flex-direction: column;
-    /* Os itens são empilhados verticalmente */
-    align-items: center;
-    /* Centraliza horizontalmente */
-}
-
-.apoiainfo h2 {
-    margin: 10px 0 5px;
-    font-size: 1.15em;
-    color: #fff;
-    text-align: center;
-    margin-top: -10px;
-    display: flex;
-}
-
-.ImgApoia {
-
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    border: 0;
-    object-fit: cover;
 }
 
 .Apoiadores h1 {
@@ -622,11 +596,6 @@
     width: 100%;
     height: 3px;
     background-color: var(--textColor);
-}
-
-.Apoiadores h2 {
-    margin: 5rem;
-    /*margin apenas de exemplo*/
 }
 
 /*Bloco PARA MAIS INFORMAÇÕES*/

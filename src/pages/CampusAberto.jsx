@@ -59,19 +59,17 @@ const membrosData = [
 // Box Apoiadores
 const apoiadoresData = [
   {
-    imageLink: 'https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg',
-    h1Text: 'Marcelo Teixeira de Sousa Filho',
-    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+    imageLink: 'https://i.ibb.co/YhLDpdF/Ellipse-3.png',
+    h1Text: 'Centro Federal de Educação Tecnológica de Minas Gerais - Campus Leopoldina',
   },
   {
-    imageLink: 'https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg',
-    h1Text: 'Marcelo Teixeira de Sousa Filho',
-    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+    imageLink: 'https://i.ibb.co/0tHRtWN/Ellipse-2.png',
+    h1Text: 'Prefeitura Municipal de Leopoldina',
+
   },
   {
-    imageLink: 'https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg',
-    h1Text: 'Marcelo Teixeira de Sousa Filho',
-    h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
+    imageLink: 'https://i.ibb.co/fHTvSbb/Ellipse-4.png',
+    h1Text: 'Diretoria de Extensão e Desenvolvimento Comunitário',
   }
 ]
 
@@ -97,7 +95,6 @@ function CampusAberto() {
                   h3Text={membro.h3Text}
                   gitLink={membro.gitLink}
                   mailLink={membro.mailLink}
-                  linkedLink={membro.linkedLink}
                 />
               </div>
             ))}
@@ -230,21 +227,22 @@ function CampusAberto() {
         <h1>APOIADORES</h1>
         <hr />
 
-        <div className={styles.ParteDireita} >
-          <div className={styles.base}>
+        <div className={styles.ParteDireita2} >
+          <div className={styles.apoiadorescard}>
             {apoiadoresData.map((membro, index) => (
               <div key={index} className={styles.membro}>
-                <BoxMembros
+                <BoxApoiadores
                   imageLink={membro.imageLink}
                   h1Text={membro.h1Text}
                   h3Text={membro.h3Text}
-                  className={styles.fundoAzul}
                 />
               </div>
             ))}
           </div>
         </div>
+        <hr />
       </div>
+
 
 
       <div className={styles.DivisaoTela3}>
