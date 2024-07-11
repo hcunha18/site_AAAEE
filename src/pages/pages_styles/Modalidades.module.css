@@ -4,13 +4,10 @@
     vertical-align:baseline;
     list-style:none;
     border:0
-    }
-
-
-.content{
-
-    background-color: red;
-    
+}
+.Body{
+    vertical-align:baseline;
+    background-color: #D9D9D9;
 }
 
 
