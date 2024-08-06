@@ -568,15 +568,13 @@
 }
 
 
-.Apoio {
+.apoiadorescard{
 
-    align-content: center;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin: 50px;
     margin-top: 100px;
-}
+    display: flex;
+    justify-content: space-between;
+    }
 
 .Apoiadores h1 {
     margin-bottom: 1rem;
