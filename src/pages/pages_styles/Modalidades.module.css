@@ -16,6 +16,7 @@
     margin-left: 10rem;
     padding-top: 4rem;
 }
+
 .TextModalidades h1{
     color: #2D7EA3;
     text-decoration: underline;
@@ -277,5 +278,57 @@
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 1250px) {
+    .DivisaoFotos{
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        margin: 0;
+    }
+    .BlocoDireita{
+        position: relative;
+        flex: 1;
+    }
+    .BlocoEsquerda{
+        width: 20vw;
+    }
+    .DivisaoTela{
+        align-items: center;
+        justify-content: center;
+    }
+}
 
+@media (max-width: 1000px) {
+    .BlocoEsquerda{
+       visibility: hidden;
+       height: 0px;
+       width: 0px;
+    }
+    .BlocoDireita{
+        margin-left: 10px;
+        flex-direction: column;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    .ListModalidadesDireita{
+        padding: 0px;
+        padding-bottom: 3rem;
+    }
+    .ListModalidadesEsquerda{
+        padding: 0px;
+        padding-bottom: 3rem;
+        padding-right: 4rem;
+    }
+    .TextModalidades{
+        margin-left: 2rem;
+        margin-right: 1rem;
+        padding-top: 4rem;
+    }
+}
 
+@media (max-width: 600px) {
+    .ImgCampeonato{
+        width: 20rem;
+        height: 15rem;
+    }
+}

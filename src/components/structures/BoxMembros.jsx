@@ -14,6 +14,8 @@ function BoxMembros({ imageLink, h1Text, h3Text, gitLink, mailLink, linkedLink, 
         //{ url: lattesLink, icon: <img src={lattes} alt="Lattes" style={{ width: '25px', height: '25px' }} /> }
     ];
 
+    const filteredLinks = links.filter(link => link.url);
+
     return (
         <div className="redondo-container">
             <div className="quadrado"></div>
@@ -41,7 +43,7 @@ function BoxMembros({ imageLink, h1Text, h3Text, gitLink, mailLink, linkedLink, 
             </div>
 
             <div className="icones">
-                {links.map((link, index) => (
+                {filteredLinks.map((link, index) => (
                     link.icon ? (
                         <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="link">
                             {link.icon}
