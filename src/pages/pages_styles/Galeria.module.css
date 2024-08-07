@@ -48,7 +48,7 @@
 /* Texto inicial */
 
 .IntroEvento{
-    padding-top: 5vw;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -92,7 +92,8 @@
 .TipoEvento{
     display: flex;
     align-items: flex-start;
-    padding-left: 4vw;
+    padding-top: 2rem;
+    padding-left: 4rem;
 }
 .TipoEvento h1{
     padding-bottom: 2vw;
@@ -112,4 +113,110 @@
 .complexButton{
     padding: 0.5vw;
     padding-bottom: 3vw;
+}
+
+/* Resposividade */
+@media(max-width:1450px){
+    .ImgFestas{
+        width: 27rem;
+        height: 32rem;
+    }
+}
+@media(max-width: 1200px){
+    .bg{
+        height: 40vw;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .NossosEventos{
+        padding-top: 3rem;
+    }
+    .ImgFestas{
+        width: 25rem;
+        height: 30rem;
+    }
+}
+@media(max-width: 1000px){
+    .IntroEvento{
+        padding-top: 4rem;
+    }
+    .IntroEvento h1{
+        font-size: 2rem;
+    }
+    .IntroEvento h2{
+        font-size: 1.2rem;
+    }
+    .TipoEvento h1{
+        font-size: 2rem;
+    }
+}
+@media(max-width:900px){
+    .complexButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:800px){
+    .bg{
+        height: 50vw;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .IntroEvento{
+        padding-top: 4rem;
+    }
+    .IntroEvento h1{
+        font-size: 1.7rem;
+    }
+    .IntroEvento h2{
+        font-size: 1rem;
+    }
+    .TipoEvento h1{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width:600px){
+    .bg {
+        height: 50vw;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+    .IntroEvento{
+        padding-top: 4rem;
+    }
+    .IntroEvento h1{
+        font-size: 1.5rem;
+    }
+    .IntroEvento h2{
+        font-size: 1rem;
+    }
+    .TipoEvento h1{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:450px){
+    .bg {
+        height: 50vw;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+    .IntroEvento{
+        padding-top: 4rem;
+    }
+    .IntroEvento h1{
+        font-size: 1.2rem;
+    }
+    .IntroEvento h2{
+        font-size: 0.8rem;
+    }
+    .TipoEvento h1{
+        font-size: 1.2rem;
+    }
 }
