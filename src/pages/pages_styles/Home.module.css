@@ -14,6 +14,8 @@
   background-color: #d9d9d9;
 }
 
+
+
 .fundo {
   width: 50%;
   height: 150px;
@@ -129,6 +131,7 @@
   gap: 40px; /* Reduzido o gap para diminuir o espaço entre os itens */
   width: 100%; /* Ajustado para ocupar toda a largura disponível */
   margin-top: -1.5rem;
+  margin-left: -20rem;
 }
 
 .h1 {
@@ -146,6 +149,16 @@
   color: #000;
   text-align: center;
   margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
+}
+
+.h02 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Jockey One', sans-serif;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: left
 }
 
 
@@ -172,15 +185,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-right: 7vw;
 }
-.direita{
+.direita {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-left: 7vw;
+  padding: 40px; /* Aumenta o padding */
+  width: calc(100% + 20vw); /* Aumenta a largura para expandir para a direita */
+  margin-right: -20vw; /* Margem negativa para expandir a div para a direita */
+  box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
 }
+
+
 .imagem1 {
   margin: 20px 0;
   display: flex;
@@ -194,9 +211,11 @@
 }
 /* Configuração dos sliders */
 .slider {
-  width: 30vw;
-  height: 30vw;
+  width: 30vw; 
+  height: 30vw; /* Define a altura máxima do slider */
 }
+
+
 
 .verMaisButton {
   background-color: #0056b3; /* Fundo */
@@ -269,6 +288,13 @@
   font-family: sans-serif;
   text-align: justify;
   color: #000;
+}
+
+.garra {
+  margin-top: 1vw;
+  width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  height: 5vw;
+  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
 }
 
 .logoc {

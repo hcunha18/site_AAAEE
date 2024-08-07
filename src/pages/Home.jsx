@@ -12,20 +12,56 @@ import Button from "@mui/material/Button";
 import { CardActions } from "@mui/material";
 import { useMediaQuery } from "react-responsive";
 import SliderBanner from '../components/structures/SliderBanner';
+import { useEffect } from "react";
 
 function Home() {
 
-  const SliderBannerEsquerda = [
-    {id: "1", url: 'https://i.ibb.co/4jN6NWS/Bucket-Panterao.png', alt: "Bucket Panterão"},
-    {id: "2", url: 'https://i.ibb.co/myY8nyV/Post-caneca.jpg', alt: "Caneca Panterão"},
-  ]
-
-  const SliderBannerDireita =[
-    {id: "1", url: 'https://i.ibb.co/8zYBnyz/Jogos-Interperiodo.jpg', alt: "Jogos interperiodo"},
-    {id: "2", url: 'https://i.ibb.co/yfR2X4x/Data-Jogos-Interperiodo.jpg', alt: "Data jogos interperiodo"},
-  ]
+  const SliderBannerDireita = [
+    { id: "1", url: 'https://i.ibb.co/8zYBnyz/Jogos-Interperiodo.jpg', alt: "Jogos interperiodo" },
+    { id: "2", url: 'https://i.ibb.co/yfR2X4x/Data-Jogos-Interperiodo.jpg', alt: "Data jogos interperiodo" },
+  ];
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://cdn.gtranslate.net/widgets/latest/float.js";
+    script.defer = true;
+    document.body.appendChild(script);
+
+    window.gtranslateSettings = {
+      "default_language": "pt",
+      "languages": ["pt", "es", "en"],
+      "wrapper_selector": ".gtranslate_wrapper",
+      "alt_flags": {
+        "en": "usa",
+        "pt": "brazil",
+        "es": "argentina"
+      }
+    };
+
+    const gtranslateFunction = () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      const lang = userLang.substring(0, 2);
+
+      if (lang !== 'pt') {
+        const select = document.querySelector('.gtranslate_wrapper select');
+        if (select) {
+          select.value = lang;
+          const event = new Event('change');
+          select.dispatchEvent(event);
+        }
+      }
+    };
+
+    script.onload = () => {
+      if (typeof gtranslateSettings !== 'undefined') {
+        gtranslateFunction();
+      } else {
+        window.onload = gtranslateFunction;
+      }
+    };
+  }, []);
 
   return (
     <section className={styles.content}>
@@ -37,8 +73,6 @@ function Home() {
             "NOS NOSSOS EVENTOS!",
             2000,
             "NOS NOSSOS CAMPEONATOS!",
-            2000,
-            "NA NOSSA LOJINHA! ",
             2000,
             "NOS NOSSOS PARCEIROS!",
             2000,
@@ -53,33 +87,59 @@ function Home() {
       <div className={styles.container}>
         <div className={styles.Divisor1}>
           <div className={styles.esquerda}>
-            <h1 className={styles.h1}> Nossos produtos</h1>
+          <h2 className={styles.h2}> Campeonatos em Andamento</h2>
             <div className={styles.slider}>
-              <SliderBanner 
-                links={SliderBannerEsquerda}
+              <SliderBanner
+                links={SliderBannerDireita}
               />
             </div>
-            
-            <button
-              className={styles.verMaisButton}
-              onClick={() => navigate("Lojinha/")}>
-              Ver Todos
-            </button>
           </div>
           {/* Linha divisoria no meio da tela */}
           <div className={styles.divisor}></div>
-          
+
           <div className={styles.direita}>
-            <h2 className={styles.h2}> Campeonatos em Andamento</h2>
-            <div className={styles.slider}>
-              <SliderBanner 
-                links={SliderBannerDireita}
-              />
-            </div>  
+            <h2 className={styles.h02}> A Atlética</h2>
+            <div className={styles.paragrafo1}>
+                <p>
+                A ASSOCIAÇÃO ATLÉTICA ACADÊMICA DAS ESCOLAS DE ENGENHARIA
+                DO CENTRO FEDERAL DE EDUCAÇÃO E TECNOLOGIA DE MINAS GERAIS
+                CEFET-MG CAMPUS LEOPOLDINA, denominada Atlética CEFET
+                Leopoldina, é pessoa jurídica de direito privado, constituída
+                na forma de associação civil sem fins lucrativos,
+                caracterizando-se como apartidária, laica, livre e
+                independente de orientações filosóficas, com autonomia 
+                administrativa e financeira, regida pelo presente estatuto
+                e pelas normas da legislação brasileira.
+                É uma representatividade dos estudantes do Campus
+                Leopoldina do CEFET-MG.
+<br />
+<br />
+                A Atlética CEFET Leopoldina tem por finalidade promover o Esporte
+                em suas diferentes dimensões (educacional, social, cultural, 
+                científica, tecnológica, da saúde e da gestão) e 
+                níveis/manifestações de prática (formação esportiva, excelência 
+                esportiva e esporte para toda a vida), através de ações sociais 
+                de ensino, pesquisa e extensão baseadas nos princípios fundamentais
+                do esporte previstos na Lei Geral do Esporte - nº 14.597/23 
+                (autonomia, democratização, descentralização, diferenciação, 
+                educação, eficiência, especificidade, gestão democrática, identidade
+                nacional, inclusão, integridade, liberdade, participação, qualidade,
+                saúde, segurança) sem qualquer distinção de raça, cor, nacionalidade,
+                credo, sexo, gênero, sexualidade, convicção política, religiosa, social.
+                </p>
+              </div>
+              <div className={styles.garra}>
+            <img
+              className={styles.garra}
+              src="https://i.postimg.cc/PxH177MQ/garra-panterao.png"
+              alt="Garra"
+              border="0"
+            />
+          </div>
           </div>
         </div>
       </div>
-      
+
       <div className={styles.Divisor2}>
         <div className={styles.esquerda2}>
           <div className={styles.campus}>
@@ -97,8 +157,8 @@ function Home() {
                   ferramenta de promoção da saúde e da educação.
                 </p>
                 <button
-                onClick={() => navigate("CampusAberto/")}
-                className={styles.verMaisButton}>
+                  onClick={() => navigate("CampusAberto/")}
+                  className={styles.verMaisButton}>
                   Saiba Mais
                 </button>
               </div>
@@ -143,7 +203,7 @@ function Home() {
             variant="body2"
             color="text.secondary"
             className={styles.cardText}
-            style={{ margin: "20px 15px", fontSize: "18px", textAlign: "justify", color: "black", fontStyle: "bold"}}
+            style={{ margin: "20px 15px", fontSize: "18px", textAlign: "justify", color: "black", fontStyle: "bold" }}
           >
             A Lei nº 11.438/06 – Lei de Incentivo ao Esporte (LIE), como é mais
             conhecida, permite que recursos provenientes de renúncia fiscal
@@ -166,6 +226,7 @@ function Home() {
           </CardActions>
         </CardContent>
       </Card>
+      <div className="gtranslate_wrapper"></div>
     </section>
   );
 }
