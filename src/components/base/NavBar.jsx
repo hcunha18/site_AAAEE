@@ -356,6 +356,7 @@ const Header = () => {
               Eventos
             </button>
           </li>
+          {/*
           <li>
             <button
               className="nav-menu-list"
@@ -364,6 +365,7 @@ const Header = () => {
               Lojinha
             </button>
           </li>
+          */}
           <li>
             <button
               className="nav-menu-list"

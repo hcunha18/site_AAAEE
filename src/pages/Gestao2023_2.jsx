@@ -48,7 +48,7 @@ function Gestao2023_2() {
       linkedLink: 'https://br.linkedin.com/in/lukas-wolf-990404269'
     },
     {
-      imageLink: '',
+      imageLink: 'https://i.postimg.cc/KvpZ54Dm/foto-dayana.jpg',
       h1Text: 'Dayana Aparecida Souza Rocha',
       h3Text: '3° Conselheira Fiscal da A.A.A.E.E CEFET - Leopoldina',
       gitLink: '',
@@ -112,7 +112,7 @@ function Gestao2023_2() {
       linkedLink: 'https://www.linkedin.com/in/mateus-pereira-fernandes-9b7974208/'
     },
     {
-      imageLink: '',
+      imageLink: 'https://i.postimg.cc/G2TYbZ3y/david.jpg',
       h1Text: 'Davdi Beckhan Marinho de Castro',
       h3Text: '2° Diretor de Eventos da A.A.A.E.E CEFET - Leopoldina',
       gitLink: '',
@@ -120,7 +120,7 @@ function Gestao2023_2() {
       linkedLink: 'https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile'
     },
     {
-      imageLink: '',
+      imageLink: 'https://i.postimg.cc/sDgjS5Sn/foto-guilherme.jpg',
       h1Text: 'Guilherme Almeida Alvarenga',
       h3Text: '3° Diretor de Eventos da A.A.A.E.E CEFET - Leopoldina',
       gitLink: '',
