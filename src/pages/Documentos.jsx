@@ -8,24 +8,17 @@ function Documentos() {
   const [items, setItems] = useState([
     {
         icon: <VscFilePdf />,
-        fileName: 'Regimento Interno',
-        fileUrl: '../pdfs/Regimento InternodeESports.pdf',
+        fileName: 'Estatuto Social',
+        fileUrl: '../pdfs/Estatuto.pdf',
         modDate: '11-01-2024',
         fileSize: null
     },
     {
         icon: <VscFilePdf />,
-        fileName: 'Relatório Anual',
-        fileUrl: '/pdfs/RelatorioAnual2023.pdf',
+        fileName: 'Termo de Posse',
+        fileUrl: '/pdfs/TermoDePosse.pdf',
         modDate: '11-01-2024',
         fileSize: '11-01-2024'
-    },
-    {
-      icon: <VscFilePdf />,
-      fileName: 'Relatório de Teste ',
-      fileUrl: '/pdfs/RelatorioAnual2022.pdf',
-      modDate: '11-01-2024',
-      fileSize: null
     },
   ]);
 
@@ -64,7 +57,7 @@ function Documentos() {
   return (
     <section className={styles.content}>
       <div className={styles.overlay}>
-        <h1 className={styles.title}>DOCUMENTOS</h1>
+        <h1 className={styles.title}>Transparência Administrativa</h1>
         <img src={logo} alt="Pantera" className={styles.bg}/>
       </div>
       <div className={styles.baseInformacoes}>

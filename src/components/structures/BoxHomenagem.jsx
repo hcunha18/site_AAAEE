@@ -7,7 +7,7 @@ function BoxHomenagem() {
         <div className="redondo-container-arthur">
             <div className="quadrado-arthur"></div>
             <div className="redondo-arthur">
-                <a href="https://imgbox.com/VOIgCQVs" target="_blank"><img src="https://thumbs2.imgbox.com/4a/08/VOIgCQVs_t.png" alt="Italo Aurélio"/></a>
+                <a href="https://i.postimg.cc/Y2gbbkCm/foto-arthurzin.jpg" target="_blank"><img src="https://i.postimg.cc/Y2gbbkCm/foto-arthurzin.jpg" alt="Arthur Ribeiro"/></a>
             </div>
             <div className="informacoes-arthur">
                 <h1 className="textoInformacoes-arthur">

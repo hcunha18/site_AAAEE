@@ -17,7 +17,6 @@
 .content {
     vertical-align:baseline;
     background-color: #090E17;
-    
 }
 
 .overlay{
@@ -68,4 +67,9 @@
     line-height: 30px;
     text-align: center;
     color: #000000;
+}
+@media (max-width: 1120px){
+    .title{
+        font-size: 20px;
+    }
 }
