@@ -35,7 +35,7 @@ const StyledHeader = styled.header`
   }
 
   @media screen and (max-width: 872px) {
-    height: ${(props) => (props.$isToggleOpen ? "35rem" : "6rem")}; 
+    height: ${(props) => (props.$isToggleOpen ? "100%" : "6rem")}; 
     .menuToggleBtn {
       display: block;
     }
@@ -125,6 +125,7 @@ const NavMenu = styled.ul`
 
   @media screen and (max-width: 872px) {
     width: 100%;
+    z-index: 10;
     display: ${(props) => (props.$isOpen ? "block" : "none")};
     li {
       width: 100%;
@@ -306,7 +307,7 @@ const Header = () => {
               </li>
               <li>
                 <DropdownButton onClick={() => handleNavigation("/Documentos")}>
-                  Documentos
+                   Transparência Administrativa
                 </DropdownButton>
               </li>
             </ul>

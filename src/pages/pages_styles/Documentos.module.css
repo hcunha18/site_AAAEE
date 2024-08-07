@@ -69,3 +69,8 @@
     text-align: center;
     color: #000000;
 }
+@media (max-width: 1120px){
+    .title{
+        font-size: 20px;
+    }
+}

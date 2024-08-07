@@ -1,12 +1,11 @@
-// src/components/animations/LoadingScreen.jsx
 import React from 'react';
-import '../styles/LoadingScreen.module.css'; 
+import styles from '../styles/LoadingScreen.module.css'; 
 
 const LoadingScreen = () => {
   return (
-    <div className="loading-container">
-      <div className="spinner"></div>
-      <h1>Loading...</h1>
+    <div className={styles.loadingContainer}>
+      <div className={styles.spinner}></div>
+      <h1 className={styles.loadingText}>Loading...</h1>
     </div>
   );
 };
