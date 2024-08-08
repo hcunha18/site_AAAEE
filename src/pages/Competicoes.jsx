@@ -107,11 +107,11 @@ function Competicoes() {
             <div className={styles.game}>
               <div className={`${styles.team} ${styles.left}`}>
                 <div className={styles.logo1}></div>
-                <div className={styles.teamName}>BOTAFOFO</div>
+                <div className={styles.teamName}>B.T.F</div>
               </div>
               <div className={styles.time}>21:30</div>
               <div className={`${styles.team} ${styles.right}`}>
-                <div className={styles.teamName}>EST LAPLACE</div>
+                <div className={styles.teamName}>E.D.L</div>
                 <div className={styles.logo2}></div>
               </div>
             </div>
@@ -121,22 +121,22 @@ function Competicoes() {
             <div className={styles.game}>
               <div className={`${styles.team} ${styles.left}`}>
                 <div className={styles.logo1}></div>
-                <div className={styles.teamName}>BAR SEM LONA</div>
+                <div className={styles.teamName}>B.S.L</div>
               </div>
               <div className={styles.time}>18:45</div>
               <div className={`${styles.team} ${styles.right}`}>
-                <div className={styles.teamName}>URSOS SEM CURSO</div>
+                <div className={styles.teamName}>U.S.C</div>
                 <div className={styles.logo2}></div>
               </div>
             </div>
             <div className={styles.game}>
               <div className={`${styles.team} ${styles.left}`}>
                 <div className={styles.logo1}></div>
-                <div className={styles.teamName}>TROPA DO RATO</div>
+                <div className={styles.teamName}>T.D.R</div>
               </div>
               <div className={styles.time}>21:15</div>
               <div className={`${styles.team} ${styles.right}`}>
-                <div className={styles.teamName}>JUMENTUS</div>
+                <div className={styles.teamName}>JMT</div>
                 <div className={styles.logo2}></div>
               </div>
             </div>

@@ -565,13 +565,13 @@
 }
 
 
-.apoiadorescard{
+.apoiadorescard {
 
     margin: 50px;
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    }
+}
 
 .Apoiadores h1 {
     margin-bottom: 1rem;
@@ -675,161 +675,225 @@
 
 /* Resposividade */
 
-@media(max-width: 1440px){
-    .DivisaoTela2{
+@media(max-width: 1440px) {
+    .DivisaoTela2 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .TelaEsquerda2{
+
+    .TelaEsquerda2 {
         visibility: hidden;
         width: 0%;
     }
-    .TelaDireita2{
+
+    .TelaDireita2 {
         width: 100%;
     }
-    .baseDiretoria{
+
+    .baseDiretoria {
         display: grid;
         grid-template-columns: auto auto;
         background-color: var(--text-page-color);
         justify-content: space-around;
     }
 }
-@media(max-width:1220px){
-    .bg{
+
+@media(max-width:1220px) {
+    .bg {
         height: 40vw;
     }
-    .title{
+
+    .title {
         font-size: 2rem;
     }
-    .DivisaoTela{
+
+    .DivisaoTela {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .TelaDireita h2{
+
+    .TelaDireita h2 {
         padding-top: 1rem;
         width: 55vw;
         padding-bottom: 2rem;
     }
-    .apoiadorescard{
+
+    .apoiadorescard {
         flex-direction: column;
     }
-    .TituloBolsistas{
+
+    .TituloBolsistas {
         padding-top: 2rem;
     }
-    .Pesquisa h2{
+
+    .Pesquisa h2 {
         width: 55rem;
     }
 }
-@media(max-width:950px){
-    .TelaDireita h2{
+
+@media(max-width:950px) {
+    .TelaDireita h2 {
         padding-top: 1rem;
         width: 60vw;
         padding-bottom: 2rem;
     }
-    .DivisaoFotos{
+
+    .DivisaoFotos {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .DivisaoTela3{
+
+    .DivisaoTela3 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .LogoCampusAberto{
+
+    .LogoCampusAberto {
         width: 100%;
     }
-    .Pesquisa h2{
+
+    .Pesquisa h2 {
         width: 42rem;
     }
 }
-@media(max-width:700px){
-    .bg{
+
+@media(max-width:700px) {
+    .bg {
         height: 50vw;
     }
-    .title{
+
+    .title {
         font-size: 1.5rem;
     }
-    .TituloOrientadora h1{
+
+    .TituloOrientadora h1 {
         font-size: 1.5rem;
         line-height: 1.5rem;
     }
-    .TelaDireita h2{
+
+    .TelaDireita h2 {
         font-size: 1rem;
         font-size: 1.25rem;
     }
-    .verMaisButton{
+
+    .verMaisButton {
         font-size: 15px;
     }
-    .TituloBolsistas h1{
+
+    .TituloBolsistas h1 {
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
-    .baseDiretoria{
+
+    .baseDiretoria {
         grid-template-columns: auto;
     }
-    .TituloSobre h1{
+
+    .TituloSobre h1 {
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
-    .TituloSobre h2{
+
+    .TituloSobre h2 {
         font-size: 1rem;
         font-weight: 1.25rem;
     }
-    .SobreProjeto h1{
+
+    .SobreProjeto h1 {
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
-    .SobreProjeto h2{
+
+    .SobreProjeto h2 {
         font-size: 1rem;
         font-weight: 1.25rem;
     }
-    .Pesquisa h1{
+
+    .Pesquisa h1 {
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
-    .Pesquisa h2{
+
+    .Pesquisa h2 {
         width: 35rem;
         font-size: 1rem;
         font-weight: 1.25rem;
     }
-    .Galeria h1{
+
+    .Galeria h1 {
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
-    .Apoiadores h1{
+
+    .Apoiadores h1 {
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
-    .ColunaEsquerda1 h1{
+
+    .ColunaEsquerda1 h1 {
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
-    .ColunaEsquerda1 h2{
+
+    .ColunaEsquerda1 h2 {
         font-size: 1rem;
         font-weight: 1.25rem;
     }
 }
-@media(max-width: 550px){
-    .Pesquisa h2{
+
+@media(max-width: 550px) {
+    .Pesquisa h2 {
         width: 25rem;
     }
-    .TituloSobre h2{
+
+    .TituloSobre h2 {
         width: 25rem;
         display: flex;
         justify-items: center;
         align-items: center;
     }
-    .ColunaEsquerda1 hr{
+
+    .ColunaEsquerda1 hr {
         width: 50vw;
     }
-    .TituloOrientadora{
+
+    .TituloOrientadora {
         padding-bottom: 3rem;
     }
-    .TituloBolsistas{
+
+    .TituloBolsistas {
+        padding-bottom: 3rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .TelaDireita h2{
+        width: 24rem;
+        font-size: 1rem;
+        font-weight: 0.1rem;
+    }
+    .Pesquisa h2 {
+        width: 20rem;
+    }
+
+    .TituloSobre h2 {
+        width: 20rem;
+    }
+
+    .ColunaEsquerda1 hr {
+        width: 50vw;
+    }
+
+    .TituloOrientadora {
+        padding-bottom: 3rem;
+    }
+
+    .TituloBolsistas {
         padding-bottom: 3rem;
     }
 }
