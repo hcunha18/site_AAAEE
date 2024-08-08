@@ -364,8 +364,8 @@
 
 .TituloSobre h2 {
     padding-top: 3rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    /* padding-left: 7rem;
+    padding-right: 7rem; */
     position: relative;
     text-align: left;
     font-family: 'Kumbh Sans';
@@ -406,8 +406,8 @@
 }
 
 .SobreProjeto h2 {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    /* padding-left: 7rem;
+    padding-right: 7rem; */
     padding-top: 3rem;
     position: relative;
     text-align: left;
@@ -449,10 +449,7 @@
 }
 
 .Pesquisa h2 {
-
-
-    padding-left: 7rem;
-    padding-right: 7rem;
+    width: 80rem;
     padding-top: 3rem;
     position: relative;
     text-align: left;
@@ -472,14 +469,14 @@
     background-color: var(--textColor);
 }
 
-.Pesquisa h2 {
+/* .Pesquisa h2 {
     margin-top: 3rem;
     font-size: 20px;
     margin-left: 7rem;
     margin-right: 7rem;
     line-height: 1.5;
     text-align: justify;
-}
+} */
 
 /* Area sobre Galeria de Fotos*/
 .Galeria {
@@ -674,4 +671,165 @@
     margin-top: 3rem;
     width: 90%;
     height: 90%;
+}
+
+/* Resposividade */
+
+@media(max-width: 1440px){
+    .DivisaoTela2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .TelaEsquerda2{
+        visibility: hidden;
+        width: 0%;
+    }
+    .TelaDireita2{
+        width: 100%;
+    }
+    .baseDiretoria{
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: var(--text-page-color);
+        justify-content: space-around;
+    }
+}
+@media(max-width:1220px){
+    .bg{
+        height: 40vw;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .DivisaoTela{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .TelaDireita h2{
+        padding-top: 1rem;
+        width: 55vw;
+        padding-bottom: 2rem;
+    }
+    .apoiadorescard{
+        flex-direction: column;
+    }
+    .TituloBolsistas{
+        padding-top: 2rem;
+    }
+    .Pesquisa h2{
+        width: 55rem;
+    }
+}
+@media(max-width:950px){
+    .TelaDireita h2{
+        padding-top: 1rem;
+        width: 60vw;
+        padding-bottom: 2rem;
+    }
+    .DivisaoFotos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .DivisaoTela3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .LogoCampusAberto{
+        width: 100%;
+    }
+    .Pesquisa h2{
+        width: 42rem;
+    }
+}
+@media(max-width:700px){
+    .bg{
+        height: 50vw;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .TituloOrientadora h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .TelaDireita h2{
+        font-size: 1rem;
+        font-size: 1.25rem;
+    }
+    .verMaisButton{
+        font-size: 15px;
+    }
+    .TituloBolsistas h1{
+        font-size: 1.5rem;
+        font-weight: 1.5rem;
+    }
+    .baseDiretoria{
+        grid-template-columns: auto;
+    }
+    .TituloSobre h1{
+        font-size: 1.5rem;
+        font-weight: 1.5rem;
+    }
+    .TituloSobre h2{
+        font-size: 1rem;
+        font-weight: 1.25rem;
+    }
+    .SobreProjeto h1{
+        font-size: 1.5rem;
+        font-weight: 1.5rem;
+    }
+    .SobreProjeto h2{
+        font-size: 1rem;
+        font-weight: 1.25rem;
+    }
+    .Pesquisa h1{
+        font-size: 1.5rem;
+        font-weight: 1.5rem;
+    }
+    .Pesquisa h2{
+        width: 35rem;
+        font-size: 1rem;
+        font-weight: 1.25rem;
+    }
+    .Galeria h1{
+        font-size: 1.5rem;
+        font-weight: 1.5rem;
+    }
+    .Apoiadores h1{
+        font-size: 1.5rem;
+        font-weight: 1.5rem;
+    }
+    .ColunaEsquerda1 h1{
+        font-size: 1.5rem;
+        font-weight: 1.5rem;
+    }
+    .ColunaEsquerda1 h2{
+        font-size: 1rem;
+        font-weight: 1.25rem;
+    }
+}
+@media(max-width: 550px){
+    .Pesquisa h2{
+        width: 25rem;
+    }
+    .TituloSobre h2{
+        width: 25rem;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .ColunaEsquerda1 hr{
+        width: 50vw;
+    }
+    .TituloOrientadora{
+        padding-bottom: 3rem;
+    }
+    .TituloBolsistas{
+        padding-bottom: 3rem;
+    }
 }

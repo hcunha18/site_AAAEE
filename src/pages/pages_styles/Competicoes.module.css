@@ -239,7 +239,8 @@ body {
   margin: 5px 0;
   color: #FFD700;
   position: relative;
-  top: -10px; /* Adjust as needed */
+  top: -10px;
+  /* Adjust as needed */
 }
 
 .periodTitle {
@@ -315,7 +316,8 @@ body {
   width: 500px;
   height: 100px;
   box-sizing: border-box;
-  position: relative; /* Added to position child elements */
+  position: relative;
+  /* Added to position child elements */
 }
 
 /* Team */
@@ -336,12 +338,14 @@ body {
 
 .logo1 {
   position: absolute;
-  left: -35px; /* Adjust to move half outside */
+  left: -35px;
+  /* Adjust to move half outside */
 }
 
 .logo2 {
   position: absolute;
-  right: -35px; /* Adjust to move half outside */
+  right: -35px;
+  /* Adjust to move half outside */
 }
 
 .teamName {
@@ -352,11 +356,13 @@ body {
 }
 
 .team.left .teamName {
-  margin-left: 40px; /* Adjust as needed to center with logo */
+  margin-left: 40px;
+  /* Adjust as needed to center with logo */
 }
 
 .team.right .teamName {
-  margin-right: 40px; /* Adjust as needed to center with logo */
+  margin-right: 40px;
+  /* Adjust as needed to center with logo */
   text-align: right;
 }
 
@@ -418,4 +424,157 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Responsividade */
+@media(max-width: 1240px) {
+  .marqueeText {
+    font-size: 32px;
+  }
+
+  .gameStatus {
+    font-size: 20px;
+  }
+
+  .scoreboard {
+    font-family: 'DS-Digital', sans-serif;
+    border-radius: 10px;
+    background-color: black;
+    padding: 20px;
+    border: 2px solid #444;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 600px;
+  }
+
+  .boltTopLeft,
+  .boltTopRight,
+  .boltBottomLeft,
+  .boltBottomRight {
+    width: 19px;
+    height: 19px;
+    background-color: gray;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    position: absolute;
+  }
+
+  .boltTopLeft {
+    top: 4px;
+    left: 4px;
+  }
+
+  .boltTopRight {
+    top: 4px;
+    right: 4px;
+  }
+
+  .boltBottomLeft {
+    bottom: 4px;
+    left: 4px;
+  }
+
+  .boltBottomRight {
+    bottom: 4px;
+    right: 4px;
+  }
+
+  /* Header */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .header .possession,
+  .header .fouls,
+  .header .timeouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .fouls {
+    position: relative;
+    margin-bottom: 14px;
+  }
+
+  .header .tempo {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+  }
+
+  .header .tempo .circle {
+    width: 9px;
+    height: 9px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+
+  .header .timeouts {
+    display: flex;
+    gap: 4px;
+  }
+}
+@media(max-width:700px){
+  .scoreboard{
+    height: 250px;
+    width: 450px;
+  }
+  .periodTitle {
+    font-size: 20px;
+  }
+  .foulsTitle{
+    font-size: 18px;
+  }
+  .pos{
+    font-size: 18px;
+  }
+  .teamName1,
+  .teamName2{
+    font-size: 35px;
+  }
+  .teamScore{
+    font-size: 70px;
+  }
+  .periodNumber{
+    font-size: 80px;
+  }
+  .title2{
+    font-size: 28px;
+  }
+}
+@media(max-width:550px){
+  .scoreboard{
+    height: 250px;
+    width: 400px;
+  }
+  .periodTitle {
+    font-size: 18px;
+  }
+  .foulsTitle{
+    font-size: 16px;
+  }
+  .pos{
+    font-size: 16px;
+  }
+  .teamName1,
+  .teamName2{
+    font-size: 25px;
+  }
+  .teamScore{
+    font-size: 65px;
+  }
+  .periodNumber{
+    font-size: 70px;
+  }
+  .title2{
+    font-size: 26px;
+  }
+  .game{
+    width: 400px;
+  }
+  /* retornar nos jogos da semana */
 }
