@@ -14,6 +14,15 @@
   background-color: #d9d9d9;
 }
 
+.contentDiv1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9d9d9;
+}
+
+
 
 
 .fundo {
@@ -29,7 +38,6 @@
 
 
 .letreiroContainer {
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -64,6 +72,35 @@
 }
 
 @media (max-width: 880px) {
+  .contentDiv1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+    
+  .divisor {
+    width: 0px;
+    height: 0px;
+    background-color: #000;
+    margin: 00px; /* Aumenta o espaço horizontal ao redor da linha divisória */
+  }
+
+  .Divisor1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px; /* Limite de largura total */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    
+  }
+
+  .direita {
+    margin-left: -10vw;
+    width: calc(0 + 0vw); /* Aumenta a largura para expandir para a direita */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
+  }
+
+
   .typeAnimation {
     font-size: 1.5em;
   }
@@ -74,6 +111,7 @@
     margin-left: 0; /* Remove o grande valor de margin-left para centralizar */
     transform: translate(-50%, -50%);
   }
+
 }
 
 @media (max-width: 600px) {
@@ -186,6 +224,7 @@
   align-items: center;
   text-align: center;
 }
+
 .direita {
   display: flex;
   flex-direction: column;
@@ -193,7 +232,7 @@
   text-align: center;
   padding: 40px; /* Aumenta o padding */
   width: calc(100% + 20vw); /* Aumenta a largura para expandir para a direita */
-  margin-right: -20vw; /* Margem negativa para expandir a div para a direita */
+  margin-right: 0vw; /* Margem negativa para expandir a div para a direita */
   box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
 }
 
@@ -350,3 +389,68 @@
 }
 /* Final Estilização para o card Incentivo ao Esporte*/
 /* oooo */
+
+
+@media (max-width: 1120px) {
+  .Divisor2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5rem;
+  }
+  
+  .esquerda2 {
+    flex: 1;
+    padding: 90px;
+  }
+  
+  .direita2 {
+    position: absolute;
+    opacity: 0.2;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .customCard {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .cardContent {
+    width: 100%; /* Alterado para ocupar 50% da largura */
+  }
+
+  .Divisor1 {
+    display: flex;
+    width: 80%;
+    max-width: 1200px; /* Limite de largura total */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    
+  }
+  
+  .esquerda, .direita {
+    flex: 1;
+    min-width: 0; /* Permite que os itens encolham conforme necessário */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9d9d9;
+  }
+  .garra {
+    width: 100%; /* Ajustado para ocupar toda a largura disponível */
+    height: auto;
+    object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+  }
+}
+
+@media (max-width: 600px) {
+  .logoc {
+    overflow: hidden;
+    width: 20%; /* Define um tamanho inicial relativo à tela */
+    max-width: 200px; /* Define um tamanho máximo para a logo */
+    height: auto; /* Mantém a proporção */
+  }
+}

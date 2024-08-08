@@ -22,7 +22,7 @@ const Contato = lazy(() => import('./pages/Contato'));
 const Eventos = lazy(() => import('./pages/Eventos'));
 const Lojinha = lazy(() => import('./pages/Lojinha'));
 const Gestao2023_2 = lazy(() => import('./pages/Gestao2023_2'));
-const Documentos = lazy(() => import('./pages/Documentos'));
+const TransparenciaAdministrativa = lazy(() => import('./pages/Documentos'));
 const CampusAberto = lazy(() => import('./pages/CampusAberto'));
 const Competicoes = lazy(() => import('./pages/Competicoes'));
 const Galeria = lazy(() => import('./pages/Galeria'));
@@ -61,7 +61,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="Gestao2023_2" element={<Gestao2023_2 />} />
-              <Route path="Documentos" element={<Documentos />} />
+              <Route path="TransparenciaAdministrativa" element={<TransparenciaAdministrativa />} />
               <Route path="Galeria" element={<Galeria />} />
               <Route path="Competicoes" element={<Competicoes />} />
               <Route path="Modalidades" element={<Modalidades />} />
