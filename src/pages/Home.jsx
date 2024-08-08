@@ -84,7 +84,7 @@ function Home() {
         />
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.contentDiv1}>
         <div className={styles.Divisor1}>
           <div className={styles.esquerda}>
           <h2 className={styles.h2}> Campeonatos em Andamento</h2>
