@@ -13,7 +13,7 @@ const coordenadoraData = [
     imageLink: 'https://i.postimg.cc/fLpk1x2M/perfil-gabriela.jpg',
     h1Text: 'Drª  Gabriela Rezende de Oliveira Venturini',
     h3Text: 'Coordenadora',
-    gitLink: 'https://github.com/hcunha18',
+    gitLink: '',
     mailLink: 'humbertomottadacunha@gmail.com',
     linkedLink: 'https://www.linkedin.com/in/humberto-motta-da-cunha-447067188/'
   }

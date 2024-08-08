@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
 
 
   .nav_logo {
-    display: flex;
+    
     align-items: center;
     justify-content: flex-start;
     opacity: ${(props) => (props.$isToggleOpen ? "0" : "1")}; 
@@ -306,7 +306,7 @@ const Header = () => {
                 <Divider/>
               </li>
               <li>
-                <DropdownButton onClick={() => handleNavigation("/Documentos")}>
+                <DropdownButton onClick={() => handleNavigation("/TransparenciaAdministrativa")}>
                    Transparência Administrativa
                 </DropdownButton>
               </li>
