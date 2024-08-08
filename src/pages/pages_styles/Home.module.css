@@ -14,6 +14,17 @@
   background-color: #d9d9d9;
 }
 
+.contentDiv1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9d9d9;
+}
+
+
+
+
 .fundo {
   width: 50%;
   height: 150px;
@@ -61,6 +72,35 @@
 }
 
 @media (max-width: 880px) {
+  .contentDiv1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+    
+  .divisor {
+    width: 0px;
+    height: 0px;
+    background-color: #000;
+    margin: 00px; /* Aumenta o espaço horizontal ao redor da linha divisória */
+  }
+
+  .Divisor1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px; /* Limite de largura total */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    
+  }
+
+  .direita {
+    margin-left: -10vw;
+    width: calc(0 + 0vw); /* Aumenta a largura para expandir para a direita */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
+  }
+  
+
   .typeAnimation {
     font-size: 1.5em;
   }
@@ -128,6 +168,7 @@
   gap: 40px; /* Reduzido o gap para diminuir o espaço entre os itens */
   width: 100%; /* Ajustado para ocupar toda a largura disponível */
   margin-top: -1.5rem;
+  margin-left: -20rem;
 }
 
 .h1 {
@@ -145,6 +186,16 @@
   color: #000;
   text-align: center;
   margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
+}
+
+.h02 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Jockey One', sans-serif;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: left
 }
 
 
@@ -171,15 +222,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-right: 7vw;
 }
-.direita{
+.direita {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-left: 7vw;
+  padding: 40px; /* Aumenta o padding */
+  width: calc(100% + 20vw); /* Aumenta a largura para expandir para a direita */
+  margin-right: 0vw; /* Margem negativa para expandir a div para a direita */
+  box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
 }
+
+
 .imagem1 {
   margin: 20px 0;
   display: flex;
@@ -193,9 +248,11 @@
 }
 /* Configuração dos sliders */
 .slider {
-  width: 30vw;
-  height: 30vw;
+  width: 30vw; 
+  height: 30vw; /* Define a altura máxima do slider */
 }
+
+
 
 .verMaisButton {
   background-color: #0056b3; /* Fundo */
@@ -270,6 +327,13 @@
   color: #000;
 }
 
+.garra {
+  margin-top: 1vw;
+  width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  height: 5vw;
+  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+}
+
 .logoc {
   max-width: 200%; /* Ajustado para ocupar toda a largura disponível */
   height: auto;
@@ -323,3 +387,55 @@
 }
 /* Final Estilização para o card Incentivo ao Esporte*/
 /* oooo */
+
+
+@media (max-width: 1120px) {
+  .Divisor2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .esquerda2 {
+    flex: 1;
+    padding: 90px;
+  }
+  
+  .direita2 {
+    position: absolute;
+    opacity: 0.2;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .customCard {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .cardContent {
+    width: 100%; /* Alterado para ocupar 50% da largura */
+  }
+
+  .Divisor1 {
+    display: flex;
+    width: 80%;
+    max-width: 1200px; /* Limite de largura total */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    
+  }
+  
+  .esquerda, .direita {
+    flex: 1;
+    min-width: 0; /* Permite que os itens encolham conforme necessário */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9d9d9;
+  }
+  
+}

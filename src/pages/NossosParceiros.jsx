@@ -79,7 +79,7 @@ function NossosParceiros() {
 
         <div className={styles.endPage}>
           <div className={styles.endPageLeft}>
-            <img src="https://i.ibb.co/xGSc8GS/Pantera-removebg-preview.png" className={styles.pantera}/>
+            <img src="https://i.postimg.cc/pVzP58Cj/Pantera-removebg-preview.png" className={styles.pantera}/>
           </div>
 
           <div className={styles.endPageRight}>

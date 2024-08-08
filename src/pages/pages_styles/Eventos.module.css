@@ -21,39 +21,38 @@
 
 /* Pai */
 .overlay {
-    width: 100%;
-    height: 30vw;
     position: relative;
 }
 
-/* Filho */
 .bg {
     width: 100%;
-    height:100%;
+    height: 30vw;
+    display: block;
     filter: brightness(40%);
-    /* background-color: red; */
+    object-fit: cover;
 }
+
 .title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #DAE7FE;
-    font-size: 32px;
+    font-size: 2.25rem;
     text-align: center;
     z-index: 1;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'inter', sans-serif;
     font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
+    line-height: 2.75rem;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.3em;
 }
+
 .NossosEventos{
     position: relative;
-    margin-left: 5rem;
-    margin-top: 8rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
 }
 .NossosEventos h1{
@@ -160,4 +159,157 @@
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
     object-fit: cover;
+}
+
+/* Responsividade */
+@media(max-width:1450px){
+    .ImgFestas{
+        width: 27rem;
+        height: 32rem;
+    }
+}
+@media(max-width: 1200px){
+    .bg{
+        height: 40vw;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .NossosEventos{
+        padding-top: 3rem;
+    }
+    .ImgFestas{
+        width: 25rem;
+        height: 30rem;
+    }
+}
+@media(max-width: 1000px){
+    .DivisaoTela1{
+        display: flex;
+        flex-direction: column;
+    }
+    .TelaEsquerda{
+        width: 100%;
+    }
+    .TelaDireita{
+        width: 100%;
+    }
+    .ImgFestas{
+        width: 32rem;
+        height: 38rem;
+    }
+    .DivisaoTela2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .TelaEsquerda2{
+        width: 100%;
+    }
+    .TelaDireita2{
+        width: 100%;
+    }
+    .DivisaoTela3{
+        display: flex;
+        flex-direction: column;
+    }
+    .TelaEsquerda3{
+        width: 100%;
+    }
+    .TelaDireita3{
+        width: 100%;
+    }
+    .NossosEventos h1{
+        font-size: 1.7rem;
+        line-height: 1.25rem;
+    }
+    .NossosEventos h2{
+        padding-top: 1.5rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+    .TextoEvento h1{
+        font-size: 1.7rem;
+        line-height: 1.5rem;
+    }
+    .TextoEvento h2{
+        padding-top: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+@media(max-width:850px){
+    .ImgFestas{
+        margin-top: 0.5rem;
+        width: 27rem;
+        height: 32rem;
+    }
+}
+@media(max-width:700px){
+    .bg{
+        height: 50vw;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .NossosEventos h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .NossosEventos h2{
+        padding-top: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+    .TextoEvento h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .TextoEvento h2{
+        padding-top: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+    .ImgFestas{
+        margin-top: 0.5rem;
+        width: 15rem;
+        height: 20rem;
+    }
+}
+@media(max-width:550px){
+    .bg {
+        height: 50vw;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+    .NossosEventos{
+        padding-top: 3rem;
+    }
+    .NossosEventos h1{
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+    }
+    .NossosEventos hr{
+        width: 250px;
+    }
+    .NossosEventos h2{
+        padding-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .TextoEvento h1{
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+    }
+    .TextoEvento h2{
+        padding-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .ImgFestas{
+        margin-top: 0.5rem;
+        width: 15rem;
+        height: 20rem;
+    }
 }

@@ -10,34 +10,37 @@ function Eventos() {
 
   //Array com as imagens para o Banner da página Eventos
   const linksSliderBanner = [
-    {id: "1", url: 'https://i.ibb.co/QnB9ktC/banner-Campus-Aberto-Membros.png', alt: "Banner campus Aberto"},
-    {id: "2", url: 'https://i.ibb.co/Sc0ffLy/1700099016684-1.jpg', alt: "#"},
-    {id: "3", url: 'https://i.ibb.co/Lhhj1t0/DSC-7079.jpg', alt: "#"},
-    {id: "4", url: 'https://i.ibb.co/hdhQQZs/DSC-6531.jpg', alt: "#"}
+    {id: "1", url: 'https://i.postimg.cc/tCd8c9Jc/banner-calcoolizando-1.jpg', alt: "Banner campus Aberto"},
+    {id: "2", url: 'https://i.postimg.cc/9ff3TsWn/banner-calcoolizando-2.jpg', alt: "#"},
+    {id: "3", url: 'https://i.postimg.cc/W3QxB30B/banner-calcoolizando-6.jpg', alt: "#"},
+    {id: "4", url: 'https://i.postimg.cc/GmrqTYc7/adeus-calouros-foto-no-banner-4.jpg', alt: "#"},
+    {id: "5", url: 'https://i.postimg.cc/T1gBf69p/banner-calcoolizando-7.jpg', alt: "#"},
+    {id: "6", url: 'https://i.postimg.cc/HxJfv580/banner-calcoolizando-5.jpg', alt: "#"},
+    {id: "7", url: 'https://i.postimg.cc/c4GVTvxY/banner-calcoolizando-9.jpg', alt: "#"},
 ];
 
 // Array com as imagens da recepção de calouros
   const linksSliderRecepcao = [
-    {id: "1", url: 'https://i.ibb.co/MPNLbJY/PHOTO-2023-04-01-09-59-55-1.jpg', alt: "#"},
-    {id: "2", url: 'https://i.ibb.co/jG07Lb0/IMG-0488-1.jpg', alt: "#"},
-    {id: "3", url: 'https://i.ibb.co/LCbgkWT/PHOTO-2023-04-01-09-59-58-1.jpg', alt: "#"},
-    {id: "4", url: 'https://i.ibb.co/Y0MhwJM/PHOTO-2023-04-01-10-00-05.jpg', alt: "#"}
+    {id: "1", url: 'https://i.postimg.cc/Vsnq96Z3/atletica-recepcao.jpg', alt: "#"},
+    {id: "2", url: 'https://i.postimg.cc/tTVhMCqn/Meninas-com-bandeira-da-atletica-na-recepcao.jpg', alt: "#"},
+    {id: "3", url: 'https://i.postimg.cc/hP0VwYBs/pedro-e-calouro-recepcao.jpg', alt: "#"},
+    {id: "4", url: 'https://i.postimg.cc/gkpvgWfr/tecnico-recepcao.jpg', alt: "#"}
 ];
 
 // Array com as imagens da Calcoolizando
   const linksSliderCalcoolizando = [
-    {id: "1", url: 'https://i.ibb.co/rd1GLVT/DSC-7212.jpg', alt: "Banda Pagode"},
-    {id: "2", url: 'https://i.ibb.co/k5zxwnq/DSC-6820.jpg', alt: "#"},
-    {id: "3", url: 'https://i.ibb.co/C0gN1dq/DSC-7071.jpg', alt: "#"},
-    {id: "4", url: 'https://i.ibb.co/rxbHvxD/DSC-6870.jpg', alt: "#"}
+    {id: "1", url: 'https://i.postimg.cc/RZDJx5b7/Cantor-Calcoolizando.jpg', alt: "Banda Pagode"},
+    {id: "2", url: 'https://i.postimg.cc/3J2tw9H0/calcoolizando-1.jpg', alt: "#"},
+    {id: "3", url: 'https://i.postimg.cc/y6ZPfnxp/calcoolizando-2.jpg', alt: "#"},
+    {id: "4", url: 'https://i.postimg.cc/XJTgjBHg/calcoolizando-4.jpg', alt: "#"}
 ];
 
 // Array com as imagens da Adeus Calouros
   const linksSliderAdeus = [
-    {id: "1", url: 'https://i.ibb.co/kq4SwwT/Yuri-Ariane-Adeus-Calouros1.jpg', alt: "Yuri e Ariane"},
-    {id: "2", url: 'https://i.ibb.co/XSDJttt/DSCN7589.jpg', alt: "Galera no banner da Atlética"},
-    {id: "3", url: 'https://i.ibb.co/4SgQyCy/DSCN7607.jpg', alt: "Meninas no banner da Atlética"},
-    {id: "4", url: 'https://i.ibb.co/6vhMQVX/DSCN7609.jpg', alt: "Ze no banner da Atlética"}
+    {id: "1", url: 'https://i.postimg.cc/KYWPfg2y/Yuri-e-Ariane-Adeus-Calouros.jpg', alt: "Yuri e Ariane"},
+    {id: "2", url: 'https://i.postimg.cc/ydJPCyPd/adeus-calouros-foto-no-banner.jpg', alt: "Galera no banner da Atlética"},
+    {id: "3", url: 'https://i.postimg.cc/6p0zr3q9/adeus-calouros-foto-no-banner-2.jpg', alt: "Meninas no banner da Atlética"},
+    {id: "4", url: 'https://i.postimg.cc/wBj20pRD/adeus-calouros-foto-no-banner-3.jpg', alt: "Ze no banner da Atlética"}
 ];
   
   return (
