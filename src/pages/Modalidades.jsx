@@ -7,24 +7,24 @@ import Button from "@mui/material/Button";
 function Modalidades() {
   // Arrays de imagens para os Sliders
   const linksSliderEsquerda = [
-    { id: "1", url: 'https://i.ibb.co/GTrSsZz/IMG-3255.jpg', alt: "Concentracao FDG" },
-    { id: "2", url: 'https://i.ibb.co/qRZc46Y/IMG-3229.jpg', alt: "Semi Mossa x FDG" },
-    { id: "3", url: 'https://i.ibb.co/TbHYTYm/1698198702124.jpg', alt: "Patrocinadores Interperiodo 2023.2" },
-    { id: "4", url: 'https://i.ibb.co/PFdMRQY/IMG-20231122-150735.jpg', alt: "Premiacao medalhas de ouro" }
+    { id: "1", url: 'https://i.postimg.cc/Px51p2bt/arbitragem-2023-2.jpg', alt: "Concentracao FDG" },
+    { id: "2", url: 'https://i.postimg.cc/CMJ6QQr4/concentracao-FDG.jpg', alt: "Semi Mossa x FDG" },
+    { id: "3", url: 'https://i.postimg.cc/pdxfx2p5/medalhas-2023-2.jpg', alt: "Patrocinadores Interperiodo 2023.2" },
+    { id: "4", url: 'https://i.postimg.cc/MZhtNJbV/david-jogando-final.jpg', alt: "Premiacao medalhas de ouro" }
   ];
 
   const linksSliderCentro = [
-    { id: "1", url: 'https://i.ibb.co/VqFM2kQ/IMG-20231122-153317.jpg', alt: "David jogando FINAL" },
-    { id: "2", url: 'https://i.ibb.co/dDWtVcd/IMG-20231122-152255.jpg', alt: "Capitaes final com juizes" },
-    { id: "3", url: 'https://i.ibb.co/P5RNW7z/IMG-20231122-150749.jpg', alt: "Trofeu" },
-    { id: "4", url: 'https://i.ibb.co/cyYp3td/IMG-20231122-171200.jpg', alt: "Campeoes 2023.2" }
+    { id: "1", url: 'https://i.postimg.cc/02QHR0L1/capitaes-e-arbitragem-final-2023-2.jpg', alt: "David jogando FINAL" },
+    { id: "2", url: 'https://i.postimg.cc/C5ZDJ56X/concentracao-mossa.jpg', alt: "Capitaes final com juizes" },
+    { id: "3", url: 'https://i.postimg.cc/4xHLnNf8/interperiodo-2022-1-estudiantes.jpg', alt: "Trofeu" },
+    { id: "4", url: 'https://i.postimg.cc/pdxfx2p5/medalhas-2023-2.jpg', alt: "Campeoes 2023.2" }
   ];
 
   const linksSliderDireita = [
-    { id: "1", url: 'https://i.ibb.co/5MQDctv/99a25a82-1ba8-433d-85af-5d59c140df54.jpg', alt: "Botafofo Campeao" },
-    { id: "2", url: 'https://i.ibb.co/fk1bbjG/PHOTO-2023-03-24-17-54-54.jpg', alt: "Atletica Campeao camp gremio" },
-    { id: "3", url: 'https://i.ibb.co/6nPSXjt/IMG-1062.jpg', alt: "Estudiantes" },
-    { id: "4", url: 'https://i.ibb.co/Z15hzP5/IMG-0844.jpg', alt: "BarSemLona x ..." }
+    { id: "1", url: 'https://i.postimg.cc/xCpMKMgL/mossa-x-fdg.jpg', alt: "Botafofo Campeao" },
+    { id: "2", url: 'https://i.postimg.cc/xTXhbSn4/Atletica-Campeao-Camp-Gremio.jpg', alt: "Atletica Campeao camp gremio" },
+    { id: "3", url: 'https://i.postimg.cc/DyL5KpBD/trofeu.jpg', alt: "Estudiantes" },
+    { id: "4", url: 'https://i.postimg.cc/HkxwLpmr/Botafofo-Campeao-Interperiodo-2023-1.jpg', alt: "BarSemLona x ..." }
   ];
 
   return (

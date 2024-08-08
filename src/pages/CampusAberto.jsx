@@ -10,7 +10,7 @@ import BoxApoiadores from '../components/structures/BoxApoiadores';
 // Definição das boxs
 const coordenadoraData = [
   {
-    imageLink: 'https://i.ibb.co/vX972Gc/foto-gabriela.jpg',
+    imageLink: 'https://i.postimg.cc/fLpk1x2M/perfil-gabriela.jpg',
     h1Text: 'Drª  Gabriela Rezende de Oliveira Venturini',
     h3Text: 'Coordenadora',
     gitLink: 'https://github.com/hcunha18',
@@ -22,7 +22,7 @@ const coordenadoraData = [
 // Box dos bolsistas
 const membrosData = [
   {
-    imageLink: 'https://i.ibb.co/LYHYvz2/isabelly.jpg',
+    imageLink: 'https://i.postimg.cc/P55hzCyy/isabelly.jpg',
     h1Text: 'Isabelly Araújo Temoteo',
     h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
     gitLink: 'https://github.com/IsabellyTemoteo',
@@ -30,7 +30,7 @@ const membrosData = [
     linkedLink: 'https://www.linkedin.com/in/isabelly-temoteo-010131230/'
   },
   {
-    imageLink: 'https://i.ibb.co/B6d09rx/foto-sophia.jpg',
+    imageLink: 'https://i.postimg.cc/G3gx3dJ4/sophia-membro.jpg',
     h1Text: 'Sophia Coura Martins Ferreira',
     h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
     gitLink: 'https://github.com/sophiacmf',
@@ -38,7 +38,7 @@ const membrosData = [
     linkedLink: 'https://www.linkedin.com/in/sophia-coura-martins-ferreira-2160641a5/'
   },
   {
-    imageLink: 'https://i.ibb.co/GTxzgpv/gabriel.jpg',
+    imageLink: 'https://i.postimg.cc/FKf48w2J/gabriel.jpg',
     h1Text: 'Gabriel Ferreira de Oliveira',
     h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
     gitLink: 'https://github.com/bigolzin',
@@ -46,7 +46,7 @@ const membrosData = [
     linkedLink: 'https://www.linkedin.com/in/gabriel-oliveira-8651a9269/'
   },
   {
-    imageLink: 'https://i.ibb.co/6NdL5LR/marcelo-filho-1.jpg',
+    imageLink: 'https://i.postimg.cc/8CqSStSX/marcelo-filho.jpg',
     h1Text: 'Marcelo Teixeira de Sousa Filho',
     h3Text: 'Bolsista do Projeto de Extensão Campus Aberto - Atlética Panterão',
     gitLink: 'https://github.com/Marcelotsfiilho',
@@ -206,13 +206,13 @@ function CampusAberto() {
         <hr />
         <div className={styles.DivisaoFotos}>
           <div className={styles.ColunaEsquerda}>
-            <img className={styles.ImgCampeonato} src="https://i.ibb.co/f40hxB0/IMG-20231122-150512-1.jpg" alt="ImgCampeonato"></img>
+            <img className={styles.ImgCampeonato} src="https://i.postimg.cc/431pDgxN/gabriela-lei-palestra.jpg" alt="ImgCampeonato"></img>
           </div>
           <div className={styles.ColunaCentro}>
-            <img className={styles.ImgCampeonato} src="https://i.ibb.co/P5RNW7z/IMG-20231122-150749.jpg" alt="ImgCampeonato"></img>
+            <img className={styles.ImgCampeonato} src="https://i.postimg.cc/DzhqpZFM/Equipe-Campus-Aberto-Lei-de-Incentivo-ao-Esporte-1.jpg" alt="ImgCampeonato"></img>
           </div>
           <div className={styles.ColunaDireita}>
-            <img className={styles.ImgCampeonato} src="https://i.ibb.co/PFdMRQY/IMG-20231122-150735.jpg" alt="ImgCampeonato"></img>
+            <img className={styles.ImgCampeonato} src="https://i.postimg.cc/Qd1Qq5L7/Gabriela-Palestrando.jpg" alt="ImgCampeonato"></img>
           </div>
         </div>
         <div className={styles.Botao1}>
@@ -259,7 +259,7 @@ function CampusAberto() {
 
         </div>
         <div className={styles.ColunaDireita1}>
-          <img className={styles.LogoCampusAberto} src="https://i.ibb.co/CMCf4Ph/Campus-Aberto-LOGO-1.png" alt="LogoCampusAberto"></img>
+          <img className={styles.LogoCampusAberto} src="https://i.postimg.cc/HLzcdTCn/Campus-Aberto-LOGO-1.png" alt="LogoCampusAberto"></img>
         </div>
       </div>
     </section>

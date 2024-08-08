@@ -17,8 +17,8 @@ import { useEffect } from "react";
 function Home() {
 
   const SliderBannerDireita = [
-    { id: "1", url: 'https://i.ibb.co/8zYBnyz/Jogos-Interperiodo.jpg', alt: "Jogos interperiodo" },
-    { id: "2", url: 'https://i.ibb.co/yfR2X4x/Data-Jogos-Interperiodo.jpg', alt: "Data jogos interperiodo" },
+    { id: "1", url: 'https://i.postimg.cc/XqGpfFBB/Data-Jogos-Interperiodo.jpg', alt: "Jogos interperiodo" },
+    { id: "2", url: 'https://i.postimg.cc/hvkhpjVy/Jogos-Interperiodo.jpg', alt: "Data jogos interperiodo" },
   ];
 
   const navigate = useNavigate();
@@ -169,7 +169,7 @@ function Home() {
           <div className={styles.logoc}>
             <img
               className="img4"
-              src="https://i.ibb.co/SdYzHfR/Campus-Aberto-LOGO-1.png"
+              src="https://i.postimg.cc/HLzcdTCn/Campus-Aberto-LOGO-1.png"
               alt="Campus-Aberto-LOGO-1"
               border="0"
             />
@@ -179,7 +179,7 @@ function Home() {
       <Card className={styles.customCard}>
         <CardMedia
           component="img"
-          image="https://i.ibb.co/KmPr9ww/1700099016684.jpg"
+          image="https://i.postimg.cc/cHjJLHkx/EDL-X-Botafofo-Lei-de-incentivo-ao-esporte.jpg"
           alt="Incentivo ao Esporte"
           className={styles.cardMedia}
         />
