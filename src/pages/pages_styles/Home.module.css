@@ -99,7 +99,7 @@
     width: calc(0 + 0vw); /* Aumenta a largura para expandir para a direita */
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
   }
-  
+
 
   .typeAnimation {
     font-size: 1.5em;
@@ -111,6 +111,7 @@
     margin-left: 0; /* Remove o grande valor de margin-left para centralizar */
     transform: translate(-50%, -50%);
   }
+
 }
 
 @media (max-width: 600px) {
@@ -223,6 +224,7 @@
   align-items: center;
   text-align: center;
 }
+
 .direita {
   display: flex;
   flex-direction: column;
@@ -394,7 +396,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: -5rem;
   }
   
   .esquerda2 {
@@ -437,5 +439,18 @@
     align-items: center;
     background-color: #d9d9d9;
   }
-  
+  .garra {
+    width: 100%; /* Ajustado para ocupar toda a largura disponível */
+    height: auto;
+    object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+  }
+}
+
+@media (max-width: 600px) {
+  .logoc {
+    overflow: hidden;
+    width: 20%; /* Define um tamanho inicial relativo à tela */
+    max-width: 200px; /* Define um tamanho máximo para a logo */
+    height: auto; /* Mantém a proporção */
+  }
 }
