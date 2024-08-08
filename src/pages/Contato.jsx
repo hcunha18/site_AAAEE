@@ -55,7 +55,7 @@ function Contato() {
             <hr className={styles.h1Divider} />
             <p>Gostaria de fazer sugestões? Sua <br/>mensagem será direcionada para <br/>nosso centro de atendimento e<br/> retornaremos o mais rápido possível.</p>
             <div className={styles.AlinharBotao}>
-              <button className={styles.Botao} onClick={handleClickTelefone}>Saiba Mais</button>
+              <button className={styles.Botao} onClick={() => window.location.href = "https://linktr.ee/atleticacefetleopoldina?fbclid=PAAaaWLmmqzTtQD8Rd91MLRPsl2xphEkKPZEYuHeYrWGWES4P6NVKB0cZNvus"}>Entre em contato</button>
             </div>
 
             <h1>SEJA NOSSO PARCEIRO</h1>
