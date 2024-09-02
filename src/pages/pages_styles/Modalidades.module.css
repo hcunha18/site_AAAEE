@@ -13,11 +13,11 @@
 
 /*Texto Nossas Modalidades*/
 .TextModalidades{
-    margin-left: 10rem;
+    padding-left: 10rem;
     padding-top: 4rem;
 }
 
-.TextModalidades h1{
+.TextModalidades h2{
     color: #2D7EA3;
     text-decoration: underline;
     position: relative;
@@ -36,17 +36,17 @@
     background-color: #2D7EA3;
 } */
 
-.TextModalidades h2{
-    font-size: 20px;
-    padding-top: 1.5rem;
-    line-height: 1.2;
+.TextModalidades p{
+    width: 80vw;
     text-align: justify;
     position: relative;
     text-align: left;
     font-family: 'Kumbh Sans';
     font-style: normal;
-    font-weight: bolder;
-    font-size: 1.4rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: justify;
     color: #000000;
 }
 
@@ -75,7 +75,7 @@
 .ListModalidadesEsquerda{
     padding-left: 15rem;
 }
-.ListModalidadesEsquerda h1{
+.ListModalidadesEsquerda h2{
     text-decoration: underline;
     padding-bottom: 3rem;
     position: relative;
@@ -100,7 +100,7 @@
 .ListModalidadesDireita{
     padding-left: 15rem;
 }
-.ListModalidadesDireita h1{
+.ListModalidadesDireita h2{
     text-decoration: underline;
     padding-bottom: 3rem;
     position: relative;
@@ -123,22 +123,28 @@
 
 
 .ListModalidadesEsquerda li{
+    width: 50%;
+    text-align: justify;
     position: relative;
     text-align: left;
     font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 20px;
     text-align: justify;
     color: #000000;
 }
 .ListModalidadesDireita li{
+    width: 50%;
+    text-align: justify;
     position: relative;
     text-align: left;
     font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 20px;
     text-align: justify;
     color: #000000;
 }
@@ -149,7 +155,7 @@
     align-items: start;
     flex-direction: column;
 }
-.Treino h1{
+.Treino h2{
     text-decoration: underline;
     padding-bottom: 2rem;
     position: relative;
@@ -172,30 +178,21 @@
 } */
 
 
-.Treino h2{
-    width: 55vw;
+.Treino p{
+    width: 90%;
+    text-align: justify;
     position: relative;
     text-align: left;
     font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 1.4rem;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 40px;
     text-align: justify;
     color: #000000;
 }
 
 /*Breve texto para acesso ao linktree dos treinos*/
-.AcesseTreino h1{
-    position: relative;
-    text-align: left;
-    font-family: 'Jockey One';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2.2rem;
-    line-height: 50px;
-    color: #000000;
-}
 .AcesseTreino{
     display: flex;
     justify-content: center;
@@ -205,22 +202,21 @@
     margin-bottom: 5vw;
 }
 .AcesseTreino hr{
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 20px;
     height: 2px;
     width: 300px;
     background-color: #090E17;
 }
 .AcesseTreino h2{
-    margin-top: 15px;
+    padding-bottom: 2rem;
     position: relative;
     text-align: left;
-    font-family: 'Kumbh Sans';
+    font-family: 'Jockey One';
     font-style: normal;
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 40px;
-    text-align: justify;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    line-height: 50px;
     color: #000000;
 }
 

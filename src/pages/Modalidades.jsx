@@ -30,10 +30,12 @@ function Modalidades() {
   return (
     <section className={styles.Body}>
       <div className={styles.TextModalidades}>
-        <h1>NOSSAS MODALIDADES</h1>
+        <h2>NOSSAS MODALIDADES</h2>
         <hr />
-        <h2>O Panterão conta com 9 modalidades físicas e 6 modalidades online.<br />
-          Os Atletas participam de diversos campeonatos no decorrer do ano letivo, dos quais temos boas memórias e títulos para recordar.</h2>
+        <p>
+          O Panterão conta com 9 modalidades físicas e 6 modalidades online.<br />
+          Os Atletas participam de diversos campeonatos no decorrer do ano letivo, dos quais temos boas memórias e títulos para recordar.
+        </p>
       </div>
 
       <div className={styles.DivisaoTela}>
@@ -45,7 +47,7 @@ function Modalidades() {
 
         <div className={styles.BlocoDireita}>
           <div className={styles.ListModalidadesEsquerda}>
-            <h1>ESPORTES</h1>
+            <h2>ESPORTES</h2>
             <hr />
             <ul>
               <li>FUTSAL</li>
@@ -62,7 +64,7 @@ function Modalidades() {
           </div>
 
           <div className={styles.ListModalidadesDireita}>
-            <h1>E-SPORTS</h1>
+            <h2>E-SPORTS</h2>
             <hr />
             <ul>
               <li>LEAGUE OF LEGENDS</li>
@@ -75,18 +77,17 @@ function Modalidades() {
           </div>
 
           <div className={styles.Treino}>
-            <h1>TREINOS</h1>
+            <h2>TREINOS</h2>
             <hr />
-            <h2>
+            <p>
               Nossos treinos das modalidades físicas de futsal, vôlei e basquete, acontecem no Centro Poliesportivo do CEFET MG - Leopoldina.<br />
               Já nossos treinos das modalidades de E-sports acontecem de forma remota.
-            </h2>
+            </p>
           </div>
         </div>
       </div>
 
       <div className={styles.AcesseTreino}>
-        <h1>TREINOS</h1>
         <hr />
         <h2>Quer ser um atleta Panterão?</h2>
 
