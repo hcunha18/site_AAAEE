@@ -553,7 +553,6 @@
     flex-direction: row;
 }
 
-<<<<<<< Updated upstream
 
 .apoiadorescard{
 
@@ -562,14 +561,6 @@
     display: flex;
     justify-content: space-between;
     }
-=======
-.apoiadorescard {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    
-}
->>>>>>> Stashed changes
 
 .Apoiadores h2 {
     margin-bottom: 1rem;
@@ -706,12 +697,7 @@
         justify-content: center;
         align-items: center;
     }
-<<<<<<< Updated upstream
     .TelaDireita h2{
-=======
-
-    .TelaDireita p {
->>>>>>> Stashed changes
         padding-top: 1rem;
         width: 55vw;
         padding-bottom: 2rem;
@@ -722,23 +708,12 @@
     .TituloBolsistas{
         padding-top: 2rem;
     }
-<<<<<<< Updated upstream
     .Pesquisa h2{
         width: 55rem;
     }
 }
 @media(max-width:950px){
     .TelaDireita h2{
-=======
-
-    .Pesquisa p {
-        width: 60rem;
-    }
-}
-
-@media(max-width:950px) {
-    .TelaDireita p {
->>>>>>> Stashed changes
         padding-top: 1rem;
         width: 60vw;
         padding-bottom: 2rem;
@@ -756,12 +731,7 @@
     .LogoCampusAberto{
         width: 100%;
     }
-<<<<<<< Updated upstream
     .Pesquisa h2{
-=======
-
-    .Pesquisa p {
->>>>>>> Stashed changes
         width: 42rem;
     }
 }
@@ -772,40 +742,24 @@
     .title{
         font-size: 1.5rem;
     }
-<<<<<<< Updated upstream
     .TituloOrientadora h1{
         font-size: 1.5rem;
         line-height: 1.5rem;
     }
     .TelaDireita h2{
-=======
-
-    .TituloOrientadora h2 {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
-
-    .TelaDireita p {
->>>>>>> Stashed changes
         font-size: 1rem;
         font-size: 1.25rem;
     }
     .verMaisButton{
         font-size: 15px;
     }
-<<<<<<< Updated upstream
     .TituloBolsistas h1{
-=======
-
-    .TituloBolsistas h2 {
->>>>>>> Stashed changes
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
     .baseDiretoria{
         grid-template-columns: auto;
     }
-<<<<<<< Updated upstream
     .TituloSobre h1{
         font-size: 1.5rem;
         font-weight: 1.5rem;
@@ -827,40 +781,10 @@
         font-weight: 1.5rem;
     }
     .Pesquisa h2{
-=======
-
-    .TituloSobre h2 {
-        font-size: 1.5rem;
-        font-weight: 1.5rem;
-    }
-
-    .TituloSobre p {
-        font-size: 1rem;
-        font-weight: 1.25rem;
-    }
-
-    .SobreProjeto h2 {
-        font-size: 1.5rem;
-        font-weight: 1.5rem;
-    }
-
-    .SobreProjeto p {
-        font-size: 1rem;
-        font-weight: 1.25rem;
-    }
-
-    .Pesquisa h2 {
-        font-size: 1.5rem;
-        font-weight: 1.5rem;
-    }
-
-    .Pesquisa p {
->>>>>>> Stashed changes
         width: 35rem;
         font-size: 1rem;
         font-weight: 1.25rem;
     }
-<<<<<<< Updated upstream
     .Galeria h1{
         font-size: 1.5rem;
         font-weight: 1.5rem;
@@ -874,44 +798,15 @@
         font-weight: 1.5rem;
     }
     .ColunaEsquerda1 h2{
-=======
-
-    .Galeria h2 {
-        font-size: 1.5rem;
-        font-weight: 1.5rem;
-    }
-
-    .Apoiadores h2 {
-        font-size: 1.5rem;
-        font-weight: 1.5rem;
-    }
-
-    .ColunaEsquerda1 h2 {
-        font-size: 1.5rem;
-        font-weight: 1.5rem;
-    }
-
-    .ColunaEsquerda1 p {
->>>>>>> Stashed changes
         font-size: 1rem;
         font-weight: 1.25rem;
     }
 }
-<<<<<<< Updated upstream
 @media(max-width: 550px){
     .Pesquisa h2{
         width: 25rem;
     }
     .TituloSobre h2{
-=======
-
-@media(max-width: 550px) {
-    .Pesquisa p {
-        width: 25rem;
-    }
-
-    .TituloSobre p {
->>>>>>> Stashed changes
         width: 25rem;
         display: flex;
         justify-items: center;
@@ -923,47 +818,7 @@
     .TituloOrientadora{
         padding-bottom: 3rem;
     }
-<<<<<<< Updated upstream
     .TituloBolsistas{
-=======
-
-    .TituloBolsistas {
-        padding-bottom: 3rem;
-    }
-}
-
-@media(max-width: 450px) {
-    .TelaDireita p{
-        width: 24rem;
-        font-size: 1rem;
-        font-weight: 0.1rem;
-    }
-    .SobreProjeto p{
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .Pesquisa p{
-        width: 20rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .TituloSobre p{
-        width: 20rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .ColunaEsquerda1 hr {
-        width: 50vw;
-    }
-
-    .TituloOrientadora {
-        padding-bottom: 3rem;
-    }
-
-    .TituloBolsistas {
->>>>>>> Stashed changes
         padding-bottom: 3rem;
     }
 }

@@ -1,23 +1,24 @@
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0
 }
-.Body{
-    vertical-align:baseline;
+
+.Body {
+    vertical-align: baseline;
     background-color: #D9D9D9;
 }
 
 
 /*Texto Nossas Modalidades*/
-.TextModalidades{
+.TextModalidades {
     padding-left: 10rem;
     padding-top: 4rem;
 }
 
-.TextModalidades h2{
+.TextModalidades h2 {
     color: #2D7EA3;
     text-decoration: underline;
     position: relative;
@@ -29,14 +30,7 @@
     line-height: 50px;
 }
 
-/* .TextModalidades hr{
-    margin-top: 5px;
-    height: 2px;
-    width: 350px;
-    background-color: #2D7EA3;
-} */
-
-.TextModalidades p{
+.TextModalidades p {
     width: 80vw;
     text-align: justify;
     position: relative;
@@ -51,79 +45,76 @@
 }
 
 /*Definição de tamanho da img da garra*/
-.Garra{
-    width: 90%;
-    height: 90%;
-    margin-top: 50px;
+.Garra {
+    width: 30vw;
+    position: relative;
 }
 
 /*Definição do tamanho das divs (dividir a tela ao meio)*/
-.DivisaoTela{
+.DivisaoTela {
     display: flex;
+    flex-direction: row;
+    padding-top: 10vw;
 }
-.BlocoEsquerda{
-    width: 35vw;
-}
-.BlocoDireita{
-    width: 70vw;
-    margin-top: 150px;
-    margin-left: 100px;
-    display: flex;
-    flex-wrap: wrap; /*É ESSA FUNÇÃO CARALHOOOOOOOOOO */
+
+.esquerda1 {
+    width: 50%;
     /* background-color: red; */
 }
-.ListModalidadesEsquerda{
-    padding-left: 15rem;
-}
-.ListModalidadesEsquerda h2{
-    text-decoration: underline;
-    padding-bottom: 3rem;
-    position: relative;
-    text-align: left;
-    font-family: 'Jockey One';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 50px;
-    color: #000000;
-}
 
-
-/* .ListModalidadesEsquerda hr{
-    margin-top: 5px;
-    margin-bottom: 30px;
-    height: 2px;
-    background-color: #090E17;
-} */
-
-
-.ListModalidadesDireita{
-    padding-left: 15rem;
-}
-.ListModalidadesDireita h2{
-    text-decoration: underline;
-    padding-bottom: 3rem;
-    position: relative;
-    text-align: left;
-    font-family: 'Jockey One';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 50px;
-    color: #000000;
-}
-
-
-/* .ListModalidadesDireita hr{
-    margin-top: 5px;
-    margin-bottom: 30px;
-    height: 2px;
-    background-color: #090E17;
-} */
-
-
-.ListModalidadesEsquerda li{
+.base {
     width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "area1 area1 area2 area2"
+        "area3 area3 area3 area3";
+}
+
+.area1 {
+    grid-area: area1;
+}
+
+.area2 {
+    grid-area: area2;
+}
+
+.area3 {
+    grid-area: area3;
+}
+
+
+.ListModalidadesEsquerda h2 {
+    text-decoration: underline;
+    padding-bottom: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 50px;
+    color: #000000;
+}
+
+.ListModalidadesDireita h2 {
+    text-decoration: underline;
+    padding-bottom: 3rem;
+    position: relative;
+    text-align: left;
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 50px;
+    color: #000000;
+}
+
+.ListModalidadesEsquerda li {
+    width: 25vw;
     text-align: justify;
     position: relative;
     text-align: left;
@@ -135,8 +126,9 @@
     text-align: justify;
     color: #000000;
 }
-.ListModalidadesDireita li{
-    width: 50%;
+
+.ListModalidadesDireita li {
+    width: 25vw;
     text-align: justify;
     position: relative;
     text-align: left;
@@ -150,12 +142,12 @@
 }
 
 /*Texto informativo dos treinos*/
-.Treino{
+.Treino {
     display: flex;
-    align-items: start;
     flex-direction: column;
 }
-.Treino h2{
+
+.Treino h2 {
     text-decoration: underline;
     padding-bottom: 2rem;
     position: relative;
@@ -168,17 +160,7 @@
     color: #000000;
 }
 
-
-/* .Treino hr{
-    margin-top: 5px;
-    margin-bottom: 20px;
-    height: 2px;
-    width: 150px;
-    background-color: #090E17;
-} */
-
-
-.Treino p{
+.Treino p {
     width: 90%;
     text-align: justify;
     position: relative;
@@ -193,22 +175,23 @@
 }
 
 /*Breve texto para acesso ao linktree dos treinos*/
-.AcesseTreino{
+.AcesseTreino {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    padding-bottom: 5vw;
 }
-.AcesseTreino hr{
+
+.AcesseTreino hr {
     margin-top: 5px;
     margin-bottom: 20px;
     height: 2px;
     width: 300px;
     background-color: #090E17;
 }
-.AcesseTreino h2{
+
+.AcesseTreino h2 {
     padding-bottom: 2rem;
     position: relative;
     text-align: left;
@@ -223,49 +206,67 @@
 
 /*Criação do botao*/
 .verMaisButton {
-    background-color: #0056b3; /* Fundo */
-    color: #fff; /* Cor do texto branco */
-    padding: 15px 30px; /* Espaçamento interno */
-    border: 2px solid #fff; /* Borda branca */
-    border-radius: 10px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor ao passar o mouse */
-    margin-top: 50px; /* Espaçamento superior */
-    font-size: 20px; /* Tamanho da fonte */
-    text-align: center; /* Centraliza o texto */
-    font-family: 'Jockey One', sans-serif; /* Fonte similar */
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
-  }
-  .verMaisButton:hover {
-    transform: scale(1.1); /* Aumenta o botão em 10% ao passar o mouse */
-    background-color: #053651; /* Cor de fundo ao passar o mouse */
-  }
+    background-color: #0056b3;
+    /* Fundo */
+    color: #fff;
+    /* Cor do texto branco */
+    padding: 15px 30px;
+    /* Espaçamento interno */
+    border: 2px solid #fff;
+    /* Borda branca */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor ao passar o mouse */
+    margin-top: 50px;
+    /* Espaçamento superior */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    text-align: center;
+    /* Centraliza o texto */
+    font-family: 'Jockey One', sans-serif;
+    /* Fonte similar */
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Transição suave */
+}
 
-  
+.verMaisButton:hover {
+    transform: scale(1.1);
+    /* Aumenta o botão em 10% ao passar o mouse */
+    background-color: #053651;
+    /* Cor de fundo ao passar o mouse */
+}
+
+
 /*Img Campeonatos*/
-.DivisaoFotos{
+.DivisaoFotos {
     display: flex;
     justify-content: center;
     background-color: white;
 }
-.ColunaEsquerda{
+
+.ColunaEsquerda {
     width: 33%;
     display: flex;
     justify-content: center;
 
 }
-.ColunaCentro{
-    width: 33%;
-    display: flex;
-    justify-content: center;
-}
-.ColunaDireita{
+
+.ColunaCentro {
     width: 33%;
     display: flex;
     justify-content: center;
 }
 
-.ImgCampeonato{
+.ColunaDireita {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.ImgCampeonato {
     margin-top: 5rem;
     margin-bottom: 10rem;
     width: 25rem;
@@ -275,56 +276,239 @@
 }
 
 @media (max-width: 1250px) {
-    .DivisaoFotos{
+    .TextModalidades {
+        padding-left: 5vw;
+    }
+
+    .DivisaoFotos {
         flex-direction: column;
         align-items: center;
         padding: 0%;
         margin: 0;
     }
-    .BlocoDireita{
-        position: relative;
-        flex: 1;
+
+    .esquerda1 {
+        width: 0%;
     }
-    .BlocoEsquerda{
-        width: 20vw;
+
+    /* Retirando a imagem da garra */
+    .Garra {
+        display: none;
     }
-    .DivisaoTela{
+
+    .DivisaoTela {
         align-items: center;
         justify-content: center;
     }
+
+    .area3 {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .Treino p {
+        width: 50vw;
+    }
+
 }
 
 @media (max-width: 1000px) {
-    .BlocoEsquerda{
-       visibility: hidden;
-       height: 0px;
-       width: 0px;
+    .BlocoEsquerda {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
     }
-    .BlocoDireita{
+
+    .BlocoDireita {
         margin-left: 10px;
         flex-direction: column;
         margin-top: 1rem;
         align-items: center;
     }
-    .ListModalidadesDireita{
+
+    .ListModalidadesDireita {
         padding: 0px;
         padding-bottom: 3rem;
     }
-    .ListModalidadesEsquerda{
+
+    .ListModalidadesEsquerda {
         padding: 0px;
         padding-bottom: 3rem;
         padding-right: 4rem;
     }
-    .TextModalidades{
+
+    .TextModalidades {
         margin-left: 2rem;
         margin-right: 1rem;
         padding-top: 4rem;
     }
+
+    .base {
+        width: 100%;
+    }
+
+    .area1 {
+        display: flex;
+        justify-content: end;
+        /* padding-left: 10vw; */
+    }
+
+    .area2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .area3 {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10vw;
+    }
+
+    .Treino p {
+        width: 75vw;
+    }
+
+    .ListModalidadesEsquerda {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ListModalidadesDireita {
+        width: 40vw;
+    }
 }
 
-@media (max-width: 600px) {
-    .ImgCampeonato{
+/* Responsividade para telas Tablet */
+@media (max-width: 770px) {
+    .ImgCampeonato {
         width: 20rem;
         height: 15rem;
+    }
+
+    .TextModalidades h2 {
+        font-size: 20px;
+    }
+
+    .TextModalidades p {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .ListModalidadesEsquerda h2 {
+        font-size: 20px;
+        padding-bottom: 0.4rem;
+    }
+
+    .ListModalidadesDireita h2 {
+        font-size: 20px;
+        padding-bottom: 0.4rem;
+    }
+
+    .ListModalidadesEsquerda li {
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    .ListModalidadesDireita li {
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    .Treino h2 {
+        font-size: 20px;
+        padding-bottom: 0.4rem;
+    }
+
+    .Treino p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .AcesseTreino hr {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        height: 1px;
+        width: 300px;
+        background-color: #090E17;
+    }
+
+    .AcesseTreino h2 {
+        padding-bottom: 1rem;
+        font-size: 20px;
+    }
+
+    .verMaisButton {
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}
+
+/* Responsividade para telas Mobiles */
+@media (max-width: 450px) {
+    .ImgCampeonato {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .TextModalidades h2 {
+        font-size: 18px;
+    }
+
+    .TextModalidades p {
+        line-height: 18px;
+        font-size: 14px;
+    }
+
+    .ListModalidadesEsquerda h2 {
+        font-size: 18px;
+        padding-bottom: 0.4rem;
+    }
+
+    .ListModalidadesDireita h2 {
+        font-size: 18px;
+        padding-bottom: 0.4rem;
+    }
+
+    .ListModalidadesEsquerda li {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .ListModalidadesDireita li {
+        font-size: 14px;
+        line-height: 15px;
+        text-align: left;
+    }
+
+    .Treino h2 {
+        font-size: 18px;
+        padding-bottom: 0.4rem;
+    }
+
+    .Treino p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .AcesseTreino hr {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        height: 1px;
+        width: 300px;
+        background-color: #090E17;
+    }
+
+    .AcesseTreino h2 {
+        padding-bottom: 1rem;
+        font-size: 18px;
+    }
+
+    .verMaisButton {
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-top: 5px;
+        font-size: 16px;
     }
 }

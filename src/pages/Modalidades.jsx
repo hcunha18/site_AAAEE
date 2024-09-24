@@ -38,55 +38,59 @@ function Modalidades() {
         </p>
       </div>
 
-      <div className={styles.DivisaoTela}>
-        <div className={styles.BlocoEsquerda}>
+      {/* ---------------------------------------------------------------------------------------- */}
+      <div className={styles.divisaoTela}>
+        <div className={styles.esquerda1}>
           <div className={styles.ImgGarra}>
             <img src={garra} alt="GarraPantera" className={styles.Garra} />
           </div>
         </div>
-
-        <div className={styles.BlocoDireita}>
-          <div className={styles.ListModalidadesEsquerda}>
-            <h2>ESPORTES</h2>
-            <hr />
-            <ul>
-              <li>FUTSAL</li>
-              <li>TÊNIS DE MESA</li>
-              <li>SINUCA</li>
-              <li>PETECA</li>
-              <li>FUTVOLEI</li>
-              <li>NATAÇÃO</li>
-              <li>ESCALADA</li>
-              <li>FUTEBOL</li>
-              <li>BASQUETE</li>
-              <li>VÔLEI</li>
-            </ul>
+        <div className={styles.base}>
+          <div className={styles.area1}>
+            <div className={styles.ListModalidadesEsquerda}>
+              <h2>ESPORTES</h2>
+              <hr />
+              <ul>
+                <li>FUTSAL</li>
+                <li>TÊNIS DE MESA</li>
+                <li>SINUCA</li>
+                <li>PETECA</li>
+                <li>FUTVOLEI</li>
+                <li>NATAÇÃO</li>
+                <li>ESCALADA</li>
+                <li>FUTEBOL</li>
+                <li>BASQUETE</li>
+                <li>VÔLEI</li>
+              </ul>
+            </div>
           </div>
-
-          <div className={styles.ListModalidadesDireita}>
-            <h2>E-SPORTS</h2>
-            <hr />
-            <ul>
-              <li>LEAGUE OF LEGENDS</li>
-              <li>COUNTER-STRIKE 2</li>
-              <li>VALORANT</li>
-              <li>OVERWATCH</li>
-              <li>FIFA</li>
-              <li>TEAM FIGHT TATICS</li>
-            </ul>
+          <div className={styles.area2}>
+            <div className={styles.ListModalidadesDireita}>
+              <h2>E-SPORTS</h2>
+              <hr />
+              <ul>
+                <li>LEAGUE OF LEGENDS</li>
+                <li>COUNTER-STRIKE 2</li>
+                <li>VALORANT</li>
+                <li>OVERWATCH</li>
+                <li>FIFA</li>
+                <li>TEAM FIGHT TATICS</li>
+              </ul>
+            </div>
           </div>
-
-          <div className={styles.Treino}>
-            <h2>TREINOS</h2>
-            <hr />
-            <p>
-              Nossos treinos das modalidades físicas de futsal, vôlei e basquete, acontecem no Centro Poliesportivo do CEFET MG - Leopoldina.<br />
-              Já nossos treinos das modalidades de E-sports acontecem de forma remota.
-            </p>
+          <div className={styles.area3}>
+            <div className={styles.Treino}>
+              <h2>TREINOS</h2>
+              <hr />
+              <p>
+                Nossos treinos das modalidades físicas de futsal, vôlei e basquete, acontecem no Centro Poliesportivo do CEFET MG - Leopoldina.<br />
+                Já nossos treinos das modalidades de E-sports acontecem de forma remota.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
+      
       <div className={styles.AcesseTreino}>
         <hr />
         <h2>Quer ser um atleta Panterão?</h2>
@@ -105,21 +109,21 @@ function Modalidades() {
             <SliderBanner
               links={linksSliderEsquerda}
             />
-          </div>    
+          </div>
         </div>
         <div className={styles.ColunaCentro}>
           <div className={styles.ImgCampeonato}>
             <SliderBanner
               links={linksSliderCentro}
             />
-          </div>    
+          </div>
         </div>
         <div className={styles.ColunaDireita}>
           <div className={styles.ImgCampeonato}>
             <SliderBanner
               links={linksSliderDireita}
             />
-          </div>    
+          </div>
         </div>
       </div>
     </section>

@@ -576,37 +576,5 @@ body {
   .game{
     width: 400px;
   }
-<<<<<<< Updated upstream
   /* retornar nos jogos da semana */
-=======
-
-  .schedule{
-    width: 380px;
-    display: flex;
-    align-items: center;
-  }
-  .game{
-    width: 300px;
-    height: 80px;
-  }
-  
-  /* Diminuir as letras consequentemente a tabela */
-  .table{
-    width: 350px;
-  }
-  
-  .table th,
-  .table td {
-    border: 1px solid #004080;
-    padding: 10px;
-    text-align: left;
-    font-size: 8px;
-  }
-
-  /* Diminuir a logo dos times */
-  .table .logo {
-    width: 20px;
-    height: 20px;
-  }
->>>>>>> Stashed changes
 }

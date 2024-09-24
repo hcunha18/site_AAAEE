@@ -147,7 +147,7 @@ function Home() {
               <div className={styles.titulo1}>
                 <h1>Campus Aberto Atlética Panterão</h1>
               </div>
-              <div className={styles.paragrafo1}>
+              <div className={styles.paragrafo2}>
                 <p>
                   O Campus Aberto é um projeto de extensão da equipe de
                   competição ATLÉTICA CEFET LEOPOLDINA, no contexto esportivo,
