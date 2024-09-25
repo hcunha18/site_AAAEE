@@ -14,7 +14,7 @@
   background-color: #d9d9d9;
 }
 
-.contentDiv1{
+.contentDiv1 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -71,81 +71,45 @@
   white-space: nowrap;
 }
 
-@media (max-width: 880px) {
-  .contentDiv1{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-    
-  .divisor {
-    width: 0px;
-    height: 0px;
-    background-color: #000;
-    margin: 00px; /* Aumenta o espaço horizontal ao redor da linha divisória */
-  }
-
-  .Divisor1 {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    max-width: 1200px; /* Limite de largura total */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    
-  }
-
-  .direita {
-    margin-left: -10vw;
-    width: calc(0 + 0vw); /* Aumenta a largura para expandir para a direita */
-    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
-  }
-
-
-  .typeAnimation {
-    font-size: 1.5em;
-  }
-
-  .letreiroContainer {
-    max-width: 90%; /* Aumenta a largura máxima em telas menores */
-    padding: 10px 20px; /* Ajusta o padding para telas menores */
-    margin-left: 0; /* Remove o grande valor de margin-left para centralizar */
-    transform: translate(-50%, -50%);
-  }
-
-}
 
 @media (max-width: 600px) {
   .letreiroContainer {
     max-width: 80%;
-    padding: 10px 15px; /* Ajusta o padding para telas ainda menores */
+    padding: 10px 15px;
+    /* Ajusta o padding para telas ainda menores */
   }
 
   .staticMessage {
-    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas menores */
+    font-size: 1.2em;
+    /* Ajusta o tamanho da fonte para telas menores */
   }
 
   .typeAnimation {
-    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas menores */
+    font-size: 1.2em;
+    /* Ajusta o tamanho da fonte para telas menores */
   }
 }
 
 @media (max-width: 400px) {
   .letreiroContainer {
     max-width: 70%;
-    padding: 5px 10px; /* Ajusta o padding para telas muito pequenas */
+    padding: 5px 10px;
+    /* Ajusta o padding para telas muito pequenas */
   }
 
   .staticMessage {
-    font-size: 1em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    font-size: 1em;
+    /* Ajusta o tamanho da fonte para telas muito pequenas */
   }
 
   .typeAnimation {
-    font-size: 1em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    font-size: 1em;
+    /* Ajusta o tamanho da fonte para telas muito pequenas */
   }
 }
 
 .Letreiro {
-  display:inline-flex;
+  display: inline-flex;
 }
 
 .Letreiro .static-txt {
@@ -164,10 +128,13 @@
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Alinha verticalmente os itens ao centro */
+  align-items: center;
+  /* Alinha verticalmente os itens ao centro */
   padding: 100px;
-  gap: 40px; /* Reduzido o gap para diminuir o espaço entre os itens */
-  width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  gap: 40px;
+  /* Reduzido o gap para diminuir o espaço entre os itens */
+  width: 100%;
+  /* Ajustado para ocupar toda a largura disponível */
   margin-top: -1.5rem;
   margin-left: -20rem;
 }
@@ -177,7 +144,8 @@
   font-weight: 600;
   font-family: 'Jockey One', sans-serif;
   color: #000;
-  margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
+  margin-bottom: 20px;
+  /* Espaçamento entre o título e a imagem */
 }
 
 .h2 {
@@ -186,7 +154,8 @@
   font-family: 'Jockey One', sans-serif;
   color: #000;
   text-align: center;
-  margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
+  margin-bottom: 20px;
+  /* Espaçamento entre o título e a imagem */
 }
 
 .h02 {
@@ -203,19 +172,24 @@
 .Divisor1 {
   display: flex;
   width: 100%;
-  max-width: 1200px; /* Limite de largura total */
-  margin: 0 auto; /* Centraliza o conteúdo */
+  max-width: 1200px;
+  /* Limite de largura total */
+  margin: 0 auto;
+  /* Centraliza o conteúdo */
 }
 
-.esquerda, .direita {
+.esquerda,
+.direita {
   flex: 1;
-  min-width: 0; /* Permite que os itens encolham conforme necessário */
+  min-width: 0;
+  /* Permite que os itens encolham conforme necessário */
 }
 
 .divisor {
   width: 1px;
   background-color: #000;
-  margin: 0 60px; /* Aumenta o espaço horizontal ao redor da linha divisória */
+  margin: 0 60px;
+  /* Aumenta o espaço horizontal ao redor da linha divisória */
 }
 
 .esquerda {
@@ -229,10 +203,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Aumenta o padding */
-  width: calc(100% + 20vw); /* Aumenta a largura para expandir para a direita */
-  margin-right: 0vw; /* Margem negativa para expandir a div para a direita */
-  box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
+  text-align: center;
+  /* Aumenta o padding */
+  width: calc(100% + 20vw);
+  /* Aumenta a largura para expandir para a direita */
+  margin-right: 0vw;
+  /* Margem negativa para expandir a div para a direita */
+  box-sizing: border-box;
+  /* Inclui o padding e a borda no cálculo da largura */
 }
 
 
@@ -243,36 +221,54 @@
 }
 
 .imagem1 img {
-  max-width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  max-width: 100%;
+  /* Ajustado para ocupar toda a largura disponível */
   height: auto;
-  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+  object-fit: contain;
+  /* Garante que a imagem se ajuste ao container sem distorcer */
 }
+
 /* Configuração dos sliders */
 .slider {
-  width: 30vw; 
-  height: 30vw; /* Define a altura máxima do slider */
+  width: 30vw;
+  height: 30vw;
+  /* Define a altura máxima do slider */
 }
 
 
 
 .verMaisButton {
-  background-color: #0056b3; /* Fundo */
-  color: #fff; /* Cor do texto branco */
-  padding: 15px 30px; /* Espaçamento interno */
-  border: 2px solid #fff; /* Borda branca */
-  border-radius: 10px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor ao passar o mouse */
-  margin-top: 50px; /* Espaçamento superior */
-  font-size: 20px; /* Tamanho da fonte */
-  text-align: center; /* Centraliza o texto */
-  font-family: 'Jockey One', sans-serif; /* Fonte similar */
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+  background-color: #0056b3;
+  /* Fundo */
+  color: #fff;
+  /* Cor do texto branco */
+  padding: 15px 30px;
+  /* Espaçamento interno */
+  border: 2px solid #fff;
+  /* Borda branca */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  cursor: pointer;
+  /* Cursor ao passar o mouse */
+  margin-top: 50px;
+  /* Espaçamento superior */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  text-align: center;
+  /* Centraliza o texto */
+  font-family: 'Jockey One', sans-serif;
+  /* Fonte similar */
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+  /* Sombra */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Transição suave */
 }
 
 .verMaisButton:hover {
-  transform: scale(1.1); /* Aumenta o botão em 10% ao passar o mouse */
-  background-color: #053651; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.1);
+  /* Aumenta o botão em 10% ao passar o mouse */
+  background-color: #053651;
+  /* Cor de fundo ao passar o mouse */
 }
 
 /* Fim do contaneir dos destaques */
@@ -298,11 +294,15 @@
   align-items: center;
   justify-content: center;
 }
+
 .logoc {
   display: flex;
   justify-content: center;
-  width: 100%; /* Ajustado para ocupar toda a largura disponível */
-  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+}
+
+.logoc img {
+  object-fit: contain;
+  width: 100%;
 }
 
 .campus {
@@ -346,9 +346,11 @@
 
 .garra {
   margin-top: 1vw;
-  width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  width: 100%;
+  /* Ajustado para ocupar toda a largura disponível */
   height: 5vw;
-  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+  object-fit: contain;
+  /* Garante que a imagem se ajuste ao container sem distorcer */
 }
 
 /* Fim da estilização para o Campus Aberto*/
@@ -363,8 +365,9 @@
   max-width: 1200px;
   overflow: hidden;
   box-shadow: 0 4px 8px red(0, 0, 0, 0.1);
-  margin: 80px auto; /* Centralizar o card */
-  border-radius: 5px; 
+  margin: 80px auto;
+  /* Centralizar o card */
+  border-radius: 5px;
 }
 
 .cardMedia {
@@ -375,15 +378,17 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .cardContent {
   position: relative;
   z-index: 1;
-  width: 50%; /* Alterado para ocupar 50% da largura */
+  width: 50%;
+  /* Alterado para ocupar 50% da largura */
   padding: 20px;
-  background-color: rgba(245, 245, 245, 0.7); /* Fundo semitransparente */
+  background-color: rgba(245, 245, 245, 0.7);
+  /* Fundo semitransparente */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -391,8 +396,113 @@
 }
 
 /* centralização do botão */
-.button{
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Responsividade para notebooks */
+@media (max-width:1440px){
+  .Divisor1{
+    display: flex;
+    flex-direction: column;
+  }
+  .slider{
+    width: 35vw;
+    height: 35vw;
+  }
+  .direita{
+    width: 100%;
+  }
+  .h02{
+    padding-top: 10vw;
+  }
+  .paragrafo1{
+    width: 85%;
+    padding-right: 0;
+  }
+
+  /* Configuração das fontes */
+  .esquerda h2{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .h02{
+    font-size: 40px;
+  }
+  .paragrafo1{
+    font-size: 18px;
+  }
+  .titulo1{
+    font-size: 25px;
+  }
+}
+
+/* Responsividade para notebooks pequenos */
+@media (max-width:1025px){
+  /* Configuração das fontes */
+  .esquerda h2{
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .h02{
+    font-size: 35px;
+  }
+  .paragrafo1{
+    font-size: 16px;
+  }
+  .titulo1{
+    font-size: 20px;
+  }
+  .garra{
+    margin-bottom: 10vw;
+  }
+}
+
+@media (max-width: 880px) {
+  .contentDiv1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .divisor {
+    width: 0px;
+    height: 0px;
+    background-color: #000;
+    margin: 00px;
+    /* Aumenta o espaço horizontal ao redor da linha divisória */
+  }
+  .Divisor1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    /* Limite de largura total */
+    margin: 0 auto;
+    /* Centraliza o conteúdo */
+  }
+  .typeAnimation {
+    font-size: 1.5em;
+  }
+  .letreiroContainer {
+    max-width: 90%;
+    /* Aumenta a largura máxima em telas menores */
+    padding: 10px 20px;
+    /* Ajusta o padding para telas menores */
+    margin-left: 0;
+    /* Remove o grande valor de margin-left para centralizar */
+    transform: translate(-50%, -50%);
+  }
+  .esquerda2{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+  .direita2{
+    visibility: hidden;
+    width: 0%;
+  }
 }
