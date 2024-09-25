@@ -665,6 +665,7 @@
 
 /* Resposividade */
 
+
 @media(max-width: 1441px) {
     .DivisaoTela2 {
         display: flex;
@@ -1014,6 +1015,34 @@
     }
 
     .TituloBolsistas {
+        padding-bottom: 3rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .TelaDireita h2{
+        width: 24rem;
+        font-size: 1rem;
+        font-weight: 0.1rem;
+    }
+    .Pesquisa h2 {
+        width: 20rem;
+    }
+
+    .TituloSobre h2 {
+        width: 20rem;
+    }
+
+    .ColunaEsquerda1 hr {
+        width: 50vw;
+    }
+
+    .TituloOrientadora {
+        padding-bottom: 3rem;
+    }
+
+    .TituloBolsistas {
+
         padding-bottom: 3rem;
     }
 }
