@@ -359,7 +359,7 @@
     background-color: var(--textColor);
 }
 
-.TituloSobre p{
+.TituloSobre p {
     padding-top: 3rem;
     padding-left: 7rem;
     padding-right: 7rem;
@@ -450,6 +450,7 @@
     height: 3px;
     background-color: var(--textColor);
 }
+
 .Pesquisa p {
     /* width: 80rem; */
     padding-left: 7rem;
@@ -664,7 +665,8 @@
 
 /* Resposividade */
 
-@media(max-width: 1440px) {
+
+@media(max-width: 1441px) {
     .DivisaoTela2 {
         display: flex;
         justify-content: center;
@@ -685,6 +687,63 @@
         grid-template-columns: auto auto;
         background-color: var(--text-page-color);
         justify-content: space-around;
+    }
+
+    /* Ajuste de responsividade dos textos */
+    .title h1 {
+        font-size: 32px;
+    }
+
+    .TituloOrientadora h2 {
+        font-size: 28px;
+    }
+
+    .TelaDireita p {
+        font-size: 18px;
+    }
+
+    .TituloBolsistas h2 {
+        font-size: 28px;
+    }
+
+    .TituloSobre h2 {
+        font-size: 28px;
+    }
+
+    .TituloSobre p {
+        font-size: 18px;
+    }
+
+    .SobreProjeto h2 {
+        font-size: 28px;
+    }
+
+    .SobreProjeto p {
+        font-size: 18px;
+    }
+
+    .Pesquisa h2 {
+        font-size: 28px;
+    }
+
+    .Pesquisa p {
+        font-size: 18px;
+    }
+
+    .Galeria h2 {
+        font-size: 28px;
+    }
+
+    .Apoiadores h2 {
+        font-size: 28px;
+    }
+
+    .ColunaEsquerda1 h2 {
+        font-size: 28px;
+    }
+
+    .ColunaEsquerda1 p {
+        font-size: 18px;
     }
 }
 
@@ -723,6 +782,66 @@
     }
 }
 
+@media (max-width: 1025px) {
+
+    /* Ajuste de responsividade dos textos */
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .TituloOrientadora h2 {
+        font-size: 24px;
+    }
+
+    .TelaDireita p {
+        font-size: 16px;
+    }
+
+    .TituloBolsistas h2 {
+        font-size: 24px;
+    }
+
+    .TituloSobre h2 {
+        font-size: 24px;
+    }
+
+    .TituloSobre p {
+        font-size: 16px;
+    }
+
+    .SobreProjeto h2 {
+        font-size: 24px;
+    }
+
+    .SobreProjeto p {
+        font-size: 16px;
+    }
+
+    .Pesquisa h2 {
+        font-size: 24px;
+    }
+
+    .Pesquisa p {
+        font-size: 16px;
+    }
+
+    .Galeria h2 {
+        font-size: 24px;
+    }
+
+    .Apoiadores h2 {
+        font-size: 24px;
+    }
+
+    .ColunaEsquerda1 h2 {
+        font-size: 24px;
+    }
+
+    .ColunaEsquerda1 p {
+        font-size: 16px;
+    }
+}
+
 @media(max-width:950px) {
     .TelaDireita h2 {
         padding-top: 1rem;
@@ -748,6 +867,46 @@
 
     .Pesquisa h2 {
         width: 42rem;
+    }
+}
+
+@media (max-width: 770px) {
+
+    /* Ajuste de responsividade dos textos */
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .TituloOrientadora h2 {
+        font-size: 20px;
+    }
+
+    .TituloBolsistas h2 {
+        font-size: 20px;
+    }
+
+    .TituloSobre h2 {
+        font-size: 20px;
+    }
+
+    .SobreProjeto h2 {
+        font-size: 20px;
+    }
+
+    .Pesquisa h2 {
+        font-size: 20px;
+    }
+
+    .Galeria h2 {
+        font-size: 20px;
+    }
+
+    .Apoiadores h2 {
+        font-size: 20px;
+    }
+
+    .ColunaEsquerda1 h2 {
+        font-size: 20px;
     }
 }
 
@@ -883,6 +1042,7 @@
     }
 
     .TituloBolsistas {
+
         padding-bottom: 3rem;
     }
 }

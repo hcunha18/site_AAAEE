@@ -300,6 +300,16 @@
         align-items: center;
         justify-content: center;
     }
+    .ColunaEsquerda{
+        display: none;
+    }
+    .ColunaDireita{
+        display: none;
+    }
+    .ImgCampeonato{
+        width: 60vw;
+        height: 40vw;
+    }
 
     .area3 {
         padding-top: 5vw;
@@ -380,11 +390,6 @@
 
 /* Responsividade para telas Tablet */
 @media (max-width: 770px) {
-    .ImgCampeonato {
-        width: 20rem;
-        height: 15rem;
-    }
-
     .TextModalidades h2 {
         font-size: 20px;
     }
@@ -447,11 +452,6 @@
 
 /* Responsividade para telas Mobiles */
 @media (max-width: 450px) {
-    .ImgCampeonato {
-        width: 20rem;
-        height: 15rem;
-    }
-
     .TextModalidades h2 {
         font-size: 18px;
     }

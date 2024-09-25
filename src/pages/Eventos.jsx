@@ -31,7 +31,7 @@ function Eventos() {
   const linksSliderCalcoolizando = [
     {id: "1", url: 'https://i.postimg.cc/RZDJx5b7/Cantor-Calcoolizando.jpg', alt: "Banda Pagode"},
     {id: "2", url: 'https://i.postimg.cc/3J2tw9H0/calcoolizando-1.jpg', alt: "#"},
-    {id: "3", url: 'https://i.postimg.cc/y6ZPfnxp/calcoolizando-2.jpg', alt: "#"},
+    {id: "3", url: 'https://i.postimg.cc/t4Q5Hpvj/DSC-6834.jpg', alt: "#"},
     {id: "4", url: 'https://i.postimg.cc/XJTgjBHg/calcoolizando-4.jpg', alt: "#"}
 ];
 
@@ -55,26 +55,21 @@ function Eventos() {
       </div>
 
       <div className={styles.NossosEventos}>
-        <h1>NOSSOS EVENTOS</h1>
+        <h2>NOSSOS EVENTOS</h2>
         <hr />
-        <h2>
+        <p>
           A Atlética Panterão realiza diversos eventos durante o ano, sejam eles festas ou até mesmo eventos intitucionais. <br></br>
           Nosso objetivo é criar uma maior integração entre os alunos e deixar cada vez melhor sua experiência universitária.<br></br>
           Aqui, apresentamos algum de nossos eventos realizados durante o ano.
-        </h2>
-        {/* <pre>
-          {"A Atlética Panterão realiza diversos eventos durante o ano, sejam eles festas ou até mesmo eventos intitucionais. \n"}
-          {"Nosso objetivo é criar uma maior integração entre os alunos e deixar cada vez melhor sua experiência universitária. \n"}
-          {"Aqui, apresentamos algum de nossos eventos realizados durante o ano."}
-        </pre> */}
+        </p>
       </div>
 
       <div className={styles.DivisaoTela1}>
         <div className={styles.TelaEsquerda}>
           <div className={styles.TextoEvento}>
-            <h1>RECEPÇÃO DE CALOUROS</h1>
+            <h2>RECEPÇÃO DE CALOUROS</h2>
             <hr />
-            <h2>A Recepção de calouros é a festa mais tradicional da Atlética. Acontece no início de cada período e tem como objetivo receber os novos alunos das engenharias do CEFET - Leopoldina. É uma oportunidade incrível para fazer novas amizades, beber bastante e quem sabe até encontrar seu crush. Assim, a recepção de calouros é a melhor forma de começar o período.</h2>
+            <p>A Recepção de calouros é a festa mais tradicional da Atlética. Acontece no início de cada período e tem como objetivo receber os novos alunos das engenharias do CEFET - Leopoldina. É uma oportunidade incrível para fazer novas amizades, beber bastante e quem sabe até encontrar seu crush. Assim, a recepção de calouros é a melhor forma de começar o período.</p>
           </div>
         </div>
         <div className={styles.TelaDireita}>
@@ -97,9 +92,9 @@ function Eventos() {
         </div>
         <div className={styles.TelaDireita}>
           <div className={styles.TextoEvento}>
-            <h1>CALCOOLIZANDO</h1>
+            <h2>CALCOOLIZANDO</h2>
             <hr />
-            <h2>A Recepção de calouros é a festa mais tradicional da Atlética. Acontece no início de cada período e tem como objetivo receber os novos alunos das engenharias do CEFET - Leopoldina. É uma oportunidade incrível para fazer novas amizades, beber bastante e quem sabe até encontrar seu crush. Assim, a recepção de calouros é a melhor forma de começar o período.</h2>
+            <p>A Recepção de calouros é a festa mais tradicional da Atlética. Acontece no início de cada período e tem como objetivo receber os novos alunos das engenharias do CEFET - Leopoldina. É uma oportunidade incrível para fazer novas amizades, beber bastante e quem sabe até encontrar seu crush. Assim, a recepção de calouros é a melhor forma de começar o período.</p>
           </div>
         </div>
       </div>
@@ -107,9 +102,9 @@ function Eventos() {
       <div className={styles.DivisaoTela3}>
         <div className={styles.TelaEsquerda}>
           <div className={styles.TextoEvento}>
-            <h1>ADEUS CALOUROS</h1>
+            <h2>ADEUS CALOUROS</h2>
             <hr />
-            <h2>A Recepção de calouros é a festa mais tradicional da Atlética. Acontece no início de cada período e tem como objetivo receber os novos alunos das engenharias do CEFET - Leopoldina. É uma oportunidade incrível para fazer novas amizades, beber bastante e quem sabe até encontrar seu crush. Assim, a recepção de calouros é a melhor forma de começar o período.</h2>
+            <p>A Recepção de calouros é a festa mais tradicional da Atlética. Acontece no início de cada período e tem como objetivo receber os novos alunos das engenharias do CEFET - Leopoldina. É uma oportunidade incrível para fazer novas amizades, beber bastante e quem sabe até encontrar seu crush. Assim, a recepção de calouros é a melhor forma de começar o período.</p>
           </div>
         </div>
         <div className={styles.TelaDireita}>
