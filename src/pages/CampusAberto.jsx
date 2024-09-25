@@ -81,7 +81,7 @@ function CampusAberto() {
         <img src={bannerCampusAberto} alt='Banner' className={styles.bg} />
       </div>
       <div className={styles.TituloOrientadora}>
-        <h1>ORIENTADORA</h1>
+        <h2>ORIENTADORA</h2>
         <hr />
       </div>
       <div className={styles.DivisaoTela}>
@@ -101,11 +101,11 @@ function CampusAberto() {
           </div>
         </div>
         <div className={styles.TelaDireita}>
-          <h2>
+          <p>
             O projeto Campus Aberto Atlética Panterão é coordenado pela professora Drª
             Gabriela Venturini (PORTARIA ADMINISTRATIVA DEDC/CEFET-MG Nº 207,
             DE 14 DE SETEMBRO DE 2023).
-          </h2>
+          </p>
           {/* Botao Saiba Mais Campus Aberto */}
           <button
             className={styles.verMaisButton}
@@ -117,7 +117,7 @@ function CampusAberto() {
 
       {/* Area Bolsistas */}
       <div className={styles.TituloBolsistas}>
-        <h1>BOLSISTAS</h1>
+        <h2>BOLSISTAS</h2>
         <hr />
       </div>
       <div className={styles.DivisaoTela2}>
@@ -147,62 +147,63 @@ function CampusAberto() {
       </div>
 
       <div className={styles.TituloSobre}>
-        <h1>O QUE É?</h1>
+        <h2>O QUE É?</h2>
         <hr />
-        <h2>
+        <p>
           Equipe de competição é uma iniciativa estudantil, constituindo-se de um grupo organizado de estudantes com vínculo ativo e regular em curso de educação
           profissional técnica de nível médio, graduação ou pós-graduação ofertado pelo CEFET-MG, visando participar e representar a Instituição em competições de
           cunho acadêmico.
           A ATLÉTICA CEFET LEOPOLDINA é uma equipe de competição acadêmico esportiva, que realiza ações de ensino, pesquisa e extensão nas áreas do esporte,
           da saúde, da educação, da cultura e da tecnologia, integrando discentes dos diferentes níveis de ensino da Instituição.
-        </h2>
+        </p>
       </div>
 
       <div className={styles.SobreProjeto}>
-        <h1>PROJETO CAMPUS ABERTO - ATLÉTICA PANTERÃO</h1>
+        <h2>PROJETO CAMPUS ABERTO - ATLÉTICA PANTERÃO</h2>
         <hr />
-        <h2>
+        <p>
           O Campus Aberto é um projeto de extensão da equipe de competição ATLÉTICA CEFET LEOPOLDINA, no contexto esportivo, que tem por objetivo geral
           representar o CEFET-MG em competições esportivas e promover a aproximação do Campus Leopoldina com a comunidade através do esporte, como
           ferramenta de promoção da saúde e da educação.
-        </h2>
-        <h2>
+        </p>
+        <p>
           Para isso, serão realizadas as seguintes ações:
           <ul>
-            <li>participação de competições esportivas representando o CEFET-MG Campus Leopoldina;</li>
-            <li>participação em Congresso Internacional de Educação Física;</li>
-            <li>oferecimento de oficinas esportivas para público interno e externo dentro do Complexo Esportivo do campus;</li>
-            <li>desenvolvimento de habilidades socioemocionais do público alvo e dos discentes que compõem a equipe de competição através das oficinas esportivas;</li>
-            <li>programação de atividades esportivas gratuitas e abertas à sociedade na MOCITEC MG 2024, proporcionando o contato do público externo do projeto a
+            <li>- participação de competições esportivas representando o CEFET-MG Campus Leopoldina;</li>
+            <li>- participação em Congresso Internacional de Educação Física;</li>
+            <li>- oferecimento de oficinas esportivas para público interno e externo dentro do Complexo Esportivo do campus;</li>
+            <li>- desenvolvimento de habilidades socioemocionais do público alvo e dos discentes que compõem a equipe de competição através das oficinas esportivas;</li>
+            <li>- programação de atividades esportivas gratuitas e abertas à sociedade na MOCITEC MG 2024, proporcionando o contato do público externo do projeto a
               outras ações de extensão existentes no CEFET-MG.</li>
           </ul>
-        </h2>
-        <h2>
+        </p>
+        <p>
           São beneficiados aproximadamente 350 discentes, gratuitamente e igualitariamente, de forma a fortalecer o compromisso do CEFET-MG com os marcos
           legais da inclusão social, e igualdade entre os gêneros.
-        </h2>
+        </p>
       </div>
 
       <div className={styles.Pesquisa}>
-        <h1>PESQUISA, ENSINO E EXTENSÃO</h1>
+        <h2>PESQUISA, ENSINO E EXTENSÃO</h2>
         <hr />
-        <h2>O projeto de pesquisa do Campus Aberto possui 2 bolsistas, um da graduação e um do técnico integrado em informática,
+        <p>O projeto de pesquisa do Campus Aberto possui 2 bolsistas, um da graduação e um do técnico integrado em informática,
           e busca desenvolver um aplicativo que meça o nível de atividade física dos discentes do campus.
-        </h2>
+        </p>
+        <br></br>
 
-        <h2>Ensino: o projeto de ensino está sendo relizado com as tumas dos cursos técnicos integrado do campus, e tem como objetivo
+        <p>Ensino: o projeto de ensino está sendo relizado com as tumas dos cursos técnicos integrado do campus, e tem como objetivo
           conhecer as principais tecnologias utiilzadas nos Jogos Olímpicos e Paralímpicos PARIS 2024.
-        </h2>
-
-        <h2>O Campus Aberto possui um núcleo de extensão chamado Atlética Panterão, que realiza diferentes ações no contexto esportivo,
+        </p>
+        <br></br>
+        <p>O Campus Aberto possui um núcleo de extensão chamado Atlética Panterão, que realiza diferentes ações no contexto esportivo,
           dentre elas, a realização do Torneio de Futsal Interperíodos, a programação esportiva da MOCITEC MG.
           a oferta de oficinas esportivas gratuitas para alunos das escolas públicas da cidade ( em parceria com a Prefeitura de Leopoldina),
           a oferta de cursos de extensão, entre outras.
-        </h2>
+        </p>
       </div>
 
       <div className={styles.Galeria}>
-        <h1>GALERIA DE FOTOS</h1>
+        <h2>GALERIA DE FOTOS</h2>
         <hr />
         <div className={styles.DivisaoFotos}>
           <div className={styles.ColunaEsquerda}>
@@ -224,9 +225,8 @@ function CampusAberto() {
         </div>
       </div>
       <div className={styles.Apoiadores}>
-        <h1>APOIADORES</h1>
+        <h2>APOIADORES</h2>
         <hr />
-
         <div className={styles.ParteDireita2} >
           <div className={styles.apoiadorescard}>
             {apoiadoresData.map((membro, index) => (
@@ -247,9 +247,9 @@ function CampusAberto() {
 
       <div className={styles.DivisaoTela3}>
         <div className={styles.ColunaEsquerda1}>
-          <h1>PARA MAIS INFORMAÇÕES</h1>
+          <h2>PARA MAIS INFORMAÇÕES</h2>
           <hr />
-          <h2>Nos acompanhe no Instagram</h2>
+          <p>Nos acompanhe no Instagram</p>
           <button
             className={styles.verMaisButton}
             onClick={() => window.location.href = "https://www.instagram.com/campusabertocefetleopoldina/"}>

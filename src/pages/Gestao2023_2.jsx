@@ -136,7 +136,7 @@ function Gestao2023_2() {
       linkedLink: 'https://www.linkedin.com/in/vin%C3%ADcius-lima-fernandes-889318261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
-      imageLink: '',
+      imageLink: 'https://i.postimg.cc/ydcnP4sy/leticia-membro.jpg',
       h1Text: 'Letícia Faria Pereira Prado',
       h3Text: '1° Diretora de Produtos da A.A.A.E.E CEFET - Leopoldina',
       gitLink: '',
@@ -144,7 +144,7 @@ function Gestao2023_2() {
       linkedLink: 'https://www.linkedin.com/in/leticia-prado-373016286/'
     },
     {
-      imageLink: '',
+      imageLink: 'https://i.postimg.cc/rpvQxFXp/sophia-membro.jpg',
       h1Text: 'Sophia Coura Martins Ferreira',
       h3Text: '1° Diretora de Patrimônio da A.A.A.E.E CEFET - Leopoldina',
       gitLink: 'https://github.com/sophiacmf',

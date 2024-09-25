@@ -30,63 +30,68 @@ function Modalidades() {
   return (
     <section className={styles.Body}>
       <div className={styles.TextModalidades}>
-        <h1>NOSSAS MODALIDADES</h1>
+        <h2>NOSSAS MODALIDADES</h2>
         <hr />
-        <h2>O Panterão conta com 9 modalidades físicas e 6 modalidades online.<br />
-          Os Atletas participam de diversos campeonatos no decorrer do ano letivo, dos quais temos boas memórias e títulos para recordar.</h2>
+        <p>
+          O Panterão conta com 9 modalidades físicas e 6 modalidades online.<br />
+          Os Atletas participam de diversos campeonatos no decorrer do ano letivo, dos quais temos boas memórias e títulos para recordar.
+        </p>
       </div>
 
-      <div className={styles.DivisaoTela}>
-        <div className={styles.BlocoEsquerda}>
+      {/* ---------------------------------------------------------------------------------------- */}
+      <div className={styles.divisaoTela}>
+        <div className={styles.esquerda1}>
           <div className={styles.ImgGarra}>
             <img src={garra} alt="GarraPantera" className={styles.Garra} />
           </div>
         </div>
-
-        <div className={styles.BlocoDireita}>
-          <div className={styles.ListModalidadesEsquerda}>
-            <h1>ESPORTES</h1>
-            <hr />
-            <ul>
-              <li>FUTSAL</li>
-              <li>TÊNIS DE MESA</li>
-              <li>SINUCA</li>
-              <li>PETECA</li>
-              <li>FUTVOLEI</li>
-              <li>NATAÇÃO</li>
-              <li>ESCALADA</li>
-              <li>FUTEBOL</li>
-              <li>BASQUETE</li>
-              <li>VÔLEI</li>
-            </ul>
+        <div className={styles.base}>
+          <div className={styles.area1}>
+            <div className={styles.ListModalidadesEsquerda}>
+              <h2>ESPORTES</h2>
+              <hr />
+              <ul>
+                <li>FUTSAL</li>
+                <li>TÊNIS DE MESA</li>
+                <li>SINUCA</li>
+                <li>PETECA</li>
+                <li>FUTVOLEI</li>
+                <li>NATAÇÃO</li>
+                <li>ESCALADA</li>
+                <li>FUTEBOL</li>
+                <li>BASQUETE</li>
+                <li>VÔLEI</li>
+              </ul>
+            </div>
           </div>
-
-          <div className={styles.ListModalidadesDireita}>
-            <h1>E-SPORTS</h1>
-            <hr />
-            <ul>
-              <li>LEAGUE OF LEGENDS</li>
-              <li>COUNTER-STRIKE 2</li>
-              <li>VALORANT</li>
-              <li>OVERWATCH</li>
-              <li>FIFA</li>
-              <li>TEAM FIGHT TATICS</li>
-            </ul>
+          <div className={styles.area2}>
+            <div className={styles.ListModalidadesDireita}>
+              <h2>E-SPORTS</h2>
+              <hr />
+              <ul>
+                <li>LEAGUE OF LEGENDS</li>
+                <li>COUNTER-STRIKE 2</li>
+                <li>VALORANT</li>
+                <li>OVERWATCH</li>
+                <li>FIFA</li>
+                <li>TEAM FIGHT TATICS</li>
+              </ul>
+            </div>
           </div>
-
-          <div className={styles.Treino}>
-            <h1>TREINOS</h1>
-            <hr />
-            <h2>
-              Nossos treinos das modalidades físicas de futsal, vôlei e basquete, acontecem no Centro Poliesportivo do CEFET MG - Leopoldina.<br />
-              Já nossos treinos das modalidades de E-sports acontecem de forma remota.
-            </h2>
+          <div className={styles.area3}>
+            <div className={styles.Treino}>
+              <h2>TREINOS</h2>
+              <hr />
+              <p>
+                Nossos treinos das modalidades físicas de futsal, vôlei e basquete, acontecem no Centro Poliesportivo do CEFET MG - Leopoldina.<br />
+                Já nossos treinos das modalidades de E-sports acontecem de forma remota.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
+      
       <div className={styles.AcesseTreino}>
-        <h1>TREINOS</h1>
         <hr />
         <h2>Quer ser um atleta Panterão?</h2>
 
@@ -104,21 +109,21 @@ function Modalidades() {
             <SliderBanner
               links={linksSliderEsquerda}
             />
-          </div>    
+          </div>
         </div>
         <div className={styles.ColunaCentro}>
           <div className={styles.ImgCampeonato}>
             <SliderBanner
               links={linksSliderCentro}
             />
-          </div>    
+          </div>
         </div>
         <div className={styles.ColunaDireita}>
           <div className={styles.ImgCampeonato}>
             <SliderBanner
               links={linksSliderDireita}
             />
-          </div>    
+          </div>
         </div>
       </div>
     </section>

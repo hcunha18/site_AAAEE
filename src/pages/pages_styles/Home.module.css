@@ -231,8 +231,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 40px; /* Aumenta o padding */
+  text-align: center; /* Aumenta o padding */
   width: calc(100% + 20vw); /* Aumenta a largura para expandir para a direita */
   margin-right: 0vw; /* Margem negativa para expandir a div para a direita */
   box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
@@ -287,32 +286,39 @@ body {
 
 .Divisor2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .esquerda2 {
-  flex: 1;
-  padding: 90px;
+  width: 50%;
 }
 
 .direita2 {
-  flex: 1;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.logoc {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+}
 
 .campus {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5vw;
 }
 
 .texto1 {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .titulo1 {
@@ -331,19 +337,21 @@ body {
   font-family: sans-serif;
   text-align: justify;
   color: #000;
-  margin-right: 3rem;
+  padding-right: 3rem;
+}
+
+.paragrafo2 {
+  font-size: 16px;
+  line-height: 2.0;
+  font-family: sans-serif;
+  text-align: justify;
+  color: #000;
 }
 
 .garra {
   margin-top: 1vw;
   width: 100%; /* Ajustado para ocupar toda a largura disponível */
   height: 5vw;
-  object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
-}
-
-.logoc {
-  max-width: 200%; /* Ajustado para ocupar toda a largura disponível */
-  height: auto;
   object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
 }
 

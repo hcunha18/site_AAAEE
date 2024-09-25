@@ -87,7 +87,7 @@ function Home() {
       <div className={styles.contentDiv1}>
         <div className={styles.Divisor1}>
           <div className={styles.esquerda}>
-          <h2 className={styles.h2}> Campeonatos em Andamento</h2>
+            <h2 className={styles.h2}> Campeonatos em Andamento</h2>
             <div className={styles.slider}>
               <SliderBanner
                 links={SliderBannerDireita}
@@ -100,42 +100,42 @@ function Home() {
           <div className={styles.direita}>
             <h2 className={styles.h02}> A Atlética</h2>
             <div className={styles.paragrafo1}>
-                <p>
+              <p>
                 A ASSOCIAÇÃO ATLÉTICA ACADÊMICA DAS ESCOLAS DE ENGENHARIA
                 DO CENTRO FEDERAL DE EDUCAÇÃO E TECNOLOGIA DE MINAS GERAIS
                 CEFET-MG CAMPUS LEOPOLDINA, denominada Atlética CEFET
                 Leopoldina, é pessoa jurídica de direito privado, constituída
                 na forma de associação civil sem fins lucrativos,
                 caracterizando-se como apartidária, laica, livre e
-                independente de orientações filosóficas, com autonomia 
+                independente de orientações filosóficas, com autonomia
                 administrativa e financeira, regida pelo presente estatuto
                 e pelas normas da legislação brasileira.
                 É uma representatividade dos estudantes do Campus
                 Leopoldina do CEFET-MG.
-<br />
-<br />
+                <br />
+                <br />
                 A Atlética CEFET Leopoldina tem por finalidade promover o Esporte
-                em suas diferentes dimensões (educacional, social, cultural, 
-                científica, tecnológica, da saúde e da gestão) e 
-                níveis/manifestações de prática (formação esportiva, excelência 
-                esportiva e esporte para toda a vida), através de ações sociais 
+                em suas diferentes dimensões (educacional, social, cultural,
+                científica, tecnológica, da saúde e da gestão) e
+                níveis/manifestações de prática (formação esportiva, excelência
+                esportiva e esporte para toda a vida), através de ações sociais
                 de ensino, pesquisa e extensão baseadas nos princípios fundamentais
-                do esporte previstos na Lei Geral do Esporte - nº 14.597/23 
-                (autonomia, democratização, descentralização, diferenciação, 
+                do esporte previstos na Lei Geral do Esporte - nº 14.597/23
+                (autonomia, democratização, descentralização, diferenciação,
                 educação, eficiência, especificidade, gestão democrática, identidade
                 nacional, inclusão, integridade, liberdade, participação, qualidade,
                 saúde, segurança) sem qualquer distinção de raça, cor, nacionalidade,
                 credo, sexo, gênero, sexualidade, convicção política, religiosa, social.
-                </p>
-              </div>
-              <div className={styles.garra}>
-            <img
-              className={styles.garra}
-              src="https://i.postimg.cc/PxH177MQ/garra-panterao.png"
-              alt="Garra"
-              border="0"
-            />
-          </div>
+              </p>
+            </div>
+            <div className={styles.garra}>
+              <img
+                className={styles.garra}
+                src="https://i.postimg.cc/PxH177MQ/garra-panterao.png"
+                alt="Garra"
+                border="0"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -147,7 +147,7 @@ function Home() {
               <div className={styles.titulo1}>
                 <h1>Campus Aberto Atlética Panterão</h1>
               </div>
-              <div className={styles.paragrafo1}>
+              <div className={styles.paragrafo2}>
                 <p>
                   O Campus Aberto é um projeto de extensão da equipe de
                   competição ATLÉTICA CEFET LEOPOLDINA, no contexto esportivo,
@@ -156,13 +156,13 @@ function Home() {
                   Leopoldina com a comunidade através do esporte, como
                   ferramenta de promoção da saúde e da educação.
                 </p>
-                <button
-                  onClick={() => navigate("CampusAberto/")}
-                  className={styles.verMaisButton}>
-                  Saiba Mais
-                </button>
               </div>
             </div>
+            <button
+              onClick={() => navigate("CampusAberto/")}
+              className={styles.verMaisButton}>
+              Saiba Mais
+            </button>
           </div>
         </div>
         <div className={styles.direita2}>
