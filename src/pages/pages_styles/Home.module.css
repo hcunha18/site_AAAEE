@@ -26,20 +26,16 @@ body {
   overflow-x: hidden;
 }
 
-
-.fundo {
-  width: 50%;
-  height: 150px;
-  color: #053651;
-  background-color: #053651;
-  margin-top: -150px;
-  z-index: 1;
-  border: none;
-  border-radius: 50px;
+.letreiroPai {
+  display: flex;
+  width: 100%; /* Largura completa do pai */
+  justify-content: center;
 }
 
 
+
 .letreiroContainer {
+  margin-left: 25rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -54,7 +50,16 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-  margin-left: 30rem;
+}
+
+@media (max-width: 880px) {
+  .letreiroContainer {
+    width: 300px; /* Define um tamanho fixo para telas menores */
+    padding: 20px; /* Ajuste o padding se necessário */
+    margin-left: 0; /* Garante que não haja deslocamento */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Garante a centralização exata */
+  }
 }
 
 .staticMessage {
@@ -303,6 +308,12 @@ body {
   justify-content: center;
 }
 
+.atletica {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .campus {
   display: flex;
   flex-direction: column;
@@ -446,6 +457,15 @@ body {
     width: 100%; /* Ajustado para ocupar toda a largura disponível */
     height: auto;
     object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+  }
+  @media (max-width: 880px) {
+    .garra {
+      display: none;
+      overflow: hidden;
+      width: 20%; /* Define um tamanho inicial relativo à tela */
+      max-width: 200px; /* Define um tamanho máximo para a logo */
+      height: auto; /* Mantém a proporção */
+    }
   }
 }
 

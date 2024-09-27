@@ -66,6 +66,7 @@ function Home() {
   return (
     <section className={styles.content}>
       <img src={logo} alt="Pantera" className={styles.bg} />
+      <div class={styles.letreiroPai}>
       <div className={styles.letreiroContainer}>
         <div className={styles.staticMessage}>FIQUEM LIGADOS</div>
         <TypeAnimation
@@ -83,22 +84,14 @@ function Home() {
           className={styles.typeAnimation}
         />
       </div>
-
+      </div>
       <div className={styles.contentDiv1}>
         <div className={styles.Divisor1}>
           <div className={styles.esquerda}>
-          <h2 className={styles.h2}> Campeonatos em Andamento</h2>
-            <div className={styles.slider}>
-              <SliderBanner
-                links={SliderBannerDireita}
-              />
+          <div className={styles.atletica}>
+          <div className={styles.titulo1}>
+            <h1> A Atlética</h1>
             </div>
-          </div>
-          {/* Linha divisoria no meio da tela */}
-          <div className={styles.divisor}></div>
-
-          <div className={styles.direita}>
-            <h2 className={styles.h02}> A Atlética</h2>
             <div className={styles.paragrafo1}>
                 <p>
                 A ASSOCIAÇÃO ATLÉTICA ACADÊMICA DAS ESCOLAS DE ENGENHARIA
@@ -137,13 +130,23 @@ function Home() {
             />
           </div>
           </div>
+          </div>
+          {/* Linha divisoria no meio da tela */}
+          <div className={styles.divisor}></div>
+          <div className={styles.direita}>
+          <h2 className={styles.h2}> Campeonatos em Andamento</h2>
+            <div className={styles.slider}>
+              <SliderBanner
+                links={SliderBannerDireita}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
       <div className={styles.Divisor2}>
         <div className={styles.esquerda2}>
           <div className={styles.campus}>
-            <div className={styles.texto1}>
               <div className={styles.titulo1}>
                 <h1>Campus Aberto Atlética Panterão</h1>
               </div>
@@ -162,7 +165,6 @@ function Home() {
                   Saiba Mais
                 </button>
               </div>
-            </div>
           </div>
         </div>
         <div className={styles.direita2}>
