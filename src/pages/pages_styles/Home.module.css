@@ -20,6 +20,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #d9d9d9;
+  margin-top: 10rem;
 }
 
 body {
@@ -30,12 +31,13 @@ body {
   display: flex;
   width: 100%; /* Largura completa do pai */
   justify-content: center;
+  position: relative;
 }
 
 
 
 .letreiroContainer {
-  margin-left: 25rem;
+  position: absolute; /* Certifique-se de que o pai tem 'position: relative' se necessário */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -50,6 +52,8 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10rem; /* Ajuste o valor conforme necessário para espaçamento */
+
 }
 
 @media (max-width: 880px) {
