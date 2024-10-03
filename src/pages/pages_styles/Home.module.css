@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #d9d9d9;
-  margin-top: 10rem;
 }
 
 
@@ -28,17 +27,20 @@ body {
   overflow-x: hidden;
 }
 
-.letreiroPai {
-  display: flex;
-  width: 100%; /* Largura completa do pai */
-  justify-content: center;
-  position: relative;
+
+.fundo {
+  width: 50%;
+  height: 150px;
+  color: #053651;
+  background-color: #053651;
+  margin-top: -150px;
+  z-index: 1;
+  border: none;
+  border-radius: 50px;
 }
 
 
-
 .letreiroContainer {
-  position: absolute; /* Certifique-se de que o pai tem 'position: relative' se necessário */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -53,18 +55,7 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-  margin-bottom: 10rem; /* Ajuste o valor conforme necessário para espaçamento */
-
-}
-
-@media (max-width: 880px) {
-  .letreiroContainer {
-    width: 300px; /* Define um tamanho fixo para telas menores */
-    padding: 20px; /* Ajuste o padding se necessário */
-    margin-left: 0; /* Garante que não haja deslocamento */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Garante a centralização exata */
-  }
+  margin-left: 30rem;
 }
 
 .staticMessage {
@@ -296,6 +287,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.logoc {
+  display: flex;
+  justify-content: center;
+}
+
+.logoc img {
+  object-fit: contain;
+  width: 100%;
 }
 
 .campus {
@@ -555,6 +556,12 @@ body {
     width: 100%; /* Ajustado para ocupar toda a largura disponível */
     height: auto;
     object-fit: contain; /* Garante que a imagem se ajuste ao container sem distorcer */
+  }
+  .logoc {
+    overflow: hidden;
+    width: 20%; /* Define um tamanho inicial relativo à tela */
+    max-width: 200px; /* Define um tamanho máximo para a logo */
+    height: auto; /* Mantém a proporção */
   }
 }
 
