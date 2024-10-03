@@ -55,7 +55,7 @@
     margin: 5rem;
 }
 
-.TituloOrientadora h1 {
+.TituloOrientadora h2 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     position: relative;
@@ -94,15 +94,14 @@
     justify-content: center;
     align-items: center;
     padding-top: 4vw;
-    /* arrumar margin bot */
 }
 
 
 /*Final Card Gabriela */
 
 
-.TelaEsquerda h1 {
-    margin-left: 5rem;
+.TelaEsquerda h2 {
+    padding-left: 5rem;
 }
 
 .TelaDireita {
@@ -111,19 +110,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: blue; */
 }
 
-.TelaDireita h2 {
+.TelaDireita p {
     width: 40vw;
     text-align: justify;
-    padding-top: 3rem;
     position: relative;
     text-align: left;
     font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 40px;
     text-align: justify;
     color: #000000;
@@ -170,7 +167,7 @@
     margin-right: 5rem;
 }
 
-.TituloBolsistas h1 {
+.TituloBolsistas h2 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     position: relative;
@@ -341,7 +338,7 @@
     margin-right: 5rem;
 }
 
-.TituloSobre h1 {
+.TituloSobre h2 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -362,17 +359,17 @@
     background-color: var(--textColor);
 }
 
-.TituloSobre h2 {
+.TituloSobre p {
     padding-top: 3rem;
-    /* padding-left: 7rem;
-    padding-right: 7rem; */
+    padding-left: 7rem;
+    padding-right: 7rem;
     position: relative;
     text-align: left;
     font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 1.3rem;
-    line-height: 40px;
+    line-height: 35px;
     text-align: justify;
     color: #000000;
 }
@@ -384,7 +381,7 @@
     margin-right: 5rem;
 }
 
-.SobreProjeto h1 {
+.SobreProjeto h2 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -405,9 +402,9 @@
     background-color: var(--textColor);
 }
 
-.SobreProjeto h2 {
-    /* padding-left: 7rem;
-    padding-right: 7rem; */
+.SobreProjeto p {
+    padding-left: 7rem;
+    padding-right: 7rem;
     padding-top: 3rem;
     position: relative;
     text-align: left;
@@ -415,12 +412,12 @@
     font-style: normal;
     font-weight: normal;
     font-size: 1.3rem;
-    line-height: 40px;
+    line-height: 35px;
     text-align: justify;
     color: #000000;
 }
 
-.SobreProjeto h2 li {
+.SobreProjeto p li {
     padding-left: 2rem;
     text-align: justify;
 }
@@ -433,7 +430,7 @@
     margin-right: 5rem;
 }
 
-.Pesquisa h1 {
+.Pesquisa h2 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -448,8 +445,16 @@
     color: #000000;
 }
 
-.Pesquisa h2 {
-    width: 80rem;
+.Pesquisa hr {
+    width: 100%;
+    height: 3px;
+    background-color: var(--textColor);
+}
+
+.Pesquisa p {
+    /* width: 80rem; */
+    padding-left: 7rem;
+    padding-right: 7rem;
     padding-top: 3rem;
     position: relative;
     text-align: left;
@@ -457,26 +462,11 @@
     font-style: normal;
     font-weight: normal;
     font-size: 1.3rem;
-    line-height: 40px;
+    line-height: 35px;
     text-align: justify;
     color: #000000;
-
 }
 
-.Pesquisa hr {
-    width: 100%;
-    height: 3px;
-    background-color: var(--textColor);
-}
-
-/* .Pesquisa h2 {
-    margin-top: 3rem;
-    font-size: 20px;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    line-height: 1.5;
-    text-align: justify;
-} */
 
 /* Area sobre Galeria de Fotos*/
 .Galeria {
@@ -485,7 +475,7 @@
     margin-right: 5rem;
 }
 
-.Galeria h1 {
+.Galeria h2 {
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -514,7 +504,7 @@
 
 .DivisaoFotos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .ColunaEsquerda {
@@ -558,9 +548,9 @@
 
 /* Bloco Apoiadores */
 .Apoiadores {
-    margin-top: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     flex-direction: row;
 }
 
@@ -573,7 +563,7 @@
     justify-content: space-between;
 }
 
-.Apoiadores h1 {
+.Apoiadores h2 {
     margin-bottom: 1rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
@@ -607,7 +597,7 @@
     justify-content: center;
 }
 
-.ColunaEsquerda1 h1 {
+.ColunaEsquerda1 h2 {
     margin-top: 4rem;
     margin-bottom: 1rem;
     position: relative;
@@ -626,7 +616,7 @@
     background-color: var(--textColor);
 }
 
-.ColunaEsquerda1 h2 {
+.ColunaEsquerda1 p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -675,7 +665,8 @@
 
 /* Resposividade */
 
-@media(max-width: 1440px) {
+
+@media(max-width: 1441px) {
     .DivisaoTela2 {
         display: flex;
         justify-content: center;
@@ -696,6 +687,63 @@
         grid-template-columns: auto auto;
         background-color: var(--text-page-color);
         justify-content: space-around;
+    }
+
+    /* Ajuste de responsividade dos textos */
+    .title h1 {
+        font-size: 32px;
+    }
+
+    .TituloOrientadora h2 {
+        font-size: 28px;
+    }
+
+    .TelaDireita p {
+        font-size: 18px;
+    }
+
+    .TituloBolsistas h2 {
+        font-size: 28px;
+    }
+
+    .TituloSobre h2 {
+        font-size: 28px;
+    }
+
+    .TituloSobre p {
+        font-size: 18px;
+    }
+
+    .SobreProjeto h2 {
+        font-size: 28px;
+    }
+
+    .SobreProjeto p {
+        font-size: 18px;
+    }
+
+    .Pesquisa h2 {
+        font-size: 28px;
+    }
+
+    .Pesquisa p {
+        font-size: 18px;
+    }
+
+    .Galeria h2 {
+        font-size: 28px;
+    }
+
+    .Apoiadores h2 {
+        font-size: 28px;
+    }
+
+    .ColunaEsquerda1 h2 {
+        font-size: 28px;
+    }
+
+    .ColunaEsquerda1 p {
+        font-size: 18px;
     }
 }
 
@@ -734,6 +782,66 @@
     }
 }
 
+@media (max-width: 1025px) {
+
+    /* Ajuste de responsividade dos textos */
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .TituloOrientadora h2 {
+        font-size: 24px;
+    }
+
+    .TelaDireita p {
+        font-size: 16px;
+    }
+
+    .TituloBolsistas h2 {
+        font-size: 24px;
+    }
+
+    .TituloSobre h2 {
+        font-size: 24px;
+    }
+
+    .TituloSobre p {
+        font-size: 16px;
+    }
+
+    .SobreProjeto h2 {
+        font-size: 24px;
+    }
+
+    .SobreProjeto p {
+        font-size: 16px;
+    }
+
+    .Pesquisa h2 {
+        font-size: 24px;
+    }
+
+    .Pesquisa p {
+        font-size: 16px;
+    }
+
+    .Galeria h2 {
+        font-size: 24px;
+    }
+
+    .Apoiadores h2 {
+        font-size: 24px;
+    }
+
+    .ColunaEsquerda1 h2 {
+        font-size: 24px;
+    }
+
+    .ColunaEsquerda1 p {
+        font-size: 16px;
+    }
+}
+
 @media(max-width:950px) {
     .TelaDireita h2 {
         padding-top: 1rem;
@@ -759,6 +867,46 @@
 
     .Pesquisa h2 {
         width: 42rem;
+    }
+}
+
+@media (max-width: 770px) {
+
+    /* Ajuste de responsividade dos textos */
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .TituloOrientadora h2 {
+        font-size: 20px;
+    }
+
+    .TituloBolsistas h2 {
+        font-size: 20px;
+    }
+
+    .TituloSobre h2 {
+        font-size: 20px;
+    }
+
+    .SobreProjeto h2 {
+        font-size: 20px;
+    }
+
+    .Pesquisa h2 {
+        font-size: 20px;
+    }
+
+    .Galeria h2 {
+        font-size: 20px;
+    }
+
+    .Apoiadores h2 {
+        font-size: 20px;
+    }
+
+    .ColunaEsquerda1 h2 {
+        font-size: 20px;
     }
 }
 
@@ -894,6 +1042,7 @@
     }
 
     .TituloBolsistas {
+
         padding-bottom: 3rem;
     }
 }

@@ -8,9 +8,9 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 300,
   margin: 1.5,
-  [theme.breakpoints.down('sm')]: {
+  [theme.breakpoints.down('md')]: {
     width: '100% !important', // Overrides inline-style
-    height: 100,
+    height: 250,
   },
   '&:hover, &.Mui-focusVisible': {
     zIndex: 1,
@@ -75,7 +75,7 @@ export default function ButtonBaseDemo({ images }) {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%'}}>
+    <Box sx={{ display: 'flex', flexWrap:'wrap', minWidth: 250, width: '100%'}}>
       {images.map((image) => (
         <ImageButton
           focusRipple

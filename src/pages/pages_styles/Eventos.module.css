@@ -1,11 +1,11 @@
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
-    }
-    
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0
+}
+
 :root {
     --cabecalho-color: #090E17;
     --select-color: #2D7EA3;
@@ -48,14 +48,15 @@
     letter-spacing: 0.3em;
 }
 
-.NossosEventos{
+.NossosEventos {
     position: relative;
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 8rem;
     padding-bottom: 5rem;
 }
-.NossosEventos h1{
+
+.NossosEventos h2 {
     position: relative;
     text-align: left;
     font-family: 'Jockey One';
@@ -65,13 +66,15 @@
     line-height: 50px;
     color: #000000;
 }
-.NossosEventos hr{
+
+.NossosEventos hr {
     margin-top: 5px;
     height: 2px;
     width: 350px;
     background-color: #090E17;
 }
-.NossosEventos h2{
+
+.NossosEventos p {
     padding-top: 3rem;
     position: relative;
     text-align: left;
@@ -85,23 +88,26 @@
 }
 
 /*Divisao da tela*/
-.DivisaoTela1{
+.DivisaoTela1 {
     display: flex;
     flex-direction: row;
     background-color: white;
 }
-.DivisaoTela2{
+
+.DivisaoTela2 {
     display: flex;
     flex-direction: row;
     background-color: var(--text-page-color);
 }
-.TelaEsquerda{
+
+.TelaEsquerda {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.TelaDireita{
+
+.TelaDireita {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -109,11 +115,12 @@
 }
 
 /*Configuração dos textos*/
-.TextoEvento{
+.TextoEvento {
     margin: 5rem;
-    margin-top: 7rem; 
+    margin-top: 7rem;
 }
-.TextoEvento h1{
+
+.TextoEvento h2 {
     font-size: 24px;
     position: relative;
     text-align: left;
@@ -124,14 +131,16 @@
     line-height: 50px;
     color: #2D7EA3;
 }
-.TextoEvento hr{
+
+.TextoEvento hr {
     background-color: #2D7EA3;
     margin-top: 5px;
     height: 2px;
     width: 350px;
     margin-bottom: 5px;
 }
-.TextoEvento h2{
+
+.TextoEvento p {
     padding-top: 3rem;
     position: relative;
     text-align: left;
@@ -144,14 +153,14 @@
     color: #000000;
 }
 
-.DivisaoTela3{
+.DivisaoTela3 {
     display: flex;
     flex-direction: row;
     background-color: white;
 }
 
 /*Definição global para todas as fotos que serão utilizadas na página*/
-.ImgFestas{
+.ImgFestas {
     margin-top: 3rem;
     margin-bottom: 3rem;
     width: 30rem;
@@ -162,120 +171,170 @@
 }
 
 /* Responsividade */
-@media(max-width:1450px){
-    .ImgFestas{
+@media(max-width:1450px) {
+    .ImgFestas {
         width: 27rem;
         height: 32rem;
     }
+
+    /* Ajuste das fontes */
+    .title {
+        font-size: 32px;
+    }
+
+    .NossosEventos h2 {
+        font-size: 28px;
+    }
+
+    .NossosEventos p {
+        font-size: 18px;
+    }
+
+    .TextoEvento h2 {
+        font-size: 28px;
+    }
+
+    .TextoEvento p {
+        font-size: 18px
+    }
 }
-@media(max-width: 1200px){
-    .bg{
+
+@media(max-width: 1200px) {
+    .bg {
         height: 40vw;
     }
-    .title{
+
+    .title {
         font-size: 2rem;
     }
-    .NossosEventos{
+
+    .NossosEventos {
         padding-top: 3rem;
     }
-    .ImgFestas{
+
+    .ImgFestas {
         width: 25rem;
         height: 30rem;
     }
 }
-@media(max-width: 1000px){
-    .DivisaoTela1{
+
+@media (max-width: 1025px) {
+
+    /* Ajuste das fontes */
+    .title {
+        font-size: 28px;
+    }
+
+    .NossosEventos h2 {
+        font-size: 24px;
+    }
+
+    .NossosEventos p {
+        font-size: 16px;
+    }
+
+    .TextoEvento h2 {
+        font-size: 24px;
+    }
+
+    .TextoEvento p {
+        font-size: 16px
+    }
+}
+
+@media(max-width: 1000px) {
+    .DivisaoTela1 {
         display: flex;
         flex-direction: column;
     }
-    .TelaEsquerda{
+
+    .TelaEsquerda {
         width: 100%;
     }
-    .TelaDireita{
+
+    .TelaDireita {
         width: 100%;
     }
-    .ImgFestas{
+
+    .ImgFestas {
         width: 32rem;
         height: 38rem;
     }
-    .DivisaoTela2{
+
+    .DivisaoTela2 {
         display: flex;
         flex-direction: column-reverse;
     }
-    .TelaEsquerda2{
+
+    .TelaEsquerda2 {
         width: 100%;
     }
-    .TelaDireita2{
+
+    .TelaDireita2 {
         width: 100%;
     }
-    .DivisaoTela3{
+
+    .DivisaoTela3 {
         display: flex;
         flex-direction: column;
     }
-    .TelaEsquerda3{
+
+    .TelaEsquerda3 {
         width: 100%;
     }
-    .TelaDireita3{
+
+    .TelaDireita3 {
         width: 100%;
     }
-    .NossosEventos h1{
+
+    .NossosEventos h2 {
         font-size: 1.7rem;
         line-height: 1.25rem;
     }
-    .NossosEventos h2{
+
+    .NossosEventos p {
         padding-top: 1.5rem;
         font-size: 1.25rem;
         line-height: 2rem;
     }
-    .TextoEvento h1{
+
+    .TextoEvento h2 {
         font-size: 1.7rem;
         line-height: 1.5rem;
     }
-    .TextoEvento h2{
+
+    .TextoEvento p {
         padding-top: 1.25rem;
         font-size: 1.25rem;
         line-height: 2rem;
     }
 }
-@media(max-width:850px){
-    .ImgFestas{
+
+@media(max-width:850px) {
+    .ImgFestas {
         margin-top: 0.5rem;
         width: 27rem;
         height: 32rem;
     }
 }
-@media(max-width:700px){
-    .bg{
-        height: 50vw;
+
+@media (max-width: 770px) {
+
+    /* Ajuste das fontes */
+    .title {
+        font-size: 24px;
     }
-    .title{
-        font-size: 1.5rem;
+
+    .NossosEventos h2 {
+        font-size: 20px;
     }
-    .NossosEventos h1{
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
-    .NossosEventos h2{
-        padding-top: 1rem;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-    }
-    .TextoEvento h1{
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
-    .TextoEvento h2{
-        padding-top: 1rem;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-    }
-    .ImgFestas{
-        margin-top: 0.5rem;
-        width: 15rem;
-        height: 20rem;
+
+    .TextoEvento h2 {
+        font-size: 20px;
     }
 }
-@media(max-width:550px){
+
+@media(max-width:700px) {
     .bg {
         height: 50vw;
     }
@@ -283,33 +342,101 @@
     .title {
         font-size: 1.5rem;
     }
-    .NossosEventos{
-        padding-top: 3rem;
-    }
-    .NossosEventos h1{
+
+    .NossosEventos h1 {
         font-size: 1.5rem;
-        line-height: 1.25rem;
+        line-height: 1.5rem;
     }
-    .NossosEventos hr{
-        width: 250px;
-    }
-    .NossosEventos h2{
+
+    .NossosEventos h2 {
         padding-top: 1rem;
-        font-size: 1rem;
-        line-height: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
     }
-    .TextoEvento h1{
+
+    .TextoEvento h1 {
         font-size: 1.5rem;
-        line-height: 1.25rem;
+        line-height: 1.5rem;
     }
-    .TextoEvento h2{
+
+    .TextoEvento h2 {
         padding-top: 1rem;
-        font-size: 1rem;
-        line-height: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
     }
-    .ImgFestas{
+
+    .ImgFestas {
         margin-top: 0.5rem;
         width: 15rem;
         height: 20rem;
+    }
+}
+
+@media(max-width:550px) {
+    .bg {
+        height: 50vw;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .NossosEventos {
+        padding-top: 3rem;
+    }
+
+    .NossosEventos h1 {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+    }
+
+    .NossosEventos hr {
+        width: 250px;
+    }
+
+    .NossosEventos h2 {
+        padding-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .TextoEvento h1 {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+    }
+
+    .TextoEvento h2 {
+        padding-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .ImgFestas {
+        margin-top: 0.5rem;
+        width: 15rem;
+        height: 20rem;
+    }
+}
+@media (max-width: 430px) {
+
+    /* Ajuste das fontes */
+    .title {
+        font-size: 22px;
+    }
+
+    .NossosEventos h2 {
+        font-size: 18px;
+    }
+
+    .NossosEventos p {
+        font-size: 14px;
+    }
+
+    .TextoEvento h2 {
+        font-size: 18px;
+    }
+
+    .TextoEvento p {
+        font-size: 14px
     }
 }
