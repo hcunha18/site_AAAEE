@@ -421,13 +421,19 @@ body {
   justify-content: center;
 }
 
-@media(max-width: 1240px) {
+@media(max-width: 800px) {
   .marqueeText {
     font-size: 32px;
   }
 
   .gameStatus {
     font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0; /* Garante que não haja deslocamento */
+    left: 50%; /* Centraliza horizontalmente */
+
   }
 
   .scoreboard {
