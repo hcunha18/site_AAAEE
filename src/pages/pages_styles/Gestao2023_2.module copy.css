@@ -52,32 +52,38 @@
 }
 
 .baseInformacoes {
-    padding: 2rem;
+    padding: 15px;
     align-items: left;
+    background-color: #D9D9D9;
     justify-content: left;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .boxPrincipal {
-    margin: -4rem;
+    display: flex;
+    background-color: var(--text-page-color);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10rem;
 }
 
 .baseDiretoria {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 1rem;
     background-color: var(--text-page-color);
-    padding: 2rem;
-    justify-content: space-around;
+    justify-content: space-around; 
+}
+
+.linhaDiretoria {
+    flex-direction: column;
 }
 
 .membro {
-    padding: 1rem;
-    text-align: center;
-    border-radius: 8px;
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
 }
-
 
 .textoInformacoes{
     position: relative;
@@ -88,6 +94,7 @@
     font-size: 30px;
     line-height: 50px;
     color: #000000;
+    padding-left: 5rem;
 }
 
 .textoDiretoria {
@@ -118,24 +125,40 @@
 }
 
 @media (max-width: 1120px) {
-    .title {
-        font-size: 24px;
-        line-height: 32px;
+    .content {
+        flex-direction: column;
     }
-    .baseInformacoes {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .boxPrincipal {
-        margin: 0 2rem;
-    }
-    .baseDiretoria{
+    .baseDiretoria {
         grid-template-columns: auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top:2rem;
     }
-}
 
-@media (max-width: 720px) {
-    .baseDiretoria{
-        grid-template-columns: auto;
+    .textoInformacoes{
+        padding-left: 0rem;
+        text-align: center;
+        font-size: 24px; 
+    }
+
+    .title {
+        font-size: 24px; 
+    }
+
+    .baseInformacoes {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .membro {
+        width: 90%; 
+        margin-right: 0; 
+        margin-left: 0;
+        flex: 0 1 calc(25% - 20px);
+    }
+
+    .boxPrincipal {
+        margin-bottom: 0;
     }
 }
