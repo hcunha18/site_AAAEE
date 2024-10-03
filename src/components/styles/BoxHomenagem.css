@@ -29,6 +29,7 @@
   height: 4px;
   background: linear-gradient(to right, transparent, #004e92 );
   animation: animacao 2s linear infinite;
+  animation-delay: 3s;
 }
 
 .card span:nth-of-type(2){
@@ -39,7 +40,7 @@
   height: 100%;
   background: linear-gradient(to bottom, transparent, #004e92 );
   animation: animacao2 2s linear infinite;
-  animation-delay: 6s;
+  animation-delay: 8s;
 }
 
 .card span:nth-of-type(3){
@@ -61,7 +62,7 @@
   height: 100%;
   background: linear-gradient(to top, transparent, #004e92 );
   animation: animacao4 2s linear infinite;
-  animation-delay: 7.25s;
+  animation-delay: 8s;
 }
 
 @keyframes animacao {

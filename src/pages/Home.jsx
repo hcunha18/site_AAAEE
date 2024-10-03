@@ -141,10 +141,6 @@ function Home() {
         </div>
       </div>
 
-      <div>
-        <Homenagem/>
-      </div>
-
       <div className={styles.Divisor2}>
         <div className={styles.esquerda2}>
           <div className={styles.campus}>

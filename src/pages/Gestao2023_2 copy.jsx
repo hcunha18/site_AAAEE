@@ -179,18 +179,18 @@ function Gestao2023_2() {
       <div className={styles.groundColor}/> 
 
       <div className={styles.baseDiretoria}>
-  {membrosData.map((membro, index) => (
-    <div key={index} className={styles.membro}>
-      <BoxMembros
-        imageLink={membro.imageLink}
-        h1Text={membro.h1Text}
-        h3Text={membro.h3Text}
-        gitLink={membro.gitLink}
-        mailLink={membro.mailLink}
-        linkedLink={membro.linkedLink}
-      />
-    </div>
-  ))}
+        {membrosData.map((membro, index) => (
+          <div key={index} className={styles.membro}>
+            <BoxMembros
+              imageLink={membro.imageLink}
+              h1Text={membro.h1Text}
+              h3Text={membro.h3Text}
+              gitLink={membro.gitLink}
+              mailLink={membro.mailLink}
+              linkedLink={membro.linkedLink}
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
