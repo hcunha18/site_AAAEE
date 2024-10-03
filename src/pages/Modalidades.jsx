@@ -126,6 +126,7 @@ function Modalidades() {
           </div>
         </div>
       </div>
+
     </section>
   );
 }

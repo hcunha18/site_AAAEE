@@ -10,7 +10,7 @@
 .redondo-container {
     position: relative;
     width: 17.5rem; 
-    height: 23.8rem; 
+    height: 17rem; 
   }
   
   .redondo {
@@ -32,10 +32,10 @@
   
   .quadrado {
     width: 22rem; 
-    height: 14rem; 
+    height: 13rem; 
     background-color: var(--box-color);
     position: absolute;
-    top: 20%; 
+    top: 26%; 
     left: 50%;
     border: 0.125rem solid lightgray; 
     border-radius: 0.625rem;
@@ -49,7 +49,7 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    bottom: 16rem; 
+    bottom: 8.5rem;
     left: 50%; 
     transform: translateX(-50%); 
     font-family: 'inter';
@@ -62,7 +62,7 @@
 .divisor{
     width: 100%; 
     position: absolute;
-    bottom: 14rem;
+    bottom: 6.8rem;
     left: 50%; 
     transform: translateX(-50%);
 }
@@ -71,12 +71,13 @@
   width: auto;
   position: absolute;
   color: var(--text-color);
-  bottom: 13rem;
+  bottom: 6.5rem;
   left: 50%;
   display: flex; 
   align-items: center;
   justify-content: space-between; 
   transform: translateX(-50%);
+  
 }
 
 .icones a:not(:last-child) { 

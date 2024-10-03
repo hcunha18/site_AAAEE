@@ -13,6 +13,7 @@ import { CardActions } from "@mui/material";
 import { useMediaQuery } from "react-responsive";
 import SliderBanner from '../components/structures/SliderBanner';
 import { useEffect } from "react";
+import Homenagem from '../components/structures/BoxHomenagem';
 
 function Home() {
 
