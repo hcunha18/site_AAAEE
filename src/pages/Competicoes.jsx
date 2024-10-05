@@ -13,7 +13,7 @@ function Competicoes() {
 
 
 
-  const [time, setTime] = useState(20 * 60); 
+  const [time, setTime] = useState(20 * 60); // 20 minutes in seconds
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -88,7 +88,7 @@ function Competicoes() {
 
       {/* // TABELA JOGOS DA SEMANA  */}
 
-      <div className={styles.SemanaJogos}>
+      <div className={styles.weeklyGames}>
         <div className={styles.title2}>JOGOS DA SEMANA</div>
         <div className={styles.schedule}>
           <div className={styles.daySection}>

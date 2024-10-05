@@ -75,7 +75,7 @@ export default function ButtonBaseDemo({ images }) {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexWrap:'wrap', minWidth: 250, width: '100%'}}>
+    <Box sx={{ display: 'flex', flexWrap:'wrap', minWidth: 925, width: '100%'}}>
       {images.map((image) => (
         <ImageButton
           focusRipple

@@ -11,10 +11,12 @@ body {
   box-sizing: border-box;
 }
 
+/* Overlay */
 .overlay {
   position: relative;
 }
 
+/* Titles */
 .title1 {
   position: absolute;
   top: 50%;
@@ -33,13 +35,6 @@ body {
 }
 
 .title2 {
-  top: 50%;
-  left: 50%;
-  padding: 20px 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: 36px;
   color: #FFD700;
   margin-bottom: 20px;
@@ -50,14 +45,13 @@ body {
 }
 
 .bg {
-  top: 50%;
-  left: 50%;
   width: 100%;
   height: 30vw;
   display: block;
   filter: brightness(40%);
 }
 
+/* Content */
 .content {
   background-color: #1E222D;
   color: white;
@@ -71,6 +65,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Marquee */
 .marquee {
   background-color: black;
   width: 100%;
@@ -87,6 +82,7 @@ body {
   color: #FFD700;
 }
 
+/* Scoreboard Container */
 .scoreboardContainer {
   width: 100%;
   display: flex;
@@ -95,18 +91,13 @@ body {
   margin-top: 40px;
 }
 
+/* Game Status */
 .gameStatus {
-  top: 50%;
-  left: 50%;
-  padding: 20px 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border-radius: 30px;
   background-color: black;
   color: #00ff15;
   font-size: 24px;
+  padding: 10px;
   margin-bottom: 30px;
   border: 2px solid #00ff15;
   box-shadow: 0 0 10px #00ff15;
@@ -114,6 +105,7 @@ body {
   font-family: 'Press Start 2P', cursive;
 }
 
+/* Scoreboard */
 .scoreboard {
   font-family: 'DS-Digital', sans-serif;
   border-radius: 10px;
@@ -162,6 +154,7 @@ body {
   right: 5px;
 }
 
+/* Header */
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -200,18 +193,21 @@ body {
   gap: 5px;
 }
 
+/* Scores */
 .scores {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
 }
 
+/* Team Section */
 .teamSection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Period */
 .period .final::before {
   content: 'SEMI-FINAL';
   position: absolute;
@@ -229,6 +225,7 @@ body {
   }
 }
 
+/* Team Score */
 .teamScore,
 .periodNumber {
   font-size: 100px;
@@ -243,6 +240,7 @@ body {
   color: #FFD700;
   position: relative;
   top: -10px;
+  /* Adjust as needed */
 }
 
 .periodTitle {
@@ -250,6 +248,7 @@ body {
   color: #FFD700;
 }
 
+/* Possession, Fouls */
 .pos,
 .posNumber,
 .foulsTitle,
@@ -258,13 +257,15 @@ body {
   font-size: 20px;
 }
 
-.SemanaJogos {
+/* Weekly Games */
+.weeklyGames {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
   margin-top: 40px;
 }
 
+/* Title */
 .title {
   font-size: 36px;
   color: #FFD700;
@@ -275,6 +276,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Schedule */
 .schedule {
   display: flex;
   flex-direction: column;
@@ -283,14 +285,8 @@ body {
   align-items: center;
 }
 
+/* Day Section */
 .daySection {
-  top: 50%;
-  left: 50%;
-  padding: 20px 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -307,9 +303,8 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Game */
 .game {
-  top: 50%;
-  left: 50%;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -321,8 +316,11 @@ body {
   width: 500px;
   height: 100px;
   box-sizing: border-box;
+  position: relative;
+  /* Added to position child elements */
 }
 
+/* Team */
 .team {
   display: flex;
   align-items: center;
@@ -341,11 +339,13 @@ body {
 .logo1 {
   position: absolute;
   left: -35px;
+  /* Adjust to move half outside */
 }
 
 .logo2 {
   position: absolute;
   right: -35px;
+  /* Adjust to move half outside */
 }
 
 .teamName {
@@ -357,13 +357,16 @@ body {
 
 .team.left .teamName {
   margin-left: 40px;
+  /* Adjust as needed to center with logo */
 }
 
 .team.right .teamName {
   margin-right: 40px;
+  /* Adjust as needed to center with logo */
   text-align: right;
 }
 
+/* Time */
 .time {
   font-size: 30px;
   color: white;
@@ -372,6 +375,7 @@ body {
 }
 
 
+/* Table */
 .table {
   width: 100%;
   max-width: 800px;
@@ -403,6 +407,7 @@ body {
   background-color: #053651;
 }
 
+/* Table Team */
 .table .team {
   display: flex;
   align-items: center;
@@ -421,19 +426,14 @@ body {
   justify-content: center;
 }
 
-@media(max-width: 800px) {
+/* Responsividade */
+@media(max-width: 1240px) {
   .marqueeText {
     font-size: 32px;
   }
 
   .gameStatus {
     font-size: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-left: 0; /* Garante que não haja deslocamento */
-    left: 50%; /* Centraliza horizontalmente */
-
   }
 
   .scoreboard {
@@ -479,6 +479,7 @@ body {
     right: 4px;
   }
 
+  /* Header */
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
