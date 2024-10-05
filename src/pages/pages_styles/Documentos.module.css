@@ -7,7 +7,7 @@
     }
 
 :root {
-    --cabecalho-color: #090E17;
+    --cabecalho-color: #170f09;
     --select-color: #2D7EA3;
     --background-color: #1E222D;
     --text-rodape-color: #D9D9D9;
@@ -17,7 +17,7 @@
 .content {
     vertical-align:baseline;
 
-    background-color: #090E17;
+    background-color: #1E222D;
 }
 
 .overlay{
