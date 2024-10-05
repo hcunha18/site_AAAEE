@@ -205,6 +205,7 @@ body {
 }
 
 .esquerda {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,17 +213,14 @@ body {
 }
 
 .direita {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* Aumenta o padding */
   width: calc(100% + 20vw);
-  /* Aumenta a largura para expandir para a direita */
   margin-right: 0vw;
-  /* Margem negativa para expandir a div para a direita */
   box-sizing: border-box;
-  /* Inclui o padding e a borda no cálculo da largura */
 }
 
 
@@ -346,6 +344,11 @@ body {
   /* Garante que a imagem se ajuste ao container sem distorcer */
 }
 
+@media screen and (max-width: 1120px) {
+  .garra {
+    display: none; /* A imagem desaparecerá quando a largura da tela for menor ou igual a 1120px */
+  }
+}
 /* Fim da estilização para o Campus Aberto*/
 
 
