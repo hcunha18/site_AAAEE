@@ -7,7 +7,7 @@
     }
 
 :root {
-    --cabecalho-color: #090E17;
+    --cabecalho-color: #170f09;
     --select-color: #2D7EA3;
     --background-color: #1E222D;
     --text-rodape-color: #D9D9D9;
@@ -16,7 +16,8 @@
 
 .content {
     vertical-align:baseline;
-    background-color: #090E17;
+
+    background-color: #1E222D;
 }
 
 .overlay{
@@ -36,7 +37,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #DAE7FE;
+    color: #f4f4f5;
     font-size: 32px;
     text-align: center;
     z-index: 1;
@@ -52,7 +53,7 @@
 .baseInformacoes {
     padding: 15px;
     align-items: center;
-    background-color: #D9D9D9;
+    background-color: #1E222D;
     justify-content: left;
     padding-top: 5rem;
     padding-left: 5rem;
